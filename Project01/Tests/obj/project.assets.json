@@ -1708,6 +1708,42 @@
         "build": {
           "build/net6.0/xunit.runner.visualstudio.props": {}
         }
+      },
+      "Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Application.dll": {}
+        }
+      },
+      "Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Core.dll": {}
+        }
+      },
+      "Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Infrastructure.dll": {}
+        }
       }
     }
   },
@@ -5497,10 +5533,27 @@
         "xunit.runner.visualstudio.2.5.3.nupkg.sha512",
         "xunit.runner.visualstudio.nuspec"
       ]
+    },
+    "Application/1.0.0": {
+      "type": "project",
+      "path": "../Application/Application.csproj",
+      "msbuildProject": "../Application/Application.csproj"
+    },
+    "Core/1.0.0": {
+      "type": "project",
+      "path": "../Core/Core.csproj",
+      "msbuildProject": "../Core/Core.csproj"
+    },
+    "Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../Infrastructure/Infrastructure.csproj",
+      "msbuildProject": "../Infrastructure/Infrastructure.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "Application >= 1.0.0",
+      "Infrastructure >= 1.0.0",
       "Microsoft.NET.Test.Sdk >= 17.8.0",
       "coverlet.collector >= 6.0.0",
       "xunit >= 2.5.3",
@@ -5513,11 +5566,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/omidsa/Programmings/ASPNetCore/Project01/Tests/Tests.csproj",
+      "projectUniqueName": "/home/omidsa/Programmings/ASPNetCore/EcommerceApp/Tests/Tests.csproj",
       "projectName": "Tests",
-      "projectPath": "/home/omidsa/Programmings/ASPNetCore/Project01/Tests/Tests.csproj",
+      "projectPath": "/home/omidsa/Programmings/ASPNetCore/EcommerceApp/Tests/Tests.csproj",
       "packagesPath": "/home/omidsa/.nuget/packages/",
-      "outputPath": "/home/omidsa/Programmings/ASPNetCore/Project01/Tests/obj/",
+      "outputPath": "/home/omidsa/Programmings/ASPNetCore/EcommerceApp/Tests/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/omidsa/.nuget/NuGet/NuGet.Config"
@@ -5531,7 +5584,14 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/home/omidsa/Programmings/ASPNetCore/EcommerceApp/Application/Application.csproj": {
+              "projectPath": "/home/omidsa/Programmings/ASPNetCore/EcommerceApp/Application/Application.csproj"
+            },
+            "/home/omidsa/Programmings/ASPNetCore/EcommerceApp/Infrastructure/Infrastructure.csproj": {
+              "projectPath": "/home/omidsa/Programmings/ASPNetCore/EcommerceApp/Infrastructure/Infrastructure.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

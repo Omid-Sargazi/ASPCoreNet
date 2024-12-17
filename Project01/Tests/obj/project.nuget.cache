@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fjxmmcWQc5c=",
+  "dgSpecHash": "OOHZKdYBHVg=",
   "success": true,
-  "projectFilePath": "/home/omidsa/Programmings/ASPNetCore/Project01/Tests/Tests.csproj",
+  "projectFilePath": "/home/omidsa/Programmings/ASPNetCore/EcommerceApp/Tests/Tests.csproj",
   "expectedPackageFiles": [
     "/home/omidsa/.nuget/packages/coverlet.collector/6.0.0/coverlet.collector.6.0.0.nupkg.sha512",
     "/home/omidsa/.nuget/packages/microsoft.codecoverage/17.8.0/microsoft.codecoverage.17.8.0.nupkg.sha512",

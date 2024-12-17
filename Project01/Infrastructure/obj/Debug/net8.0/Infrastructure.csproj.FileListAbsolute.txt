@@ -1,0 +1,16 @@
+/home/omidsa/Programmings/ASPNetCore/Project01/Infrastructure/bin/Debug/net8.0/Infrastructure.deps.json
+/home/omidsa/Programmings/ASPNetCore/Project01/Infrastructure/bin/Debug/net8.0/Infrastructure.dll
+/home/omidsa/Programmings/ASPNetCore/Project01/Infrastructure/bin/Debug/net8.0/Infrastructure.pdb
+/home/omidsa/Programmings/ASPNetCore/Project01/Infrastructure/bin/Debug/net8.0/Core.dll
+/home/omidsa/Programmings/ASPNetCore/Project01/Infrastructure/bin/Debug/net8.0/Core.pdb
+/home/omidsa/Programmings/ASPNetCore/Project01/Infrastructure/obj/Debug/net8.0/Infrastructure.csproj.AssemblyReference.cache
+/home/omidsa/Programmings/ASPNetCore/Project01/Infrastructure/obj/Debug/net8.0/Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/home/omidsa/Programmings/ASPNetCore/Project01/Infrastructure/obj/Debug/net8.0/Infrastructure.AssemblyInfoInputs.cache
+/home/omidsa/Programmings/ASPNetCore/Project01/Infrastructure/obj/Debug/net8.0/Infrastructure.AssemblyInfo.cs
+/home/omidsa/Programmings/ASPNetCore/Project01/Infrastructure/obj/Debug/net8.0/Infrastructure.csproj.CoreCompileInputs.cache
+/home/omidsa/Programmings/ASPNetCore/Project01/Infrastructure/obj/Debug/net8.0/Infrastructure.sourcelink.json
+/home/omidsa/Programmings/ASPNetCore/Project01/Infrastructure/obj/Debug/net8.0/Infrastr.15EFFBFE.Up2Date
+/home/omidsa/Programmings/ASPNetCore/Project01/Infrastructure/obj/Debug/net8.0/Infrastructure.dll
+/home/omidsa/Programmings/ASPNetCore/Project01/Infrastructure/obj/Debug/net8.0/refint/Infrastructure.dll
+/home/omidsa/Programmings/ASPNetCore/Project01/Infrastructure/obj/Debug/net8.0/Infrastructure.pdb
+/home/omidsa/Programmings/ASPNetCore/Project01/Infrastructure/obj/Debug/net8.0/ref/Infrastructure.dll
