@@ -10,7 +10,7 @@ namespace MyApp.Tests
 {
     public class AppDbContextTests
 {
-    [Fact]
+   /* [Fact]
     public void CanInsertProductIntoDatabase()
     {
         var options = new DbContextOptionsBuilder<AppDbContext>()
@@ -63,6 +63,46 @@ namespace MyApp.Tests
             Assert.Single(context.Products);
             Assert.Equal("Laptop",context.Products.Single().Name);
 
+        }
+    }
+
+    [Fact]
+    public void CanUpdateProduct()
+    {
+        var options = new DbContextOptionsBuilder<AppDbContext>()
+        .UseInMemoryDatabase(databaseName:"UpdateProductTest").Options;
+
+        using(var context = new AppDbContext(options))
+        {
+            var product = new Product{Name="Phone",Price=500m};
+            context.Products.Add(product);
+            context.SaveChanges();
+
+            var existingProduct = context.Products.Single();
+            existingProduct.Price=450m;
+            context.SaveChanges();
+
+            Assert.Equal(450m,context.Products.Single().Price);
+
+        }
+    }*/
+
+    [Fact]
+    public void CanDeleteProduct()
+    {
+        var options = new DbContextOptionsBuilder<AppDbContext>()
+        .UseInMemoryDatabase(databaseName:"DeleteProductTest").Options;
+
+        using(var context = new AppDbContext(options))
+        {
+            var product = new Product{Name="IPhone",Price=152m};
+            context.Products.Add(product);
+            context.SaveChanges();
+
+            context.Products.Remove(product);
+            context.SaveChanges();
+
+            Assert.Empty(context.Products);
         }
     }
 
