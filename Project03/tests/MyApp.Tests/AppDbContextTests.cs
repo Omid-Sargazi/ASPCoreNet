@@ -259,7 +259,7 @@ namespace MyApp.Tests
             var savedCategory = context.Categories.Single();
             Assert.Equal("Elect",savedCategory.Name);
         }
-    }*/
+    }
 
 
     [Fact]
@@ -274,6 +274,19 @@ namespace MyApp.Tests
     public class MessageService
     {
         public Task<string> GetMessageAsync()=>Task.FromResult("Hello, World");
+    }*/
+
+
+    [Fact]
+    public void ValidateInput_ThrowsException_ForNullInput()
+    {
+        string input=null;
+        Assert.Throws<ArgumentNullException>(()=>ValidateInput(input));
+    }
+
+    private void ValidateInput(string input)
+    {
+        if(input==null) throw new ArgumentNullException(nameof(input));
     }
 }
 }
