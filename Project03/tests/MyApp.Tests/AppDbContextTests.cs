@@ -238,7 +238,7 @@ namespace MyApp.Tests
     public class Calculator
     {
         public int Add(int a, int b)=>a+b;
-    }*/
+    }
 
 
 
@@ -259,6 +259,21 @@ namespace MyApp.Tests
             var savedCategory = context.Categories.Single();
             Assert.Equal("Elect",savedCategory.Name);
         }
+    }*/
+
+
+    [Fact]
+    public async Task GetMessageAsync_ReturnsExpectedMessage()
+    {
+        var services = new MessageService();
+        var result = await services.GetMessageAsync();
+        Assert.Equal("Hello, World",result);
+    }
+
+
+    public class MessageService
+    {
+        public Task<string> GetMessageAsync()=>Task.FromResult("Hello, World");
     }
 }
 }
