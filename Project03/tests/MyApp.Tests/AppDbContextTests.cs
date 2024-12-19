@@ -85,7 +85,7 @@ namespace MyApp.Tests
             Assert.Equal(450m,context.Products.Single().Price);
 
         }
-    }*/
+    }
 
     [Fact]
     public void CanDeleteProduct()
@@ -103,6 +103,25 @@ namespace MyApp.Tests
             context.SaveChanges();
 
             Assert.Empty(context.Products);
+        }
+    }*/
+
+    [Fact]
+    public void CanQueryProductByName()
+    {
+        var options = new DbContextOptionsBuilder<AppDbContext>()
+        .UseInMemoryDatabase(databaseName:"QueryByNameTest").Options;
+
+        using(var context = new AppDbContext(options))
+        {
+            context.Products.Add(new Product{Name="Monitor",Price=120m});
+            context.Products.Add(new Product{Name="KeyBoard",Price=25m});
+
+            context.SaveChanges();
+
+            var result = context.Products.Single(p=>p.Name=="Monitor");
+            Assert.NotNull(result);
+            Assert.Equal(120,result.Price);
         }
     }
 
