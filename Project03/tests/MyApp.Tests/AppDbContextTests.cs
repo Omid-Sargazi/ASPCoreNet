@@ -104,7 +104,7 @@ namespace MyApp.Tests
 
             Assert.Empty(context.Products);
         }
-    }*/
+    }
 
     [Fact]
     public void CanQueryProductByName()
@@ -125,6 +125,48 @@ namespace MyApp.Tests
         }
     }
 
+    public void CannotAddDuplicateNames()
+    {
+        var options = new DbContextOptionsBuilder<AppDbContext>()
+        .UseInMemoryDatabase(databaseName:"UniqueConstraintTest").Options;
+
+        using(var context = new AppDbContext(options))
+        {
+            context.Products.Add(new Product{Name="Mouse",Price=25m});
+            context.Products.Add(new Product{Name="Mouse02",Price=25m});
+            
+            Assert.Throws<DbUpdateException>(() => context.SaveChanges());
+
+        }
+    }*/
+
+    [Fact]
+    public void CanInsertCategoryWithProducts()
+    {
+        var options = new DbContextOptionsBuilder<AppDbContext>()
+        .UseInMemoryDatabase(databaseName:"CategoryWithProductsTest").Options;
+
+        using(var context = new AppDbContext(options))
+        {
+            var category = new Category
+            {
+                Name="Electronics",
+                Products=new List<Product>
+                {
+                    new Product{Name="TV",Price=20m},
+                    new Product{Name="Laptop",Price=201m},
+                }
+            };
+
+            context.Add(category);
+            context.SaveChanges();
+
+
+            var savedCategory = context.Categories.Include(c=>c.Products).Single();
+            Assert.Equal(2,savedCategory.Products.Count);
+            Assert.Equal("TV",savedCategory.Products.First().Name);
+        }
+    }
     
 }
 }
