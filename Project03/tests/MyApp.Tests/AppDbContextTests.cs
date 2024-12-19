@@ -138,7 +138,7 @@ namespace MyApp.Tests
             Assert.Throws<DbUpdateException>(() => context.SaveChanges());
 
         }
-    }*/
+    }
 
     [Fact]
     public void CanInsertCategoryWithProducts()
@@ -167,6 +167,98 @@ namespace MyApp.Tests
             Assert.Equal("TV",savedCategory.Products.First().Name);
         }
     }
+
+    [Fact]
+    public void Test_Addition_ReturnsCorrectSum()
+    {
+        
+        Assert.Equal(5,3+2);
+    }
+
+
+    [Theory]
+    [InlineData(2,3,5)]
+    [InlineData(1,2,30)]
+    public void Test_Addition_MultipleCases(int a, int b, int expected)
+    {
+        Assert.Equal(expected,a+b);
+    }
+
+    [Fact]
+    public void Test_DivideByZero_ThrowsException()
+    {
+        Assert.Throws<DivideByZeroException>(()=>{int result = 1 / 2;});
     
+
+    [Fact]
+    public void Test_ObjectIsNull()
+    {
+        object obj=null;
+        Assert.Null(obj);
+    } 
+    }
+    [Fact]
+    public void ValidateInput_ThrowsException_ForInvalidData()
+    {
+        string invalidInput = null;
+
+        try{
+            ValidateInput(invalidInput);
+        }catch(ArgumentException ex)
+        {
+            Console.WriteLine($"Exception Caught: {ex.Message}");
+            Assert.Equal("Input cannot be empty or null", ex.Message);
+            return;
+        }
+
+
+
+        Assert.Throws<ArgumentException>(()=>ValidateInput(invalidInput));
+    }
+
+    private void ValidateInput(string input)
+    {
+        if(string.IsNullOrWhiteSpace(input))
+        {
+            Console.WriteLine("Omidhello");
+            throw new ArgumentException("Input cannot be empty or null");
+        }
+    }
+
+
+
+    [Fact]
+    public void Add_ReturnsCorrectSum()
+    {
+        var Calculator = new Calculator();
+        int result = Calculator.Add(10,10);
+        Assert.Equal(10, result);
+    }
+
+    public class Calculator
+    {
+        public int Add(int a, int b)=>a+b;
+    }*/
+
+
+
+
+    [Fact]
+    public void AddCategory_SavesCategoryToDatabase()
+    {
+        var options = new DbContextOptionsBuilder<AppDbContext>()
+        .UseInMemoryDatabase("TestDatabase").Options;
+
+        using(var context = new AppDbContext(options))
+        {
+            var category = new Category{Name="Electronics"};
+            context.Categories.Add(category);
+            context.SaveChanges();
+
+
+            var savedCategory = context.Categories.Single();
+            Assert.Equal("Elect",savedCategory.Name);
+        }
+    }
 }
 }
