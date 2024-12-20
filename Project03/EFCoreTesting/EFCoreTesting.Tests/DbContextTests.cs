@@ -31,5 +31,20 @@ namespace EFCoreTesting.Tests
             Assert.Equal(1,context.Products.Count());
             Assert.Equal("Test Product",context.Products.Single().Name);
         }
+
+        [Fact]
+        public void GetProducts_ShouldReturnAllProducts()
+        {
+            using var context = GetInMemoryDbContext();
+
+            context.Products.Add(new Product{Name = "Product 1", Price=5.99m});
+            context.Products.Add(new Product{ Name = "Product 2", Price=15.99m});
+            context.SaveChanges();
+
+
+            var products = context.Products.ToList();
+
+            Assert.Equal(3,products.Count);
+        }
     }
 }
