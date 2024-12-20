@@ -274,7 +274,7 @@ namespace MyApp.Tests
     public class MessageService
     {
         public Task<string> GetMessageAsync()=>Task.FromResult("Hello, World");
-    }*/
+    }
 
 
     [Fact]
@@ -288,5 +288,31 @@ namespace MyApp.Tests
     {
         if(input==null) throw new ArgumentNullException(nameof(input));
     }
+
+    [Fact]
+    public void ReverseString_ReturnsReversedString()
+    {
+        var input = "hello";
+        var expected = "olleh";
+
+        var result = ReverseString(input);
+
+        Assert.Equal(expected, result);
+    }
+
+
+    private string ReverseString(string input)=>new string(input.Reverse().ToArray());*/
+
+    public void Divide_ThrowsException_ForZeroDenominator()
+    {
+        Assert.Throws<DivideByZeroException>(()=>Divide(10,0));
+    }
+
+    private int Divide(int x, int y)=>x/y;
+
+
+
+
+
 }
 }
