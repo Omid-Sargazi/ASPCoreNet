@@ -301,7 +301,7 @@ namespace MyApp.Tests
     }
 
 
-    private string ReverseString(string input)=>new string(input.Reverse().ToArray());*/
+    private string ReverseString(string input)=>new string(input.Reverse().ToArray());
 
     public void Divide_ThrowsException_ForZeroDenominator()
     {
@@ -311,7 +311,17 @@ namespace MyApp.Tests
     private int Divide(int x, int y)=>x/y;
 
 
+*/
 
+[Fact]
+public void GetEvenNumbers_ReturnsCorrectSubset()
+{
+    var numbers = new[] { 1, 2,3,4,5,6,7,8,};
+    var result = GetEvenNumbers(numbers); 
+    Assert.Equal(new[]{2,4,6,8},result);
+}
+
+private IEnumerable<int> GetEvenNumbers(IEnumerable<int> numbers)=>numbers.Where(x=>x%2==0);
 
 
 }
