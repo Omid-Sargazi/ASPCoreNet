@@ -65,4 +65,29 @@ namespace DIAndIOC
         }
     }
 
+
+    public class UserService
+    {
+        private Database _database;
+
+        public UserService()
+        {
+            _database = new Database();
+        }
+
+        public void SaveUser(string user)
+        {
+            _database.Save(user);
+        }
+    }
+
+
+    public class Database
+    {
+        public void Save(string data)
+        {
+            Console.WriteLine($"Saving {data} to database.");
+        }
+    }
+
 }
