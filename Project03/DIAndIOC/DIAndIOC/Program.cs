@@ -28,11 +28,41 @@ namespace DIAndIOC
         }
     }
 
-    public class Logger
+    // public class Logger
+    // {
+    //     public void Log(string message)
+    //     {
+    //         Console.WriteLine(message);
+    //     }
+    // }
+
+
+    public class ProductService02
+    {
+       private readonly ILogger _logger;
+
+       public ProductService02(ILogger logger)
+       {
+           _logger = logger;
+       }
+
+       public void AddProduct(string product)
+       {
+        _logger.Log($"Product {product} added.");
+       }
+    }
+
+    public interface ILogger
+    {
+        void Log(string message);
+    }
+
+    public class Logger:ILogger
     {
         public void Log(string message)
         {
             Console.WriteLine(message);
         }
     }
+
 }
