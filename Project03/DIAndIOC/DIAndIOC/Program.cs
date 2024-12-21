@@ -90,4 +90,37 @@ namespace DIAndIOC
         }
     }
 
+
+
+
+    public class UserServiceDI
+    {
+        private readonly IDatabase _database;
+
+        public UserServiceDI(IDatabase database)
+        {
+            _database = database;
+        }
+
+
+        public void SaveUser(string user)
+        {
+            _database.Save(user);
+        }
+    }
+
+    public interface IDatabase
+    {
+        void Save(string data);
+    }
+
+
+    public class DatabaseDI : IDatabase
+    {
+        public void Save(string data)
+        {
+            Console.WriteLine($"Saving {data} to database.");
+        }
+    }
+
 }
