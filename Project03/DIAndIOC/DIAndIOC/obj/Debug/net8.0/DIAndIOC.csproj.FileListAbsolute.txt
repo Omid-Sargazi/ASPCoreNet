@@ -1,0 +1,15 @@
+/home/omidsa/Programmings/ASPNetCore/Project03/DIAndIOC/DIAndIOC/bin/Debug/net8.0/DIAndIOC
+/home/omidsa/Programmings/ASPNetCore/Project03/DIAndIOC/DIAndIOC/bin/Debug/net8.0/DIAndIOC.deps.json
+/home/omidsa/Programmings/ASPNetCore/Project03/DIAndIOC/DIAndIOC/bin/Debug/net8.0/DIAndIOC.runtimeconfig.json
+/home/omidsa/Programmings/ASPNetCore/Project03/DIAndIOC/DIAndIOC/bin/Debug/net8.0/DIAndIOC.dll
+/home/omidsa/Programmings/ASPNetCore/Project03/DIAndIOC/DIAndIOC/bin/Debug/net8.0/DIAndIOC.pdb
+/home/omidsa/Programmings/ASPNetCore/Project03/DIAndIOC/DIAndIOC/obj/Debug/net8.0/DIAndIOC.GeneratedMSBuildEditorConfig.editorconfig
+/home/omidsa/Programmings/ASPNetCore/Project03/DIAndIOC/DIAndIOC/obj/Debug/net8.0/DIAndIOC.AssemblyInfoInputs.cache
+/home/omidsa/Programmings/ASPNetCore/Project03/DIAndIOC/DIAndIOC/obj/Debug/net8.0/DIAndIOC.AssemblyInfo.cs
+/home/omidsa/Programmings/ASPNetCore/Project03/DIAndIOC/DIAndIOC/obj/Debug/net8.0/DIAndIOC.csproj.CoreCompileInputs.cache
+/home/omidsa/Programmings/ASPNetCore/Project03/DIAndIOC/DIAndIOC/obj/Debug/net8.0/DIAndIOC.sourcelink.json
+/home/omidsa/Programmings/ASPNetCore/Project03/DIAndIOC/DIAndIOC/obj/Debug/net8.0/DIAndIOC.dll
+/home/omidsa/Programmings/ASPNetCore/Project03/DIAndIOC/DIAndIOC/obj/Debug/net8.0/refint/DIAndIOC.dll
+/home/omidsa/Programmings/ASPNetCore/Project03/DIAndIOC/DIAndIOC/obj/Debug/net8.0/DIAndIOC.pdb
+/home/omidsa/Programmings/ASPNetCore/Project03/DIAndIOC/DIAndIOC/obj/Debug/net8.0/DIAndIOC.genruntimeconfig.cache
+/home/omidsa/Programmings/ASPNetCore/Project03/DIAndIOC/DIAndIOC/obj/Debug/net8.0/ref/DIAndIOC.dll
