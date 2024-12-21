@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MiddlewareAuthentication")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c3fb119de103f1b4fcecc7b2e3d3262a1570bc2f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4bb2dd5da6e3dde5556eaea097ab4c1916bd6db1")]
 [assembly: System.Reflection.AssemblyProductAttribute("MiddlewareAuthentication")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MiddlewareAuthentication")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

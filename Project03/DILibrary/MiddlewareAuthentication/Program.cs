@@ -67,47 +67,72 @@
 
 
 
+// var builder = WebApplication.CreateBuilder(args);
+
+// var app = builder.Build();
+
+// app.Use(async(context,next)=>{
+//     Console.WriteLine($"Request: {context.Request.Method} {context.Request.Path}");
+//     await next();
+// });
+
+
+// app.Use(async(context,next)=>{
+//     if(!context.Request.Headers.ContainsKey("AuthToken"))
+//         {
+//          context.Response.StatusCode=401;   
+//         await context.Response.WriteAsync("Authentication Failed: Missing AuthToken");
+//         }
+
+//         else if(context.Request.Headers["AuthToken"]!="ValidToken")
+//         {
+//             context.Response.StatusCode = 403; // Forbidden
+//         await context.Response.WriteAsync("Authentication Failed: Invalid AuthToken");
+//         }
+//         else
+//     {
+//         await next(); // Pass to the next middleware
+//     }
+// });
+
+// app.Run(async context =>
+// {
+//     await context.Response.WriteAsync("Welcome! You have successfully accessed the application.");
+// });
+
+// app.Run();
+
+
+
+
+
+
+using System.Diagnostics;
+using Microsoft.AspNetCore.Mvc;
+
 var builder = WebApplication.CreateBuilder(args);
 
 var app = builder.Build();
+
 
 app.Use(async(context,next)=>{
     Console.WriteLine($"Request: {context.Request.Method} {context.Request.Path}");
     await next();
 });
 
-
 app.Use(async(context,next)=>{
-    if(!context.Request.Headers.ContainsKey("AuthToken"))
-        {
-         context.Response.StatusCode=401;   
-        await context.Response.WriteAsync("Authentication Failed: Missing AuthToken");
-        }
-
-        else if(context.Request.Headers["AuthToken"]!="ValidToken")
-        {
-            context.Response.StatusCode = 403; // Forbidden
-        await context.Response.WriteAsync("Authentication Failed: Invalid AuthToken");
-        }
-        else
-    {
-        await next(); // Pass to the next middleware
-    }
-});
+    var stopwatch = Stopwatch.StartNew();
+    await next();
+    stopwatch.Stop();
+    Console.WriteLine($"Request Duration: {stopwatch.ElapsedMilliseconds} ms");
+    });
 
 app.Run(async context =>
 {
-    await context.Response.WriteAsync("Welcome! You have successfully accessed the application.");
+    await context.Response.WriteAsync("Hello! This response was timed.");
 });
 
 app.Run();
-
-
-
-
-
-
-
 
 
 
