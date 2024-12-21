@@ -149,4 +149,34 @@ namespace DIAndIOC
         }
     }
 
+    public class OrderServiceDI
+    {
+        private readonly IPaymentGateway _paymentGateway;
+
+        public OrderServiceDI(IPaymentGateway paymentGateway)
+        {
+            _paymentGateway = paymentGateway;
+        }
+
+        public void ProcessOrder()
+        {
+            _paymentGateway.ProcessPayment();
+        }
+    }
+
+
+
+    public interface IPaymentGateway
+    {
+        void ProcessPayment();
+    }
+
+    public class PaymentGatewayDI:IPaymentGateway
+    {
+        public void ProcessPayment()
+        {
+            Console.WriteLine("Payment processed.");
+        }
+    }
+
 }
