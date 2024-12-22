@@ -6,8 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using RestfullAPIs.Models;
 
-namespace RestfullAPIs.Controllers
-{
+
 //     [ApiController]
 //     [Route("api/[controller]")]
 //     public class BooksController:ControllerBase
@@ -71,30 +70,80 @@ namespace RestfullAPIs.Controllers
 // }
 
 
+// [ApiController]
+// [Route("api/[controller]")]
+// public class BooksController:ControllerBase
+// {
+//     private readonly AppDbContext _context;
+
+//     public BooksController(AppDbContext context)
+//     {
+//         _context = context;
+//     }
+
+//     [HttpGet]
+//     public async Task<IActionResult> GetBooks()
+//     {
+//         var books = await _context.Books.ToListAsync();
+//         return Ok(books);
+//     }
+
+//     [HttpPost]
+//     public async Task<IActionResult> CreateBook([FromBody] Book newBook)
+//     {
+//         _context.Books.Add(newBook);
+//         await _context.SaveChangesAsync();
+//         return CreatedAtAction(nameof(GetBooks),new {id=newBook.Id},newBook);
+//     }
+// }
+
+
+namespace RestfullAPIs.Controllers
+{
+
+
 [ApiController]
 [Route("api/[controller]")]
-public class BooksController:ControllerBase
+public class AuthorsController:ControllerBase
 {
     private readonly AppDbContext _context;
 
-    public BooksController(AppDbContext context)
+    public AuthorsController(AppDbContext context)
     {
         _context = context;
     }
 
     [HttpGet]
-    public async Task<IActionResult> GetBooks()
+    public async Task<IActionResult> GetAuthors()
     {
-        var books = await _context.Books.ToListAsync();
-        return Ok(books);
+        var authors = await _context.Authors.Include(a=>a.Books).ToListAsync();
+        return Ok(authors);
     }
 
-    [HttpPost]
-    public async Task<IActionResult> CreateBook([FromBody] Book newBook)
+    // GET: api/authors/1
+    [HttpGet("{id}")]
+    public async Task<IActionResult> GetAuthor(int id)
     {
-        _context.Books.Add(newBook);
-        await _context.SaveChangesAsync();
-        return CreatedAtAction(nameof(GetBooks),new {id=newBook.Id},newBook);
+        var author = await _context.Authors
+            .Include(a => a.Books)
+            .FirstOrDefaultAsync(a => a.Id == id);
+
+        if (author == null)
+            return NotFound();
+
+        return Ok(author);
     }
+
+    // GET: api/authors/1
+  [HttpPost]
+    public async Task<IActionResult> CreateAuthor([FromBody] Author newAuthor)
+    {
+        _context.Authors.Add(newAuthor);
+        await _context.SaveChangesAsync();
+        return CreatedAtAction(nameof(GetAuthor), new { id = newAuthor.Id }, newAuthor);
+    }
+
+    
 }
+
 }
