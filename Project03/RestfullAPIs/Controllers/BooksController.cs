@@ -88,5 +88,13 @@ public class BooksController:ControllerBase
         var books = await _context.Books.ToListAsync();
         return Ok(books);
     }
+
+    [HttpPost]
+    public async Task<IActionResult> CreateBook([FromBody] Book newBook)
+    {
+        _context.Books.Add(newBook);
+        await _context.SaveChangesAsync();
+        return CreatedAtAction(nameof(GetBooks),new {id=newBook.Id},newBook);
+    }
 }
 }
