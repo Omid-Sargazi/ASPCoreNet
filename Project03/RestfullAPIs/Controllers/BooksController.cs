@@ -17,7 +17,7 @@ namespace RestfullAPIs.Controllers
         };
 
 
-        [HttpGet]
+        [HttpGet("{id}")]
         public IActionResult GetBook(int id)
         {
             var book = Books.FirstOrDefault(b=>b.Id==id);
@@ -26,6 +26,34 @@ namespace RestfullAPIs.Controllers
                 return NotFound();
             }
             return Ok(book);
+        }
+
+        [HttpGet]
+        public IActionResult GetBooks()
+        {
+            return Ok(Books);
+        }
+        [HttpPost]
+        public IActionResult CreateBook([FromBody] Book newBook)
+        {
+            newBook.Id = Books.Max(b=>b.Id)+1;
+            Books.Add(newBook);
+
+            return CreatedAtAction(nameof(GetBook),new {id=newBook.Id},newBook);
+        }
+
+
+        [HttpDelete("{id}")]
+        public IActionResult DeleteBook(int id)
+        {
+            var book = Books.FirstOrDefault(b=>b.Id==id);
+            if(book==null)
+            {
+                return NotFound();
+            }
+
+            Books.Remove(book);
+            return NoContent();
         }
     }
 
