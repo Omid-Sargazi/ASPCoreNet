@@ -1,0 +1,16 @@
+/home/omidsa/Programmings/ASPNetCore/Project03/CleanArchitectureApp/CleanArchitecture.Application/bin/Debug/net8.0/CleanArchitecture.Application.deps.json
+/home/omidsa/Programmings/ASPNetCore/Project03/CleanArchitectureApp/CleanArchitecture.Application/bin/Debug/net8.0/CleanArchitecture.Application.dll
+/home/omidsa/Programmings/ASPNetCore/Project03/CleanArchitectureApp/CleanArchitecture.Application/bin/Debug/net8.0/CleanArchitecture.Application.pdb
+/home/omidsa/Programmings/ASPNetCore/Project03/CleanArchitectureApp/CleanArchitecture.Application/bin/Debug/net8.0/CleanArchitecture.Domain.dll
+/home/omidsa/Programmings/ASPNetCore/Project03/CleanArchitectureApp/CleanArchitecture.Application/bin/Debug/net8.0/CleanArchitecture.Domain.pdb
+/home/omidsa/Programmings/ASPNetCore/Project03/CleanArchitectureApp/CleanArchitecture.Application/obj/Debug/net8.0/CleanArchitecture.Application.csproj.AssemblyReference.cache
+/home/omidsa/Programmings/ASPNetCore/Project03/CleanArchitectureApp/CleanArchitecture.Application/obj/Debug/net8.0/CleanArchitecture.Application.GeneratedMSBuildEditorConfig.editorconfig
+/home/omidsa/Programmings/ASPNetCore/Project03/CleanArchitectureApp/CleanArchitecture.Application/obj/Debug/net8.0/CleanArchitecture.Application.AssemblyInfoInputs.cache
+/home/omidsa/Programmings/ASPNetCore/Project03/CleanArchitectureApp/CleanArchitecture.Application/obj/Debug/net8.0/CleanArchitecture.Application.AssemblyInfo.cs
+/home/omidsa/Programmings/ASPNetCore/Project03/CleanArchitectureApp/CleanArchitecture.Application/obj/Debug/net8.0/CleanArchitecture.Application.csproj.CoreCompileInputs.cache
+/home/omidsa/Programmings/ASPNetCore/Project03/CleanArchitectureApp/CleanArchitecture.Application/obj/Debug/net8.0/CleanArchitecture.Application.sourcelink.json
+/home/omidsa/Programmings/ASPNetCore/Project03/CleanArchitectureApp/CleanArchitecture.Application/obj/Debug/net8.0/CleanArc.03AFA812.Up2Date
+/home/omidsa/Programmings/ASPNetCore/Project03/CleanArchitectureApp/CleanArchitecture.Application/obj/Debug/net8.0/CleanArchitecture.Application.dll
+/home/omidsa/Programmings/ASPNetCore/Project03/CleanArchitectureApp/CleanArchitecture.Application/obj/Debug/net8.0/refint/CleanArchitecture.Application.dll
+/home/omidsa/Programmings/ASPNetCore/Project03/CleanArchitectureApp/CleanArchitecture.Application/obj/Debug/net8.0/CleanArchitecture.Application.pdb
+/home/omidsa/Programmings/ASPNetCore/Project03/CleanArchitectureApp/CleanArchitecture.Application/obj/Debug/net8.0/ref/CleanArchitecture.Application.dll

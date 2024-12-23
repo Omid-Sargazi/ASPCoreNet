@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "yWZEpMdKzCs=",
+  "dgSpecHash": "zLHzLY1I7Ms=",
   "success": true,
   "projectFilePath": "/home/omidsa/Programmings/ASPNetCore/Project03/CleanArchitectureApp/CleanArchitecture.Application/CleanArchitecture.Application.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/home/omidsa/.nuget/packages/mediatr/11.0.0/mediatr.11.0.0.nupkg.sha512",
+    "/home/omidsa/.nuget/packages/mediatr.contracts/1.0.1/mediatr.contracts.1.0.1.nupkg.sha512",
+    "/home/omidsa/.nuget/packages/mediatr.extensions.microsoft.dependencyinjection/11.1.0/mediatr.extensions.microsoft.dependencyinjection.11.1.0.nupkg.sha512",
+    "/home/omidsa/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/7.0.0/microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
