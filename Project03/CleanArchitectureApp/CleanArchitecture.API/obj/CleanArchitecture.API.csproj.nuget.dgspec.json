@@ -1,0 +1,271 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/omidsa/Programmings/ASPNetCore/Project03/CleanArchitectureApp/CleanArchitecture.API/CleanArchitecture.API.csproj": {}
+  },
+  "projects": {
+    "/home/omidsa/Programmings/ASPNetCore/Project03/CleanArchitectureApp/CleanArchitecture.API/CleanArchitecture.API.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/omidsa/Programmings/ASPNetCore/Project03/CleanArchitectureApp/CleanArchitecture.API/CleanArchitecture.API.csproj",
+        "projectName": "CleanArchitecture.API",
+        "projectPath": "/home/omidsa/Programmings/ASPNetCore/Project03/CleanArchitectureApp/CleanArchitecture.API/CleanArchitecture.API.csproj",
+        "packagesPath": "/home/omidsa/.nuget/packages/",
+        "outputPath": "/home/omidsa/Programmings/ASPNetCore/Project03/CleanArchitectureApp/CleanArchitecture.API/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/omidsa/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/home/omidsa/Programmings/ASPNetCore/Project03/CleanArchitectureApp/CleanArchitecture.Application/CleanArchitecture.Application.csproj": {
+                "projectPath": "/home/omidsa/Programmings/ASPNetCore/Project03/CleanArchitectureApp/CleanArchitecture.Application/CleanArchitecture.Application.csproj"
+              },
+              "/home/omidsa/Programmings/ASPNetCore/Project03/CleanArchitectureApp/CleanArchitecture.Infrastructure/CleanArchitecture.Infrastructure.csproj": {
+                "projectPath": "/home/omidsa/Programmings/ASPNetCore/Project03/CleanArchitectureApp/CleanArchitecture.Infrastructure/CleanArchitecture.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[8.0.11, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.6.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.404/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/omidsa/Programmings/ASPNetCore/Project03/CleanArchitectureApp/CleanArchitecture.Application/CleanArchitecture.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/omidsa/Programmings/ASPNetCore/Project03/CleanArchitectureApp/CleanArchitecture.Application/CleanArchitecture.Application.csproj",
+        "projectName": "CleanArchitecture.Application",
+        "projectPath": "/home/omidsa/Programmings/ASPNetCore/Project03/CleanArchitectureApp/CleanArchitecture.Application/CleanArchitecture.Application.csproj",
+        "packagesPath": "/home/omidsa/.nuget/packages/",
+        "outputPath": "/home/omidsa/Programmings/ASPNetCore/Project03/CleanArchitectureApp/CleanArchitecture.Application/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/omidsa/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/home/omidsa/Programmings/ASPNetCore/Project03/CleanArchitectureApp/CleanArchitecture.Domain/CleanArchitecture.Domain.csproj": {
+                "projectPath": "/home/omidsa/Programmings/ASPNetCore/Project03/CleanArchitectureApp/CleanArchitecture.Domain/CleanArchitecture.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.404/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/omidsa/Programmings/ASPNetCore/Project03/CleanArchitectureApp/CleanArchitecture.Domain/CleanArchitecture.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/omidsa/Programmings/ASPNetCore/Project03/CleanArchitectureApp/CleanArchitecture.Domain/CleanArchitecture.Domain.csproj",
+        "projectName": "CleanArchitecture.Domain",
+        "projectPath": "/home/omidsa/Programmings/ASPNetCore/Project03/CleanArchitectureApp/CleanArchitecture.Domain/CleanArchitecture.Domain.csproj",
+        "packagesPath": "/home/omidsa/.nuget/packages/",
+        "outputPath": "/home/omidsa/Programmings/ASPNetCore/Project03/CleanArchitectureApp/CleanArchitecture.Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/omidsa/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.404/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/omidsa/Programmings/ASPNetCore/Project03/CleanArchitectureApp/CleanArchitecture.Infrastructure/CleanArchitecture.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/omidsa/Programmings/ASPNetCore/Project03/CleanArchitectureApp/CleanArchitecture.Infrastructure/CleanArchitecture.Infrastructure.csproj",
+        "projectName": "CleanArchitecture.Infrastructure",
+        "projectPath": "/home/omidsa/Programmings/ASPNetCore/Project03/CleanArchitectureApp/CleanArchitecture.Infrastructure/CleanArchitecture.Infrastructure.csproj",
+        "packagesPath": "/home/omidsa/.nuget/packages/",
+        "outputPath": "/home/omidsa/Programmings/ASPNetCore/Project03/CleanArchitectureApp/CleanArchitecture.Infrastructure/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/omidsa/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/home/omidsa/Programmings/ASPNetCore/Project03/CleanArchitectureApp/CleanArchitecture.Application/CleanArchitecture.Application.csproj": {
+                "projectPath": "/home/omidsa/Programmings/ASPNetCore/Project03/CleanArchitectureApp/CleanArchitecture.Application/CleanArchitecture.Application.csproj"
+              },
+              "/home/omidsa/Programmings/ASPNetCore/Project03/CleanArchitectureApp/CleanArchitecture.Domain/CleanArchitecture.Domain.csproj": {
+                "projectPath": "/home/omidsa/Programmings/ASPNetCore/Project03/CleanArchitectureApp/CleanArchitecture.Domain/CleanArchitecture.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.404/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
