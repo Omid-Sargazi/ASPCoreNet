@@ -38,3 +38,6 @@
 /home/omidsa/Programmings/ASPNetCore/Project03/CleanArchitectureApp/CleanArchitecture.API/obj/Debug/net8.0/CleanArchitecture.API.pdb
 /home/omidsa/Programmings/ASPNetCore/Project03/CleanArchitectureApp/CleanArchitecture.API/obj/Debug/net8.0/CleanArchitecture.API.genruntimeconfig.cache
 /home/omidsa/Programmings/ASPNetCore/Project03/CleanArchitectureApp/CleanArchitecture.API/obj/Debug/net8.0/ref/CleanArchitecture.API.dll
+/home/omidsa/Programmings/ASPNetCore/Project03/CleanArchitectureApp/CleanArchitecture.API/bin/Debug/net8.0/MediatR.dll
+/home/omidsa/Programmings/ASPNetCore/Project03/CleanArchitectureApp/CleanArchitecture.API/bin/Debug/net8.0/MediatR.Contracts.dll
+/home/omidsa/Programmings/ASPNetCore/Project03/CleanArchitectureApp/CleanArchitecture.API/bin/Debug/net8.0/MediatR.Extensions.Microsoft.DependencyInjection.dll
