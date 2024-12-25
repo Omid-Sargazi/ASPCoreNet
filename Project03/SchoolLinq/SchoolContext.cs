@@ -9,12 +9,14 @@ namespace SchoolLinq
 {
     public class SchoolContext:DbContext
     {
-        DbSet<Student> Students {get;set;}
-        DbSet<Enrollment> Enrollments {get;set;}
-        DbSet<Course> Courses {get;set;}
+        public DbSet<Student> Students {get;set;}
+        public DbSet<Enrollment> Enrollments {get;set;}
+        public DbSet<Course> Courses {get;set;}
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseInMemoryDatabase("SchoolDb");
         }
+
+
     }
 }

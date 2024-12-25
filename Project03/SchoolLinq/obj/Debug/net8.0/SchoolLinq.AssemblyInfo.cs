@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SchoolLinq")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6094bd6105b59d17683d36a51ea2a7235f7d8c93")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+398d9b7be4fd3836a42b09432a90dc22a85479ce")]
 [assembly: System.Reflection.AssemblyProductAttribute("SchoolLinq")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SchoolLinq")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
