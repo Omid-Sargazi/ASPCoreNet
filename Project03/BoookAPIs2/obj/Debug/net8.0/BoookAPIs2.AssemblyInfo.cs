@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BoookAPIs2")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d842a873d393496e7986b069a08a27260628f870")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4a8247b338bf27a5f0272b5729a55bb614935a40")]
 [assembly: System.Reflection.AssemblyProductAttribute("BoookAPIs2")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BoookAPIs2")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
