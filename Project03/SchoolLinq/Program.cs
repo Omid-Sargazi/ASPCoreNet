@@ -13,7 +13,7 @@ using SchoolLinq.Models;
             var student2 = new Student{Name="Saeed",Age=39};
 
             var course1 = new Course{Title="Math",Credits=3};
-            var course2 = new Course{Title="Computer",Credits=4};
+            var course2 = new Course{Title="Science",Credits=4};
 
 
             context.Students.AddRange(student1,student2);
@@ -35,7 +35,7 @@ using(var context = new SchoolContext())
 {
     SeedData(context);
 
-    
+     // 1. Get all students with their courses and grades
     var studentsWithCourses = context.Students
     .Include(s=>s.Enrollments).ThenInclude(e=>e.Course).Select(s=>new {
         s.Name,
@@ -74,4 +74,26 @@ using(var context = new SchoolContext())
     {
         Console.WriteLine($"Course: {course.Title}, Enrolled Students: {course.StudentCount}");
     }
-}
+
+
+    var mathStudentsWithGradeA = context.Enrollments.Where(e=>e.Course.Title=="Math" && e.Grade=="A").Select(e=>e.Student.Name);
+
+    Console.WriteLine("\nStudents with grade 'A' in Math:");
+
+    foreach(var student in mathStudentsWithGradeA)
+    {
+        Console.WriteLine(student);
+    }
+
+    var averageAgeInScience = context.Enrollments.Where(e=>e.Course.Title=="Science")
+    .Select(e=>e.Student.Age).Average();
+    Console.WriteLine($"\nAverage age of students in Science: {averageAgeInScience}");
+
+    var studentsInMultipleCourses = context.Students.Where(s=>s.Enrollments.Count>1).Select(s=>s.Name);
+     Console.WriteLine("\nStudents enrolled in more than 1 course:");
+      foreach (var student in studentsInMultipleCourses)
+    {
+        Console.WriteLine(student);
+    }
+
+} 
