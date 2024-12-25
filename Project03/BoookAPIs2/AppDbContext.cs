@@ -14,6 +14,7 @@ namespace BoookAPIs2
         public DbSet<Book> Books {get;set;}
         public DbSet<Genre> Genres {get;set;}
         public DbSet<Author> Authors {get;set;}
+        public DbSet<Publisher> Publishers {get;set;}
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -27,9 +28,20 @@ namespace BoookAPIs2
             .WithMany(g=>g.Books)
             .HasForeignKey(b=>b.GenreId);
 
+            modelBuilder.Entity<Book>()
+            .HasOne(b=>b.Publisher)
+            .WithMany(p=>p.Books)
+            .HasForeignKey(b=>b.PublisherId);
+
+
             modelBuilder.Entity<Author>().HasData(
             new Author { Id = 1, Name = "J.K. Rowling" },
             new Author { Id = 2, Name = "George R.R. Martin" }
+        );
+
+        modelBuilder.Entity<Publisher>().HasData(
+            new Publisher{Id=1,Name="Bloomsbury"},
+            new Publisher{Id=2,Name="Bantam Books"}
         );
 
         modelBuilder.Entity<Genre>().HasData(
