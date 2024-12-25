@@ -12,7 +12,7 @@ namespace BoookAPIs2.Models
         public int AuthorId {get;set;}
         public int GenreId {get;set;}
 
-        public Author Author {get;set;}
-        public Genre Genre {get;set;}
+        public Author? Author {get;set;}
+        public Genre? Genre {get;set;}
     }
 }

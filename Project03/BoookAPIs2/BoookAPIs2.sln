@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoookAPIs2", "BoookAPIs2.csproj", "{85F20BE8-C037-DD60-B305-F3AB96C41B3B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{85F20BE8-C037-DD60-B305-F3AB96C41B3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85F20BE8-C037-DD60-B305-F3AB96C41B3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85F20BE8-C037-DD60-B305-F3AB96C41B3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85F20BE8-C037-DD60-B305-F3AB96C41B3B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2CCFD637-A43D-441B-AB68-02A74FCF5894}
+	EndGlobalSection
+EndGlobal
