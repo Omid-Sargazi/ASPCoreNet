@@ -11,5 +11,7 @@ namespace BoookAPIs2.DTOs
         public string Title {get;set;}
         public string AuthorName { get; set; }
         public string GenreName { get; set; }
+        public string PublisherName {get;set;}
+        public int PublishedYear {get;set;}
     }
 }
