@@ -11,8 +11,12 @@ namespace BoookAPIs2.Models
         public string Title {get;set;}
         public int AuthorId {get;set;}
         public int GenreId {get;set;}
+        public int PublisherId {get;set;}
+        public int PublishedYear {get;set;}
 
         public Author? Author {get;set;}
         public Genre? Genre {get;set;}
+        public Publisher Publisher {get;set;}
+
     }
 }
