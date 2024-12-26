@@ -54,6 +54,23 @@ public class Program
             Console.WriteLine(johnsBook);
         }
 
+        //Get all borrowers with their borrowed books
+
+        var borrowersWithBooks = context.Borrowers.Select(b=>new{
+            b.Name,
+            books = b.BorrowingRecords.Select(r=>r.Book.Title)
+        }).ToList();
+
+        foreach(var borrowerWithBooks in borrowersWithBooks)
+        {
+            Console.WriteLine(borrowerWithBooks.Name);
+            foreach(var book in borrowerWithBooks.books)
+            {
+                Console.WriteLine(book);
+            }
+        }
+
+
 
 
 
