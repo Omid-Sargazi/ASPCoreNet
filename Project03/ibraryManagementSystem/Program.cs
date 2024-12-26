@@ -11,75 +11,87 @@ public class Program
 
         SeedData(context);
         Console.WriteLine("Hello");
+        // var books = context.Books.ToList();
+        // var authors = context.Authors.ToList();
+
+        // foreach(var book in books)
+        // {
+        //     Console.WriteLine(book.Title);
+        // }
+
+        // foreach(var author in authors)
+        // {
+        //     Console.WriteLine(author.Name);
+        // }
+
+        // var recentBooks = context.Books.Where(b=>b.YearPublished>2000).ToList();
+
+        // foreach (var recenetBook in recentBooks)
+        // {
+        //     Console.WriteLine(recenetBook.Title);   
+        // }
+
+
+        // var booksWithAuthors = context.Books.Select(b=>new {b.Title,b.Author.Name}).ToList();
+
+        // foreach(var bookAuthor in booksWithAuthors)
+        // {
+        //     Console.WriteLine(bookAuthor);
+        // }
+
+        // var libraryBookCounts = context.Libraries.Select(l=>new {l.Name,BookCount=l.Books.Count}).ToList();
+
+        // foreach(var libraryBookCount in libraryBookCounts)
+        // {
+        //     Console.WriteLine(libraryBookCount);
+        // }
+
+
+        // var johnsBooks = context.BorrowingRecords.Where(r=>r.Borrower.Name=="John Doe").Select(r=>r.Book.Title).ToList();
+
+        // foreach(var johnsBook in johnsBooks)
+        // {
+        //     Console.WriteLine(johnsBook);
+        // }
+
+        // //Get all borrowers with their borrowed books
+
+        // var borrowersWithBooks = context.Borrowers.Select(b=>new{
+        //     b.Name,
+        //     books = b.BorrowingRecords.Select(r=>r.Book.Title)
+        // }).ToList();
+
+        // foreach(var borrowerWithBooks in borrowersWithBooks)
+        // {
+        //     Console.WriteLine(borrowerWithBooks.Name);
+        //     foreach(var book in borrowerWithBooks.books)
+        //     {
+        //         Console.WriteLine(book);
+        //     }
+        // }
+
+        // //Get all books with borrowing counts
+
+        // var booksWithBorrowCounts = context.Books.Select(b=>new{b.Title,BrowCount=b.BorrowingRecords.Count}).ToList();
+
+        // ///Get the most borrowed book
+        // var mostBorrowedBook = context.Books.OrderByDescending(b=>b.BorrowingRecords.Count).FirstOrDefault();
+        
+        // //Find the youngest borrower
+        // var youngestBorrower = context.Borrowers.OrderBy(b=>b.Age).FirstOrDefault();
+
+
         var books = context.Books.ToList();
         var authors = context.Authors.ToList();
 
-        foreach(var book in books)
-        {
-            Console.WriteLine(book.Title);
-        }
-
-        foreach(var author in authors)
-        {
-            Console.WriteLine(author.Name);
-        }
+        //Get books published after 2000
 
         var recentBooks = context.Books.Where(b=>b.YearPublished>2000).ToList();
-
-        foreach (var recenetBook in recentBooks)
-        {
-            Console.WriteLine(recenetBook.Title);   
-        }
-
-
-        var booksWithAuthors = context.Books.Select(b=>new {b.Title,b.Author.Name}).ToList();
-
-        foreach(var bookAuthor in booksWithAuthors)
-        {
-            Console.WriteLine(bookAuthor);
-        }
-
-        var libraryBookCounts = context.Libraries.Select(l=>new {l.Name,BookCount=l.Books.Count}).ToList();
-
-        foreach(var libraryBookCount in libraryBookCounts)
-        {
-            Console.WriteLine(libraryBookCount);
-        }
-
-
-        var johnsBooks = context.BorrowingRecords.Where(r=>r.Borrower.Name=="John Doe").Select(r=>r.Book.Title).ToList();
-
-        foreach(var johnsBook in johnsBooks)
-        {
-            Console.WriteLine(johnsBook);
-        }
-
-        //Get all borrowers with their borrowed books
-
-        var borrowersWithBooks = context.Borrowers.Select(b=>new{
-            b.Name,
-            books = b.BorrowingRecords.Select(r=>r.Book.Title)
+        //Get books with their authors' names
+        var booksWithAuthors = context.Books.Select(b=>new{
+            b.Title,
+            AuthorName = b.Author.Name
         }).ToList();
-
-        foreach(var borrowerWithBooks in borrowersWithBooks)
-        {
-            Console.WriteLine(borrowerWithBooks.Name);
-            foreach(var book in borrowerWithBooks.books)
-            {
-                Console.WriteLine(book);
-            }
-        }
-
-        //Get all books with borrowing counts
-
-        var booksWithBorrowCounts = context.Books.Select(b=>new{b.Title,BrowCount=b.BorrowingRecords.Count}).ToList();
-
-        ///Get the most borrowed book
-        var mostBorrowedBook = context.Books.OrderByDescending(b=>b.BorrowingRecords.Count).FirstOrDefault();
-        
-        //Find the youngest borrower
-        var youngestBorrower = context.Borrowers.OrderBy(b=>b.Age).FirstOrDefault();
-
 
 
 
