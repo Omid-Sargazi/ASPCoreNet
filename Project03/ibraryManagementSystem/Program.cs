@@ -45,6 +45,45 @@ public class Program
         {
             Console.WriteLine(libraryBookCount);
         }
+
+
+        var johnsBooks = context.BorrowingRecords.Where(r=>r.Borrower.Name=="John Doe").Select(r=>r.Book.Title).ToList();
+
+        foreach(var johnsBook in johnsBooks)
+        {
+            Console.WriteLine(johnsBook);
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         
     }
 
