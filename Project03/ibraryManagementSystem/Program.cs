@@ -23,6 +23,28 @@ public class Program
         {
             Console.WriteLine(author.Name);
         }
+
+        var recentBooks = context.Books.Where(b=>b.YearPublished>2000).ToList();
+
+        foreach (var recenetBook in recentBooks)
+        {
+            Console.WriteLine(recenetBook.Title);   
+        }
+
+
+        var booksWithAuthors = context.Books.Select(b=>new {b.Title,b.Author.Name}).ToList();
+
+        foreach(var bookAuthor in booksWithAuthors)
+        {
+            Console.WriteLine(bookAuthor);
+        }
+
+        var libraryBookCounts = context.Libraries.Select(l=>new {l.Name,BookCount=l.Books.Count}).ToList();
+
+        foreach(var libraryBookCount in libraryBookCounts)
+        {
+            Console.WriteLine(libraryBookCount);
+        }
         
     }
 
