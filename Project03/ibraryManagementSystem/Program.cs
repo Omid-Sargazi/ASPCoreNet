@@ -70,6 +70,17 @@ public class Program
             }
         }
 
+        //Get all books with borrowing counts
+
+        var booksWithBorrowCounts = context.Books.Select(b=>new{b.Title,BrowCount=b.BorrowingRecords.Count}).ToList();
+
+        ///Get the most borrowed book
+        var mostBorrowedBook = context.Books.OrderByDescending(b=>b.BorrowingRecords.Count).FirstOrDefault();
+        
+        //Find the youngest borrower
+        var youngestBorrower = context.Borrowers.OrderBy(b=>b.Age).FirstOrDefault();
+
+
 
 
 
