@@ -21,8 +21,36 @@ public class Program
        {
         Console.WriteLine(publisher.Publisher + " " + publisher.BookCount);
        }
+        ///More optimized than the previous example
+        var publisher02 = context.Publishers.Select(p=>new {
+            Publisher = p.Name,
+            BookCount=p.Books.Count,
+        });
 
+        foreach(var publisher in publisher02)
+        {
+            Console.WriteLine($"{publisher.Publisher} has {publisher.BookCount} books.");
+        }
 
+        //Find all books written by "Author 1" and include their publisher's name
+        var booksByAuthor1 = context.Books.Include(b=>b.Author).Include(b=>b.Publisher).Select(b=>new{
+            Book = b.Title,
+            Author = b.Author.Name,
+            Publisher = b.Publisher.Name
+        }).Where(b=>b.Author == "Author 1").ToList();
+
+        var booksByAuthor1_02 = context.Books.Include(b=>b.Author).Include(b=>b.Publisher).Where(b=>b.Author.Name == "Author 1").Select(b=>new{
+            Book = b.Title,
+            Author = b.Author.Name,
+            Publisher = b.Publisher.Name
+        }).ToList();
+
+        //Find all authors who have published more than 2 books and display their names along with the number of books
+
+        var authorsMoreThan2Books = context.Authors.Include(a=>a.Books).Select(a=>new {
+            Author = a.Name,
+            BookCount = a.Books.Count
+        }).Where(a=>a.BookCount > 2).ToList();
 
     }
 
