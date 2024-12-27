@@ -52,6 +52,26 @@ public class Program
             BookCount = a.Books.Count
         }).Where(a=>a.BookCount > 2).ToList();
 
+        //Get all books along with their authors and publishers, but only include books published after the year 2020
+
+        var booksAuthorsPublishers = context.Books.Include(b=>b.Author).Include(b=>b.Publisher).Where(b=>b.PublishedYear>2020).Select(b=>new{
+            book=b.Title,
+            Author= b.Author.Name,
+            Publisher = b.Publisher.Name,
+
+        }).ToList();
+
+        //Find all authors along with the count of books published after 2020, and only include authors who have published at least one book during that period.
+
+        var authorsBooksAfter2020 = context.Authors.Include(a=>a.Books).Where(a=>a.Books.Any(b=>b.PublishedYear>2020)).Select(a=>new{
+            Author = a.Name,
+            BookCount = a.Books.Count(b=>b.PublishedYear>2020)
+        }).ToList();
+
+        //Find all publishers along with their books' total pages, but only include publishers where the total pages of all their books exceed 500.
+
+
+
     }
 
 
