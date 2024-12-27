@@ -58,6 +58,10 @@ public class Program
         {
              Console.WriteLine($"Authors: {author.Name}");
         }
+
+        //Retrieve the Most Expensive Book
+        var ExpensiveBooks = context.Books.OrderByDescending(b=>b.Price).First();
+        Console.WriteLine(ExpensiveBooks.Title);
     }
 
 
@@ -70,8 +74,8 @@ public class Program
         );
 
         context.Books.AddRange(
-            new Book { BookId = 1, Title = "Harry Potter and the Philosopher's Stone", AuthorId = 1 },
-            new Book { BookId = 2, Title = "A Game of Thrones", AuthorId = 2 }
+            new Book { BookId = 1, Title = "Harry Potter and the Philosopher's Stone", AuthorId = 1,Price=123.6m },
+            new Book { BookId = 2, Title = "A Game of Thrones", AuthorId = 2,Price=45.36m }
         );
 
         context.Customers.AddRange(

@@ -12,5 +12,6 @@ namespace LibaryWithQueries.Models
         public int AuthorId { get; set; }
         public Author Author { get; set; }
         public ICollection<Order> Orders { get; set; }
+        public decimal Price {get;set;}
     }
 }
