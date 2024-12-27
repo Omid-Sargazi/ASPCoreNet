@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LibraryForQUery")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2cec49cfc213b7f73bc09841fd285d94950b981e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a7626d7c0c183b3f5f596f318529293ea73d82b0")]
 [assembly: System.Reflection.AssemblyProductAttribute("LibraryForQUery")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LibraryForQUery")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
