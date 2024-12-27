@@ -69,6 +69,13 @@ public class Program
         .Where(o=>o.Book.Title==bookTitle).Count();
         Console.WriteLine($"Total Orders for {bookTitle}: {totalOrdersForBook}");
 
+        //Retrieve Authors with Their Most Expensive Book
+        var authorsWithMostExpensiveBook = context.Authors.Select(a=>new {
+            AuthorName = a.Name,
+            mostExpensiveBook = a.Books.OrderByDescending(b=>b.Price).FirstOrDefault()
+        }).ToArray();
+
+
     }
 
 
