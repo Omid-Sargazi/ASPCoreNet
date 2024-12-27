@@ -1,5 +1,6 @@
 ﻿using LibraryForQUery;
 using LibraryForQUery.Models;
+using Microsoft.EntityFrameworkCore;
 
 public class Program
 {
@@ -7,10 +8,26 @@ public class Program
     {
        Console.WriteLine("Hello");
 
+       var context = new SchoolContext();
+       SeedData(context);
+       //Get all publishers with the count of books they have published.
+
+       var publishers = context.Publishers.Include(p=>p.Books).Select(b=>new {
+              Publisher = b.Name,
+              BookCount = b.Books.Count
+       }).ToList();
+
+       foreach(var publisher in publishers)
+       {
+        Console.WriteLine(publisher.Publisher + " " + publisher.BookCount);
+       }
+
+
+
     }
 
 
-    private void SeedData(SchoolContext context)
+    private static void SeedData(SchoolContext context)
     {
         var publisher1 = new Publisher { Name = "Publisher A" };
         var publisher2 = new Publisher { Name = "Publisher B" };
