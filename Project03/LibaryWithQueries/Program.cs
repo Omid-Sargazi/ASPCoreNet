@@ -35,6 +35,29 @@ public class Program
             bookTitle = g.Key.Title,
             orderCount=g.Count(),
         }).ToList();
+
+        //list of authors who have written more than one book
+        
+        var popularAuthors = context.Authors.Select(a=>new{
+            Name=a.Name,
+            CountBook = a.Books.Count,
+        }).ToList();
+
+
+        //Retrieve All Books Ordered by Title
+        var booksOrderedByTitle = context.Books.OrderBy(b=>b.Title).ToList();
+
+        foreach(var book in booksOrderedByTitle)
+        {
+            Console.WriteLine(book.Title);
+        }
+
+        var authorsWithNoBooks = context.Authors.Where(a=>!a.Books.Any()).ToList();
+
+        foreach(var author in authorsWithNoBooks)
+        {
+             Console.WriteLine($"Authors: {author.Name}");
+        }
     }
 
 
@@ -42,7 +65,8 @@ public class Program
     {
         context.Authors.AddRange(
             new Author { AuthorId = 1, Name = "J.K. Rowling" },
-            new Author { AuthorId = 2, Name = "George R.R. Martin" }
+            new Author { AuthorId = 2, Name = "George R.R. Martin" },
+            new Author { AuthorId = 3, Name = "Omid Sargazi " }
         );
 
         context.Books.AddRange(
