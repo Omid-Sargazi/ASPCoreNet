@@ -62,6 +62,13 @@ public class Program
         //Retrieve the Most Expensive Book
         var ExpensiveBooks = context.Books.OrderByDescending(b=>b.Price).First();
         Console.WriteLine(ExpensiveBooks.Title);
+
+        //Retrieve the Total Number of Orders for a Specific Book
+        var bookTitle = "Harry Potter";
+        var totalOrdersForBook = context.Orders
+        .Where(o=>o.Book.Title==bookTitle).Count();
+        Console.WriteLine($"Total Orders for {bookTitle}: {totalOrdersForBook}");
+
     }
 
 
