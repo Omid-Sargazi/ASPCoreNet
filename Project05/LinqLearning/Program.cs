@@ -53,3 +53,22 @@ foreach (var student in youngStudents)
 {
     Console.WriteLine($"Young Student: {student.Name}, Age: {student.Age}");
 }
+
+
+
+//Advanced Queries
+var studentCourses = context.Enrollments.Join(context.Students,e=>e.StudentId,s=>s.StudentId,(e,s)=>new {e,s})
+    .Join(context.Courses,sc=>sc.e.CourseId,c=>c.CourseId,(sc,c)=>new {sc,c})
+    .Select(x=>new {x.sc.s.Name,x.c.Title})
+    .ToList();
+
+
+var studentCourses2 = context.Enrollments.Select(e=>new{
+    studentName = e.Student.Name,
+    CourseTitle = e.Course.Title,
+}).ToList();
+
+foreach(var item in studentCourses2)
+{
+    Console.WriteLine($"Student: {item.studentName}, Course: {item.CourseTitle}");
+}
