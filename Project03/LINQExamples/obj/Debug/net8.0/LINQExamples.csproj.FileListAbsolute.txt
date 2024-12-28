@@ -1,0 +1,15 @@
+/home/omidsa/Programmings/ASPNetCore/Project03/LINQExamples/bin/Debug/net8.0/LINQExamples
+/home/omidsa/Programmings/ASPNetCore/Project03/LINQExamples/bin/Debug/net8.0/LINQExamples.deps.json
+/home/omidsa/Programmings/ASPNetCore/Project03/LINQExamples/bin/Debug/net8.0/LINQExamples.runtimeconfig.json
+/home/omidsa/Programmings/ASPNetCore/Project03/LINQExamples/bin/Debug/net8.0/LINQExamples.dll
+/home/omidsa/Programmings/ASPNetCore/Project03/LINQExamples/bin/Debug/net8.0/LINQExamples.pdb
+/home/omidsa/Programmings/ASPNetCore/Project03/LINQExamples/obj/Debug/net8.0/LINQExamples.GeneratedMSBuildEditorConfig.editorconfig
+/home/omidsa/Programmings/ASPNetCore/Project03/LINQExamples/obj/Debug/net8.0/LINQExamples.AssemblyInfoInputs.cache
+/home/omidsa/Programmings/ASPNetCore/Project03/LINQExamples/obj/Debug/net8.0/LINQExamples.AssemblyInfo.cs
+/home/omidsa/Programmings/ASPNetCore/Project03/LINQExamples/obj/Debug/net8.0/LINQExamples.csproj.CoreCompileInputs.cache
+/home/omidsa/Programmings/ASPNetCore/Project03/LINQExamples/obj/Debug/net8.0/LINQExamples.sourcelink.json
+/home/omidsa/Programmings/ASPNetCore/Project03/LINQExamples/obj/Debug/net8.0/LINQExamples.dll
+/home/omidsa/Programmings/ASPNetCore/Project03/LINQExamples/obj/Debug/net8.0/refint/LINQExamples.dll
+/home/omidsa/Programmings/ASPNetCore/Project03/LINQExamples/obj/Debug/net8.0/LINQExamples.pdb
+/home/omidsa/Programmings/ASPNetCore/Project03/LINQExamples/obj/Debug/net8.0/LINQExamples.genruntimeconfig.cache
+/home/omidsa/Programmings/ASPNetCore/Project03/LINQExamples/obj/Debug/net8.0/ref/LINQExamples.dll
