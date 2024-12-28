@@ -12,6 +12,16 @@ class Employee
 }
 
 
+class Order 
+{
+    public int OrderId {get;set;}
+    public string CustomerName {get;set;}
+    public int TotalAmount {get;set;}
+}
+
+
+
+
 
 
 public class Program
@@ -34,6 +44,15 @@ public class Program
     new Employee { Name = "Jane", Department = "HR" },
     new Employee { Name = "Doe", Department = "IT" },
     new Employee { Name = "Smith", Department = "IT" }
+};
+
+
+var orders = new List<Order> {
+    new Order { OrderId = 1, CustomerName = "Alice", TotalAmount = 100 },
+    new Order { OrderId = 2, CustomerName = "Bob", TotalAmount = 200 },
+    new Order { OrderId = 3, CustomerName = "Alice", TotalAmount = 150 },
+    new Order { OrderId = 4, CustomerName = "Bob", TotalAmount = 300 },
+    new Order { OrderId = 5, CustomerName = "Charlie", TotalAmount = 400 }
 };
 
 
@@ -65,7 +84,16 @@ public class Program
     
     }
 
+    
+    var ordersByCustomer = orders.GroupBy(o=>o.CustomerName).Select(g=>new{
+        CustomerName = g.Key,
+        TotalAmount= g.Sum(g=>g.TotalAmount),
+        orders = g.Select(o=>new{o.OrderId,o.TotalAmount}).ToList()
+    }).ToList();
 
+    
+    
+    }
 
 }
 
