@@ -3,11 +3,67 @@ using LibaryWithQueries;
 using LibaryWithQueries.Models;
 using Microsoft.EntityFrameworkCore;
 
+
+class BookLinq {
+    public string Title {get;set;}
+    public string Genre {get;set;}
+}
 public class Program
 {
     public static void Main(string[] args)
     {
         Console.WriteLine("Hello");
+
+        var numbers = new List<int> {1,2,3,4,5,6,7,8,9};
+
+        var groupedNumbers = numbers.GroupBy(n=>n%2==0?"E":"O").ToList();
+        foreach(var group in groupedNumbers)
+        {
+            Console.WriteLine($"Group: {group.Key}");
+             foreach (var number in group)
+    {
+        Console.WriteLine($"  - {number}");
+    }
+
+
+    var books = new List<BookLinq> {
+         new BookLinq { Title = "Book A", Genre = "Fiction" },
+        new BookLinq { Title = "Book B", Genre = "Fiction" },
+        new BookLinq { Title = "Book C", Genre = "Science" },
+        new BookLinq { Title = "Book D", Genre = "Science" },
+        new BookLinq { Title = "Book E", Genre = "History" }
+    };
+
+
+    var booksByGenre = books.GroupBy(b=>b.Genre).ToList();
+
+    foreach(var groups in booksByGenre)
+    {
+        Console.WriteLine($"Genre: {group.Key}");
+        foreach(var book in groups)
+        {
+            Console.WriteLine($"  - {book.Title}");
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        }
 
         var context = new ApplicationDbContext();
         SeedDate(context);
@@ -74,6 +130,25 @@ public class Program
             AuthorName = a.Name,
             mostExpensiveBook = a.Books.OrderByDescending(b=>b.Price).FirstOrDefault()
         }).ToArray();
+
+        // Retrieve Books Along with Total Orders and Revenue
+        var booksWithRevenue = context.Books.Select(b=>new{
+            bookTitle = b.Title,
+            TotalOrder = b.Orders.Count(),
+            TotalRevenue = b.Orders.Sum(o=>o.Book.Price)
+        }).ToList();
+
+        foreach(var book in booksWithRevenue)
+        {
+            Console.WriteLine($"Book: {book.bookTitle}, Total Orders: {book.TotalOrder}, Total Revenue: {book.TotalRevenue}");
+        }
+
+
+        //Group Books by Author
+        var allBooksByAuthor = context.Books.GroupBy(b=>b.Author.Name).Select(group=>new{
+            AuthorName=group.Key,
+            Books = group.Select(b=>b.Title).ToList()
+        });
 
 
     }
