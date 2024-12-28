@@ -19,6 +19,13 @@ class Order
     public int TotalAmount {get;set;}
 }
 
+class Student
+{
+    public string Name {get;set;}
+    public string Grade {get;set;}
+}
+
+
 
 
 
@@ -56,6 +63,17 @@ var orders = new List<Order> {
 };
 
 
+var students = new List<Student>
+{
+    new Student { Name = "John", Grade = "A" },
+    new Student { Name = "Sarah", Grade = "B" },
+    new Student { Name = "Michael", Grade = "A" },
+    new Student { Name = "Emma", Grade = "C" },
+    new Student { Name = "Sophia", Grade = "B" }
+};
+
+
+
 
     // group books by Genre and Published Year
     var groupedBooks = books.GroupBy(b=>b.Genre).Select(generGroup=>new {
@@ -91,6 +109,14 @@ var orders = new List<Order> {
         orders = g.Select(o=>new{o.OrderId,o.TotalAmount}).ToList()
     }).ToList();
 
+    
+    
+    //Group students by their grades and list the names of students in each grade.
+    var studentsByGrade = students.GroupBy(s=>s.Grade).Select(g=>new{
+        Grade = g.Key,
+        Students = g.Select(s=>s.Name).ToList()
+    }).ToList();
+    
     
     
     }
