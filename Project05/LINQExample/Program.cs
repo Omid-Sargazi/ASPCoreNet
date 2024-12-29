@@ -124,6 +124,12 @@ class Program
                 StudentCount = c.Enrollments.Count
             }).OrderByDescending(c=>c.StudentCount).FirstOrDefault();
 
+            //List All Courses with Their Students
+            var coursesWithStudents = context.Courses.Select(c=>new{
+                CourseTitle = c.Title,
+                Students = c.Enrollments.Select(e=>e.Student.Name).ToList()
+            }).ToList();
+
 
 
         }
