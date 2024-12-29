@@ -57,13 +57,29 @@ class Program
                 Courses = s.Enrollments.Select(e=>e.Course.Title).ToList()
             }).ToList();
 
-            //ist All Courses with No Enrollments
+            //List All Courses with No Enrollments
            var coursesWithoutStudents = context.Courses.GroupJoin(context.Enrollments,
             course =>course.CourseId,
             enrollement=>enrollement.CourseId,
             (course,enrollments)=>new{Course=course,Enrollments=enrollments})
             .Where(g=>!g.Enrollments.Any())
             .Select(g=>g.Course.Title).ToList();
+
+            //List All Students with Their Enrolled Courses
+            var StudentCourses = context.Students.Select(s=>new{
+                StudentName = s.Name,
+                EnrolledCourses = s.Enrollments.Select(e=>e.Course.Title).ToList()
+            }).ToList();
+
+            foreach (var student in StudentCourses)
+            {
+                Console.WriteLine($"Student: {student.StudentName}");
+                foreach(var course in student.EnrolledCourses)
+                {
+                    Console.WriteLine($"  Enrolled in: {course}");
+                }
+            }
+
 
         }
     }
