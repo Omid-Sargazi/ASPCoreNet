@@ -118,6 +118,12 @@ class Program
             .Where(e=>e.Course.Title=="Math 101")
             .ToList();
 
+            //Find the Most Popular Course (By Enrollment Count)
+            var mostPopularCourse = context.Courses.Select(c=>new{
+                CourseTitle = c.Title,
+                StudentCount = c.Enrollments.Count
+            }).OrderByDescending(c=>c.StudentCount).FirstOrDefault();
+
 
 
         }
