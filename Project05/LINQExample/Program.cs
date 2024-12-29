@@ -142,6 +142,10 @@ class Program
                 Name=e.Student.Name
             }).ToList();
 
+            //Find the names of students who are enrolled in more than 2 courses
+            var studentsEnrolledMoreTwoCourses = context.Students.Where(s=>s.Enrollments.Count>2).Select(e=>new{
+                Name = e.Name
+            }).ToList();
 
 
 
