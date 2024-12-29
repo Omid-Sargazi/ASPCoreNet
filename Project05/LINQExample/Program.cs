@@ -51,5 +51,12 @@ class Program
                 Courses=i.Courses.Select(c=>c.Title).ToList()
             }).ToList();
 
+            //List students and their enrolled courses
+            var studentCourses = context.Students.Select(s=>new {
+                s.Name,
+                Courses = s.Enrollments.Select(e=>e.Course.Title).ToList()
+            }).ToList();
+
+
         }
     }
