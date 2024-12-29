@@ -130,6 +130,19 @@ class Program
                 Students = c.Enrollments.Select(e=>e.Student.Name).ToList()
             }).ToList();
 
+            //Find Students Enrolled in a Specific Course
+            var studentsInMath101 = context.Enrollments
+            .Where(e=>e.Course.Title=="Math 101")
+            .Select(e=>e.Student.Name).ToList();
+            
+            //Find all students enrolled in "Science 102" 
+
+            var studentsEnrolledScience = context.Enrollments.Where(e=>e.Course.Title=="Science 102")
+            .Select(e=>new{
+                Name=e.Student.Name
+            }).ToList();
+
+
 
 
         }
