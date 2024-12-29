@@ -43,6 +43,13 @@ class Program
                 c.Title,
                 StudentCount = c.Enrollments.Count
             }).ToList();
+            
+
+            //List instructors with their courses
+            var instructorCourses = context.Instructors.Select(i=>new{
+                i.Name,
+                Courses=i.Courses.Select(c=>c.Title).ToList()
+            }).ToList();
 
         }
     }
