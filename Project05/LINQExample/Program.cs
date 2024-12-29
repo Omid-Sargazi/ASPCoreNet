@@ -57,6 +57,13 @@ class Program
                 Courses = s.Enrollments.Select(e=>e.Course.Title).ToList()
             }).ToList();
 
+            //ist All Courses with No Enrollments
+           var coursesWithoutStudents = context.Courses.GroupJoin(context.Enrollments,
+            course =>course.CourseId,
+            enrollement=>enrollement.CourseId,
+            (course,enrollments)=>new{Course=course,Enrollments=enrollments})
+            .Where(g=>!g.Enrollments.Any())
+            .Select(g=>g.Course.Title).ToList();
 
         }
     }
