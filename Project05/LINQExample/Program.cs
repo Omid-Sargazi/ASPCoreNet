@@ -156,6 +156,9 @@ class Program
                 Count = s.Enrollments.Count
             }).ToList();
 
+            //Find all students who are not enrolled in any courses
+            var studentsNotEnrolled = context.Students.Where(s=>s.Enrollments.Count==0).Select(e=>e.Name).ToList();
+
 
 
 
