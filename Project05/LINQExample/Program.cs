@@ -1,6 +1,7 @@
 ﻿
 
 using LINQExample;
+using Microsoft.EntityFrameworkCore;
 
 class Program
     {
@@ -16,6 +17,16 @@ class Program
             {
                 Console.WriteLine($"Student: {student.Name}");
             }
+
+
+            Console.WriteLine("---- Courses and Instructors ----");
+            var courses = context.Courses.Include(c=>c.Instructor).ToList();
+            foreach(var course in courses)
+            {
+                Console.WriteLine($"Course: {course.Title} - Instructor: {course.Instructor.Name}");
+            }
+
+            Console.WriteLine("---- Students in Math 101 ----");
 
 
         }
