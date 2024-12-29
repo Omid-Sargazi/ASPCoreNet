@@ -80,6 +80,19 @@ class Program
                 }
             }
 
+            //Count Total Students Per Course
+            var CourseStudentCounts = context.Courses.Select(c=>new{
+                CourseTitle =  c.Title,
+                StudentCount = c.Enrollments.Count,
+            }).ToList();
+
+            //List Instructors with the Number of Courses They Teach
+            var InstructorCourses = context.Instructors.Select(i=>new{
+                InstructorName = i.Name,
+                CourseCount = i.Courses.Count
+            }).ToList();
+
+
 
         }
     }
