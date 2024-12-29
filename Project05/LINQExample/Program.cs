@@ -26,8 +26,23 @@ class Program
                 Console.WriteLine($"Course: {course.Title} - Instructor: {course.Instructor.Name}");
             }
 
-            Console.WriteLine("---- Students in Math 101 ----");
 
+            Console.WriteLine("---- Students in Math 101 ----");
+            var mathStudents = context.Enrollments.Include(e=>e.Student)
+            .Include(e=>e.Course)
+            .Where(e=>e.Course.Title=="Math 101")
+            .Select(e=>e.Student.Name).ToList();
+
+            foreach (var name in mathStudents)
+            {
+                 Console.WriteLine($"Student: {name}");
+            }
+
+            //List all courses with student counts
+            var courseStudentCounts = context.Courses.Select(c=>new{
+                c.Title,
+                StudentCount = c.Enrollments.Count
+            }).ToList();
 
         }
     }
