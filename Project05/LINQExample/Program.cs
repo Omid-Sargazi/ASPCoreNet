@@ -150,6 +150,12 @@ class Program
             //Find the titles of courses that no students are enrolled in
             var coursesWithoutEnrollement = context.Courses.Where(c=>c.Enrollments.Count==0).Select(e=>e.Title).ToList(); 
 
+            //Find the total number of courses each student is enrolled in
+            var allCourses = context.Students.Select(s=>new{
+                Name=s.Name,
+                Count = s.Enrollments.Count
+            }).ToList();
+
 
 
 
