@@ -1,6 +1,7 @@
 ﻿
 
 using LINQExample;
+using LINQExample.Models;
 using Microsoft.EntityFrameworkCore;
 
 class Program
@@ -91,6 +92,31 @@ class Program
                 InstructorName = i.Name,
                 CourseCount = i.Courses.Count
             }).ToList();
+
+            //List Students Without Any Enrollments
+            var studentsWithoutEnrollments = context.Students.GroupJoin(context.Enrollments,
+                student=>student.StudentId,
+                enrollment=>enrollment.StudentId,
+                (student,enrollments)=>new{Student=student,Enrollment=enrollments}
+            ).Where(g=>!g.Enrollment.Any()).Select(g=>g.Student.Name).ToList();
+
+            //List All Courses Grouped by Instructor
+            var coursesByInstructor = context.Instructors.Select(i=>new{
+                coursesByInstructor = i.Name,
+                Course = i.Courses.Select(c=>c.Title).ToList()
+            }).ToList();
+
+            //List All Students and Their Total Courses
+            var studentsWithCourseCounts = context.Students.Select(s=>new{
+                StudentName = s.Name,
+                TotalCourses = s.Enrollments.Count
+            }).ToList();
+
+            //List Students Enrolled in a Specific Course
+            var studentsInMath = context.Enrollments.Include(e=>e.Student)
+            .Include(e=>e.Course)
+            .Where(e=>e.Course.Title=="Math 101")
+            .ToList();
 
 
 
