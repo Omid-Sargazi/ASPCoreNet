@@ -44,5 +44,12 @@ public class Program
 
 
        //Singleton Lifetime Example
+       services.AddSingleton<ILogger,ConsoleLogger>();
+       
+        var logger1=  provider.GetService<ILogger>();
+        var logger2=  provider.GetService<ILogger>();
+
+        Console.WriteLine(ReferenceEquals(logger1,logger2));
+       
     }
 }
