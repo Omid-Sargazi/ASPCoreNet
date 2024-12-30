@@ -50,6 +50,14 @@ public class Program
         var logger2=  provider.GetService<ILogger>();
 
         Console.WriteLine(ReferenceEquals(logger1,logger2));
+
+        //Transient Lifetime Example
+        services.AddTransient<ILogger,ConsoleLogger>();
+
+        var logger3=  provider.GetService<ILogger>();
+        var logger4= provider.GetService<ILogger>();
+
+        Console.WriteLine(ReferenceEquals(logger3,logger4));
        
     }
 }
