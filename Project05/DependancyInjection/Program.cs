@@ -17,5 +17,9 @@ public class Program
             logger = new ConsoleLogger()
         };
         service02.PerformTask();
+        //Next:Injecting a dependency through a method parameter.
+
+        var service03 = new Service03();
+        service03.PerformTask(new ConsoleLogger());
     }
 }
