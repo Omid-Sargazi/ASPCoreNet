@@ -13,3 +13,7 @@
 /home/omidsa/Programmings/ASPNetCore/Project05/DependancyInjection/obj/Debug/net8.0/DependancyInjection.pdb
 /home/omidsa/Programmings/ASPNetCore/Project05/DependancyInjection/obj/Debug/net8.0/DependancyInjection.genruntimeconfig.cache
 /home/omidsa/Programmings/ASPNetCore/Project05/DependancyInjection/obj/Debug/net8.0/ref/DependancyInjection.dll
+/home/omidsa/Programmings/ASPNetCore/Project05/DependancyInjection/bin/Debug/net8.0/Microsoft.Extensions.DependencyInjection.dll
+/home/omidsa/Programmings/ASPNetCore/Project05/DependancyInjection/bin/Debug/net8.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+/home/omidsa/Programmings/ASPNetCore/Project05/DependancyInjection/obj/Debug/net8.0/DependancyInjection.csproj.AssemblyReference.cache
+/home/omidsa/Programmings/ASPNetCore/Project05/DependancyInjection/obj/Debug/net8.0/Dependan.40E9C681.Up2Date
