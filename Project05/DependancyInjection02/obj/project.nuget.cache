@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "5QqhCX1A5Mo=",
+  "success": true,
+  "projectFilePath": "/home/omidsa/Programmings/ASPNetCore/Project05/DependancyInjection02/DependancyInjection02.csproj",
+  "expectedPackageFiles": [
+    "/home/omidsa/.nuget/packages/microsoft.extensions.dependencyinjection/9.0.0/microsoft.extensions.dependencyinjection.9.0.0.nupkg.sha512",
+    "/home/omidsa/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/9.0.0/microsoft.extensions.dependencyinjection.abstractions.9.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
