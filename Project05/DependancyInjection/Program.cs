@@ -28,10 +28,21 @@ public class Program
         var services = new ServiceCollection();
         services.AddTransient<ILogger, ConsoleLogger>();
         services.AddTransient<Service>();
+        services.AddScoped<ILogger,ConsoleLogger>();
+
 
         var provider = services.BuildServiceProvider();
+        using(var scope = provider.CreateScope())
+        {
+            var service = scope.ServiceProvider.GetRequiredService<Service>();
+            service.PerformTask();
+        }
 
         var service04 = provider.GetService<Service>();
-        service04.PerformTask();
+       // service04.PerformTask();
+
+
+
+       //Singleton Lifetime Example
     }
 }
