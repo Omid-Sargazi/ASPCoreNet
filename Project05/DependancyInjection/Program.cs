@@ -10,5 +10,12 @@ public class Program
         var Logger = new ConsoleLogger();
         var Service = new Service(Logger);
         Service.PerformTask();
+        
+        //Next
+        var service02 = new Service02()
+        {
+            logger = new ConsoleLogger()
+        };
+        service02.PerformTask();
     }
 }

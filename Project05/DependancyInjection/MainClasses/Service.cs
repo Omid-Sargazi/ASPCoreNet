@@ -9,6 +9,7 @@ namespace DependancyInjection.MainClasses
 {
     public class Service
     {
+
         private readonly ILogger _logger;
         public Service(ILogger logger)
         {
