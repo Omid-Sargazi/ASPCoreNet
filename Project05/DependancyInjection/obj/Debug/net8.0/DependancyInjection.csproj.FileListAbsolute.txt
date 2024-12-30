@@ -1,0 +1,15 @@
+/home/omidsa/Programmings/ASPNetCore/Project05/DependancyInjection/bin/Debug/net8.0/DependancyInjection
+/home/omidsa/Programmings/ASPNetCore/Project05/DependancyInjection/bin/Debug/net8.0/DependancyInjection.deps.json
+/home/omidsa/Programmings/ASPNetCore/Project05/DependancyInjection/bin/Debug/net8.0/DependancyInjection.runtimeconfig.json
+/home/omidsa/Programmings/ASPNetCore/Project05/DependancyInjection/bin/Debug/net8.0/DependancyInjection.dll
+/home/omidsa/Programmings/ASPNetCore/Project05/DependancyInjection/bin/Debug/net8.0/DependancyInjection.pdb
+/home/omidsa/Programmings/ASPNetCore/Project05/DependancyInjection/obj/Debug/net8.0/DependancyInjection.GeneratedMSBuildEditorConfig.editorconfig
+/home/omidsa/Programmings/ASPNetCore/Project05/DependancyInjection/obj/Debug/net8.0/DependancyInjection.AssemblyInfoInputs.cache
+/home/omidsa/Programmings/ASPNetCore/Project05/DependancyInjection/obj/Debug/net8.0/DependancyInjection.AssemblyInfo.cs
+/home/omidsa/Programmings/ASPNetCore/Project05/DependancyInjection/obj/Debug/net8.0/DependancyInjection.csproj.CoreCompileInputs.cache
+/home/omidsa/Programmings/ASPNetCore/Project05/DependancyInjection/obj/Debug/net8.0/DependancyInjection.sourcelink.json
+/home/omidsa/Programmings/ASPNetCore/Project05/DependancyInjection/obj/Debug/net8.0/DependancyInjection.dll
+/home/omidsa/Programmings/ASPNetCore/Project05/DependancyInjection/obj/Debug/net8.0/refint/DependancyInjection.dll
+/home/omidsa/Programmings/ASPNetCore/Project05/DependancyInjection/obj/Debug/net8.0/DependancyInjection.pdb
+/home/omidsa/Programmings/ASPNetCore/Project05/DependancyInjection/obj/Debug/net8.0/DependancyInjection.genruntimeconfig.cache
+/home/omidsa/Programmings/ASPNetCore/Project05/DependancyInjection/obj/Debug/net8.0/ref/DependancyInjection.dll
