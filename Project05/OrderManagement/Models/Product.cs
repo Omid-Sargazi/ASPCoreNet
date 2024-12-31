@@ -5,11 +5,12 @@ using System.Threading.Tasks;
 
 namespace OrderManagement.Models
 {
-    public class Order
+    public class Product
     {
-        public int Id { get; set; }
-        public string CustomerName { get; set; } = string.Empty;
-        public DateTime OrderDate { get; set; }
+        public int Id {get;set;}
+        public string Name {get;set;} = string.Empty;
+        public decimal Price {get;set;}
         public ICollection<OrderDetail> orderDetails {get;set;} = new List<OrderDetail>();
+
     }
 }
