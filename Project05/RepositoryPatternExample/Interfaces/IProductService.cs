@@ -10,7 +10,7 @@ namespace RepositoryPatternExample.Interfaces
     {
         Task<IEnumerable<Product>> GetProductsAsync();
         Task<Product?> GetProductByIdAsync(int id);
-        Task AddProductAsync(string Name, string Price);
+        Task AddProductAsync(string Name, decimal Price);
         Task UpdateProductAsync(int id, string name, decimal price);
         Task DeleteProductAsync(int id);
     }
