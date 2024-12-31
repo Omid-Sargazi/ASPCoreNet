@@ -15,29 +15,37 @@ namespace RepositoryPatternDemo.Implementation
         {
             _repository = repository;
         }
-        public Task AddProductAsync(string name, decimal price)
+        public async Task AddProductAsync(string name, decimal price)
         {
-            throw new NotImplementedException();
+            var product = new Product{Name=name, Price=price};
+            await _repository.AddAsync(product);
         }
 
-        public Task DeleteProductAsync(int id)
+        public async Task DeleteProductAsync(int id)
         {
-            throw new NotImplementedException();
+            await _repository.DeleteAsync(id);
         }
 
-        public Task<Product?> GetProductByIdAsync(int id)
+        public async Task<Product?> GetProductByIdAsync(int id)
         {
-            throw new NotImplementedException();
+            return await _repository.GetByIdAsync(id);
         }
 
-        public Task<IEnumerable<Product>> GetProductsAsync()
+        public async Task<IEnumerable<Product>> GetProductsAsync()
         {
-            throw new NotImplementedException();
+            return await _repository.GetAllProduct();
         }
 
-        public Task UpdateProductAsync(int id, string name, decimal price)
+        public async Task UpdateProductAsync(int id, string name, decimal price)
         {
-            throw new NotImplementedException();
+            var product = await _repository.GetByIdAsync(id);
+            if(product !=null)
+            {
+                product.Name=name;
+                product.Price=price;
+                await _repository.UpdateAsync(product);
+            }
+
         }
     }
 }
