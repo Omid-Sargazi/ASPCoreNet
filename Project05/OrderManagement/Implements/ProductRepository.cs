@@ -20,18 +20,18 @@ namespace OrderManagement.Implements
 
         public async Task AddAsync(Product product)
         {
-            await _context.products.AddAsync(product);
+            await _context.Products.AddAsync(product);
             await _context.SaveChangesAsync();
         }
 
         public async Task<IEnumerable<Product>> GetAllAsync()
         {
-            return await _context.products.ToListAsync();
+            return await _context.Products.ToListAsync();
         }
 
         public async Task<Product?> GetByIdAsync(int id)
         {
-            return await _context.products.FindAsync(id);
+            return await _context.Products.FindAsync(id);
         }
     }
 }

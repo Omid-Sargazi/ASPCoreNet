@@ -10,8 +10,8 @@ namespace OrderManagement.Data
     public class OrderDbContext:DbContext
     {
         public DbSet<Order> Orders { get; set; }
-        public DbSet<Product> products {get;set;}
-        public DbSet<OrderDetail> orderDetails {get;set;}
+        public DbSet<Product> Products {get;set;}
+        public DbSet<OrderDetail> OrderDetails {get;set;}
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -20,7 +20,7 @@ namespace OrderManagement.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            
+
             modelBuilder.Entity<OrderDetail>()
             .HasKey(od=>new {od.OrderId,od.ProductId});
 
