@@ -41,6 +41,11 @@ namespace OrderManagement.Implements
            return await _repository.GetAllAsync();
         }
 
+        public async Task<IEnumerable<Order>> GetOrdersWithProductsAsync()
+        {
+            return await _repository.GetOrdersWithProductsAsync();
+        }
+
         public async Task UpdateOrderAsync(int id, string customerName, DateTime orderDate, decimal TotalAmount)
         {
             var order = await _repository.GetByIdAsync(id);

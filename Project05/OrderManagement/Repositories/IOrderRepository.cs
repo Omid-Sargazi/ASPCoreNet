@@ -13,5 +13,6 @@ namespace OrderManagement.Repositories
         Task AddAsync(Order order);
         Task UpdateAsync(Order order);
         Task DeleteAsync(int id);
+        Task<IEnumerable<Order>> GetOrdersWithProductsAsync();
     }
 }

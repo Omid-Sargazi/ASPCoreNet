@@ -44,10 +44,20 @@ namespace OrderManagement.Implements
             return order;
         }
 
+        public async Task<IEnumerable<Order>> GetOrdersWithProductsAsync()
+        {
+            return await _context.Orders
+            .Include(o=>o.orderDetails)
+            .ThenInclude(od=>od.Product)
+            .ToListAsync();
+        }
+
         public async Task UpdateAsync(Order order)
         {
             _context.Orders.Update(order);
             await _context.SaveChangesAsync();
         }
+
+        
     }
 }

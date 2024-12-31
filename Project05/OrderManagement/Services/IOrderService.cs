@@ -13,5 +13,7 @@ namespace OrderManagement.Services
         Task AddOrderAsync(string customerName, DateTime orderDate,decimal TotalAmount);
         Task UpdateOrderAsync(int id, string customerName, DateTime orderDate, decimal TotalAmount);
         Task DeleteOrderAsync(int id);
+        Task<IEnumerable<Order>> GetOrdersWithProductsAsync();
+
     }
 }
