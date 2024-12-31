@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RepositoryPatternDemo")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c97a4e504a29ba468097b23f5dec4e1bf8f77568")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+83e6556facea1de57fc03d55b382a93319b3a570")]
 [assembly: System.Reflection.AssemblyProductAttribute("RepositoryPatternDemo")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RepositoryPatternDemo")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

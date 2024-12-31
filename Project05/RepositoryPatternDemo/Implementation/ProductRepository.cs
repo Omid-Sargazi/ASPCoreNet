@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
+using RepositoryPatternDemo.Data;
 using RepositoryPatternDemo.Interfaces;
 using RepositoryPatternDemo.models;
 
@@ -9,29 +11,44 @@ namespace RepositoryPatternDemo.Implementation
 {
     public class ProductRepository : IProductRepository
     {
-        public Task AddAsync(Product product)
+
+        private readonly AppDbContext _context;
+
+        public ProductRepository(AppDbContext context)
         {
-            throw new NotImplementedException();
+            _context = context;
         }
 
-        public Task DeleteAsync(int id)
+        public async Task AddAsync(Product product)
         {
-            throw new NotImplementedException();
+            await _context.Products.AddAsync(product);
+            await _context.SaveChangesAsync();
         }
 
-        public Task<IEnumerable<Product>> GetAllProduct()
+        public async Task DeleteAsync(int id)
         {
-            throw new NotImplementedException();
+            var product = await GetByIdAsync(id);
+            if(product !=null)
+            {
+                _context.Products.Remove(product);
+                await _context.SaveChangesAsync();
+            }
         }
 
-        public Task<Product?> GetByIdAsync(int id)
+        public async Task<IEnumerable<Product>> GetAllProduct()
         {
-            throw new NotImplementedException();
+            return await _context.Products.ToListAsync();
         }
 
-        public Task UpdateAsync(Product product)
+        public async Task<Product?> GetByIdAsync(int id)
         {
-            throw new NotImplementedException();
+            return await _context.Products.FindAsync(id);
+        }
+
+        public async Task UpdateAsync(Product product)
+        {
+            _context.Products.Update(product);
+            await _context.SaveChangesAsync();
         }
     }
 }
