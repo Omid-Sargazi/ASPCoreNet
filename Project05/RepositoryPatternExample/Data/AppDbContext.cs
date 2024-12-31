@@ -9,7 +9,7 @@ namespace RepositoryPatternExample.Data
 {
     public class AppDbContext:DbContext
     {
-        DbSet<Product> Products { get; set; }
+        public DbSet<Product> Products { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
