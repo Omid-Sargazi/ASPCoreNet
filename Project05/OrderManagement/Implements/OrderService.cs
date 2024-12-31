@@ -21,7 +21,7 @@ namespace OrderManagement.Implements
             var order = new Order{
                 CustomerName = customerName,
                 OrderDate = orderDate,
-                TotalAmount = TotalAmount
+               
             };
             await _repository.AddAsync(order);
         }
@@ -48,7 +48,7 @@ namespace OrderManagement.Implements
             {
                 order.OrderDate = orderDate;
                 order.CustomerName = customerName;
-                order.TotalAmount = TotalAmount;
+                
                 await _repository.UpdateAsync(order);
             }
         }
