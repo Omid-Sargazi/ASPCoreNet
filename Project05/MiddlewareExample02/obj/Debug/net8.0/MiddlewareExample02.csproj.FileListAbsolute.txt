@@ -1,3 +1,11 @@
+/home/omidsa/Programmings/ASPNetCore/Project05/MiddlewareExample02/obj/Debug/net8.0/MiddlewareExample02.csproj.AssemblyReference.cache
+/home/omidsa/Programmings/ASPNetCore/Project05/MiddlewareExample02/obj/Debug/net8.0/MiddlewareExample02.GeneratedMSBuildEditorConfig.editorconfig
+/home/omidsa/Programmings/ASPNetCore/Project05/MiddlewareExample02/obj/Debug/net8.0/MiddlewareExample02.AssemblyInfoInputs.cache
+/home/omidsa/Programmings/ASPNetCore/Project05/MiddlewareExample02/obj/Debug/net8.0/MiddlewareExample02.AssemblyInfo.cs
+/home/omidsa/Programmings/ASPNetCore/Project05/MiddlewareExample02/obj/Debug/net8.0/MiddlewareExample02.csproj.CoreCompileInputs.cache
+/home/omidsa/Programmings/ASPNetCore/Project05/MiddlewareExample02/obj/Debug/net8.0/MiddlewareExample02.MvcApplicationPartsAssemblyInfo.cs
+/home/omidsa/Programmings/ASPNetCore/Project05/MiddlewareExample02/obj/Debug/net8.0/MiddlewareExample02.MvcApplicationPartsAssemblyInfo.cache
+/home/omidsa/Programmings/ASPNetCore/Project05/MiddlewareExample02/obj/Debug/net8.0/MiddlewareExample02.sourcelink.json
 /home/omidsa/Programmings/ASPNetCore/Project05/MiddlewareExample02/bin/Debug/net8.0/appsettings.Development.json
 /home/omidsa/Programmings/ASPNetCore/Project05/MiddlewareExample02/bin/Debug/net8.0/appsettings.json
 /home/omidsa/Programmings/ASPNetCore/Project05/MiddlewareExample02/bin/Debug/net8.0/MiddlewareExample02
@@ -10,14 +18,6 @@
 /home/omidsa/Programmings/ASPNetCore/Project05/MiddlewareExample02/bin/Debug/net8.0/Swashbuckle.AspNetCore.Swagger.dll
 /home/omidsa/Programmings/ASPNetCore/Project05/MiddlewareExample02/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerGen.dll
 /home/omidsa/Programmings/ASPNetCore/Project05/MiddlewareExample02/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerUI.dll
-/home/omidsa/Programmings/ASPNetCore/Project05/MiddlewareExample02/obj/Debug/net8.0/MiddlewareExample02.csproj.AssemblyReference.cache
-/home/omidsa/Programmings/ASPNetCore/Project05/MiddlewareExample02/obj/Debug/net8.0/MiddlewareExample02.GeneratedMSBuildEditorConfig.editorconfig
-/home/omidsa/Programmings/ASPNetCore/Project05/MiddlewareExample02/obj/Debug/net8.0/MiddlewareExample02.AssemblyInfoInputs.cache
-/home/omidsa/Programmings/ASPNetCore/Project05/MiddlewareExample02/obj/Debug/net8.0/MiddlewareExample02.AssemblyInfo.cs
-/home/omidsa/Programmings/ASPNetCore/Project05/MiddlewareExample02/obj/Debug/net8.0/MiddlewareExample02.csproj.CoreCompileInputs.cache
-/home/omidsa/Programmings/ASPNetCore/Project05/MiddlewareExample02/obj/Debug/net8.0/MiddlewareExample02.MvcApplicationPartsAssemblyInfo.cs
-/home/omidsa/Programmings/ASPNetCore/Project05/MiddlewareExample02/obj/Debug/net8.0/MiddlewareExample02.MvcApplicationPartsAssemblyInfo.cache
-/home/omidsa/Programmings/ASPNetCore/Project05/MiddlewareExample02/obj/Debug/net8.0/MiddlewareExample02.sourcelink.json
 /home/omidsa/Programmings/ASPNetCore/Project05/MiddlewareExample02/obj/Debug/net8.0/staticwebassets.build.json
 /home/omidsa/Programmings/ASPNetCore/Project05/MiddlewareExample02/obj/Debug/net8.0/staticwebassets.development.json
 /home/omidsa/Programmings/ASPNetCore/Project05/MiddlewareExample02/obj/Debug/net8.0/staticwebassets/msbuild.MiddlewareExample02.Microsoft.AspNetCore.StaticWebAssets.props
