@@ -11,6 +11,17 @@ namespace MiddlewareExample03.MiddleWares
         {
             await context.Response.WriteAsync("Started...");
             await next(context);
+            await context.Response.WriteAsync("Finished...");
+            await context.Response.WriteAsync("Finished 02...");
+        }
+    }
+
+
+    public  static class MyMiddleWare
+    {
+        public static IApplicationBuilder ExtentionMethod(this IApplicationBuilder app)
+        {
+            return app.UseMiddleware<MiddleWare01>();
         }
     }
 }
