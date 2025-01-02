@@ -1,4 +1,6 @@
-﻿public class Program
+﻿using ExtensionMethods.Services;
+
+public class Program
 {
     public static void Main(string[] args)
     {
@@ -19,6 +21,15 @@
 
         var num = new List<int> {1,2,3,4};
         Console.WriteLine(num.ToCsv());
+
+
+
+        var service = new UserService();
+        var filteredUsers = service.GetFilteredUsers("Alice",20,30);
+        foreach (var user in filteredUsers)
+        {
+            Console.WriteLine($"{user.Name}, {user.Age}, {user.Email}");
+        }
 
     }
 }
