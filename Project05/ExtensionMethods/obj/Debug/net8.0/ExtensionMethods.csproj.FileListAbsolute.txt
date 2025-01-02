@@ -1,0 +1,15 @@
+/home/omidsa/Programmings/ASPNetCore/Project05/ExtensionMethods/bin/Debug/net8.0/ExtensionMethods
+/home/omidsa/Programmings/ASPNetCore/Project05/ExtensionMethods/bin/Debug/net8.0/ExtensionMethods.deps.json
+/home/omidsa/Programmings/ASPNetCore/Project05/ExtensionMethods/bin/Debug/net8.0/ExtensionMethods.runtimeconfig.json
+/home/omidsa/Programmings/ASPNetCore/Project05/ExtensionMethods/bin/Debug/net8.0/ExtensionMethods.dll
+/home/omidsa/Programmings/ASPNetCore/Project05/ExtensionMethods/bin/Debug/net8.0/ExtensionMethods.pdb
+/home/omidsa/Programmings/ASPNetCore/Project05/ExtensionMethods/obj/Debug/net8.0/ExtensionMethods.GeneratedMSBuildEditorConfig.editorconfig
+/home/omidsa/Programmings/ASPNetCore/Project05/ExtensionMethods/obj/Debug/net8.0/ExtensionMethods.AssemblyInfoInputs.cache
+/home/omidsa/Programmings/ASPNetCore/Project05/ExtensionMethods/obj/Debug/net8.0/ExtensionMethods.AssemblyInfo.cs
+/home/omidsa/Programmings/ASPNetCore/Project05/ExtensionMethods/obj/Debug/net8.0/ExtensionMethods.csproj.CoreCompileInputs.cache
+/home/omidsa/Programmings/ASPNetCore/Project05/ExtensionMethods/obj/Debug/net8.0/ExtensionMethods.sourcelink.json
+/home/omidsa/Programmings/ASPNetCore/Project05/ExtensionMethods/obj/Debug/net8.0/ExtensionMethods.dll
+/home/omidsa/Programmings/ASPNetCore/Project05/ExtensionMethods/obj/Debug/net8.0/refint/ExtensionMethods.dll
+/home/omidsa/Programmings/ASPNetCore/Project05/ExtensionMethods/obj/Debug/net8.0/ExtensionMethods.pdb
+/home/omidsa/Programmings/ASPNetCore/Project05/ExtensionMethods/obj/Debug/net8.0/ExtensionMethods.genruntimeconfig.cache
+/home/omidsa/Programmings/ASPNetCore/Project05/ExtensionMethods/obj/Debug/net8.0/ref/ExtensionMethods.dll
