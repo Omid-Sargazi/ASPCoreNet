@@ -17,6 +17,9 @@
         int number=10;
         Console.WriteLine($"Number is Even:{number.IsEven()}");
 
+        var num = new List<int> {1,2,3,4};
+        Console.WriteLine(num.ToCsv());
+
     }
 }
 
@@ -46,6 +49,14 @@ public static class StringExtentions02
     {
         if(string.IsNullOrEmpty(str)) return str;
         return System.Globalization.CultureInfo.CurrentCulture.TextInfo.ToTitleCase(str);
+    }
+}
+
+public static class ListExtensions
+{
+    public static string ToCsv<T>(this IEnumerable<T> list, char separator=',')
+    {
+        return string.Join(separator,list);
     }
 }
 
