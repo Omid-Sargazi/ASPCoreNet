@@ -66,9 +66,17 @@ app.Map("/amin",adminApp=>{
     });
 });
 
+app.UseResponseCompression();
+
+app.Use(async(context, next)=>{
+    var largeData = new string('x',10000);
+    await context.Response.WriteAsync(largeData);
+    await next();
+});
+
 //API Key Validation Middleware
 
-app.Use(async (context,next)=>{
+app.Run(async (context)=>{
     if(!context.Request.Headers.ContainsKey("X-API-KEY"))
     {
         context.Response.StatusCode = 401;
@@ -76,7 +84,7 @@ app.Use(async (context,next)=>{
         return;    
     }
 
-    await next();
+
 });
 
 
