@@ -37,10 +37,16 @@ app.Use(async(context,next)=>{
 
 });
 
+
+//Branches the pipeline based on the request path.
+app.Map("/path", appBuilder=>{
+    appBuilder.Run(async context=>{
+        await context.Response.WriteAsync("Hello from /path!");
+    });
+});
 app.Run(async(context)=>{
     await context.Response.WriteAsync("Hello from Terminal Middleware!");
 });
-
 
 app.MapGet("/", () => "Hello World!");
 
