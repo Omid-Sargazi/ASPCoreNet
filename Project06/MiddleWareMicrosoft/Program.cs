@@ -51,6 +51,7 @@ var app = builder.Build();
 // });
 
 //Register the Middleware
+app.UseMiddleware<IPLoggerMiddleware>();
 app.UseMiddleware<LoggingMiddleware>();
 
 app.MapWhen(context=>context.Request.Query.ContainsKey("debug"),appBuilder=>{
@@ -58,6 +59,14 @@ app.MapWhen(context=>context.Request.Query.ContainsKey("debug"),appBuilder=>{
         await context.Response.WriteAsync("Debug mode enabled!");
     });
 });
+
+app.Map("/amin",adminApp=>{
+    adminApp.Run(async context=>{
+        await context.Response.WriteAsync("Welcome to the admin section!");
+    });
+});
+
+
 app.UseStaticFiles();
 app.Run(async context=>{
     await context.Response.WriteAsync("This will not be executed for static file requests.");
