@@ -1,11 +1,77 @@
 {
   "Version": 1,
-  "Hash": "rNOi25JgjaJ4ZBFiDxceg/KKOC0P8GZ8S9PwuST9gZU=",
+  "Hash": "bNaSAvPISZXMgjn02hTt4riHG4HQptFY8C9WBHpet2M=",
   "Source": "MiddleWareMicrosoft",
   "BasePath": "_content/MiddleWareMicrosoft",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "MiddleWareMicrosoft/wwwroot",
+      "Source": "MiddleWareMicrosoft",
+      "ContentRoot": "/home/omidsa/Programmings/ASPNetCore/Project06/MiddleWareMicrosoft/wwwroot/",
+      "BasePath": "_content/MiddleWareMicrosoft",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "/home/omidsa/Programmings/ASPNetCore/Project06/MiddleWareMicrosoft/wwwroot/app.js",
+      "SourceId": "MiddleWareMicrosoft",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/omidsa/Programmings/ASPNetCore/Project06/MiddleWareMicrosoft/wwwroot/",
+      "BasePath": "_content/MiddleWareMicrosoft",
+      "RelativePath": "app.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/app.js"
+    },
+    {
+      "Identity": "/home/omidsa/Programmings/ASPNetCore/Project06/MiddleWareMicrosoft/wwwroot/index.html",
+      "SourceId": "MiddleWareMicrosoft",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/omidsa/Programmings/ASPNetCore/Project06/MiddleWareMicrosoft/wwwroot/",
+      "BasePath": "_content/MiddleWareMicrosoft",
+      "RelativePath": "index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/index.html"
+    },
+    {
+      "Identity": "/home/omidsa/Programmings/ASPNetCore/Project06/MiddleWareMicrosoft/wwwroot/styles.css",
+      "SourceId": "MiddleWareMicrosoft",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/omidsa/Programmings/ASPNetCore/Project06/MiddleWareMicrosoft/wwwroot/",
+      "BasePath": "_content/MiddleWareMicrosoft",
+      "RelativePath": "styles.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/styles.css"
+    }
+  ]
 }

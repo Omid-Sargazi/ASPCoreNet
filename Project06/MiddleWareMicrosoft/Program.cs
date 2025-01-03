@@ -58,6 +58,10 @@ app.MapWhen(context=>context.Request.Query.ContainsKey("debug"),appBuilder=>{
         await context.Response.WriteAsync("Debug mode enabled!");
     });
 });
+app.UseStaticFiles();
+app.Run(async context=>{
+    await context.Response.WriteAsync("This will not be executed for static file requests.");
+});
 
 app.Run(async context=>{
     await context.Response.WriteAsync("Hello World!!!!!!!!!!!!!!!");

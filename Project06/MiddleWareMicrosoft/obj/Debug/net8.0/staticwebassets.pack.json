@@ -1,0 +1,33 @@
+{
+  "Files": [
+    {
+      "Id": "/home/omidsa/Programmings/ASPNetCore/Project06/MiddleWareMicrosoft/wwwroot/app.js",
+      "PackagePath": "staticwebassets/app.js"
+    },
+    {
+      "Id": "/home/omidsa/Programmings/ASPNetCore/Project06/MiddleWareMicrosoft/wwwroot/index.html",
+      "PackagePath": "staticwebassets/index.html"
+    },
+    {
+      "Id": "/home/omidsa/Programmings/ASPNetCore/Project06/MiddleWareMicrosoft/wwwroot/styles.css",
+      "PackagePath": "staticwebassets/styles.css"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.MiddleWareMicrosoft.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.build.MiddleWareMicrosoft.props",
+      "PackagePath": "build\\MiddleWareMicrosoft.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.MiddleWareMicrosoft.props",
+      "PackagePath": "buildMultiTargeting\\MiddleWareMicrosoft.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.MiddleWareMicrosoft.props",
+      "PackagePath": "buildTransitive\\MiddleWareMicrosoft.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

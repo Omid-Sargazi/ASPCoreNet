@@ -24,3 +24,4 @@
 /home/omidsa/Programmings/ASPNetCore/Project06/MiddleWareMicrosoft/obj/Debug/net8.0/MiddleWareMicrosoft.pdb
 /home/omidsa/Programmings/ASPNetCore/Project06/MiddleWareMicrosoft/obj/Debug/net8.0/MiddleWareMicrosoft.genruntimeconfig.cache
 /home/omidsa/Programmings/ASPNetCore/Project06/MiddleWareMicrosoft/obj/Debug/net8.0/ref/MiddleWareMicrosoft.dll
+/home/omidsa/Programmings/ASPNetCore/Project06/MiddleWareMicrosoft/bin/Debug/net8.0/MiddleWareMicrosoft.staticwebassets.runtime.json
