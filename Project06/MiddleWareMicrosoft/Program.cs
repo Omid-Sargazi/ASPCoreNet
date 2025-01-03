@@ -1,3 +1,5 @@
+using MiddleWareMicrosoft.MiddleWares;
+
 var builder = WebApplication.CreateBuilder(args);
 var app = builder.Build();
 
@@ -27,26 +29,40 @@ var app = builder.Build();
 
 
 //Short-Circuiting the Pipeline
-app.Use(async(context,next)=>{
-    if(context.Request.Path=="/stop")
-    {
-        await context.Response.WriteAsync("Pipeline Short-Circuited!");
-        return;
-    }
-    await next();
+// app.Use(async(context,next)=>{
+//     if(context.Request.Path=="/stop")
+//     {
+//         await context.Response.WriteAsync("Pipeline Short-Circuited!");
+//         return;
+//     }
+//     await next();
 
-});
+// });
 
 
-//Branches the pipeline based on the request path.
-app.Map("/path", appBuilder=>{
+// //Branches the pipeline based on the request path.
+// app.Map("/path", appBuilder=>{
+//     appBuilder.Run(async context=>{
+//         await context.Response.WriteAsync("Hello from /path!");
+//     });
+// });
+// app.Run(async(context)=>{
+//     await context.Response.WriteAsync("Hello from Terminal Middleware!");
+// });
+
+//Register the Middleware
+app.UseMiddleware<LoggingMiddleware>();
+
+app.MapWhen(context=>context.Request.Query.ContainsKey("debug"),appBuilder=>{
     appBuilder.Run(async context=>{
-        await context.Response.WriteAsync("Hello from /path!");
+        await context.Response.WriteAsync("Debug mode enabled!");
     });
 });
-app.Run(async(context)=>{
-    await context.Response.WriteAsync("Hello from Terminal Middleware!");
+
+app.Run(async context=>{
+    await context.Response.WriteAsync("Hello World!!!!!!!!!!!!!!!");
 });
+
 
 app.MapGet("/", () => "Hello World!");
 
