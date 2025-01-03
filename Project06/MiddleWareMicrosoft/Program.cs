@@ -66,6 +66,19 @@ app.Map("/amin",adminApp=>{
     });
 });
 
+//API Key Validation Middleware
+
+app.Use(async (context,next)=>{
+    if(!context.Request.Headers.ContainsKey("X-API-KEY"))
+    {
+        context.Response.StatusCode = 401;
+        await context.Response.WriteAsync("API Key missing!");
+        return;    
+    }
+
+    await next();
+});
+
 
 app.UseStaticFiles();
 app.Run(async context=>{
