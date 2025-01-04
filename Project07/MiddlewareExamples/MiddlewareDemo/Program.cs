@@ -36,11 +36,25 @@ var app = builder.Build();
 //     }
 // });
 
-app.Use(async(context,next)=>{
-    var start = DateTime.Now;
+// app.Use(async(context,next)=>{
+//     var start = DateTime.Now;
+//     await next();
+//     var processingTime = DateTime.UtcNow - start;
+//     context.Response.Headers.Add("X-Processing-Time", processingTime.TotalMilliseconds.ToString());
+// });
+
+app.Use(async (context, next) =>
+{
+    var allowedIp = "127.0.0.1"; // Localhost
+    var remoteIp = context.Connection.RemoteIpAddress?.ToString();
+
+    if (remoteIp != allowedIp)
+    {
+        context.Response.StatusCode = 403;
+        await context.Response.WriteAsync("Forbidden");
+        return;
+    }
     await next();
-    var processingTime = DateTime.UtcNow - start;
-    context.Response.Headers.Add("X-Processing-Time", processingTime.TotalMilliseconds.ToString());
 });
 
 
