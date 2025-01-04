@@ -10,6 +10,16 @@ app.Use(async(context,next)=>{
 });
 
 
+app.Use(async(context,next)=>{
+    if(!context.Request.Headers.ContainsKey("Authorization"))
+    {
+        context.Response.StatusCode = 401;
+        await context.Response.WriteAsync("Unauthorized");
+        return;
+    }
+    await next();
+});
+
 
 
 
