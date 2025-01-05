@@ -1,11 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "cBCMWzgS2Nw=",
+  "dgSpecHash": "CJai9RHvPzg=",
   "success": true,
   "projectFilePath": "/home/omidsa/Programmings/ASPNetCore/Project07/CleanArchitectureMyself/CleanArchitecture.Application.UnitTests/CleanArchitecture.Application.UnitTests.csproj",
   "expectedPackageFiles": [
     "/home/omidsa/.nuget/packages/coverlet.collector/6.0.2/coverlet.collector.6.0.2.nupkg.sha512",
+    "/home/omidsa/.nuget/packages/fluentvalidation/11.5.1/fluentvalidation.11.5.1.nupkg.sha512",
+    "/home/omidsa/.nuget/packages/fluentvalidation.aspnetcore/11.3.0/fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
+    "/home/omidsa/.nuget/packages/fluentvalidation.dependencyinjectionextensions/11.5.1/fluentvalidation.dependencyinjectionextensions.11.5.1.nupkg.sha512",
     "/home/omidsa/.nuget/packages/microsoft.codecoverage/17.11.1/microsoft.codecoverage.17.11.1.nupkg.sha512",
+    "/home/omidsa/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/2.1.0/microsoft.extensions.dependencyinjection.abstractions.2.1.0.nupkg.sha512",
     "/home/omidsa/.nuget/packages/microsoft.net.test.sdk/17.11.1/microsoft.net.test.sdk.17.11.1.nupkg.sha512",
     "/home/omidsa/.nuget/packages/microsoft.testplatform.objectmodel/17.11.1/microsoft.testplatform.objectmodel.17.11.1.nupkg.sha512",
     "/home/omidsa/.nuget/packages/microsoft.testplatform.testhost/17.11.1/microsoft.testplatform.testhost.17.11.1.nupkg.sha512",
