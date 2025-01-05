@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CleanArchitecture.Domin")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+faa9e245bf0d433758743c10468731906fa73e34")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+657d70fa63e63a18f5033291409e8c26505baa78")]
 [assembly: System.Reflection.AssemblyProductAttribute("CleanArchitecture.Domin")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CleanArchitecture.Domin")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
