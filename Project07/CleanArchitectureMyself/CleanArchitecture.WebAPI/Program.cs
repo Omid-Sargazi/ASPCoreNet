@@ -42,6 +42,7 @@
 
 
 using CleanArchitecture.Infrastructure;
+using CleanArchitecture.WebAPI.Middlewares;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -51,6 +52,8 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
+
+app.UseMiddleware<LoggingMiddleware>();
 
 
 if (app.Environment.IsDevelopment())
