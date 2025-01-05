@@ -1,11 +1,49 @@
 {
   "version": 3,
   "targets": {
-    "net9.0": {}
+    "net9.0": {
+      "CleanArchitecture.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "CleanArchitecture.Domin": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/CleanArchitecture.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CleanArchitecture.Application.dll": {}
+        }
+      },
+      "CleanArchitecture.Domin/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/CleanArchitecture.Domin.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CleanArchitecture.Domin.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "CleanArchitecture.Application/1.0.0": {
+      "type": "project",
+      "path": "../CleanArchitecture.Application/CleanArchitecture.Application.csproj",
+      "msbuildProject": "../CleanArchitecture.Application/CleanArchitecture.Application.csproj"
+    },
+    "CleanArchitecture.Domin/1.0.0": {
+      "type": "project",
+      "path": "../CleanArchitecture.Domin/CleanArchitecture.Domin.csproj",
+      "msbuildProject": "../CleanArchitecture.Domin/CleanArchitecture.Domin.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net9.0": []
+    "net9.0": [
+      "CleanArchitecture.Application >= 1.0.0",
+      "CleanArchitecture.Domin >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "/home/omidsa/.nuget/packages/": {}
@@ -31,7 +69,14 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/home/omidsa/Programmings/ASPNetCore/Project07/CleanArchitectureMyself/CleanArchitecture.Application/CleanArchitecture.Application.csproj": {
+              "projectPath": "/home/omidsa/Programmings/ASPNetCore/Project07/CleanArchitectureMyself/CleanArchitecture.Application/CleanArchitecture.Application.csproj"
+            },
+            "/home/omidsa/Programmings/ASPNetCore/Project07/CleanArchitectureMyself/CleanArchitecture.Domin/CleanArchitecture.Domin.csproj": {
+              "projectPath": "/home/omidsa/Programmings/ASPNetCore/Project07/CleanArchitectureMyself/CleanArchitecture.Domin/CleanArchitecture.Domin.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

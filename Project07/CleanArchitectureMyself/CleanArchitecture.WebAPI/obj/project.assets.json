@@ -33,6 +33,43 @@
             "related": ".pdb;.xml"
           }
         }
+      },
+      "CleanArchitecture.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "CleanArchitecture.Domin": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/CleanArchitecture.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CleanArchitecture.Application.dll": {}
+        }
+      },
+      "CleanArchitecture.Domin/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/CleanArchitecture.Domin.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CleanArchitecture.Domin.dll": {}
+        }
+      },
+      "CleanArchitecture.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "CleanArchitecture.Application": "1.0.0",
+          "CleanArchitecture.Domin": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/CleanArchitecture.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CleanArchitecture.Infrastructure.dll": {}
+        }
       }
     }
   },
@@ -67,10 +104,27 @@
         "microsoft.openapi.1.6.17.nupkg.sha512",
         "microsoft.openapi.nuspec"
       ]
+    },
+    "CleanArchitecture.Application/1.0.0": {
+      "type": "project",
+      "path": "../CleanArchitecture.Application/CleanArchitecture.Application.csproj",
+      "msbuildProject": "../CleanArchitecture.Application/CleanArchitecture.Application.csproj"
+    },
+    "CleanArchitecture.Domin/1.0.0": {
+      "type": "project",
+      "path": "../CleanArchitecture.Domin/CleanArchitecture.Domin.csproj",
+      "msbuildProject": "../CleanArchitecture.Domin/CleanArchitecture.Domin.csproj"
+    },
+    "CleanArchitecture.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../CleanArchitecture.Infrastructure/CleanArchitecture.Infrastructure.csproj",
+      "msbuildProject": "../CleanArchitecture.Infrastructure/CleanArchitecture.Infrastructure.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net9.0": [
+      "CleanArchitecture.Application >= 1.0.0",
+      "CleanArchitecture.Infrastructure >= 1.0.0",
       "Microsoft.AspNetCore.OpenApi >= 9.0.0"
     ]
   },
@@ -98,7 +152,14 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/home/omidsa/Programmings/ASPNetCore/Project07/CleanArchitectureMyself/CleanArchitecture.Application/CleanArchitecture.Application.csproj": {
+              "projectPath": "/home/omidsa/Programmings/ASPNetCore/Project07/CleanArchitectureMyself/CleanArchitecture.Application/CleanArchitecture.Application.csproj"
+            },
+            "/home/omidsa/Programmings/ASPNetCore/Project07/CleanArchitectureMyself/CleanArchitecture.Infrastructure/CleanArchitecture.Infrastructure.csproj": {
+              "projectPath": "/home/omidsa/Programmings/ASPNetCore/Project07/CleanArchitectureMyself/CleanArchitecture.Infrastructure/CleanArchitecture.Infrastructure.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
