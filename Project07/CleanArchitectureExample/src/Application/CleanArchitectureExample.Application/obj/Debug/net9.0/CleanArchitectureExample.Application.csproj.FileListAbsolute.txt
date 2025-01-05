@@ -1,0 +1,16 @@
+/home/omidsa/Programmings/ASPNetCore/Project07/CleanArchitectureExample/src/Application/CleanArchitectureExample.Application/bin/Debug/net9.0/CleanArchitectureExample.Application.deps.json
+/home/omidsa/Programmings/ASPNetCore/Project07/CleanArchitectureExample/src/Application/CleanArchitectureExample.Application/bin/Debug/net9.0/CleanArchitectureExample.Application.dll
+/home/omidsa/Programmings/ASPNetCore/Project07/CleanArchitectureExample/src/Application/CleanArchitectureExample.Application/bin/Debug/net9.0/CleanArchitectureExample.Application.pdb
+/home/omidsa/Programmings/ASPNetCore/Project07/CleanArchitectureExample/src/Application/CleanArchitectureExample.Application/bin/Debug/net9.0/CleanArchitectureExample.Domain.dll
+/home/omidsa/Programmings/ASPNetCore/Project07/CleanArchitectureExample/src/Application/CleanArchitectureExample.Application/bin/Debug/net9.0/CleanArchitectureExample.Domain.pdb
+/home/omidsa/Programmings/ASPNetCore/Project07/CleanArchitectureExample/src/Application/CleanArchitectureExample.Application/obj/Debug/net9.0/CleanArchitectureExample.Application.csproj.AssemblyReference.cache
+/home/omidsa/Programmings/ASPNetCore/Project07/CleanArchitectureExample/src/Application/CleanArchitectureExample.Application/obj/Debug/net9.0/CleanArchitectureExample.Application.GeneratedMSBuildEditorConfig.editorconfig
+/home/omidsa/Programmings/ASPNetCore/Project07/CleanArchitectureExample/src/Application/CleanArchitectureExample.Application/obj/Debug/net9.0/CleanArchitectureExample.Application.AssemblyInfoInputs.cache
+/home/omidsa/Programmings/ASPNetCore/Project07/CleanArchitectureExample/src/Application/CleanArchitectureExample.Application/obj/Debug/net9.0/CleanArchitectureExample.Application.AssemblyInfo.cs
+/home/omidsa/Programmings/ASPNetCore/Project07/CleanArchitectureExample/src/Application/CleanArchitectureExample.Application/obj/Debug/net9.0/CleanArchitectureExample.Application.csproj.CoreCompileInputs.cache
+/home/omidsa/Programmings/ASPNetCore/Project07/CleanArchitectureExample/src/Application/CleanArchitectureExample.Application/obj/Debug/net9.0/CleanArchitectureExample.Application.sourcelink.json
+/home/omidsa/Programmings/ASPNetCore/Project07/CleanArchitectureExample/src/Application/CleanArchitectureExample.Application/obj/Debug/net9.0/CleanArc.54772633.Up2Date
+/home/omidsa/Programmings/ASPNetCore/Project07/CleanArchitectureExample/src/Application/CleanArchitectureExample.Application/obj/Debug/net9.0/CleanArchitectureExample.Application.dll
+/home/omidsa/Programmings/ASPNetCore/Project07/CleanArchitectureExample/src/Application/CleanArchitectureExample.Application/obj/Debug/net9.0/refint/CleanArchitectureExample.Application.dll
+/home/omidsa/Programmings/ASPNetCore/Project07/CleanArchitectureExample/src/Application/CleanArchitectureExample.Application/obj/Debug/net9.0/CleanArchitectureExample.Application.pdb
+/home/omidsa/Programmings/ASPNetCore/Project07/CleanArchitectureExample/src/Application/CleanArchitectureExample.Application/obj/Debug/net9.0/ref/CleanArchitectureExample.Application.dll

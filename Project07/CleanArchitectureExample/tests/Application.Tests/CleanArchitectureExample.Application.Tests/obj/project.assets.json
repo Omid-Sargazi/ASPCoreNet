@@ -411,6 +411,29 @@
         "build": {
           "build/net6.0/xunit.runner.visualstudio.props": {}
         }
+      },
+      "CleanArchitectureExample.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "CleanArchitectureExample.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/CleanArchitectureExample.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CleanArchitectureExample.Application.dll": {}
+        }
+      },
+      "CleanArchitectureExample.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/CleanArchitectureExample.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CleanArchitectureExample.Domain.dll": {}
+        }
       }
     }
   },
@@ -932,10 +955,21 @@
         "xunit.runner.visualstudio.2.8.2.nupkg.sha512",
         "xunit.runner.visualstudio.nuspec"
       ]
+    },
+    "CleanArchitectureExample.Application/1.0.0": {
+      "type": "project",
+      "path": "../../../src/Application/CleanArchitectureExample.Application/CleanArchitectureExample.Application.csproj",
+      "msbuildProject": "../../../src/Application/CleanArchitectureExample.Application/CleanArchitectureExample.Application.csproj"
+    },
+    "CleanArchitectureExample.Domain/1.0.0": {
+      "type": "project",
+      "path": "../../../src/Domain/CleanArchitectureExample.Domain/CleanArchitectureExample.Domain.csproj",
+      "msbuildProject": "../../../src/Domain/CleanArchitectureExample.Domain/CleanArchitectureExample.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net9.0": [
+      "CleanArchitectureExample.Application >= 1.0.0",
       "Microsoft.NET.Test.Sdk >= 17.11.1",
       "coverlet.collector >= 6.0.2",
       "xunit >= 2.9.2",
@@ -966,7 +1000,11 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/home/omidsa/Programmings/ASPNetCore/Project07/CleanArchitectureExample/src/Application/CleanArchitectureExample.Application/CleanArchitectureExample.Application.csproj": {
+              "projectPath": "/home/omidsa/Programmings/ASPNetCore/Project07/CleanArchitectureExample/src/Application/CleanArchitectureExample.Application/CleanArchitectureExample.Application.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

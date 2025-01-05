@@ -1,0 +1,12 @@
+/home/omidsa/Programmings/ASPNetCore/Project07/CleanArchitectureExample/src/Domain/CleanArchitectureExample.Domain/bin/Debug/net9.0/CleanArchitectureExample.Domain.deps.json
+/home/omidsa/Programmings/ASPNetCore/Project07/CleanArchitectureExample/src/Domain/CleanArchitectureExample.Domain/bin/Debug/net9.0/CleanArchitectureExample.Domain.dll
+/home/omidsa/Programmings/ASPNetCore/Project07/CleanArchitectureExample/src/Domain/CleanArchitectureExample.Domain/bin/Debug/net9.0/CleanArchitectureExample.Domain.pdb
+/home/omidsa/Programmings/ASPNetCore/Project07/CleanArchitectureExample/src/Domain/CleanArchitectureExample.Domain/obj/Debug/net9.0/CleanArchitectureExample.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/home/omidsa/Programmings/ASPNetCore/Project07/CleanArchitectureExample/src/Domain/CleanArchitectureExample.Domain/obj/Debug/net9.0/CleanArchitectureExample.Domain.AssemblyInfoInputs.cache
+/home/omidsa/Programmings/ASPNetCore/Project07/CleanArchitectureExample/src/Domain/CleanArchitectureExample.Domain/obj/Debug/net9.0/CleanArchitectureExample.Domain.AssemblyInfo.cs
+/home/omidsa/Programmings/ASPNetCore/Project07/CleanArchitectureExample/src/Domain/CleanArchitectureExample.Domain/obj/Debug/net9.0/CleanArchitectureExample.Domain.csproj.CoreCompileInputs.cache
+/home/omidsa/Programmings/ASPNetCore/Project07/CleanArchitectureExample/src/Domain/CleanArchitectureExample.Domain/obj/Debug/net9.0/CleanArchitectureExample.Domain.sourcelink.json
+/home/omidsa/Programmings/ASPNetCore/Project07/CleanArchitectureExample/src/Domain/CleanArchitectureExample.Domain/obj/Debug/net9.0/CleanArchitectureExample.Domain.dll
+/home/omidsa/Programmings/ASPNetCore/Project07/CleanArchitectureExample/src/Domain/CleanArchitectureExample.Domain/obj/Debug/net9.0/refint/CleanArchitectureExample.Domain.dll
+/home/omidsa/Programmings/ASPNetCore/Project07/CleanArchitectureExample/src/Domain/CleanArchitectureExample.Domain/obj/Debug/net9.0/CleanArchitectureExample.Domain.pdb
+/home/omidsa/Programmings/ASPNetCore/Project07/CleanArchitectureExample/src/Domain/CleanArchitectureExample.Domain/obj/Debug/net9.0/ref/CleanArchitectureExample.Domain.dll
