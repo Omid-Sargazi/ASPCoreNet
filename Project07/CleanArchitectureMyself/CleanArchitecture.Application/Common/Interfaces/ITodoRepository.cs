@@ -10,5 +10,6 @@ namespace CleanArchitecture.Application.Common.Interfaces
     {
         Task<IEnumerable<TodoItem>> GetAllAsync();
         Task<TodoItem> GetByIdAsync(int id);
+        Task AddAsync(TodoItem todoItem);
     }
 }

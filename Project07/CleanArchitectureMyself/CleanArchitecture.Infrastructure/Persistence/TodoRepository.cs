@@ -4,19 +4,31 @@ using System.Linq;
 using System.Threading.Tasks;
 using CleanArchitecture.Application.Common.Interfaces;
 using CleanArchitecture.Domin.Entities;
+using Microsoft.EntityFrameworkCore;
 
 namespace CleanArchitecture.Infrastructure.Persistence
 {
     public class TodoRepository : ITodoRepository
     {
-        public Task<IEnumerable<TodoItem>> GetAllAsync()
+        private readonly ApplicationDbContext _context;
+        public async Task AddAsync(TodoItem todoItem)
         {
-            throw new NotImplementedException();
+            await _context.TodoItems.AddAsync(todoItem);
         }
 
-        public Task<TodoItem> GetByIdAsync(int id)
+        public async Task<IEnumerable<TodoItem>> GetAllAsync()
         {
-            throw new NotImplementedException();
+            return await _context.TodoItems.ToListAsync();
+        }
+
+        public async Task<TodoItem> GetByIdAsync(int id)
+        {
+            var item = await _context.TodoItems.FindAsync(id);
+            if (item == null)
+            {
+                throw new Exception("Item not found");
+            }
+            return item;
         }
     }
 }
