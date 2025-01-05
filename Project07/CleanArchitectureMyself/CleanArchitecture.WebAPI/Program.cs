@@ -47,7 +47,7 @@ using CleanArchitecture.WebAPI.Middlewares;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
-builder.Services.AddInfrastructure();
+// builder.Services.AddInfrastructure();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 

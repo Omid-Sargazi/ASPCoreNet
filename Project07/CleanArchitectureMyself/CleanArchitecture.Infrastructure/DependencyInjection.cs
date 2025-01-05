@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using CleanArchitecture.Application.Common.Interfaces;
+using CleanArchitecture.Infrastructure.Persistence;
 using CleanArchitecture.Infrastructure.Services;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -35,6 +36,7 @@ namespace CleanArchitecture.Infrastructure
             services.AddSingleton<IWeatherForecastService,WeatherForecastService>();
 
             services.AddScoped<IApplicationDbContext>(provider=> provider.GetRequiredService<ApplicationDbContext>());
+            services.AddScoped<ITodoRepository,TodoRepository>();
             return services;
         }
     }
