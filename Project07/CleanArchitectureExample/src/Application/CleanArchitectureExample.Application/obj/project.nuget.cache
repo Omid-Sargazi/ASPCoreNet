@@ -1,10 +1,22 @@
 {
   "version": 2,
-  "dgSpecHash": "HT3jnuLQ1bI=",
-  "success": true,
+  "dgSpecHash": "d1zWMI88bVw=",
+  "success": false,
   "projectFilePath": "/home/omidsa/Programmings/ASPNetCore/Project07/CleanArchitectureExample/src/Application/CleanArchitectureExample.Application/CleanArchitectureExample.Application.csproj",
   "expectedPackageFiles": [
-    "/home/omidsa/.nuget/packages/mediatr/9.0.0/mediatr.9.0.0.nupkg.sha512"
+    "/home/omidsa/.nuget/packages/mediatr/9.0.0/mediatr.9.0.0.nupkg.sha512",
+    "/home/omidsa/.nuget/packages/mediatr.extensions.microsoft.dependencyinjection/11.1.0/mediatr.extensions.microsoft.dependencyinjection.11.1.0.nupkg.sha512",
+    "/home/omidsa/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/7.0.0/microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1605",
+      "level": "Error",
+      "message": "Warning As Error: Detected package downgrade: MediatR from 11.0.0 to 9.0.0. Reference the package directly from the project to select a different version. \n CleanArchitectureExample.Application -> MediatR.Extensions.Microsoft.DependencyInjection 11.1.0 -> MediatR (>= 11.0.0 && < 12.0.0) \n CleanArchitectureExample.Application -> MediatR (>= 9.0.0)",
+      "libraryId": "MediatR",
+      "targetGraphs": [
+        "net9.0"
+      ]
+    }
+  ]
 }
