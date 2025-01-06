@@ -1,4 +1,5 @@
 using CleanArchitectureExample.Application.Commands.CreateTask;
+using CleanArchitectureExample.Infrastructure;
 using MediatR;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -6,6 +7,9 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 
 builder.Services.AddMediatR(typeof(CreateTaskCommandHandler).Assembly);
+// builder.Services.AddInfrastructureServices();
+
+builder.Services.AddInfrastructureServices(builder.Configuration.GetConnectionString("DefaultConnection"));
 
 
 

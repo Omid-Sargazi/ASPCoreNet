@@ -3,15 +3,23 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using CleanArchitectureExample.Application.Commands.CreateTask;
+using CleanArchitectureExample.Infrastructure.Data;
 using MediatR;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace CleanArchitectureExample.Infrastructure
 {
     public static class DependencyInjection
     {
-        public static IServiceCollection AddInfrastructureServices(this IServiceCollection services)
+        public static IServiceCollection AddInfrastructureServices(this IServiceCollection services, string? connectionString)
         {
+
+
+            services.AddDbContext<AppDbContext>(options=>{
+                options.UseSqlite(connectionString);
+            });
+
             services.AddMediatR(typeof(CreateTaskCommandHandler).Assembly);
             return services;
         }
