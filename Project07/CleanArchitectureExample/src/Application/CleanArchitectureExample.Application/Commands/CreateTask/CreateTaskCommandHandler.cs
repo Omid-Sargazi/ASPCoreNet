@@ -20,6 +20,7 @@ namespace CleanArchitectureExample.Application.Commands.CreateTask
         {
             var task = new TaskItem 
             {
+                Id = Guid.NewGuid(),
                 Title = request.Title,
                 Description = request.Description,
                 DueDate = request.DueDate,
