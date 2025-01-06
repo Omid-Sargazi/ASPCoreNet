@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "LEZUKBKxYek=",
+  "dgSpecHash": "AzoivPQk5AQ=",
   "success": true,
   "projectFilePath": "/home/omidsa/Programmings/ASPNetCore/Project07/CleanArchitectureExample/tests/Application.Tests/CleanArchitectureExample.Application.Tests/CleanArchitectureExample.Application.Tests.csproj",
   "expectedPackageFiles": [
     "/home/omidsa/.nuget/packages/coverlet.collector/6.0.2/coverlet.collector.6.0.2.nupkg.sha512",
+    "/home/omidsa/.nuget/packages/mediatr/9.0.0/mediatr.9.0.0.nupkg.sha512",
     "/home/omidsa/.nuget/packages/microsoft.codecoverage/17.11.1/microsoft.codecoverage.17.11.1.nupkg.sha512",
     "/home/omidsa/.nuget/packages/microsoft.net.test.sdk/17.11.1/microsoft.net.test.sdk.17.11.1.nupkg.sha512",
     "/home/omidsa/.nuget/packages/microsoft.testplatform.objectmodel/17.11.1/microsoft.testplatform.objectmodel.17.11.1.nupkg.sha512",
