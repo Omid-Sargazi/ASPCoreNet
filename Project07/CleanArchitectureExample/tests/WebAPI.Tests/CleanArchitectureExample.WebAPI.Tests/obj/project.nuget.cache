@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "PNSq0H3G0kM=",
-  "success": false,
+  "dgSpecHash": "/7iCxJExZF4=",
+  "success": true,
   "projectFilePath": "/home/omidsa/Programmings/ASPNetCore/Project07/CleanArchitectureExample/tests/WebAPI.Tests/CleanArchitectureExample.WebAPI.Tests/CleanArchitectureExample.WebAPI.Tests.csproj",
   "expectedPackageFiles": [
     "/home/omidsa/.nuget/packages/coverlet.collector/6.0.2/coverlet.collector.6.0.2.nupkg.sha512",
-    "/home/omidsa/.nuget/packages/mediatr/9.0.0/mediatr.9.0.0.nupkg.sha512",
+    "/home/omidsa/.nuget/packages/mediatr/11.1.0/mediatr.11.1.0.nupkg.sha512",
+    "/home/omidsa/.nuget/packages/mediatr.contracts/1.0.1/mediatr.contracts.1.0.1.nupkg.sha512",
     "/home/omidsa/.nuget/packages/mediatr.extensions.microsoft.dependencyinjection/11.1.0/mediatr.extensions.microsoft.dependencyinjection.11.1.0.nupkg.sha512",
     "/home/omidsa/.nuget/packages/microsoft.aspnetcore.openapi/9.0.0/microsoft.aspnetcore.openapi.9.0.0.nupkg.sha512",
     "/home/omidsa/.nuget/packages/microsoft.codecoverage/17.11.1/microsoft.codecoverage.17.11.1.nupkg.sha512",
@@ -47,15 +48,5 @@
     "/home/omidsa/.nuget/packages/xunit.extensibility.execution/2.9.2/xunit.extensibility.execution.2.9.2.nupkg.sha512",
     "/home/omidsa/.nuget/packages/xunit.runner.visualstudio/2.8.2/xunit.runner.visualstudio.2.8.2.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1605",
-      "level": "Error",
-      "message": "Warning As Error: Detected package downgrade: MediatR from 11.0.0 to 9.0.0. Reference the package directly from the project to select a different version. \n CleanArchitectureExample.WebAPI.Tests -> CleanArchitectureExample.WebAPI -> CleanArchitectureExample.Application -> MediatR.Extensions.Microsoft.DependencyInjection 11.1.0 -> MediatR (>= 11.0.0 && < 12.0.0) \n CleanArchitectureExample.WebAPI.Tests -> CleanArchitectureExample.WebAPI -> CleanArchitectureExample.Application -> MediatR (>= 9.0.0)",
-      "libraryId": "MediatR",
-      "targetGraphs": [
-        "net9.0"
-      ]
-    }
-  ]
+  "logs": []
 }

@@ -19,7 +19,7 @@ namespace CleanArchitectureExample.Application.Queries.GetTaskById
         }
 
 
-        public async Task<TaskItemDto> Handle(GetTaskByIdQuery request, CancellationToken cancellationToken)
+        public async Task<TaskItemDto?> Handle(GetTaskByIdQuery request, CancellationToken cancellationToken)
         {
             var task = await _repository.GetByIdAsync(request.TaskId);
             if(task ==null)

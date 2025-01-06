@@ -102,3 +102,7 @@
 /home/omidsa/Programmings/ASPNetCore/Project07/CleanArchitectureExample/tests/Application.Tests/CleanArchitectureExample.Application.Tests/obj/Debug/net9.0/CleanArchitectureExample.Application.Tests.pdb
 /home/omidsa/Programmings/ASPNetCore/Project07/CleanArchitectureExample/tests/Application.Tests/CleanArchitectureExample.Application.Tests/obj/Debug/net9.0/CleanArchitectureExample.Application.Tests.genruntimeconfig.cache
 /home/omidsa/Programmings/ASPNetCore/Project07/CleanArchitectureExample/tests/Application.Tests/CleanArchitectureExample.Application.Tests/obj/Debug/net9.0/ref/CleanArchitectureExample.Application.Tests.dll
+/home/omidsa/Programmings/ASPNetCore/Project07/CleanArchitectureExample/tests/Application.Tests/CleanArchitectureExample.Application.Tests/bin/Debug/net9.0/MediatR.dll
+/home/omidsa/Programmings/ASPNetCore/Project07/CleanArchitectureExample/tests/Application.Tests/CleanArchitectureExample.Application.Tests/bin/Debug/net9.0/MediatR.Contracts.dll
+/home/omidsa/Programmings/ASPNetCore/Project07/CleanArchitectureExample/tests/Application.Tests/CleanArchitectureExample.Application.Tests/bin/Debug/net9.0/MediatR.Extensions.Microsoft.DependencyInjection.dll
+/home/omidsa/Programmings/ASPNetCore/Project07/CleanArchitectureExample/tests/Application.Tests/CleanArchitectureExample.Application.Tests/bin/Debug/net9.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll

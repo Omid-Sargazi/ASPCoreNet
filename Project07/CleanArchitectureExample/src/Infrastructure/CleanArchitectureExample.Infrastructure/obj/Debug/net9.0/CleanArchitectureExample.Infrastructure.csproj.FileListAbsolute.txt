@@ -16,3 +16,5 @@
 /home/omidsa/Programmings/ASPNetCore/Project07/CleanArchitectureExample/src/Infrastructure/CleanArchitectureExample.Infrastructure/obj/Debug/net9.0/refint/CleanArchitectureExample.Infrastructure.dll
 /home/omidsa/Programmings/ASPNetCore/Project07/CleanArchitectureExample/src/Infrastructure/CleanArchitectureExample.Infrastructure/obj/Debug/net9.0/CleanArchitectureExample.Infrastructure.pdb
 /home/omidsa/Programmings/ASPNetCore/Project07/CleanArchitectureExample/src/Infrastructure/CleanArchitectureExample.Infrastructure/obj/Debug/net9.0/ref/CleanArchitectureExample.Infrastructure.dll
+/home/omidsa/Programmings/ASPNetCore/Project07/CleanArchitectureExample/src/Infrastructure/CleanArchitectureExample.Infrastructure/bin/Debug/net9.0/CleanArchitectureExample.Infrastructure.runtimeconfig.json
+/home/omidsa/Programmings/ASPNetCore/Project07/CleanArchitectureExample/src/Infrastructure/CleanArchitectureExample.Infrastructure/obj/Debug/net9.0/CleanArchitectureExample.Infrastructure.genruntimeconfig.cache
