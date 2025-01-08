@@ -20,7 +20,9 @@ namespace MiddlewareExamples02.Middlewares
             {
                 context.Response.StatusCode = 401;
                 await context.Response.WriteAsync("Unauthorized");
-                return;
+                await _next(context);
+
+                //return;
             }
             await _next(context);
         }
