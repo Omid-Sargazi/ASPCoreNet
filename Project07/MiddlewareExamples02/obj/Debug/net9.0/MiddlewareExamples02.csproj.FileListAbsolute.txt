@@ -32,3 +32,7 @@
 /home/omidsa/Programmings/ASPNetCore/Project07/MiddlewareExamples02/obj/Debug/net9.0/MiddlewareExamples02.pdb
 /home/omidsa/Programmings/ASPNetCore/Project07/MiddlewareExamples02/obj/Debug/net9.0/MiddlewareExamples02.genruntimeconfig.cache
 /home/omidsa/Programmings/ASPNetCore/Project07/MiddlewareExamples02/obj/Debug/net9.0/ref/MiddlewareExamples02.dll
+/home/omidsa/Programmings/ASPNetCore/Project07/MiddlewareExamples02/bin/Debug/net9.0/FluentValidation.dll
+/home/omidsa/Programmings/ASPNetCore/Project07/MiddlewareExamples02/bin/Debug/net9.0/FluentValidation.DependencyInjectionExtensions.dll
+/home/omidsa/Programmings/ASPNetCore/Project07/MiddlewareExamples02/bin/Debug/net9.0/MediatR.dll
+/home/omidsa/Programmings/ASPNetCore/Project07/MiddlewareExamples02/bin/Debug/net9.0/MediatR.Extensions.Microsoft.DependencyInjection.dll
