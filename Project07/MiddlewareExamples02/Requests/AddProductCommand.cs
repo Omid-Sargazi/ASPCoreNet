@@ -6,5 +6,5 @@ using MediatR;
 
 namespace MiddlewareExamples02.Requests
 {
-    public record AddProductCommand(string Name, String Price):IRequest<Guid>;
+    public record AddProductCommand(string Name, int Price):IRequest<Guid>;
 }
