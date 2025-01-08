@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "z5Pp3ikCI4s=",
+  "success": true,
+  "projectFilePath": "/home/omidsa/Programmings/ASPNetCore/Project07/MiddlewareExamples02/MiddlewareExamples02.csproj",
+  "expectedPackageFiles": [
+    "/home/omidsa/.nuget/packages/microsoft.aspnetcore.openapi/9.0.0/microsoft.aspnetcore.openapi.9.0.0.nupkg.sha512",
+    "/home/omidsa/.nuget/packages/microsoft.openapi/1.6.17/microsoft.openapi.1.6.17.nupkg.sha512"
+  ],
+  "logs": []
+}
