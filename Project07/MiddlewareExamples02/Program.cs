@@ -9,6 +9,7 @@ builder.Services.AddOpenApi();
 var app = builder.Build();
 
 app.UseMiddleware<RequestLoggingMiddleware>();
+app.UseMiddleware<ResponseTimeMiddleware>();
 
 
 app.Run();
