@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using MediatR;
+using MiddlewareExamples02.Exceptions;
 using MiddlewareExamples02.Requests;
 
 namespace MiddlewareExamples02.Handlers
