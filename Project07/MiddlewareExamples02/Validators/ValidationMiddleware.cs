@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using FluentValidation;
+using MiddlewareExamples02.Exceptions;
 
 
 namespace MiddlewareExamples02.Validators
 {
-    public class ValidationMiddleware<TRequest> : IMiddleware
+    public class ValidationMiddleware<TRequest> : IMiddleware where TRequest:class
     {
 
         private readonly IValidator<TRequest> _validator;
