@@ -10,6 +10,7 @@ var app = builder.Build();
 
 app.UseMiddleware<RequestLoggingMiddleware>();
 app.UseMiddleware<ResponseTimeMiddleware>();
+app.UseMiddleware<AuthenticationMiddleware>();
 
 
 app.Run();
