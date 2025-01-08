@@ -9,10 +9,15 @@ builder.Services.AddOpenApi();
 var app = builder.Build();
 
 app.UseMiddleware<RequestLoggingMiddleware>();
-app.UseMiddleware<ResponseTimeMiddleware>();
+// app.UseMiddleware<ResponseTimeMiddleware>();
 //app.UseMiddleware<AuthenticationMiddleware>();
-app.UseMiddleware<IpWhitelistMiddleware>(new List<string>{"127.0.0.1"});
-app.UseMiddleware<CustomHeaderMiddleware>();
+//app.UseMiddleware<IpWhitelistMiddleware>(new List<string>{"127.0.1.1"});
+// app.UseMiddleware<CustomHeaderMiddleware>();
+// app.UseMiddleware<RequestValidationMiddleware>();
+app.UseMiddleware<RateLimitingMiddleware>();
+
+
+
 
 app.MapGet("/", () => "Hello World!");
 
