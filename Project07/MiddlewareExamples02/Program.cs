@@ -11,6 +11,7 @@ var app = builder.Build();
 app.UseMiddleware<RequestLoggingMiddleware>();
 app.UseMiddleware<ResponseTimeMiddleware>();
 app.UseMiddleware<AuthenticationMiddleware>();
+app.UseMiddleware<IpWhitelistMiddleware>(new List<string>{"127.0.0.1"});
 
 
 app.Run();
