@@ -42,10 +42,22 @@ namespace EnhanceCodes.controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Create(Product product)
+        public async Task<IActionResult> Create([FromBody] ProductCreateDto productDto)
         {
-            if (product == null || string.IsNullOrEmpty(product.Name) || product.Price <= 0)
-                return BadRequest("Invalid product data.");
+
+            if(!ModelState.IsValid)
+            {
+                return BadRequest(new {
+                    Success=false,
+                    Errors=ModelState.Values.SelectMany(v=>v.Errors).Select(e=>e.ErrorMessage),
+                });
+            }
+            
+            var product = new Product
+            {
+                Name = productDto.Name,
+                Price = productDto.Price
+            };
             
             var createdProduct = await _productService.CreateProductAsync(product);
 
@@ -55,6 +67,20 @@ namespace EnhanceCodes.controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> Update(int id, Product updatedProduct)
         {
+
+            if(!ModelState.IsValid)
+            {
+                return BadRequest(new{
+                    Success=false,
+                    Errors = ModelState.Values.SelectMany(v=>v.Errors).Select(e =>e.ErrorMessage)
+                });
+            }
+
+            var updateProduct = new Product
+            {
+                Name = updatedProduct.Name,
+                Price = updatedProduct.Price
+            };
 
             if (updatedProduct == null || string.IsNullOrEmpty(updatedProduct.Name) || updatedProduct.Price <= 0)
                 return BadRequest("Invalid product data.");
