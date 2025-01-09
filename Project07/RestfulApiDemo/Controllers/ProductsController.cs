@@ -56,5 +56,15 @@ namespace RestfulApiDemo.Controllers
             product.Price = updatedProduct.Price;
             return NoContent();
         }
+
+        [HttpDelete("{id}")]
+        public IActionResult DeleteProduct(int id)
+        {
+            var product = products.FirstOrDefault(p=>p.Id==id);
+            if(product==null) return NotFound(new {Message="Product Not Found;"});
+
+            products.Remove(product);
+            return NoContent();
+        }
     }
 }
