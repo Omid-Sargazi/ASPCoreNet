@@ -19,6 +19,19 @@
           }
         }
       },
+      "FluentValidation/9.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/FluentValidation.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/FluentValidation.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "MediatR/9.0.0": {
         "type": "package",
         "compile": {
@@ -192,6 +205,21 @@
         "lib/netstandard2.0/AutoMapper.dll",
         "lib/netstandard2.0/AutoMapper.pdb",
         "lib/netstandard2.0/AutoMapper.xml"
+      ]
+    },
+    "FluentValidation/9.0.0": {
+      "sha512": "2SPrOW660J7v56AC2Wd4MqdiXOoEUPf72J2yMx2F3y6Ylw5pvuYrbjI435wimdTCleGgssgsdTwUJHc72dkTMw==",
+      "type": "package",
+      "path": "fluentvalidation/9.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "fluentvalidation.9.0.0.nupkg.sha512",
+        "fluentvalidation.nuspec",
+        "lib/net461/FluentValidation.dll",
+        "lib/net461/FluentValidation.xml",
+        "lib/netstandard2.0/FluentValidation.dll",
+        "lib/netstandard2.0/FluentValidation.xml"
       ]
     },
     "MediatR/9.0.0": {
@@ -842,6 +870,7 @@
   "projectFileDependencyGroups": {
     "net9.0": [
       "AutoMapper >= 9.0.0",
+      "FluentValidation >= 9.0.0",
       "MediatR >= 9.0.0"
     ]
   },
@@ -889,6 +918,10 @@
         "targetAlias": "net9.0",
         "dependencies": {
           "AutoMapper": {
+            "target": "Package",
+            "version": "[9.0.0, )"
+          },
+          "FluentValidation": {
             "target": "Package",
             "version": "[9.0.0, )"
           },
