@@ -1,0 +1,6 @@
+@EnhanceCodes_HostAddress = http://localhost:5023
+
+GET {{EnhanceCodes_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

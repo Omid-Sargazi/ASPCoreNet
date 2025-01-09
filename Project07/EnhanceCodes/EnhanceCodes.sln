@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnhanceCodes", "EnhanceCodes.csproj", "{10099597-E116-E847-DC15-26B69461ECDC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{10099597-E116-E847-DC15-26B69461ECDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10099597-E116-E847-DC15-26B69461ECDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10099597-E116-E847-DC15-26B69461ECDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10099597-E116-E847-DC15-26B69461ECDC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5198C086-016D-4DED-BA9D-E443ACC20617}
+	EndGlobalSection
+EndGlobal
