@@ -24,5 +24,37 @@ namespace RestfulApiDemo.Controllers
         {
             return Ok(products);
         }
+
+        [HttpGet("{id}")]
+        public IActionResult GetProductById(int id)
+        {
+            var product = products.FirstOrDefault(p=>p.Id==id);
+
+            if(product==null)
+            {
+                return NotFound(new {Message="Product not found."});
+            }
+
+            return Ok(product);
+        }
+
+        [HttpPost]
+        public IActionResult AddProduct([FromBody] Product newProduct)
+        {
+            newProduct.Id = products.Max(p=>p.Id)+1;
+            products.Add(newProduct);
+            return CreatedAtAction(nameof(GetProductById), new { id = newProduct.Id }, newProduct);
+        }
+
+        [HttpPut("{id}")]
+        public IActionResult UpdateProduct(int id, [FromBody] Product updatedProduct)
+        {
+            var product = products.FirstOrDefault(p=>p.Id==id);
+            if(product==null) return NotFound(new {Message="Product not found"});
+
+            product.Name = updatedProduct.Name;
+            product.Price = updatedProduct.Price;
+            return NoContent();
+        }
     }
 }
