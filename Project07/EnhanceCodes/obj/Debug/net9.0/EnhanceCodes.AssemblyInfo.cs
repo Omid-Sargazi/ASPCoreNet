@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EnhanceCodes")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d0e71ba03ad6749ce6166e2ae16eba5fc880a126")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fae57f7cc540b024bd42661094dc75cbec3b41f8")]
 [assembly: System.Reflection.AssemblyProductAttribute("EnhanceCodes")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EnhanceCodes")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

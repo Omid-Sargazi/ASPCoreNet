@@ -10,6 +10,7 @@ namespace EnhanceCodes.controllers
     [Route("api/[controller]")]
     public class ProductController:ControllerBase
     {
+    
         private static List<Product> Products = new List<Product>
         {
             new Product { Id = 1, Name = "Laptop", Price = 1200 },
