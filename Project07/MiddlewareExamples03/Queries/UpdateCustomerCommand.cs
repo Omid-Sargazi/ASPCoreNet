@@ -6,5 +6,5 @@ using MediatR;
 
 namespace MiddlewareExamples03.Queries
 {
-    public class UpdateCustomerCommand(Guid Id, string FirstName, string LastName, string Email, string Phone):IRequest<bool>;
+    public record UpdateCustomerCommand(Guid Id, string FirstName, string LastName, string Email, string Phone):IRequest<bool>;
 }
