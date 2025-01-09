@@ -1,0 +1,15 @@
+/home/omidsa/Programmings/ASPNetCore/Project07/SystemTextJson/bin/Debug/net9.0/SystemTextJson
+/home/omidsa/Programmings/ASPNetCore/Project07/SystemTextJson/bin/Debug/net9.0/SystemTextJson.deps.json
+/home/omidsa/Programmings/ASPNetCore/Project07/SystemTextJson/bin/Debug/net9.0/SystemTextJson.runtimeconfig.json
+/home/omidsa/Programmings/ASPNetCore/Project07/SystemTextJson/bin/Debug/net9.0/SystemTextJson.dll
+/home/omidsa/Programmings/ASPNetCore/Project07/SystemTextJson/bin/Debug/net9.0/SystemTextJson.pdb
+/home/omidsa/Programmings/ASPNetCore/Project07/SystemTextJson/obj/Debug/net9.0/SystemTextJson.GeneratedMSBuildEditorConfig.editorconfig
+/home/omidsa/Programmings/ASPNetCore/Project07/SystemTextJson/obj/Debug/net9.0/SystemTextJson.AssemblyInfoInputs.cache
+/home/omidsa/Programmings/ASPNetCore/Project07/SystemTextJson/obj/Debug/net9.0/SystemTextJson.AssemblyInfo.cs
+/home/omidsa/Programmings/ASPNetCore/Project07/SystemTextJson/obj/Debug/net9.0/SystemTextJson.csproj.CoreCompileInputs.cache
+/home/omidsa/Programmings/ASPNetCore/Project07/SystemTextJson/obj/Debug/net9.0/SystemTextJson.sourcelink.json
+/home/omidsa/Programmings/ASPNetCore/Project07/SystemTextJson/obj/Debug/net9.0/SystemTextJson.dll
+/home/omidsa/Programmings/ASPNetCore/Project07/SystemTextJson/obj/Debug/net9.0/refint/SystemTextJson.dll
+/home/omidsa/Programmings/ASPNetCore/Project07/SystemTextJson/obj/Debug/net9.0/SystemTextJson.pdb
+/home/omidsa/Programmings/ASPNetCore/Project07/SystemTextJson/obj/Debug/net9.0/SystemTextJson.genruntimeconfig.cache
+/home/omidsa/Programmings/ASPNetCore/Project07/SystemTextJson/obj/Debug/net9.0/ref/SystemTextJson.dll
