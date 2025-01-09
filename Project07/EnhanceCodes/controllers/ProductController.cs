@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using EnhanceCodes.Models;
+using EnhanceCodes.Services;
 using Microsoft.AspNetCore.Mvc;
 
 namespace EnhanceCodes.controllers
@@ -10,65 +12,67 @@ namespace EnhanceCodes.controllers
     [Route("api/[controller]")]
     public class ProductController:ControllerBase
     {
-    
-        private static List<Product> Products = new List<Product>
-        {
-            new Product { Id = 1, Name = "Laptop", Price = 1200 },
-            new Product { Id = 2, Name = "Smartphone", Price = 800 },
-        };
+        private readonly IProductService _productService;
 
+    
+        public ProductController(IProductService productService)
+        {
+            _productService = productService;
+        }
 
         [HttpGet]
-        public IActionResult GetAll()
+        public async Task<IActionResult> GetAll()
         {
-            return Ok(Products);
+            var products = await _productService.GetAllProductsAsync();
+            return Ok(products);
         }
 
 
         [HttpGet("{id}")]
-        public IActionResult GetById(int id)
+        public async Task<IActionResult> GetById(int id)
         {
-            var product = Products.FirstOrDefault(p => p.Id == id);
-            if (product == null)
+
+            var product = await _productService.GetProductByIdAsync(id);
+            if(product==null)
+            {
                 return NotFound();
+            }
 
             return Ok(product);
         }
 
         [HttpPost]
-        public IActionResult Create(Product product)
+        public async Task<IActionResult> Create(Product product)
         {
             if (product == null || string.IsNullOrEmpty(product.Name) || product.Price <= 0)
                 return BadRequest("Invalid product data.");
+            
+            var createdProduct = await _productService.CreateProductAsync(product);
 
-            product.Id = Products.Max(p => p.Id) + 1;
-            Products.Add(product);
             return CreatedAtAction(nameof(GetById), new { id = product.Id }, product);
         }
 
         [HttpPut("{id}")]
-        public IActionResult Update(int id, Product updatedProduct)
+        public async Task<IActionResult> Update(int id, Product updatedProduct)
         {
-            var product = Products.FirstOrDefault(p => p.Id == id);
-            if (product == null)
-                return NotFound();
 
             if (updatedProduct == null || string.IsNullOrEmpty(updatedProduct.Name) || updatedProduct.Price <= 0)
                 return BadRequest("Invalid product data.");
 
-            product.Name = updatedProduct.Name;
-            product.Price = updatedProduct.Price;
-            return NoContent();
+           var product = await _productService.UpdateProductAsync(id, updatedProduct);
+           if(product==null)
+                return NotFound();
+
+            return Ok(product);
         }
 
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {
-            var product = Products.FirstOrDefault(p => p.Id == id);
-            if (product == null)
+            var deleted = _productService.DeleteProductAsync(id);
+            if (deleted == null)
                 return NotFound();
 
-            Products.Remove(product);
             return NoContent();
         }
     }
@@ -76,17 +80,4 @@ namespace EnhanceCodes.controllers
 
 
 
-
-
-
-
-
-
-
-    public class Product
-    {
-        public int Id { get; set; }
-        public string Name { get; set; }
-        public decimal Price { get; set; }
-    }
 }

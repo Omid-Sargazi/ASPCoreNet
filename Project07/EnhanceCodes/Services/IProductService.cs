@@ -8,7 +8,6 @@ namespace EnhanceCodes.Services
 {
     public interface IProductService
     {
-        private readonly List<Product> _products;
         Task<IEnumerable<Product>> GetAllProductsAsync();
         Task<Product> GetProductByIdAsync(int id);
         Task<Product> CreateProductAsync(Product product);
