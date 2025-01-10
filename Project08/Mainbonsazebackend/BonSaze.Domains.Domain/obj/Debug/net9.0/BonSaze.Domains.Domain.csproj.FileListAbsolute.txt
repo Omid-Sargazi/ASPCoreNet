@@ -1,0 +1,12 @@
+/home/omidsa/Programmings/ASPNetCore/Project08/Mainbonsazebackend/BonSaze.Domains.Domain/bin/Debug/net9.0/BonSaze.Domains.Domain.deps.json
+/home/omidsa/Programmings/ASPNetCore/Project08/Mainbonsazebackend/BonSaze.Domains.Domain/bin/Debug/net9.0/BonSaze.Domains.Domain.dll
+/home/omidsa/Programmings/ASPNetCore/Project08/Mainbonsazebackend/BonSaze.Domains.Domain/bin/Debug/net9.0/BonSaze.Domains.Domain.pdb
+/home/omidsa/Programmings/ASPNetCore/Project08/Mainbonsazebackend/BonSaze.Domains.Domain/obj/Debug/net9.0/BonSaze.Domains.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/home/omidsa/Programmings/ASPNetCore/Project08/Mainbonsazebackend/BonSaze.Domains.Domain/obj/Debug/net9.0/BonSaze.Domains.Domain.AssemblyInfoInputs.cache
+/home/omidsa/Programmings/ASPNetCore/Project08/Mainbonsazebackend/BonSaze.Domains.Domain/obj/Debug/net9.0/BonSaze.Domains.Domain.AssemblyInfo.cs
+/home/omidsa/Programmings/ASPNetCore/Project08/Mainbonsazebackend/BonSaze.Domains.Domain/obj/Debug/net9.0/BonSaze.Domains.Domain.csproj.CoreCompileInputs.cache
+/home/omidsa/Programmings/ASPNetCore/Project08/Mainbonsazebackend/BonSaze.Domains.Domain/obj/Debug/net9.0/BonSaze.Domains.Domain.sourcelink.json
+/home/omidsa/Programmings/ASPNetCore/Project08/Mainbonsazebackend/BonSaze.Domains.Domain/obj/Debug/net9.0/BonSaze.Domains.Domain.dll
+/home/omidsa/Programmings/ASPNetCore/Project08/Mainbonsazebackend/BonSaze.Domains.Domain/obj/Debug/net9.0/refint/BonSaze.Domains.Domain.dll
+/home/omidsa/Programmings/ASPNetCore/Project08/Mainbonsazebackend/BonSaze.Domains.Domain/obj/Debug/net9.0/BonSaze.Domains.Domain.pdb
+/home/omidsa/Programmings/ASPNetCore/Project08/Mainbonsazebackend/BonSaze.Domains.Domain/obj/Debug/net9.0/ref/BonSaze.Domains.Domain.dll
