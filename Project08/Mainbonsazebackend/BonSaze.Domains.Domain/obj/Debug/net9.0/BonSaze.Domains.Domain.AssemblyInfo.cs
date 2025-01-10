@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BonSaze.Domains.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e598b9698368d6dba3ab8a780490590f322be04f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fae727d5809078900dfe08abe17352c33f06df5b")]
 [assembly: System.Reflection.AssemblyProductAttribute("BonSaze.Domains.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BonSaze.Domains.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
