@@ -1,0 +1,16 @@
+/home/omidsa/Programmings/ASPNetCore/Project08/Mainbonsazebackend/BonSaze.Infrastructures.CommandDB/bin/Debug/net9.0/BonSaze.Infrastructures.CommandDB.deps.json
+/home/omidsa/Programmings/ASPNetCore/Project08/Mainbonsazebackend/BonSaze.Infrastructures.CommandDB/bin/Debug/net9.0/BonSaze.Infrastructures.CommandDB.dll
+/home/omidsa/Programmings/ASPNetCore/Project08/Mainbonsazebackend/BonSaze.Infrastructures.CommandDB/bin/Debug/net9.0/BonSaze.Infrastructures.CommandDB.pdb
+/home/omidsa/Programmings/ASPNetCore/Project08/Mainbonsazebackend/BonSaze.Infrastructures.CommandDB/bin/Debug/net9.0/BonSaze.Domains.Domain.dll
+/home/omidsa/Programmings/ASPNetCore/Project08/Mainbonsazebackend/BonSaze.Infrastructures.CommandDB/bin/Debug/net9.0/BonSaze.Domains.Domain.pdb
+/home/omidsa/Programmings/ASPNetCore/Project08/Mainbonsazebackend/BonSaze.Infrastructures.CommandDB/obj/Debug/net9.0/BonSaze.Infrastructures.CommandDB.csproj.AssemblyReference.cache
+/home/omidsa/Programmings/ASPNetCore/Project08/Mainbonsazebackend/BonSaze.Infrastructures.CommandDB/obj/Debug/net9.0/BonSaze.Infrastructures.CommandDB.GeneratedMSBuildEditorConfig.editorconfig
+/home/omidsa/Programmings/ASPNetCore/Project08/Mainbonsazebackend/BonSaze.Infrastructures.CommandDB/obj/Debug/net9.0/BonSaze.Infrastructures.CommandDB.AssemblyInfoInputs.cache
+/home/omidsa/Programmings/ASPNetCore/Project08/Mainbonsazebackend/BonSaze.Infrastructures.CommandDB/obj/Debug/net9.0/BonSaze.Infrastructures.CommandDB.AssemblyInfo.cs
+/home/omidsa/Programmings/ASPNetCore/Project08/Mainbonsazebackend/BonSaze.Infrastructures.CommandDB/obj/Debug/net9.0/BonSaze.Infrastructures.CommandDB.csproj.CoreCompileInputs.cache
+/home/omidsa/Programmings/ASPNetCore/Project08/Mainbonsazebackend/BonSaze.Infrastructures.CommandDB/obj/Debug/net9.0/BonSaze.Infrastructures.CommandDB.sourcelink.json
+/home/omidsa/Programmings/ASPNetCore/Project08/Mainbonsazebackend/BonSaze.Infrastructures.CommandDB/obj/Debug/net9.0/BonSaze..89DED198.Up2Date
+/home/omidsa/Programmings/ASPNetCore/Project08/Mainbonsazebackend/BonSaze.Infrastructures.CommandDB/obj/Debug/net9.0/BonSaze.Infrastructures.CommandDB.dll
+/home/omidsa/Programmings/ASPNetCore/Project08/Mainbonsazebackend/BonSaze.Infrastructures.CommandDB/obj/Debug/net9.0/refint/BonSaze.Infrastructures.CommandDB.dll
+/home/omidsa/Programmings/ASPNetCore/Project08/Mainbonsazebackend/BonSaze.Infrastructures.CommandDB/obj/Debug/net9.0/BonSaze.Infrastructures.CommandDB.pdb
+/home/omidsa/Programmings/ASPNetCore/Project08/Mainbonsazebackend/BonSaze.Infrastructures.CommandDB/obj/Debug/net9.0/ref/BonSaze.Infrastructures.CommandDB.dll
