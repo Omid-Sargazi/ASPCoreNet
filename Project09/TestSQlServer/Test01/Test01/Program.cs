@@ -9,6 +9,28 @@ builder.Services.AddOpenApi();
 
 builder.Services.AddControllers();
 
+// using(var context = new AppDbContext())
+// {
+//     {
+//             // Add sample data if the database is empty
+//             if (!context.Authors.Any())
+//             {
+//                 var author = new Author
+//                 {
+//                     Name = "George Orwell",
+//                     Books = new List<Book>
+//                     {
+//                         new Book { Title = "1984" },
+//                         new Book { Title = "Animal Farm" }
+//                     }
+//                 };
+
+//                 context.Authors.Add(author);
+//                 context.SaveChanges();
+//             }
+//         }
+// }
+
 builder.Services.AddDbContext<AppDbContext>(options=>options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")).LogTo(Console.WriteLine, LogLevel.Information));
 
 var app = builder.Build();
