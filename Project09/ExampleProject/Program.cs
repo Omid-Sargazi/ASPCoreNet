@@ -1,8 +1,17 @@
+using ExampleProject.Repositories;
+using ExampleProject.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
+builder.Services.AddScoped<ICustomerRepository, CustomerRepository>();
+builder.Services.AddScoped<IOrderRepository, OrderRepository>();
+builder.Services.AddScoped<IInvoiceRepository, InvoiceRepository>();
+builder.Services.AddScoped<OrderService>();
+builder.Services.AddScoped<InvoiceService>();
+
 
 var app = builder.Build();
 
