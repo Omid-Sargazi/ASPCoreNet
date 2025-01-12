@@ -11,6 +11,7 @@ namespace ExampleProject.Entities
         public Guid CustomerId {get; protected set;}
 
         public DateTime OrderDate {get; protected set;}
+        public List<OrderItem> OrderItems {get; protected set;}
 
 
         public Order(Guid customerId)

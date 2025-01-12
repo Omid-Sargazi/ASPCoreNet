@@ -10,6 +10,7 @@ namespace ExampleProject.Entities
         public Guid Id {get; protected set;}
         public string Name {get; protected set;}
         public string Email {get; protected set;}
+        public List<Order> Orders {get; protected set;} = new();
 
 
         public Customer(string name, string email)
@@ -22,5 +23,12 @@ namespace ExampleProject.Entities
             Name = name;
             Email= email;
         }
+
+        public void AddOrder(Order order)
+        {
+            Orders.Add(order ?? throw new ArgumentNullException(nameof(order)));
+        }
+
+
     }
 }
