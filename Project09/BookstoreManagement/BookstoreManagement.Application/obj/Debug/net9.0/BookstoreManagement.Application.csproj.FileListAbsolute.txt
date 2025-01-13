@@ -1,0 +1,12 @@
+/home/omidsa/Programmings/ASPNetCore/Project09/BookstoreManagement/BookstoreManagement.Application/bin/Debug/net9.0/BookstoreManagement.Application.deps.json
+/home/omidsa/Programmings/ASPNetCore/Project09/BookstoreManagement/BookstoreManagement.Application/bin/Debug/net9.0/BookstoreManagement.Application.dll
+/home/omidsa/Programmings/ASPNetCore/Project09/BookstoreManagement/BookstoreManagement.Application/bin/Debug/net9.0/BookstoreManagement.Application.pdb
+/home/omidsa/Programmings/ASPNetCore/Project09/BookstoreManagement/BookstoreManagement.Application/obj/Debug/net9.0/BookstoreManagement.Application.GeneratedMSBuildEditorConfig.editorconfig
+/home/omidsa/Programmings/ASPNetCore/Project09/BookstoreManagement/BookstoreManagement.Application/obj/Debug/net9.0/BookstoreManagement.Application.AssemblyInfoInputs.cache
+/home/omidsa/Programmings/ASPNetCore/Project09/BookstoreManagement/BookstoreManagement.Application/obj/Debug/net9.0/BookstoreManagement.Application.AssemblyInfo.cs
+/home/omidsa/Programmings/ASPNetCore/Project09/BookstoreManagement/BookstoreManagement.Application/obj/Debug/net9.0/BookstoreManagement.Application.csproj.CoreCompileInputs.cache
+/home/omidsa/Programmings/ASPNetCore/Project09/BookstoreManagement/BookstoreManagement.Application/obj/Debug/net9.0/BookstoreManagement.Application.sourcelink.json
+/home/omidsa/Programmings/ASPNetCore/Project09/BookstoreManagement/BookstoreManagement.Application/obj/Debug/net9.0/BookstoreManagement.Application.dll
+/home/omidsa/Programmings/ASPNetCore/Project09/BookstoreManagement/BookstoreManagement.Application/obj/Debug/net9.0/refint/BookstoreManagement.Application.dll
+/home/omidsa/Programmings/ASPNetCore/Project09/BookstoreManagement/BookstoreManagement.Application/obj/Debug/net9.0/BookstoreManagement.Application.pdb
+/home/omidsa/Programmings/ASPNetCore/Project09/BookstoreManagement/BookstoreManagement.Application/obj/Debug/net9.0/ref/BookstoreManagement.Application.dll
