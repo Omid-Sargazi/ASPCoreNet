@@ -15,7 +15,7 @@ namespace BookstoreManagement.Domain.Entities
         public Author(string name)
         {
             if(string.IsNullOrWhiteSpace(name))
-                throw new ArgumentException("Author name cannot be empty.")
+                throw new ArgumentException("Author name cannot be empty.");
             
             Name = name;
         }

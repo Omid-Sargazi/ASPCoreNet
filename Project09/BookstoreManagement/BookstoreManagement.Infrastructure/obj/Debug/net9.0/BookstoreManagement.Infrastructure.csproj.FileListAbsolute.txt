@@ -1,0 +1,16 @@
+/home/omidsa/Programmings/ASPNetCore/Project09/BookstoreManagement/BookstoreManagement.Infrastructure/bin/Debug/net9.0/BookstoreManagement.Infrastructure.deps.json
+/home/omidsa/Programmings/ASPNetCore/Project09/BookstoreManagement/BookstoreManagement.Infrastructure/bin/Debug/net9.0/BookstoreManagement.Infrastructure.dll
+/home/omidsa/Programmings/ASPNetCore/Project09/BookstoreManagement/BookstoreManagement.Infrastructure/bin/Debug/net9.0/BookstoreManagement.Infrastructure.pdb
+/home/omidsa/Programmings/ASPNetCore/Project09/BookstoreManagement/BookstoreManagement.Infrastructure/bin/Debug/net9.0/BookstoreManagement.Domain.dll
+/home/omidsa/Programmings/ASPNetCore/Project09/BookstoreManagement/BookstoreManagement.Infrastructure/bin/Debug/net9.0/BookstoreManagement.Domain.pdb
+/home/omidsa/Programmings/ASPNetCore/Project09/BookstoreManagement/BookstoreManagement.Infrastructure/obj/Debug/net9.0/BookstoreManagement.Infrastructure.csproj.AssemblyReference.cache
+/home/omidsa/Programmings/ASPNetCore/Project09/BookstoreManagement/BookstoreManagement.Infrastructure/obj/Debug/net9.0/BookstoreManagement.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/home/omidsa/Programmings/ASPNetCore/Project09/BookstoreManagement/BookstoreManagement.Infrastructure/obj/Debug/net9.0/BookstoreManagement.Infrastructure.AssemblyInfoInputs.cache
+/home/omidsa/Programmings/ASPNetCore/Project09/BookstoreManagement/BookstoreManagement.Infrastructure/obj/Debug/net9.0/BookstoreManagement.Infrastructure.AssemblyInfo.cs
+/home/omidsa/Programmings/ASPNetCore/Project09/BookstoreManagement/BookstoreManagement.Infrastructure/obj/Debug/net9.0/BookstoreManagement.Infrastructure.csproj.CoreCompileInputs.cache
+/home/omidsa/Programmings/ASPNetCore/Project09/BookstoreManagement/BookstoreManagement.Infrastructure/obj/Debug/net9.0/BookstoreManagement.Infrastructure.sourcelink.json
+/home/omidsa/Programmings/ASPNetCore/Project09/BookstoreManagement/BookstoreManagement.Infrastructure/obj/Debug/net9.0/Bookstor.135FF612.Up2Date
+/home/omidsa/Programmings/ASPNetCore/Project09/BookstoreManagement/BookstoreManagement.Infrastructure/obj/Debug/net9.0/BookstoreManagement.Infrastructure.dll
+/home/omidsa/Programmings/ASPNetCore/Project09/BookstoreManagement/BookstoreManagement.Infrastructure/obj/Debug/net9.0/refint/BookstoreManagement.Infrastructure.dll
+/home/omidsa/Programmings/ASPNetCore/Project09/BookstoreManagement/BookstoreManagement.Infrastructure/obj/Debug/net9.0/BookstoreManagement.Infrastructure.pdb
+/home/omidsa/Programmings/ASPNetCore/Project09/BookstoreManagement/BookstoreManagement.Infrastructure/obj/Debug/net9.0/ref/BookstoreManagement.Infrastructure.dll
