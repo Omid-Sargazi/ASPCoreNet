@@ -6,7 +6,7 @@ using MediatR;
 
 namespace BookstoreManagement.Application.Commands
 {
-    public class UpdateBookCommand:IRequest
+    public class UpdateBookCommand:IRequest<Unit>
     {
         public int Id {get;set}
         public string Title {get; set;}

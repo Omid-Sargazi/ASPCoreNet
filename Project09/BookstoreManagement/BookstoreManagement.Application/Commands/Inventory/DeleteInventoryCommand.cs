@@ -6,9 +6,8 @@ using MediatR;
 
 namespace BookstoreManagement.Application.Commands.Inventory
 {
-    public class UpdateInventoryCommand:IRequest<Unit>
+    public class DeleteInventoryCommand:IRequest<Unit>
     {
         public int Id {get; set;}
-        public int Quantity {get; set;}
     }
 }

@@ -6,7 +6,7 @@ using MediatR;
 
 namespace BookstoreManagement.Application.Commands
 {
-    public class DeleteBookCommand:IRequest
+    public class DeleteBookCommand:IRequest<Unit>
     {
         public int Id {get;set;}
     }
