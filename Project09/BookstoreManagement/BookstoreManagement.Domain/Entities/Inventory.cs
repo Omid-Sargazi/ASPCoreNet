@@ -41,5 +41,14 @@ namespace BookstoreManagement.Domain.Entities
 
             Quantity -= amount;
         }
+
+
+        public void UpdateQuantity(int newQuantity)
+        {
+            if(newQuantity < 0)
+                throw new Exception("Quantity cannot be negative.");
+            
+            Quantity = newQuantity;
+        }
     }
 }
