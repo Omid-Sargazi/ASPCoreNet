@@ -2,9 +2,11 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Azure;
 using BookstoreManagement.Domain.Entities;
 using BookstoreManagement.Infrastructure.Data;
 using BookstoreManagement.Infrastructure.Repositories;
+using Microsoft.EntityFrameworkCore;
 using Xunit;
 
 namespace BookstoreManagement.Tests.BookTests
@@ -44,6 +46,47 @@ namespace BookstoreManagement.Tests.BookTests
             Assert.Equal("Fiction", retrievedBook.Category.Name);
             Assert.Equal(100, retrievedBook.Inventory.Quantity);
 
+        }
+
+        [Fact]
+        public async Task AddAsync_ShouldAddBookToDatabase()
+        {
+            var context = TestDbContextFactory.Create();
+            var repository = new BookRepository(context);
+
+            var book = new Book("new book", 15.99m, 1,1);
+
+            await repository.AddAsync(book);
+
+            // var savedBook = await repository.GetAllAsync();
+            var savedBook = await context.Books.FirstOrDefaultAsync();
+
+            Assert.NotNull(savedBook);
+            Assert.Equal("new book", savedBook.Title);
+            Assert.Equal(15.99m, savedBook.Price);
+        }
+
+        [Fact]
+        public async Task GetByIdAsync_ShouldReturnBookWithRelations()
+        {
+            var context = TestDbContextFactory.Create();
+            var repository = new BookRepository(context);
+
+            var author = new Author("Author name");
+            var category = new Category("Fiction");
+            var inventory = new Inventory(1,100);
+            var book = new Book("Book title", 19.99m, 1,1, author, category,inventory);
+
+            context.Authors.Add(author);
+            context.Categories.Add(category);
+            context.Books.Add(book);
+            await context.SaveChangesAsync();
+
+            var retrievedBook = await context.Books.FindAsync(book.Id);
+
+            //Assert
+            Assert.NotNull(retrievedBook);
+            Assert.Equal("Book title",retrievedBook.Title);
         }
     }
 }
