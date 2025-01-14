@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using BookstoreManagement.Application.Commands;
+using BookstoreManagement.Application.DTOs;
 using BookstoreManagement.Application.Interfaces;
-using BookstoreManagement.Domain.Entities;
+using BookstoreManagement.Domain.Entities;  
 using MediatR;
 
 namespace BookstoreManagement.Application.Handlers
@@ -19,7 +20,7 @@ namespace BookstoreManagement.Application.Handlers
         }
         public async Task<int> Handle(AddBookCommand request, CancellationToken cancellationToken)
         {
-            var book = new Book(request.Title, request.Price, request.AuthorId, request.CategoryId);
+            var book = new Domain.Entities.Book(request.Title, request.Price, request.AuthorId, request.CategoryId);
             await _bookRepository.AddAsync(book);
             return book.Id;
         }
