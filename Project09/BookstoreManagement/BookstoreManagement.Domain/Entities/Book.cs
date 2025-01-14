@@ -30,5 +30,18 @@ namespace BookstoreManagement.Domain.Entities
                 CategoryId = categoryId;
         }
 
+        public void Update(string title, decimal price, int authorId, int categoryId)
+        {
+            if(string.IsNullOrWhiteSpace(title))
+                throw new ArgumentException("Title cannot be empty.", nameof(title));
+            if(price <= 0)
+                throw new ArgumentException("Price must be greater than zero.", nameof(price));
+            Title = title;
+            Price = price;
+            AuthorId = authorId;
+            CategoryId = categoryId;
+
+        }
+
     }
 }

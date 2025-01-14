@@ -1,11 +1,12 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
-    <ProjectReference Include="..\BookstoreManagement.Domain\BookstoreManagement.Domain.csproj" />
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+    <PackageReference Include="MediatR" Version="12.4.1" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="MediatR" Version="12.4.1" />
+    <ProjectReference Include="..\BookstoreManagement.Domain\BookstoreManagement.Domain.csproj" />
   </ItemGroup>
 
   <PropertyGroup>
