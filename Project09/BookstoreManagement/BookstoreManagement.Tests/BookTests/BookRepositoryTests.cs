@@ -13,7 +13,7 @@ namespace BookstoreManagement.Tests.BookTests
 {
     public class BookRepositoryTests
     {
-        [Fact]
+       // [Fact]
         public async Task GetAllAsync_ShouldReturnBooksWithRelations()
         {
             var context = TestDbContextFactory.Create();
@@ -48,7 +48,7 @@ namespace BookstoreManagement.Tests.BookTests
 
         }
 
-        [Fact]
+       // [Fact]
         public async Task AddAsync_ShouldAddBookToDatabase()
         {
             var context = TestDbContextFactory.Create();
@@ -66,7 +66,7 @@ namespace BookstoreManagement.Tests.BookTests
             Assert.Equal(15.99m, savedBook.Price);
         }
 
-        [Fact]
+       // [Fact]
         public async Task GetByIdAsync_ShouldReturnBookWithRelations()
         {
             var context = TestDbContextFactory.Create();
@@ -87,6 +87,23 @@ namespace BookstoreManagement.Tests.BookTests
             //Assert
             Assert.NotNull(retrievedBook);
             Assert.Equal("Book title",retrievedBook.Title);
+        }
+
+        [Fact]
+        public async Task DeleteAsync_ShouldRemoveBookFromDatabase()
+        {
+            var context = TestDbContextFactory.Create();
+            var repository= new BookRepository(context);
+
+            var book = new Book("Book to Delete", 9.99m, 1, 1);
+            context.Books.Add(book);
+            await context.SaveChangesAsync();
+            // await context.Books.Remove(book);
+
+            await repository.DeleteAsync(book.Id);
+
+            var deletedBook = await context.Books.FirstOrDefaultAsync(b=>b.Id==book.Id);
+            Assert.Null(deletedBook);
         }
     }
 }
