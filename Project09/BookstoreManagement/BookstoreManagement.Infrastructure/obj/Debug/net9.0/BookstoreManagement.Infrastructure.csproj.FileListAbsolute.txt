@@ -16,3 +16,5 @@
 /home/omidsa/Programmings/ASPNetCore/Project09/BookstoreManagement/BookstoreManagement.Infrastructure/obj/Debug/net9.0/ref/BookstoreManagement.Infrastructure.dll
 /home/omidsa/Programmings/ASPNetCore/Project09/BookstoreManagement/BookstoreManagement.Infrastructure/bin/Debug/net9.0/BookstoreManagement.Infrastructure.runtimeconfig.json
 /home/omidsa/Programmings/ASPNetCore/Project09/BookstoreManagement/BookstoreManagement.Infrastructure/obj/Debug/net9.0/BookstoreManagement.Infrastructure.genruntimeconfig.cache
+/home/omidsa/Programmings/ASPNetCore/Project09/BookstoreManagement/BookstoreManagement.Infrastructure/bin/Debug/net9.0/BookstoreManagement.Application.dll
+/home/omidsa/Programmings/ASPNetCore/Project09/BookstoreManagement/BookstoreManagement.Infrastructure/bin/Debug/net9.0/BookstoreManagement.Application.pdb

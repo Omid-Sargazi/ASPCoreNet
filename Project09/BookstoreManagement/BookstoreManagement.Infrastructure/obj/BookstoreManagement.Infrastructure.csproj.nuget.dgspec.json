@@ -4,6 +4,75 @@
     "/home/omidsa/Programmings/ASPNetCore/Project09/BookstoreManagement/BookstoreManagement.Infrastructure/BookstoreManagement.Infrastructure.csproj": {}
   },
   "projects": {
+    "/home/omidsa/Programmings/ASPNetCore/Project09/BookstoreManagement/BookstoreManagement.Application/BookstoreManagement.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/omidsa/Programmings/ASPNetCore/Project09/BookstoreManagement/BookstoreManagement.Application/BookstoreManagement.Application.csproj",
+        "projectName": "BookstoreManagement.Application",
+        "projectPath": "/home/omidsa/Programmings/ASPNetCore/Project09/BookstoreManagement/BookstoreManagement.Application/BookstoreManagement.Application.csproj",
+        "packagesPath": "/home/omidsa/.nuget/packages/",
+        "outputPath": "/home/omidsa/Programmings/ASPNetCore/Project09/BookstoreManagement/BookstoreManagement.Application/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/omidsa/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "/home/omidsa/Programmings/ASPNetCore/Project09/BookstoreManagement/BookstoreManagement.Domain/BookstoreManagement.Domain.csproj": {
+                "projectPath": "/home/omidsa/Programmings/ASPNetCore/Project09/BookstoreManagement/BookstoreManagement.Domain/BookstoreManagement.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.4.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/9.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "/home/omidsa/Programmings/ASPNetCore/Project09/BookstoreManagement/BookstoreManagement.Domain/BookstoreManagement.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -85,6 +154,9 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
+              "/home/omidsa/Programmings/ASPNetCore/Project09/BookstoreManagement/BookstoreManagement.Application/BookstoreManagement.Application.csproj": {
+                "projectPath": "/home/omidsa/Programmings/ASPNetCore/Project09/BookstoreManagement/BookstoreManagement.Application/BookstoreManagement.Application.csproj"
+              },
               "/home/omidsa/Programmings/ASPNetCore/Project09/BookstoreManagement/BookstoreManagement.Domain/BookstoreManagement.Domain.csproj": {
                 "projectPath": "/home/omidsa/Programmings/ASPNetCore/Project09/BookstoreManagement/BookstoreManagement.Domain/BookstoreManagement.Domain.csproj"
               }

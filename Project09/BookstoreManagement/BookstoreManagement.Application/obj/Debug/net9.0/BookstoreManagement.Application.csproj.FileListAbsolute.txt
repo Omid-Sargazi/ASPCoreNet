@@ -10,3 +10,7 @@
 /home/omidsa/Programmings/ASPNetCore/Project09/BookstoreManagement/BookstoreManagement.Application/obj/Debug/net9.0/refint/BookstoreManagement.Application.dll
 /home/omidsa/Programmings/ASPNetCore/Project09/BookstoreManagement/BookstoreManagement.Application/obj/Debug/net9.0/BookstoreManagement.Application.pdb
 /home/omidsa/Programmings/ASPNetCore/Project09/BookstoreManagement/BookstoreManagement.Application/obj/Debug/net9.0/ref/BookstoreManagement.Application.dll
+/home/omidsa/Programmings/ASPNetCore/Project09/BookstoreManagement/BookstoreManagement.Application/bin/Debug/net9.0/BookstoreManagement.Domain.dll
+/home/omidsa/Programmings/ASPNetCore/Project09/BookstoreManagement/BookstoreManagement.Application/bin/Debug/net9.0/BookstoreManagement.Domain.pdb
+/home/omidsa/Programmings/ASPNetCore/Project09/BookstoreManagement/BookstoreManagement.Application/obj/Debug/net9.0/BookstoreManagement.Application.csproj.AssemblyReference.cache
+/home/omidsa/Programmings/ASPNetCore/Project09/BookstoreManagement/BookstoreManagement.Application/obj/Debug/net9.0/Bookstor.D1EAB591.Up2Date
