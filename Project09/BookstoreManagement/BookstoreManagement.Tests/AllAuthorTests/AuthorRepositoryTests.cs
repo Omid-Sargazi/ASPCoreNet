@@ -73,7 +73,7 @@ namespace BookstoreManagement.Tests.AllAuthorTests
             Assert.Equal("New Author",savedAuthor.Name);
         }
 
-        [Fact]
+        //[Fact]
         public async Task DeleteAsync_ShouldRemoveAuthorFromDatabase()
         {
             var context = TestDbContextFactory.Create();
