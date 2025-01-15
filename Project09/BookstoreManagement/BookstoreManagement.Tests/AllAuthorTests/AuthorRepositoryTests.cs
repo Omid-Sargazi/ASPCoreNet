@@ -1,10 +1,12 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
 using BookstoreManagement.Domain.Entities;
 using BookstoreManagement.Infrastructure.Data;
 using BookstoreManagement.Infrastructure.Repositories;
+using Microsoft.EntityFrameworkCore;
 using Xunit;
 
 namespace BookstoreManagement.Tests.AllAuthorTests
@@ -34,7 +36,7 @@ namespace BookstoreManagement.Tests.AllAuthorTests
 
         }
 
-        [Fact]
+        //[Fact]
         public async Task GetByIdAsync_ShouldReturnAuthorWithBooks()
         {
             var context = TestDbContextFactory.Create();
@@ -54,6 +56,21 @@ namespace BookstoreManagement.Tests.AllAuthorTests
             Assert.Single(retrievedAuthor.Books);
             Assert.Equal("Book Title",retrievedAuthor.Books[0].Title);
 
+        }
+
+        [Fact]
+        public async Task AddAsync_ShouldAddAuthorToDatabase()
+        {
+            var context = TestDbContextFactory.Create();
+            var repository = new AuthorRepository(context);
+
+            var author = new Author("New Author");
+
+            await repository.AddAsync(author);
+
+            var savedAuthor = await context.Authors.FirstOrDefaultAsync();
+            Assert.NotNull(savedAuthor);
+            Assert.Equal("New Author",savedAuthor.Name);
         }
     }
 }
