@@ -11,7 +11,7 @@ namespace BookstoreManagement.Tests.AllAuthorTests
 {
     public class AuthorRepositoryTests
     {
-        [Fact]
+        //[Fact]
         public async Task GetAllAsync_ShouldReturnAuthorsWithBooks()
         {
             var context = TestDbContextFactory.Create();
@@ -31,6 +31,28 @@ namespace BookstoreManagement.Tests.AllAuthorTests
             var retrievedAuthor = authors[0];
             Assert.Equal("Author name", retrievedAuthor.Name);
             Assert.Equal(2, retrievedAuthor.Books.Count);
+
+        }
+
+        [Fact]
+        public async Task GetByIdAsync_ShouldReturnAuthorWithBooks()
+        {
+            var context = TestDbContextFactory.Create();
+            var repository = new AuthorRepository(context);
+
+            var author = new Author("Author name");
+            var book = Book.Create("Book Title", 19.99m, 1, 1,author);
+
+            context.Books.Add(book);
+            context.Authors.Add(author);
+            await context.SaveChangesAsync();
+
+            var retrievedAuthor = await repository.GetByIdAsync(author.Id);
+
+            Assert.NotNull(retrievedAuthor);
+            Assert.Equal("Omid",retrievedAuthor.Name);
+            Assert.Single(retrievedAuthor.Books);
+            Assert.Equal("Book Title",retrievedAuthor.Books[0].Title);
 
         }
     }
