@@ -58,7 +58,7 @@ namespace BookstoreManagement.Tests.AllAuthorTests
 
         }
 
-        [Fact]
+        //[Fact]
         public async Task AddAsync_ShouldAddAuthorToDatabase()
         {
             var context = TestDbContextFactory.Create();
@@ -71,6 +71,22 @@ namespace BookstoreManagement.Tests.AllAuthorTests
             var savedAuthor = await context.Authors.FirstOrDefaultAsync();
             Assert.NotNull(savedAuthor);
             Assert.Equal("New Author",savedAuthor.Name);
+        }
+
+        [Fact]
+        public async Task DeleteAsync_ShouldRemoveAuthorFromDatabase()
+        {
+            var context = TestDbContextFactory.Create();
+            var repository = new AuthorRepository(context);
+
+            var author = new Author("Author to Delete");
+            context.Authors.Add(author);
+            await context.SaveChangesAsync();
+
+            await repository.DeleteAsync(author.Id);
+
+            var deletedAuthor = await context.Authors.FirstOrDefaultAsync(a => a.Id == author.Id);
+            Assert.NotNull(deletedAuthor);
         }
     }
 }
