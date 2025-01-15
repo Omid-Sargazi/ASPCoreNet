@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Fb1jDu8ZH4s=",
+  "dgSpecHash": "20wiAmtXDs8=",
   "success": true,
   "projectFilePath": "/home/omidsa/Programmings/ASPNetCore/Project09/BookstoreManagement/BookstoreManagement.Infrastructure/BookstoreManagement.Infrastructure.csproj",
   "expectedPackageFiles": [
@@ -29,6 +29,7 @@
     "/home/omidsa/.nuget/packages/microsoft.entityframeworkcore.abstractions/9.0.0/microsoft.entityframeworkcore.abstractions.9.0.0.nupkg.sha512",
     "/home/omidsa/.nuget/packages/microsoft.entityframeworkcore.analyzers/9.0.0/microsoft.entityframeworkcore.analyzers.9.0.0.nupkg.sha512",
     "/home/omidsa/.nuget/packages/microsoft.entityframeworkcore.design/9.0.0/microsoft.entityframeworkcore.design.9.0.0.nupkg.sha512",
+    "/home/omidsa/.nuget/packages/microsoft.entityframeworkcore.inmemory/9.0.0/microsoft.entityframeworkcore.inmemory.9.0.0.nupkg.sha512",
     "/home/omidsa/.nuget/packages/microsoft.entityframeworkcore.relational/9.0.0/microsoft.entityframeworkcore.relational.9.0.0.nupkg.sha512",
     "/home/omidsa/.nuget/packages/microsoft.entityframeworkcore.sqlserver/9.0.0/microsoft.entityframeworkcore.sqlserver.9.0.0.nupkg.sha512",
     "/home/omidsa/.nuget/packages/microsoft.extensions.caching.abstractions/9.0.0/microsoft.extensions.caching.abstractions.9.0.0.nupkg.sha512",

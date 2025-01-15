@@ -17,17 +17,44 @@ namespace BookstoreManagement.Domain.Entities
         public Inventory Inventory { get; private set; }
 
 
-        public Book(string title, decimal price, int authorId, int categoryId)
+        public Book(string title, decimal price, int authorId, int categoryId, Author author, Category category, Inventory inventory)
         {
             if(string.IsNullOrWhiteSpace(title))
                 throw new ArgumentException("Book title cannot be empty.");
             if(price<=0)
                 throw new ArgumentException("Price must be greater than zero.");
+            
+            if(author == null)
+                throw new ArgumentNullException(nameof(author));
+            if(category==null)
+                throw new ArgumentNullException(nameof(category));
+            
+            if(inventory == null)
+                throw new ArgumentNullException(nameof(inventory));
 
                 Title = title;
                 Price = price;
                 AuthorId = authorId;
                 CategoryId = categoryId;
+                Author = author;
+                Category = category;
+                Inventory = inventory;
+        }
+
+         public Book(string title, decimal price, int authorId, int categoryId)
+        {
+            if(string.IsNullOrWhiteSpace(title))
+                throw new ArgumentException("Book title cannot be empty.");
+            if(price<=0)
+                throw new ArgumentException("Price must be greater than zero.");
+            
+         
+
+                Title = title;
+                Price = price;
+                AuthorId = authorId;
+                CategoryId = categoryId;
+               
         }
 
         public void Update(string title, decimal price, int authorId, int categoryId)

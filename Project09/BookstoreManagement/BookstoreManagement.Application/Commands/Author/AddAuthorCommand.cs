@@ -8,6 +8,6 @@ namespace BookstoreManagement.Application.Commands.Author
 {
     public class AddAuthorCommand:IRequest<int>
     {
-        public string Name {get; set}
+        public string Name {get; set;}
     }
 }

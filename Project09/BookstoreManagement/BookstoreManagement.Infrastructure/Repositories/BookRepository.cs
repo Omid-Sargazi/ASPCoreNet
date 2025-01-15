@@ -35,7 +35,9 @@ namespace BookstoreManagement.Infrastructure.Repositories
 
         public async Task<List<Book>> GetAllAsync()
         {
-            return await _repository.Books.Include(b=>b.Author).Include(b=>b.Category).ToListAsync();
+            return await _repository.Books.Include(b=>b.Author).Include(b=>b.Category)
+            .Include(b=>b.Inventory)
+            .ToListAsync();
         }
 
         public async Task<Book> GetByIdAsync(int id)

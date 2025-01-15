@@ -81,3 +81,6 @@
 /home/omidsa/Programmings/ASPNetCore/Project09/BookstoreManagement/BookstoreManagement.API/bin/Debug/net9.0/BookstoreManagement.Infrastructure.pdb
 /home/omidsa/Programmings/ASPNetCore/Project09/BookstoreManagement/BookstoreManagement.API/bin/Debug/net9.0/BookstoreManagement.Application.pdb
 /home/omidsa/Programmings/ASPNetCore/Project09/BookstoreManagement/BookstoreManagement.API/bin/Debug/net9.0/BookstoreManagement.Domain.pdb
+/home/omidsa/Programmings/ASPNetCore/Project09/BookstoreManagement/BookstoreManagement.API/bin/Debug/net9.0/AutoMapper.dll
+/home/omidsa/Programmings/ASPNetCore/Project09/BookstoreManagement/BookstoreManagement.API/bin/Debug/net9.0/MediatR.dll
+/home/omidsa/Programmings/ASPNetCore/Project09/BookstoreManagement/BookstoreManagement.API/bin/Debug/net9.0/MediatR.Contracts.dll

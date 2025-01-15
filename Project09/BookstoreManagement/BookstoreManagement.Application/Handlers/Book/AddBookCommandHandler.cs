@@ -46,7 +46,7 @@ namespace BookstoreManagement.Application.Handlers.Book
             var book = new BookstoreManagement.Domain.Entities.Book(request.Title, request.Price, request.AuthorId, request.CategoryId);
             await _bookRepository.AddAsync(book);
 
-            var inventory = new Inventory(book.Id, request.InventoryQuantity);
+            var inventory = new Domain.Entities.Inventory(book.Id, request.InventoryQuantity);
             await _inventoryRepository.AddAsync(inventory);
 
             return book.Id;
