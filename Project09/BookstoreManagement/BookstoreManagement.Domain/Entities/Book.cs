@@ -47,6 +47,30 @@ namespace BookstoreManagement.Domain.Entities
              book.Author = author;
             return book;
         }
+        public static Book Create<T>(string title, decimal price, int authorId, int categoryId, T relatedObject)
+        {
+            var book = new Book(title, price, authorId, categoryId);
+
+            if(relatedObject is Author author)
+            {
+                book.Author = author;
+            }
+            
+            if(relatedObject is Category category)
+            {
+                book.Category = category;
+            }
+             else if (relatedObject is Inventory inventory)
+             {
+        book.Inventory = inventory;
+            }
+             else
+            {
+                throw new ArgumentException($"Unsupported type: {typeof(T).Name}");
+            }
+
+            return book;
+        }
 
          public Book(string title, decimal price, int authorId, int categoryId)
         {
