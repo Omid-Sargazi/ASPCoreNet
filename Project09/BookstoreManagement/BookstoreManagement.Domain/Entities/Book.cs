@@ -41,6 +41,13 @@ namespace BookstoreManagement.Domain.Entities
                 Inventory = inventory;
         }
 
+        public static Book Create(string title, decimal price, int authorId, int categoryId, Author author)
+        {
+            var book = new Book(title, price, authorId, categoryId);
+             book.Author = author;
+            return book;
+        }
+
          public Book(string title, decimal price, int authorId, int categoryId)
         {
             if(string.IsNullOrWhiteSpace(title))
