@@ -1,0 +1,15 @@
+/home/omidsa/Programmings/ASPNetCore/Project09/DataStructuresAlgorithms/bin/Debug/net9.0/DataStructuresAlgorithms
+/home/omidsa/Programmings/ASPNetCore/Project09/DataStructuresAlgorithms/bin/Debug/net9.0/DataStructuresAlgorithms.deps.json
+/home/omidsa/Programmings/ASPNetCore/Project09/DataStructuresAlgorithms/bin/Debug/net9.0/DataStructuresAlgorithms.runtimeconfig.json
+/home/omidsa/Programmings/ASPNetCore/Project09/DataStructuresAlgorithms/bin/Debug/net9.0/DataStructuresAlgorithms.dll
+/home/omidsa/Programmings/ASPNetCore/Project09/DataStructuresAlgorithms/bin/Debug/net9.0/DataStructuresAlgorithms.pdb
+/home/omidsa/Programmings/ASPNetCore/Project09/DataStructuresAlgorithms/obj/Debug/net9.0/DataStructuresAlgorithms.GeneratedMSBuildEditorConfig.editorconfig
+/home/omidsa/Programmings/ASPNetCore/Project09/DataStructuresAlgorithms/obj/Debug/net9.0/DataStructuresAlgorithms.AssemblyInfoInputs.cache
+/home/omidsa/Programmings/ASPNetCore/Project09/DataStructuresAlgorithms/obj/Debug/net9.0/DataStructuresAlgorithms.AssemblyInfo.cs
+/home/omidsa/Programmings/ASPNetCore/Project09/DataStructuresAlgorithms/obj/Debug/net9.0/DataStructuresAlgorithms.csproj.CoreCompileInputs.cache
+/home/omidsa/Programmings/ASPNetCore/Project09/DataStructuresAlgorithms/obj/Debug/net9.0/DataStructuresAlgorithms.sourcelink.json
+/home/omidsa/Programmings/ASPNetCore/Project09/DataStructuresAlgorithms/obj/Debug/net9.0/DataStructuresAlgorithms.dll
+/home/omidsa/Programmings/ASPNetCore/Project09/DataStructuresAlgorithms/obj/Debug/net9.0/refint/DataStructuresAlgorithms.dll
+/home/omidsa/Programmings/ASPNetCore/Project09/DataStructuresAlgorithms/obj/Debug/net9.0/DataStructuresAlgorithms.pdb
+/home/omidsa/Programmings/ASPNetCore/Project09/DataStructuresAlgorithms/obj/Debug/net9.0/DataStructuresAlgorithms.genruntimeconfig.cache
+/home/omidsa/Programmings/ASPNetCore/Project09/DataStructuresAlgorithms/obj/Debug/net9.0/ref/DataStructuresAlgorithms.dll
