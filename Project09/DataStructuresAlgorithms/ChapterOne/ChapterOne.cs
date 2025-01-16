@@ -1,5 +1,7 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -38,16 +40,31 @@ namespace DataStructuresAlgorithms.ChapterOne
 
        public int[] SelectionSort(int[] arr)
        {
-        for(int i=0;i<arr.Length;i++)
+        for(int i=0;i<arr.Length-1;i++)
         {
             int minIndex = i;
             for (int j=i+1; j<arr.Length;j++)
                 if(arr[j]<arr[minIndex])
                     minIndex=j;
-            (arr[i], arr[minIndex])= (arr[minIndex], arr[i]);
+            (arr[i], arr[minIndex]) = (arr[minIndex], arr[i]);
         }
         return arr;
        }
+
+
+      public void CalculateAverage(List<double> values)
+      {
+        string input;
+        do
+        {
+            Console.Write("Enter a number (or 'q' to quit): ");
+            input = Console.ReadLine();
+            if(double.TryParse(input, out double value))
+                values.Add(value);
+        }while(input !="q");
+        Console.WriteLine($"Average: {values.Average()}");
+        
+      }
 
     }
 

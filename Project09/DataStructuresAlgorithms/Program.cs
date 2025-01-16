@@ -44,3 +44,8 @@ for(int i=0;i<arr.Length; i++)
 {
     Console.WriteLine(arr[i]);
 }
+
+Console.WriteLine("/////////////////////////////////////");
+
+List<double> values = new List<double> {1.1, 1.2,1.3};
+C1.CalculateAverage(values);
