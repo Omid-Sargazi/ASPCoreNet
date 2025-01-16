@@ -1,0 +1,15 @@
+/home/omidsa/Programmings/ASPNetCore/Project09/GetHashCodeAndEquals/ExampleOfHashCode/bin/Debug/net9.0/ExampleOfHashCode
+/home/omidsa/Programmings/ASPNetCore/Project09/GetHashCodeAndEquals/ExampleOfHashCode/bin/Debug/net9.0/ExampleOfHashCode.deps.json
+/home/omidsa/Programmings/ASPNetCore/Project09/GetHashCodeAndEquals/ExampleOfHashCode/bin/Debug/net9.0/ExampleOfHashCode.runtimeconfig.json
+/home/omidsa/Programmings/ASPNetCore/Project09/GetHashCodeAndEquals/ExampleOfHashCode/bin/Debug/net9.0/ExampleOfHashCode.dll
+/home/omidsa/Programmings/ASPNetCore/Project09/GetHashCodeAndEquals/ExampleOfHashCode/bin/Debug/net9.0/ExampleOfHashCode.pdb
+/home/omidsa/Programmings/ASPNetCore/Project09/GetHashCodeAndEquals/ExampleOfHashCode/obj/Debug/net9.0/ExampleOfHashCode.GeneratedMSBuildEditorConfig.editorconfig
+/home/omidsa/Programmings/ASPNetCore/Project09/GetHashCodeAndEquals/ExampleOfHashCode/obj/Debug/net9.0/ExampleOfHashCode.AssemblyInfoInputs.cache
+/home/omidsa/Programmings/ASPNetCore/Project09/GetHashCodeAndEquals/ExampleOfHashCode/obj/Debug/net9.0/ExampleOfHashCode.AssemblyInfo.cs
+/home/omidsa/Programmings/ASPNetCore/Project09/GetHashCodeAndEquals/ExampleOfHashCode/obj/Debug/net9.0/ExampleOfHashCode.csproj.CoreCompileInputs.cache
+/home/omidsa/Programmings/ASPNetCore/Project09/GetHashCodeAndEquals/ExampleOfHashCode/obj/Debug/net9.0/ExampleOfHashCode.sourcelink.json
+/home/omidsa/Programmings/ASPNetCore/Project09/GetHashCodeAndEquals/ExampleOfHashCode/obj/Debug/net9.0/ExampleOfHashCode.dll
+/home/omidsa/Programmings/ASPNetCore/Project09/GetHashCodeAndEquals/ExampleOfHashCode/obj/Debug/net9.0/refint/ExampleOfHashCode.dll
+/home/omidsa/Programmings/ASPNetCore/Project09/GetHashCodeAndEquals/ExampleOfHashCode/obj/Debug/net9.0/ExampleOfHashCode.pdb
+/home/omidsa/Programmings/ASPNetCore/Project09/GetHashCodeAndEquals/ExampleOfHashCode/obj/Debug/net9.0/ExampleOfHashCode.genruntimeconfig.cache
+/home/omidsa/Programmings/ASPNetCore/Project09/GetHashCodeAndEquals/ExampleOfHashCode/obj/Debug/net9.0/ref/ExampleOfHashCode.dll
