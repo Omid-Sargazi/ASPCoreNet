@@ -3,3 +3,10 @@
 /home/omidsa/Programmings/ASPNetCore/Project09/BookstoreManagementSystem/BookstoreManagementSystem.Domain/obj/Debug/net9.0/BookstoreManagementSystem.Domain.AssemblyInfo.cs
 /home/omidsa/Programmings/ASPNetCore/Project09/BookstoreManagementSystem/BookstoreManagementSystem.Domain/obj/Debug/net9.0/BookstoreManagementSystem.Domain.csproj.CoreCompileInputs.cache
 /home/omidsa/Programmings/ASPNetCore/Project09/BookstoreManagementSystem/BookstoreManagementSystem.Domain/obj/Debug/net9.0/BookstoreManagementSystem.Domain.sourcelink.json
+/home/omidsa/Programmings/ASPNetCore/Project09/BookstoreManagementSystem/BookstoreManagementSystem.Domain/bin/Debug/net9.0/BookstoreManagementSystem.Domain.deps.json
+/home/omidsa/Programmings/ASPNetCore/Project09/BookstoreManagementSystem/BookstoreManagementSystem.Domain/bin/Debug/net9.0/BookstoreManagementSystem.Domain.dll
+/home/omidsa/Programmings/ASPNetCore/Project09/BookstoreManagementSystem/BookstoreManagementSystem.Domain/bin/Debug/net9.0/BookstoreManagementSystem.Domain.pdb
+/home/omidsa/Programmings/ASPNetCore/Project09/BookstoreManagementSystem/BookstoreManagementSystem.Domain/obj/Debug/net9.0/BookstoreManagementSystem.Domain.dll
+/home/omidsa/Programmings/ASPNetCore/Project09/BookstoreManagementSystem/BookstoreManagementSystem.Domain/obj/Debug/net9.0/refint/BookstoreManagementSystem.Domain.dll
+/home/omidsa/Programmings/ASPNetCore/Project09/BookstoreManagementSystem/BookstoreManagementSystem.Domain/obj/Debug/net9.0/BookstoreManagementSystem.Domain.pdb
+/home/omidsa/Programmings/ASPNetCore/Project09/BookstoreManagementSystem/BookstoreManagementSystem.Domain/obj/Debug/net9.0/ref/BookstoreManagementSystem.Domain.dll
