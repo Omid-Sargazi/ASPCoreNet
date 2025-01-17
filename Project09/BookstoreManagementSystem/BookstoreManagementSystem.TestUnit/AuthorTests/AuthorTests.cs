@@ -23,7 +23,7 @@ namespace BookstoreManagementSystem.TestUnit.AuthorTests
         [Fact]
         public void Should_Throw_Exception_When_Name_Is_Empty()
         {
-            Assert.Throws<ArgumentException>(()=>new Author("omid"));
+            Assert.Throws<ArgumentException>(()=>new Author(""));
         }
     }
 }

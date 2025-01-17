@@ -10,7 +10,7 @@ namespace BookstoreManagementSystem.Domain.Entities
     {
         public int Id {get; private set;}
         public string Name {get; private set;}
-        public List<Book> Books {get; private set} = new List<Book>();
+        public List<Book> Books {get; private set;} = new List<Book>();
 
 
         public Category(string name)
