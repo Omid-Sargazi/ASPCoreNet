@@ -40,9 +40,23 @@ namespace BookstoreManagementSystem.TestUnit.OrderTests
             order.AddBook(book);
 
             order.RemoveBook(book);
-            
+
             Assert.Empty(order.Books);
             Assert.Equal(0,order.TotalAmount);
+        }
+
+        [Fact]
+        public void Should_Add_Multiple_Books_To_Order()
+        {
+            var order = new Order(1);
+            var book1 = new Book("Book 1", new Money(19.99m,"USD"),1,2);
+            var book2 = new Book("Book 2", new Money(13.69m,"USD"),1,3);
+
+            order.AddBook(book1);
+            order.AddBook(book2);
+
+            Assert.Equal(2, order.Books.Count);
+            Assert.Equal(33.68m, order.TotalAmount);
         }
     }
 }
