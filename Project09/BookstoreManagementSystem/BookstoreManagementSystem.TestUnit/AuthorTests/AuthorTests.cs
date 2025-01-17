@@ -19,5 +19,11 @@ namespace BookstoreManagementSystem.TestUnit.AuthorTests
             Assert.Equal(name,author.Name);
             Assert.Empty(author.Books);
         }
+
+        [Fact]
+        public void Should_Throw_Exception_When_Name_Is_Empty()
+        {
+            Assert.Throws<ArgumentException>(()=>new Author("omid"));
+        }
     }
 }
