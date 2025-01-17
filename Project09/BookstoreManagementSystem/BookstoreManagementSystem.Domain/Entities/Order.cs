@@ -33,7 +33,7 @@ namespace BookstoreManagementSystem.Domain.Entities
         {
             if(book == null)
                 throw new ArgumentNullException(nameof(book));
-            Books.Add(book);
+            Books.Remove(book);
 
         }
 

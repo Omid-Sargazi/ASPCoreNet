@@ -31,5 +31,18 @@ namespace BookstoreManagementSystem.TestUnit.OrderTests
             Assert.Single(order.Books);
             Assert.Equal(19.99m, order.TotalAmount);
         }
+
+        [Fact]
+        public void Should_Remove_Book_From_Order()
+        {
+            var order = new Order(1);
+            var book = new Book("Test Book", new Money(19.99m,"USD"),1,2);
+            order.AddBook(book);
+
+            order.RemoveBook(book);
+            
+            Assert.Empty(order.Books);
+            Assert.Equal(0,order.TotalAmount);
+        }
     }
 }
