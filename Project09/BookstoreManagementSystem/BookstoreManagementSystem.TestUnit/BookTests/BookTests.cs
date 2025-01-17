@@ -18,5 +18,11 @@ namespace BookstoreManagementSystem.TestUnit.BookTests
             Assert.Equal(19.99m, book.Price.Amount);
             Assert.Equal("USD", book.Price.Currency);
         }
+
+        [Fact]
+        public void Should_Throw_Exception_For_Empty_Title()
+        {
+            Assert.Throws<ArgumentException>(()=> new Book("",new Money(18.99m,"USD"),1,2));
+        }
     }
 }
