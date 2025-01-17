@@ -1,0 +1,15 @@
+/home/omidsa/Programmings/ASPNetCore/Project09/DomainEventsForms02/bin/Debug/net9.0/DomainEventsForms02
+/home/omidsa/Programmings/ASPNetCore/Project09/DomainEventsForms02/bin/Debug/net9.0/DomainEventsForms02.deps.json
+/home/omidsa/Programmings/ASPNetCore/Project09/DomainEventsForms02/bin/Debug/net9.0/DomainEventsForms02.runtimeconfig.json
+/home/omidsa/Programmings/ASPNetCore/Project09/DomainEventsForms02/bin/Debug/net9.0/DomainEventsForms02.dll
+/home/omidsa/Programmings/ASPNetCore/Project09/DomainEventsForms02/bin/Debug/net9.0/DomainEventsForms02.pdb
+/home/omidsa/Programmings/ASPNetCore/Project09/DomainEventsForms02/obj/Debug/net9.0/DomainEventsForms02.GeneratedMSBuildEditorConfig.editorconfig
+/home/omidsa/Programmings/ASPNetCore/Project09/DomainEventsForms02/obj/Debug/net9.0/DomainEventsForms02.AssemblyInfoInputs.cache
+/home/omidsa/Programmings/ASPNetCore/Project09/DomainEventsForms02/obj/Debug/net9.0/DomainEventsForms02.AssemblyInfo.cs
+/home/omidsa/Programmings/ASPNetCore/Project09/DomainEventsForms02/obj/Debug/net9.0/DomainEventsForms02.csproj.CoreCompileInputs.cache
+/home/omidsa/Programmings/ASPNetCore/Project09/DomainEventsForms02/obj/Debug/net9.0/DomainEventsForms02.sourcelink.json
+/home/omidsa/Programmings/ASPNetCore/Project09/DomainEventsForms02/obj/Debug/net9.0/DomainEventsForms02.dll
+/home/omidsa/Programmings/ASPNetCore/Project09/DomainEventsForms02/obj/Debug/net9.0/refint/DomainEventsForms02.dll
+/home/omidsa/Programmings/ASPNetCore/Project09/DomainEventsForms02/obj/Debug/net9.0/DomainEventsForms02.pdb
+/home/omidsa/Programmings/ASPNetCore/Project09/DomainEventsForms02/obj/Debug/net9.0/DomainEventsForms02.genruntimeconfig.cache
+/home/omidsa/Programmings/ASPNetCore/Project09/DomainEventsForms02/obj/Debug/net9.0/ref/DomainEventsForms02.dll
