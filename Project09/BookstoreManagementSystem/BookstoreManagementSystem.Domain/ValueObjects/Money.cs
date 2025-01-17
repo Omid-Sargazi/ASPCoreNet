@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using BookstoreManagementSystem.Domain.Exceptions;
 
 namespace BookstoreManagementSystem.Domain.ValueObjects
 {
@@ -13,7 +14,7 @@ namespace BookstoreManagementSystem.Domain.ValueObjects
         public Money(decimal amount, string currency)
         {
             if(amount <0)
-                throw new Exception("Price can not be negative");
+                throw new InvalidPriceException("Price can not be negative");
             Amount = amount;
             Currency = currency ?? throw new ArgumentNullException(nameof(currency));
         }
