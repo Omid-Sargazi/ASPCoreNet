@@ -1,0 +1,15 @@
+/home/omidsa/Programmings/ASPNetCore/Project10/DelegateExamples/bin/Debug/net9.0/DelegateExamples
+/home/omidsa/Programmings/ASPNetCore/Project10/DelegateExamples/bin/Debug/net9.0/DelegateExamples.deps.json
+/home/omidsa/Programmings/ASPNetCore/Project10/DelegateExamples/bin/Debug/net9.0/DelegateExamples.runtimeconfig.json
+/home/omidsa/Programmings/ASPNetCore/Project10/DelegateExamples/bin/Debug/net9.0/DelegateExamples.dll
+/home/omidsa/Programmings/ASPNetCore/Project10/DelegateExamples/bin/Debug/net9.0/DelegateExamples.pdb
+/home/omidsa/Programmings/ASPNetCore/Project10/DelegateExamples/obj/Debug/net9.0/DelegateExamples.GeneratedMSBuildEditorConfig.editorconfig
+/home/omidsa/Programmings/ASPNetCore/Project10/DelegateExamples/obj/Debug/net9.0/DelegateExamples.AssemblyInfoInputs.cache
+/home/omidsa/Programmings/ASPNetCore/Project10/DelegateExamples/obj/Debug/net9.0/DelegateExamples.AssemblyInfo.cs
+/home/omidsa/Programmings/ASPNetCore/Project10/DelegateExamples/obj/Debug/net9.0/DelegateExamples.csproj.CoreCompileInputs.cache
+/home/omidsa/Programmings/ASPNetCore/Project10/DelegateExamples/obj/Debug/net9.0/DelegateExamples.sourcelink.json
+/home/omidsa/Programmings/ASPNetCore/Project10/DelegateExamples/obj/Debug/net9.0/DelegateExamples.dll
+/home/omidsa/Programmings/ASPNetCore/Project10/DelegateExamples/obj/Debug/net9.0/refint/DelegateExamples.dll
+/home/omidsa/Programmings/ASPNetCore/Project10/DelegateExamples/obj/Debug/net9.0/DelegateExamples.pdb
+/home/omidsa/Programmings/ASPNetCore/Project10/DelegateExamples/obj/Debug/net9.0/DelegateExamples.genruntimeconfig.cache
+/home/omidsa/Programmings/ASPNetCore/Project10/DelegateExamples/obj/Debug/net9.0/ref/DelegateExamples.dll
