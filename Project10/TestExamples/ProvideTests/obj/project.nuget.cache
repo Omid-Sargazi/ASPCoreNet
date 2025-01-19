@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "LwW37Pix280=",
+  "success": true,
+  "projectFilePath": "/home/omidsa/Programmings/ASPNetCore/Project10/TestExamples/ProvideTests/ProvideTests.csproj",
+  "expectedPackageFiles": [
+    "/home/omidsa/.nuget/packages/microsoft.netcore.app.ref/8.0.11/microsoft.netcore.app.ref.8.0.11.nupkg.sha512",
+    "/home/omidsa/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.11/microsoft.aspnetcore.app.ref.8.0.11.nupkg.sha512"
+  ],
+  "logs": []
+}

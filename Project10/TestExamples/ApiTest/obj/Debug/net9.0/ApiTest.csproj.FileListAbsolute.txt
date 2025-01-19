@@ -1,0 +1,8 @@
+/home/omidsa/Programmings/ASPNetCore/Project10/TestExamples/ApiTest/obj/Debug/net9.0/ApiTest.csproj.AssemblyReference.cache
+/home/omidsa/Programmings/ASPNetCore/Project10/TestExamples/ApiTest/obj/Debug/net9.0/ApiTest.GeneratedMSBuildEditorConfig.editorconfig
+/home/omidsa/Programmings/ASPNetCore/Project10/TestExamples/ApiTest/obj/Debug/net9.0/ApiTest.AssemblyInfoInputs.cache
+/home/omidsa/Programmings/ASPNetCore/Project10/TestExamples/ApiTest/obj/Debug/net9.0/ApiTest.AssemblyInfo.cs
+/home/omidsa/Programmings/ASPNetCore/Project10/TestExamples/ApiTest/obj/Debug/net9.0/ApiTest.csproj.CoreCompileInputs.cache
+/home/omidsa/Programmings/ASPNetCore/Project10/TestExamples/ApiTest/obj/Debug/net9.0/ApiTest.MvcApplicationPartsAssemblyInfo.cs
+/home/omidsa/Programmings/ASPNetCore/Project10/TestExamples/ApiTest/obj/Debug/net9.0/ApiTest.MvcApplicationPartsAssemblyInfo.cache
+/home/omidsa/Programmings/ASPNetCore/Project10/TestExamples/ApiTest/obj/Debug/net9.0/ApiTest.sourcelink.json
