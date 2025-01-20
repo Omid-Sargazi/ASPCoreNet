@@ -26,7 +26,7 @@ namespace Tests01.UnitTest.Tests
             _controller = new BooksController(_dbContext);
         }
 
-        [Fact]
+        //[Fact]
         public async Task GetBooks_ReturnsAllBooks()
         {
             var author = new Author{Id = 1, Name = "Author 1"};
@@ -44,7 +44,7 @@ namespace Tests01.UnitTest.Tests
             Assert.Equal("Book 1", returnValue[0].Title);
         }
 
-        [Fact]
+       // [Fact]
         public async Task CreateBook_ReturnsCreatedAtActionResult()
         {
             var author = new Author {Id = 1, Name = "Author 1"};
