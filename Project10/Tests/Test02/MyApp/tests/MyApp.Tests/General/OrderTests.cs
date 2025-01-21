@@ -32,5 +32,18 @@ namespace MyApp.Tests.General
             order.Products[0].Should().Be(product);
             Assert.Equal(product, order.Products[0]);
         }
+
+        [Fact]
+        public void GetTotalAmount_ShouldReturnCorrectTotal()
+        {
+            var category = new Category("Appliances");
+            var order = new Order();
+
+            order.AddProduct(new Product("Fridge", 500m, category));
+            order.AddProduct(new Product("Washing Machine", 300m, category));
+
+            order.GetTotalAmount().Should().Be(800m);   
+        }
+
     }
 }
