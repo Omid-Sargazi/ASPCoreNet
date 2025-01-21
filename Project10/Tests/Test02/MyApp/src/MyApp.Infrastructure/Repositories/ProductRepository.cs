@@ -35,6 +35,7 @@ namespace MyApp.Infrastructure.Repositories
 
         public async Task<IEnumerable<Product>> GetAllAsync()
         {
+            //Console.WriteLine("omidSargazi");
             return await _context.Products.ToListAsync();
         }
 

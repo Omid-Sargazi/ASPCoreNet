@@ -1,6 +1,16 @@
+/home/omidsa/Programmings/ASPNetCore/Project10/Tests/Test02/MyApp/src/MyApp.Infrastructure/bin/Debug/net9.0/MyApp.Infrastructure.deps.json
+/home/omidsa/Programmings/ASPNetCore/Project10/Tests/Test02/MyApp/src/MyApp.Infrastructure/bin/Debug/net9.0/MyApp.Infrastructure.dll
+/home/omidsa/Programmings/ASPNetCore/Project10/Tests/Test02/MyApp/src/MyApp.Infrastructure/bin/Debug/net9.0/MyApp.Infrastructure.pdb
+/home/omidsa/Programmings/ASPNetCore/Project10/Tests/Test02/MyApp/src/MyApp.Infrastructure/bin/Debug/net9.0/MyApp.Domain.dll
+/home/omidsa/Programmings/ASPNetCore/Project10/Tests/Test02/MyApp/src/MyApp.Infrastructure/bin/Debug/net9.0/MyApp.Domain.pdb
 /home/omidsa/Programmings/ASPNetCore/Project10/Tests/Test02/MyApp/src/MyApp.Infrastructure/obj/Debug/net9.0/MyApp.Infrastructure.csproj.AssemblyReference.cache
 /home/omidsa/Programmings/ASPNetCore/Project10/Tests/Test02/MyApp/src/MyApp.Infrastructure/obj/Debug/net9.0/MyApp.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
 /home/omidsa/Programmings/ASPNetCore/Project10/Tests/Test02/MyApp/src/MyApp.Infrastructure/obj/Debug/net9.0/MyApp.Infrastructure.AssemblyInfoInputs.cache
 /home/omidsa/Programmings/ASPNetCore/Project10/Tests/Test02/MyApp/src/MyApp.Infrastructure/obj/Debug/net9.0/MyApp.Infrastructure.AssemblyInfo.cs
 /home/omidsa/Programmings/ASPNetCore/Project10/Tests/Test02/MyApp/src/MyApp.Infrastructure/obj/Debug/net9.0/MyApp.Infrastructure.csproj.CoreCompileInputs.cache
 /home/omidsa/Programmings/ASPNetCore/Project10/Tests/Test02/MyApp/src/MyApp.Infrastructure/obj/Debug/net9.0/MyApp.Infrastructure.sourcelink.json
+/home/omidsa/Programmings/ASPNetCore/Project10/Tests/Test02/MyApp/src/MyApp.Infrastructure/obj/Debug/net9.0/MyApp.In.4513676F.Up2Date
+/home/omidsa/Programmings/ASPNetCore/Project10/Tests/Test02/MyApp/src/MyApp.Infrastructure/obj/Debug/net9.0/MyApp.Infrastructure.dll
+/home/omidsa/Programmings/ASPNetCore/Project10/Tests/Test02/MyApp/src/MyApp.Infrastructure/obj/Debug/net9.0/refint/MyApp.Infrastructure.dll
+/home/omidsa/Programmings/ASPNetCore/Project10/Tests/Test02/MyApp/src/MyApp.Infrastructure/obj/Debug/net9.0/MyApp.Infrastructure.pdb
+/home/omidsa/Programmings/ASPNetCore/Project10/Tests/Test02/MyApp/src/MyApp.Infrastructure/obj/Debug/net9.0/ref/MyApp.Infrastructure.dll

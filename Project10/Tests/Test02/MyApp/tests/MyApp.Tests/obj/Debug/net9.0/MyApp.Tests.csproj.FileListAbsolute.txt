@@ -8,7 +8,19 @@
 /home/omidsa/Programmings/ASPNetCore/Project10/Tests/Test02/MyApp/tests/MyApp.Tests/bin/Debug/net9.0/MyApp.Tests.dll
 /home/omidsa/Programmings/ASPNetCore/Project10/Tests/Test02/MyApp/tests/MyApp.Tests/bin/Debug/net9.0/MyApp.Tests.pdb
 /home/omidsa/Programmings/ASPNetCore/Project10/Tests/Test02/MyApp/tests/MyApp.Tests/bin/Debug/net9.0/Castle.Core.dll
+/home/omidsa/Programmings/ASPNetCore/Project10/Tests/Test02/MyApp/tests/MyApp.Tests/bin/Debug/net9.0/FluentAssertions.dll
 /home/omidsa/Programmings/ASPNetCore/Project10/Tests/Test02/MyApp/tests/MyApp.Tests/bin/Debug/net9.0/Microsoft.VisualStudio.CodeCoverage.Shim.dll
+/home/omidsa/Programmings/ASPNetCore/Project10/Tests/Test02/MyApp/tests/MyApp.Tests/bin/Debug/net9.0/Microsoft.EntityFrameworkCore.dll
+/home/omidsa/Programmings/ASPNetCore/Project10/Tests/Test02/MyApp/tests/MyApp.Tests/bin/Debug/net9.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+/home/omidsa/Programmings/ASPNetCore/Project10/Tests/Test02/MyApp/tests/MyApp.Tests/bin/Debug/net9.0/Microsoft.EntityFrameworkCore.InMemory.dll
+/home/omidsa/Programmings/ASPNetCore/Project10/Tests/Test02/MyApp/tests/MyApp.Tests/bin/Debug/net9.0/Microsoft.Extensions.Caching.Abstractions.dll
+/home/omidsa/Programmings/ASPNetCore/Project10/Tests/Test02/MyApp/tests/MyApp.Tests/bin/Debug/net9.0/Microsoft.Extensions.Caching.Memory.dll
+/home/omidsa/Programmings/ASPNetCore/Project10/Tests/Test02/MyApp/tests/MyApp.Tests/bin/Debug/net9.0/Microsoft.Extensions.DependencyInjection.dll
+/home/omidsa/Programmings/ASPNetCore/Project10/Tests/Test02/MyApp/tests/MyApp.Tests/bin/Debug/net9.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+/home/omidsa/Programmings/ASPNetCore/Project10/Tests/Test02/MyApp/tests/MyApp.Tests/bin/Debug/net9.0/Microsoft.Extensions.Logging.dll
+/home/omidsa/Programmings/ASPNetCore/Project10/Tests/Test02/MyApp/tests/MyApp.Tests/bin/Debug/net9.0/Microsoft.Extensions.Logging.Abstractions.dll
+/home/omidsa/Programmings/ASPNetCore/Project10/Tests/Test02/MyApp/tests/MyApp.Tests/bin/Debug/net9.0/Microsoft.Extensions.Options.dll
+/home/omidsa/Programmings/ASPNetCore/Project10/Tests/Test02/MyApp/tests/MyApp.Tests/bin/Debug/net9.0/Microsoft.Extensions.Primitives.dll
 /home/omidsa/Programmings/ASPNetCore/Project10/Tests/Test02/MyApp/tests/MyApp.Tests/bin/Debug/net9.0/Microsoft.TestPlatform.CoreUtilities.dll
 /home/omidsa/Programmings/ASPNetCore/Project10/Tests/Test02/MyApp/tests/MyApp.Tests/bin/Debug/net9.0/Microsoft.TestPlatform.PlatformAbstractions.dll
 /home/omidsa/Programmings/ASPNetCore/Project10/Tests/Test02/MyApp/tests/MyApp.Tests/bin/Debug/net9.0/Microsoft.VisualStudio.TestPlatform.ObjectModel.dll
@@ -92,7 +104,9 @@
 /home/omidsa/Programmings/ASPNetCore/Project10/Tests/Test02/MyApp/tests/MyApp.Tests/bin/Debug/net9.0/runtimes/win/lib/net6.0/System.Diagnostics.EventLog.Messages.dll
 /home/omidsa/Programmings/ASPNetCore/Project10/Tests/Test02/MyApp/tests/MyApp.Tests/bin/Debug/net9.0/runtimes/win/lib/net6.0/System.Diagnostics.EventLog.dll
 /home/omidsa/Programmings/ASPNetCore/Project10/Tests/Test02/MyApp/tests/MyApp.Tests/bin/Debug/net9.0/MyApp.Domain.dll
+/home/omidsa/Programmings/ASPNetCore/Project10/Tests/Test02/MyApp/tests/MyApp.Tests/bin/Debug/net9.0/MyApp.Infrastructure.dll
 /home/omidsa/Programmings/ASPNetCore/Project10/Tests/Test02/MyApp/tests/MyApp.Tests/bin/Debug/net9.0/MyApp.Domain.pdb
+/home/omidsa/Programmings/ASPNetCore/Project10/Tests/Test02/MyApp/tests/MyApp.Tests/bin/Debug/net9.0/MyApp.Infrastructure.pdb
 /home/omidsa/Programmings/ASPNetCore/Project10/Tests/Test02/MyApp/tests/MyApp.Tests/obj/Debug/net9.0/MyApp.Tests.csproj.AssemblyReference.cache
 /home/omidsa/Programmings/ASPNetCore/Project10/Tests/Test02/MyApp/tests/MyApp.Tests/obj/Debug/net9.0/MyApp.Tests.GeneratedMSBuildEditorConfig.editorconfig
 /home/omidsa/Programmings/ASPNetCore/Project10/Tests/Test02/MyApp/tests/MyApp.Tests/obj/Debug/net9.0/MyApp.Tests.AssemblyInfoInputs.cache
@@ -105,4 +119,3 @@
 /home/omidsa/Programmings/ASPNetCore/Project10/Tests/Test02/MyApp/tests/MyApp.Tests/obj/Debug/net9.0/MyApp.Tests.pdb
 /home/omidsa/Programmings/ASPNetCore/Project10/Tests/Test02/MyApp/tests/MyApp.Tests/obj/Debug/net9.0/MyApp.Tests.genruntimeconfig.cache
 /home/omidsa/Programmings/ASPNetCore/Project10/Tests/Test02/MyApp/tests/MyApp.Tests/obj/Debug/net9.0/ref/MyApp.Tests.dll
-/home/omidsa/Programmings/ASPNetCore/Project10/Tests/Test02/MyApp/tests/MyApp.Tests/bin/Debug/net9.0/FluentAssertions.dll
