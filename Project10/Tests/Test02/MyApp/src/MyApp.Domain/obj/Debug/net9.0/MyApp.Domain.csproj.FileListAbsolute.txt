@@ -1,0 +1,12 @@
+/home/omidsa/Programmings/ASPNetCore/Project10/Tests/Test02/MyApp/src/MyApp.Domain/bin/Debug/net9.0/MyApp.Domain.deps.json
+/home/omidsa/Programmings/ASPNetCore/Project10/Tests/Test02/MyApp/src/MyApp.Domain/bin/Debug/net9.0/MyApp.Domain.dll
+/home/omidsa/Programmings/ASPNetCore/Project10/Tests/Test02/MyApp/src/MyApp.Domain/bin/Debug/net9.0/MyApp.Domain.pdb
+/home/omidsa/Programmings/ASPNetCore/Project10/Tests/Test02/MyApp/src/MyApp.Domain/obj/Debug/net9.0/MyApp.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/home/omidsa/Programmings/ASPNetCore/Project10/Tests/Test02/MyApp/src/MyApp.Domain/obj/Debug/net9.0/MyApp.Domain.AssemblyInfoInputs.cache
+/home/omidsa/Programmings/ASPNetCore/Project10/Tests/Test02/MyApp/src/MyApp.Domain/obj/Debug/net9.0/MyApp.Domain.AssemblyInfo.cs
+/home/omidsa/Programmings/ASPNetCore/Project10/Tests/Test02/MyApp/src/MyApp.Domain/obj/Debug/net9.0/MyApp.Domain.csproj.CoreCompileInputs.cache
+/home/omidsa/Programmings/ASPNetCore/Project10/Tests/Test02/MyApp/src/MyApp.Domain/obj/Debug/net9.0/MyApp.Domain.sourcelink.json
+/home/omidsa/Programmings/ASPNetCore/Project10/Tests/Test02/MyApp/src/MyApp.Domain/obj/Debug/net9.0/MyApp.Domain.dll
+/home/omidsa/Programmings/ASPNetCore/Project10/Tests/Test02/MyApp/src/MyApp.Domain/obj/Debug/net9.0/refint/MyApp.Domain.dll
+/home/omidsa/Programmings/ASPNetCore/Project10/Tests/Test02/MyApp/src/MyApp.Domain/obj/Debug/net9.0/MyApp.Domain.pdb
+/home/omidsa/Programmings/ASPNetCore/Project10/Tests/Test02/MyApp/src/MyApp.Domain/obj/Debug/net9.0/ref/MyApp.Domain.dll
