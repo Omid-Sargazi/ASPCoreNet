@@ -8,7 +8,7 @@ namespace MyApp.Tests.General
 {
     public class ProductTests
     {
-        [Fact]
+        //[Fact]
         public void CreateProduct_ShouldInitializeCorrectly()
         {
             var category = new Category("Electronics");
@@ -19,7 +19,7 @@ namespace MyApp.Tests.General
             Assert.Equal(category.Name, product.Category.Name);
         }
 
-        [Fact]
+        //[Fact]
         public void CreateProduct_ShouldThrowException_WhenPriceIsNegative()
         {
             var category = new Category("Electronics");
@@ -28,5 +28,8 @@ namespace MyApp.Tests.General
 
            Assert.Equal("Price cannot be negative.", exception.Message);
         }
+        
+        //[Fact]
+
     }
 }

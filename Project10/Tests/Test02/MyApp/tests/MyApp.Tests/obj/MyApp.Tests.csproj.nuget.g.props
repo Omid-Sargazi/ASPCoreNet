@@ -21,5 +21,6 @@
   </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <Pkgxunit_analyzers Condition=" '$(Pkgxunit_analyzers)' == '' ">/home/omidsa/.nuget/packages/xunit.analyzers/1.18.0</Pkgxunit_analyzers>
+    <PkgFluentAssertions Condition=" '$(PkgFluentAssertions)' == '' ">/home/omidsa/.nuget/packages/fluentassertions/8.0.0</PkgFluentAssertions>
   </PropertyGroup>
 </Project>

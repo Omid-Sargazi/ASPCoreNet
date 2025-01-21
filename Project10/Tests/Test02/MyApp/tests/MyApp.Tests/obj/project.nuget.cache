@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "70ayqdJXkXM=",
+  "dgSpecHash": "8T1bRxOxcTc=",
   "success": true,
   "projectFilePath": "/home/omidsa/Programmings/ASPNetCore/Project10/Tests/Test02/MyApp/tests/MyApp.Tests/MyApp.Tests.csproj",
   "expectedPackageFiles": [
     "/home/omidsa/.nuget/packages/castle.core/5.1.1/castle.core.5.1.1.nupkg.sha512",
     "/home/omidsa/.nuget/packages/coverlet.collector/6.0.2/coverlet.collector.6.0.2.nupkg.sha512",
+    "/home/omidsa/.nuget/packages/fluentassertions/8.0.0/fluentassertions.8.0.0.nupkg.sha512",
     "/home/omidsa/.nuget/packages/microsoft.codecoverage/17.11.1/microsoft.codecoverage.17.11.1.nupkg.sha512",
     "/home/omidsa/.nuget/packages/microsoft.net.test.sdk/17.11.1/microsoft.net.test.sdk.17.11.1.nupkg.sha512",
     "/home/omidsa/.nuget/packages/microsoft.testplatform.objectmodel/17.11.1/microsoft.testplatform.objectmodel.17.11.1.nupkg.sha512",

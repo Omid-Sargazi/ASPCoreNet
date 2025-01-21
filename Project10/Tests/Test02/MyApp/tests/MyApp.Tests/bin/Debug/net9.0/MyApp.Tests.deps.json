@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v9.0": {
       "MyApp.Tests/1.0.0": {
         "dependencies": {
+          "FluentAssertions": "8.0.0",
           "Microsoft.NET.Test.Sdk": "17.11.1",
           "MyApp.Domain": "1.0.0",
           "coverlet.collector": "6.0.2",
@@ -31,6 +32,14 @@
         }
       },
       "coverlet.collector/6.0.2": {},
+      "FluentAssertions/8.0.0": {
+        "runtime": {
+          "lib/net6.0/FluentAssertions.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.0.0"
+          }
+        }
+      },
       "Microsoft.CodeCoverage/17.11.1": {
         "runtime": {
           "lib/netcoreapp3.1/Microsoft.VisualStudio.CodeCoverage.Shim.dll": {
@@ -415,6 +424,13 @@
       "sha512": "sha512-bJShQ6uWRTQ100ZeyiMqcFlhP7WJ+bCuabUs885dJiBEzMsJMSFr7BOyeCw4rgvQokteGi5rKQTlkhfQPUXg2A==",
       "path": "coverlet.collector/6.0.2",
       "hashPath": "coverlet.collector.6.0.2.nupkg.sha512"
+    },
+    "FluentAssertions/8.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-qVCJIpukyFb9TO9W3vC4/sQF8lfrQksJbo4071uk3YfmHyKKlCZTTpyYhmCnnTZ2LVfFP1JgxM652nolCFjZDw==",
+      "path": "fluentassertions/8.0.0",
+      "hashPath": "fluentassertions.8.0.0.nupkg.sha512"
     },
     "Microsoft.CodeCoverage/17.11.1": {
       "type": "package",

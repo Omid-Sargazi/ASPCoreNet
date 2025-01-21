@@ -105,3 +105,4 @@
 /home/omidsa/Programmings/ASPNetCore/Project10/Tests/Test02/MyApp/tests/MyApp.Tests/obj/Debug/net9.0/MyApp.Tests.pdb
 /home/omidsa/Programmings/ASPNetCore/Project10/Tests/Test02/MyApp/tests/MyApp.Tests/obj/Debug/net9.0/MyApp.Tests.genruntimeconfig.cache
 /home/omidsa/Programmings/ASPNetCore/Project10/Tests/Test02/MyApp/tests/MyApp.Tests/obj/Debug/net9.0/ref/MyApp.Tests.dll
+/home/omidsa/Programmings/ASPNetCore/Project10/Tests/Test02/MyApp/tests/MyApp.Tests/bin/Debug/net9.0/FluentAssertions.dll
