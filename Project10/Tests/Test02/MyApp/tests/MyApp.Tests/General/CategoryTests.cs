@@ -22,5 +22,21 @@ namespace MyApp.Tests.General
 
 
         }
+        [Fact]
+        public void AddProduct_ShouldAddToCategory()
+        {
+            var category = new Category("Books");
+            var product = new Product("Book1", 15m, category);
+
+            category.AddProduct(product);
+
+            // category.Products.Should().Contain(product);
+            // Assert.Contains(product, category.Products);
+
+            category.Products.Should().Contain(product);
+            category.Products.Should().ContainSingle();
+            Assert.Contains(product, category.Products);
+            category.Products[0].Should().Be(product);
+        }
     }
 }
