@@ -36,7 +36,9 @@ namespace Tests01.WebApi.Repository
 
         public async Task<IEnumerable<T>> GetAllAsync()
         {
-            return await _dbSet.ToListAsync();
+            Console.WriteLine("This is repository");
+            throw new Exception("this is repo");
+            //return await _dbSet.ToListAsync();
         }
 
         public async Task<T> GetByIdAsync(int id)

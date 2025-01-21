@@ -1,0 +1,15 @@
+/home/omidsa/Programmings/ASPNetCore/Project10/Tests/Test01/Tests01.Domain/bin/Debug/net9.0/Tests01.Domain.deps.json
+/home/omidsa/Programmings/ASPNetCore/Project10/Tests/Test01/Tests01.Domain/bin/Debug/net9.0/Tests01.Domain.runtimeconfig.json
+/home/omidsa/Programmings/ASPNetCore/Project10/Tests/Test01/Tests01.Domain/bin/Debug/net9.0/Tests01.Domain.dll
+/home/omidsa/Programmings/ASPNetCore/Project10/Tests/Test01/Tests01.Domain/bin/Debug/net9.0/Tests01.Domain.pdb
+/home/omidsa/Programmings/ASPNetCore/Project10/Tests/Test01/Tests01.Domain/obj/Debug/net9.0/Tests01.Domain.csproj.AssemblyReference.cache
+/home/omidsa/Programmings/ASPNetCore/Project10/Tests/Test01/Tests01.Domain/obj/Debug/net9.0/Tests01.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/home/omidsa/Programmings/ASPNetCore/Project10/Tests/Test01/Tests01.Domain/obj/Debug/net9.0/Tests01.Domain.AssemblyInfoInputs.cache
+/home/omidsa/Programmings/ASPNetCore/Project10/Tests/Test01/Tests01.Domain/obj/Debug/net9.0/Tests01.Domain.AssemblyInfo.cs
+/home/omidsa/Programmings/ASPNetCore/Project10/Tests/Test01/Tests01.Domain/obj/Debug/net9.0/Tests01.Domain.csproj.CoreCompileInputs.cache
+/home/omidsa/Programmings/ASPNetCore/Project10/Tests/Test01/Tests01.Domain/obj/Debug/net9.0/Tests01.Domain.sourcelink.json
+/home/omidsa/Programmings/ASPNetCore/Project10/Tests/Test01/Tests01.Domain/obj/Debug/net9.0/Tests01.Domain.dll
+/home/omidsa/Programmings/ASPNetCore/Project10/Tests/Test01/Tests01.Domain/obj/Debug/net9.0/refint/Tests01.Domain.dll
+/home/omidsa/Programmings/ASPNetCore/Project10/Tests/Test01/Tests01.Domain/obj/Debug/net9.0/Tests01.Domain.pdb
+/home/omidsa/Programmings/ASPNetCore/Project10/Tests/Test01/Tests01.Domain/obj/Debug/net9.0/Tests01.Domain.genruntimeconfig.cache
+/home/omidsa/Programmings/ASPNetCore/Project10/Tests/Test01/Tests01.Domain/obj/Debug/net9.0/ref/Tests01.Domain.dll
