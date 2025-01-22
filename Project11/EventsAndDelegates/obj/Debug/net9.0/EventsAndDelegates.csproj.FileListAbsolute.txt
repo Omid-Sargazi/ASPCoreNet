@@ -1,0 +1,15 @@
+/home/omidsa/Programmings/ASPNetCore/Project11/EventsAndDelegates/bin/Debug/net9.0/EventsAndDelegates
+/home/omidsa/Programmings/ASPNetCore/Project11/EventsAndDelegates/bin/Debug/net9.0/EventsAndDelegates.deps.json
+/home/omidsa/Programmings/ASPNetCore/Project11/EventsAndDelegates/bin/Debug/net9.0/EventsAndDelegates.runtimeconfig.json
+/home/omidsa/Programmings/ASPNetCore/Project11/EventsAndDelegates/bin/Debug/net9.0/EventsAndDelegates.dll
+/home/omidsa/Programmings/ASPNetCore/Project11/EventsAndDelegates/bin/Debug/net9.0/EventsAndDelegates.pdb
+/home/omidsa/Programmings/ASPNetCore/Project11/EventsAndDelegates/obj/Debug/net9.0/EventsAndDelegates.GeneratedMSBuildEditorConfig.editorconfig
+/home/omidsa/Programmings/ASPNetCore/Project11/EventsAndDelegates/obj/Debug/net9.0/EventsAndDelegates.AssemblyInfoInputs.cache
+/home/omidsa/Programmings/ASPNetCore/Project11/EventsAndDelegates/obj/Debug/net9.0/EventsAndDelegates.AssemblyInfo.cs
+/home/omidsa/Programmings/ASPNetCore/Project11/EventsAndDelegates/obj/Debug/net9.0/EventsAndDelegates.csproj.CoreCompileInputs.cache
+/home/omidsa/Programmings/ASPNetCore/Project11/EventsAndDelegates/obj/Debug/net9.0/EventsAndDelegates.sourcelink.json
+/home/omidsa/Programmings/ASPNetCore/Project11/EventsAndDelegates/obj/Debug/net9.0/EventsAndDelegates.dll
+/home/omidsa/Programmings/ASPNetCore/Project11/EventsAndDelegates/obj/Debug/net9.0/refint/EventsAndDelegates.dll
+/home/omidsa/Programmings/ASPNetCore/Project11/EventsAndDelegates/obj/Debug/net9.0/EventsAndDelegates.pdb
+/home/omidsa/Programmings/ASPNetCore/Project11/EventsAndDelegates/obj/Debug/net9.0/EventsAndDelegates.genruntimeconfig.cache
+/home/omidsa/Programmings/ASPNetCore/Project11/EventsAndDelegates/obj/Debug/net9.0/ref/EventsAndDelegates.dll
