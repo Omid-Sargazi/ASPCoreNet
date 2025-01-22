@@ -29,5 +29,16 @@ public class Program
             product.UpdatePrice(new Money(1200,"Pound"));
 
             Console.WriteLine($"Updated Price:{product.Price.Amount}, {product.Price.Currency}");
+
+            Console.WriteLine("////////////////////////////////");
+            var orderId = Guid.NewGuid();
+            var Orderaddress = new Address("456 Market St", "Los Angeles", "90002");
+
+            var order = new Order(orderId, "Omid Sargazi", Orderaddress);
+
+            var laptop = new Product(Guid.NewGuid(), "Laptop", new Money(1500,"USD"));
+            order.AddProduct(laptop);
+            
+            Console.WriteLine($"Order Id: {order.Id}, Customer Name: {order.CustomerName}, Shipping Address: {order.ShippingAddress.City}, {order.ShippingAddress.Street}");
     }
 }
