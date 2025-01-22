@@ -9,25 +9,42 @@ namespace Domain.Entities
     public class Order
     {
         public Guid Id {get; private set;}
-        public string CustomerName {get; private set;}
+        public Guid CustomerId  {get; private set;}
         public Address ShippingAddress {get; private set;}
-        public List<Product> Products {get; private set;}
+        public List<OrderItem> _items  = new();
+        public IReadOnlyCollection<OrderItem> Items => _items.AsReadOnly();
 
-        public Order(Guid id, string customerName, Address shippingAddress)
+        public Order(Guid id, Guid customerId, Address shippingAddress,List<OrderItem> items)
         {
-            if(string.IsNullOrWhiteSpace(customerName))
-                throw new ArgumentException("Customer name cannot be empty.");
+            if (items == null || items.Count == 0)
+                throw new InvalidOperationException("An order must contain at least one item.");
             
+
             Id= id;
-            CustomerName = customerName;
+            CustomerId = customerId;
             ShippingAddress = shippingAddress;
-            Products = new List<Product>();
+            _items.AddRange(items);
         }
 
-        public void AddProduct(Product product)
+        public Money GetTotalOrderPrice()
         {
-            Products.Add(product);
+            var total = _items.Sum(item => item.GetTotalPrice().Amount);
+            return new Money(total, _items.First().Price.Currency);
         }
+        public void AddItem(OrderItem item)
+        {
+            _items.Add(item);
+        }
+
+         public void RemoveItem(Guid itemId)
+        {
+            var item = _items.FirstOrDefault(i => i.Id == itemId);
+            if (item != null)
+            {
+                _items.Remove(item);
+            }
+
+      
         
     }
 }
