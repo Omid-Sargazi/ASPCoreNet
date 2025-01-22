@@ -1,0 +1,12 @@
+/home/omidsa/Programmings/ASPNetCore/Project11/DDD/Domain/obj/Debug/net9.0/Domain.GeneratedMSBuildEditorConfig.editorconfig
+/home/omidsa/Programmings/ASPNetCore/Project11/DDD/Domain/obj/Debug/net9.0/Domain.AssemblyInfoInputs.cache
+/home/omidsa/Programmings/ASPNetCore/Project11/DDD/Domain/obj/Debug/net9.0/Domain.AssemblyInfo.cs
+/home/omidsa/Programmings/ASPNetCore/Project11/DDD/Domain/obj/Debug/net9.0/Domain.csproj.CoreCompileInputs.cache
+/home/omidsa/Programmings/ASPNetCore/Project11/DDD/Domain/obj/Debug/net9.0/Domain.sourcelink.json
+/home/omidsa/Programmings/ASPNetCore/Project11/DDD/Domain/bin/Debug/net9.0/Domain.deps.json
+/home/omidsa/Programmings/ASPNetCore/Project11/DDD/Domain/bin/Debug/net9.0/Domain.dll
+/home/omidsa/Programmings/ASPNetCore/Project11/DDD/Domain/bin/Debug/net9.0/Domain.pdb
+/home/omidsa/Programmings/ASPNetCore/Project11/DDD/Domain/obj/Debug/net9.0/Domain.dll
+/home/omidsa/Programmings/ASPNetCore/Project11/DDD/Domain/obj/Debug/net9.0/refint/Domain.dll
+/home/omidsa/Programmings/ASPNetCore/Project11/DDD/Domain/obj/Debug/net9.0/Domain.pdb
+/home/omidsa/Programmings/ASPNetCore/Project11/DDD/Domain/obj/Debug/net9.0/ref/Domain.dll
