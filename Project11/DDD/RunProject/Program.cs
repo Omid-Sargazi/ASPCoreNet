@@ -14,5 +14,14 @@ public class Program
             var newAddress = new Address("456 Elm St", "LA", "90001");
             customer.ChangeAddress(newAddress);
             Console.WriteLine($"Updated Address: {customer.Address.Street}, {customer.Address.City}");
+
+            Console.WriteLine("//////////////");
+
+            var price1 = new Money(50,"USD");
+            var price2 = new Money(50, "USD");
+            var totalPrice = price1.Add(price2);
+
+            Console.WriteLine($"Total Price: {totalPrice.Amount}, {totalPrice.Currency}");
+            Console.WriteLine($"{price1.Equals(price2)}");
     }
 }
