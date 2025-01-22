@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Domain.Common;
+using Domain.Events;
 using Domain.ValueObjects;
 
 namespace Domain.Entities
@@ -12,7 +14,10 @@ namespace Domain.Entities
         public Guid CustomerId  {get; private set;}
         public Address ShippingAddress {get; private set;}
         public List<OrderItem> _items  = new();
+        public List<IDomainEvent> _events = new();
         public IReadOnlyCollection<OrderItem> Items => _items.AsReadOnly();
+        public IReadOnlyCollection<IDomainEvent> Events => _events.AsReadOnly();
+        
 
         public Order(Guid id, Guid customerId, Address shippingAddress,List<OrderItem> items)
         {
@@ -24,6 +29,19 @@ namespace Domain.Entities
             CustomerId = customerId;
             ShippingAddress = shippingAddress;
             _items.AddRange(items);
+
+            RaiseEvent(new OrderPlacedEvent(id, customerId));
+            
+        }
+
+        private void RaiseEvent(IDomainEvent domainEvent)
+        {
+            _events.Add(domainEvent);
+        }
+
+        public void ClearEvents()
+        {
+            _events.Clear();
         }
 
         public Money GetTotalOrderPrice()
