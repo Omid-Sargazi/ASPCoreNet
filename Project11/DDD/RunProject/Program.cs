@@ -23,5 +23,11 @@ public class Program
 
             Console.WriteLine($"Total Price: {totalPrice.Amount}, {totalPrice.Currency}");
             Console.WriteLine($"{price1.Equals(price2)}");
+            Console.WriteLine("//////////////");
+            var productId = Guid.NewGuid();
+            var product = new Product(productId, "Laptop", new Money(1000, "USD"));
+            product.UpdatePrice(new Money(1200,"Pound"));
+
+            Console.WriteLine($"Updated Price:{product.Price.Amount}, {product.Price.Currency}");
     }
 }
