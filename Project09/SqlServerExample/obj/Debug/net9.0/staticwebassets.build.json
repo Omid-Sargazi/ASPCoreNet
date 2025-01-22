@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "37j4iJ+I6vM7VH2sN/yBhvBbByN43a72XbOcWQif0GU=",
+  "Source": "SqlServerExample",
+  "BasePath": "_content/SqlServerExample",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
