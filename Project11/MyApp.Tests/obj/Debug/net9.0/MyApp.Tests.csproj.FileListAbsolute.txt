@@ -96,3 +96,8 @@
 /home/omidsa/Programmings/ASPNetCore/Project11/MyApp.Tests/obj/Debug/net9.0/MyApp.Tests.pdb
 /home/omidsa/Programmings/ASPNetCore/Project11/MyApp.Tests/obj/Debug/net9.0/MyApp.Tests.genruntimeconfig.cache
 /home/omidsa/Programmings/ASPNetCore/Project11/MyApp.Tests/obj/Debug/net9.0/ref/MyApp.Tests.dll
+/home/omidsa/Programmings/ASPNetCore/Project11/MyApp.Tests/bin/Debug/net9.0/Castle.Core.dll
+/home/omidsa/Programmings/ASPNetCore/Project11/MyApp.Tests/bin/Debug/net9.0/Moq.dll
+/home/omidsa/Programmings/ASPNetCore/Project11/MyApp.Tests/bin/Debug/net9.0/System.Diagnostics.EventLog.dll
+/home/omidsa/Programmings/ASPNetCore/Project11/MyApp.Tests/bin/Debug/net9.0/runtimes/win/lib/net6.0/System.Diagnostics.EventLog.Messages.dll
+/home/omidsa/Programmings/ASPNetCore/Project11/MyApp.Tests/bin/Debug/net9.0/runtimes/win/lib/net6.0/System.Diagnostics.EventLog.dll
