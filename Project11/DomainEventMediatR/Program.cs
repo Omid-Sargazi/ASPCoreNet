@@ -1,41 +1,68 @@
-var builder = WebApplication.CreateBuilder(args);
+// using System.Reflection;
 
-// Add services to the container.
-// Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
-builder.Services.AddOpenApi();
+// var builder = WebApplication.CreateBuilder(args);
 
-var app = builder.Build();
+// builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblies(Assembly.GetExecutingAssembly()));
 
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
+// // Add services to the container.
+// // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
+// builder.Services.AddOpenApi();
+
+// var app = builder.Build();
+
+// // Configure the HTTP request pipeline.
+
+// app.MapGet("/", () => "MediatR Integration Complete!");
+
+// app.Run();
+
+
+using System.Reflection;
+using DomainEventMediatR.Aggregates;
+using MediatR;
+
+class Program
 {
-    app.MapOpenApi();
-}
+    public static void Main(string[] args)
+    {
+        var builder = WebApplication.CreateBuilder(args);
 
-app.UseHttpsRedirection();
+       builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblies(Assembly.GetExecutingAssembly()));
 
-var summaries = new[]
-{
-    "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-};
+       var services = new ServiceCollection();
+       var provider = services.BuildServiceProvider();
+        var mediator = provider.GetRequiredService<IMediator>();
 
-app.MapGet("/weatherforecast", () =>
-{
-    var forecast =  Enumerable.Range(1, 5).Select(index =>
-        new WeatherForecast
-        (
-            DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
-            Random.Shared.Next(-20, 55),
-            summaries[Random.Shared.Next(summaries.Length)]
-        ))
-        .ToArray();
-    return forecast;
-})
-.WithName("GetWeatherForecast");
+        var orderId = Guid.NewGuid();
+        var customerId = Guid.NewGuid();
+        var address = new Address("123 Main St", "New York", "10001");
 
-app.Run();
+        var items = new List<OrderItem>
+        {
+            new OrderItem(Guid.NewGuid(), "Laptop", 1, new Money(1500, "USD"))
+        };
 
-record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
-{
-    public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
+        var order = new Order(orderId, customerId, address, items);
+
+        // Dispatch events via MediatR
+        foreach (var domainEvent in order.DomainEvents)
+        {
+            await mediator.Publish(domainEvent);
+        }
+
+        // Clear events to avoid duplication
+        order.ClearDomainEvents();
+
+        // Add services to the container.
+        // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
+        builder.Services.AddOpenApi();
+
+        var app = builder.Build();
+
+        // Configure the HTTP request pipeline.
+
+        app.MapGet("/", () => "MediatR Integration Complete!");
+
+        app.Run();
+    }
 }

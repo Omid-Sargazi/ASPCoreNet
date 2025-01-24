@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "tKkdPW3KTbHhPmQHjL+e8PWrDoYiUHhPViUjx6imkT4=",
+  "Source": "DomainEventMediatR",
+  "BasePath": "_content/DomainEventMediatR",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
