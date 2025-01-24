@@ -9,5 +9,6 @@ namespace DomainEventMediatR.Aggregates
     {
         public Guid Id { get; private set; }
         public Guid CustomerId { get; private set; }
+        public Address ShippingAddress { get; private set; }
     }
 }
