@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DomainEventMediatR")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1c990078852971610d519d95cb5f2036e6ed2722")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2a77a0fae1eb7383ca6beb02ca99a1240603b5aa")]
 [assembly: System.Reflection.AssemblyProductAttribute("DomainEventMediatR")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DomainEventMediatR")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
