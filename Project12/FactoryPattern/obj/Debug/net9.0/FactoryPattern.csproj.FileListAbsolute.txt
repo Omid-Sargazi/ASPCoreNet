@@ -1,0 +1,15 @@
+/home/omidsa/Programmings/ASPNetCore/Project12/FactoryPattern/bin/Debug/net9.0/FactoryPattern
+/home/omidsa/Programmings/ASPNetCore/Project12/FactoryPattern/bin/Debug/net9.0/FactoryPattern.deps.json
+/home/omidsa/Programmings/ASPNetCore/Project12/FactoryPattern/bin/Debug/net9.0/FactoryPattern.runtimeconfig.json
+/home/omidsa/Programmings/ASPNetCore/Project12/FactoryPattern/bin/Debug/net9.0/FactoryPattern.dll
+/home/omidsa/Programmings/ASPNetCore/Project12/FactoryPattern/bin/Debug/net9.0/FactoryPattern.pdb
+/home/omidsa/Programmings/ASPNetCore/Project12/FactoryPattern/obj/Debug/net9.0/FactoryPattern.GeneratedMSBuildEditorConfig.editorconfig
+/home/omidsa/Programmings/ASPNetCore/Project12/FactoryPattern/obj/Debug/net9.0/FactoryPattern.AssemblyInfoInputs.cache
+/home/omidsa/Programmings/ASPNetCore/Project12/FactoryPattern/obj/Debug/net9.0/FactoryPattern.AssemblyInfo.cs
+/home/omidsa/Programmings/ASPNetCore/Project12/FactoryPattern/obj/Debug/net9.0/FactoryPattern.csproj.CoreCompileInputs.cache
+/home/omidsa/Programmings/ASPNetCore/Project12/FactoryPattern/obj/Debug/net9.0/FactoryPattern.sourcelink.json
+/home/omidsa/Programmings/ASPNetCore/Project12/FactoryPattern/obj/Debug/net9.0/FactoryPattern.dll
+/home/omidsa/Programmings/ASPNetCore/Project12/FactoryPattern/obj/Debug/net9.0/refint/FactoryPattern.dll
+/home/omidsa/Programmings/ASPNetCore/Project12/FactoryPattern/obj/Debug/net9.0/FactoryPattern.pdb
+/home/omidsa/Programmings/ASPNetCore/Project12/FactoryPattern/obj/Debug/net9.0/FactoryPattern.genruntimeconfig.cache
+/home/omidsa/Programmings/ASPNetCore/Project12/FactoryPattern/obj/Debug/net9.0/ref/FactoryPattern.dll
