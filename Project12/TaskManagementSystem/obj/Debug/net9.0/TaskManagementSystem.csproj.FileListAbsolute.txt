@@ -1,0 +1,15 @@
+/home/omidsa/Programmings/ASPNetCore/Project12/TaskManagementSystem/bin/Debug/net9.0/TaskManagementSystem
+/home/omidsa/Programmings/ASPNetCore/Project12/TaskManagementSystem/bin/Debug/net9.0/TaskManagementSystem.deps.json
+/home/omidsa/Programmings/ASPNetCore/Project12/TaskManagementSystem/bin/Debug/net9.0/TaskManagementSystem.runtimeconfig.json
+/home/omidsa/Programmings/ASPNetCore/Project12/TaskManagementSystem/bin/Debug/net9.0/TaskManagementSystem.dll
+/home/omidsa/Programmings/ASPNetCore/Project12/TaskManagementSystem/bin/Debug/net9.0/TaskManagementSystem.pdb
+/home/omidsa/Programmings/ASPNetCore/Project12/TaskManagementSystem/obj/Debug/net9.0/TaskManagementSystem.GeneratedMSBuildEditorConfig.editorconfig
+/home/omidsa/Programmings/ASPNetCore/Project12/TaskManagementSystem/obj/Debug/net9.0/TaskManagementSystem.AssemblyInfoInputs.cache
+/home/omidsa/Programmings/ASPNetCore/Project12/TaskManagementSystem/obj/Debug/net9.0/TaskManagementSystem.AssemblyInfo.cs
+/home/omidsa/Programmings/ASPNetCore/Project12/TaskManagementSystem/obj/Debug/net9.0/TaskManagementSystem.csproj.CoreCompileInputs.cache
+/home/omidsa/Programmings/ASPNetCore/Project12/TaskManagementSystem/obj/Debug/net9.0/TaskManagementSystem.sourcelink.json
+/home/omidsa/Programmings/ASPNetCore/Project12/TaskManagementSystem/obj/Debug/net9.0/TaskManagementSystem.dll
+/home/omidsa/Programmings/ASPNetCore/Project12/TaskManagementSystem/obj/Debug/net9.0/refint/TaskManagementSystem.dll
+/home/omidsa/Programmings/ASPNetCore/Project12/TaskManagementSystem/obj/Debug/net9.0/TaskManagementSystem.pdb
+/home/omidsa/Programmings/ASPNetCore/Project12/TaskManagementSystem/obj/Debug/net9.0/TaskManagementSystem.genruntimeconfig.cache
+/home/omidsa/Programmings/ASPNetCore/Project12/TaskManagementSystem/obj/Debug/net9.0/ref/TaskManagementSystem.dll
