@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "22jdqbGZh9w=",
+  "success": true,
+  "projectFilePath": "/home/omidsa/Programmings/ASPNetCore/Project12/LibraryManagementSystem/LibraryManagementSystem.API/LibraryManagementSystem.API.csproj",
+  "expectedPackageFiles": [
+    "/home/omidsa/.nuget/packages/microsoft.aspnetcore.openapi/9.0.0/microsoft.aspnetcore.openapi.9.0.0.nupkg.sha512",
+    "/home/omidsa/.nuget/packages/microsoft.openapi/1.6.17/microsoft.openapi.1.6.17.nupkg.sha512"
+  ],
+  "logs": []
+}
