@@ -33,6 +33,16 @@
             "related": ".pdb;.xml"
           }
         }
+      },
+      "CatalogContext/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/CatalogContext.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CatalogContext.dll": {}
+        }
       }
     }
   },
@@ -67,10 +77,16 @@
         "microsoft.openapi.1.6.17.nupkg.sha512",
         "microsoft.openapi.nuspec"
       ]
+    },
+    "CatalogContext/1.0.0": {
+      "type": "project",
+      "path": "../CatalogContext/CatalogContext.csproj",
+      "msbuildProject": "../CatalogContext/CatalogContext.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net9.0": [
+      "CatalogContext >= 1.0.0",
       "Microsoft.AspNetCore.OpenApi >= 9.0.0"
     ]
   },
@@ -98,7 +114,11 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/home/omidsa/Programmings/ASPNetCore/Project12/LibraryManagementSystem/CatalogContext/CatalogContext.csproj": {
+              "projectPath": "/home/omidsa/Programmings/ASPNetCore/Project12/LibraryManagementSystem/CatalogContext/CatalogContext.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
