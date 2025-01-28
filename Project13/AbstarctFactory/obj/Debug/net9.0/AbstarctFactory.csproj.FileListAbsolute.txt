@@ -1,0 +1,15 @@
+/home/omidsa/Programmings/ASPNetCore/Project13/AbstarctFactory/bin/Debug/net9.0/AbstarctFactory
+/home/omidsa/Programmings/ASPNetCore/Project13/AbstarctFactory/bin/Debug/net9.0/AbstarctFactory.deps.json
+/home/omidsa/Programmings/ASPNetCore/Project13/AbstarctFactory/bin/Debug/net9.0/AbstarctFactory.runtimeconfig.json
+/home/omidsa/Programmings/ASPNetCore/Project13/AbstarctFactory/bin/Debug/net9.0/AbstarctFactory.dll
+/home/omidsa/Programmings/ASPNetCore/Project13/AbstarctFactory/bin/Debug/net9.0/AbstarctFactory.pdb
+/home/omidsa/Programmings/ASPNetCore/Project13/AbstarctFactory/obj/Debug/net9.0/AbstarctFactory.GeneratedMSBuildEditorConfig.editorconfig
+/home/omidsa/Programmings/ASPNetCore/Project13/AbstarctFactory/obj/Debug/net9.0/AbstarctFactory.AssemblyInfoInputs.cache
+/home/omidsa/Programmings/ASPNetCore/Project13/AbstarctFactory/obj/Debug/net9.0/AbstarctFactory.AssemblyInfo.cs
+/home/omidsa/Programmings/ASPNetCore/Project13/AbstarctFactory/obj/Debug/net9.0/AbstarctFactory.csproj.CoreCompileInputs.cache
+/home/omidsa/Programmings/ASPNetCore/Project13/AbstarctFactory/obj/Debug/net9.0/AbstarctFactory.sourcelink.json
+/home/omidsa/Programmings/ASPNetCore/Project13/AbstarctFactory/obj/Debug/net9.0/AbstarctFactory.dll
+/home/omidsa/Programmings/ASPNetCore/Project13/AbstarctFactory/obj/Debug/net9.0/refint/AbstarctFactory.dll
+/home/omidsa/Programmings/ASPNetCore/Project13/AbstarctFactory/obj/Debug/net9.0/AbstarctFactory.pdb
+/home/omidsa/Programmings/ASPNetCore/Project13/AbstarctFactory/obj/Debug/net9.0/AbstarctFactory.genruntimeconfig.cache
+/home/omidsa/Programmings/ASPNetCore/Project13/AbstarctFactory/obj/Debug/net9.0/ref/AbstarctFactory.dll
