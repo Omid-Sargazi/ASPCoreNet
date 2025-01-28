@@ -20,5 +20,13 @@
         Console.WriteLine("Numbers greater than five:");
         foreach(var num in greaterThanFive )
             Console.WriteLine(num);
+
+        
+        var sortedNumbers = numbers.OrderBy(num => num);
+
+        Console.WriteLine("Sorted Numbers");
+        foreach(var num in sortedNumbers)
+            
+            Console.WriteLine(num);
     }
 }
