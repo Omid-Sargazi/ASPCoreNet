@@ -28,5 +28,13 @@
         foreach(var num in sortedNumbers)
             
             Console.WriteLine(num);
+
+            var sortedDescending = numbers.OrderByDescending(num => num);
+            Console.WriteLine("Soreted Numbers (Descending): ");
+
+            foreach(var num in sortedDescending)
+            {
+                Console.WriteLine(num);
+            }
     }
 }
