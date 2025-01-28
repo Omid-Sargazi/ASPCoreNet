@@ -36,5 +36,14 @@
             {
                 Console.WriteLine(num);
             }
+
+
+            var squares = numbers.Select(num => num*num);
+            Console.WriteLine("Squares of Numbers:");
+
+            foreach(var num in squares)
+            {
+                Console.WriteLine(num);
+            }
     }
 }
