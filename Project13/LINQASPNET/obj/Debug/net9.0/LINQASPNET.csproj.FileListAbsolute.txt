@@ -1,0 +1,15 @@
+/home/omidsa/Programmings/ASPNetCore/Project13/LINQASPNET/bin/Debug/net9.0/LINQASPNET
+/home/omidsa/Programmings/ASPNetCore/Project13/LINQASPNET/bin/Debug/net9.0/LINQASPNET.deps.json
+/home/omidsa/Programmings/ASPNetCore/Project13/LINQASPNET/bin/Debug/net9.0/LINQASPNET.runtimeconfig.json
+/home/omidsa/Programmings/ASPNetCore/Project13/LINQASPNET/bin/Debug/net9.0/LINQASPNET.dll
+/home/omidsa/Programmings/ASPNetCore/Project13/LINQASPNET/bin/Debug/net9.0/LINQASPNET.pdb
+/home/omidsa/Programmings/ASPNetCore/Project13/LINQASPNET/obj/Debug/net9.0/LINQASPNET.GeneratedMSBuildEditorConfig.editorconfig
+/home/omidsa/Programmings/ASPNetCore/Project13/LINQASPNET/obj/Debug/net9.0/LINQASPNET.AssemblyInfoInputs.cache
+/home/omidsa/Programmings/ASPNetCore/Project13/LINQASPNET/obj/Debug/net9.0/LINQASPNET.AssemblyInfo.cs
+/home/omidsa/Programmings/ASPNetCore/Project13/LINQASPNET/obj/Debug/net9.0/LINQASPNET.csproj.CoreCompileInputs.cache
+/home/omidsa/Programmings/ASPNetCore/Project13/LINQASPNET/obj/Debug/net9.0/LINQASPNET.sourcelink.json
+/home/omidsa/Programmings/ASPNetCore/Project13/LINQASPNET/obj/Debug/net9.0/LINQASPNET.dll
+/home/omidsa/Programmings/ASPNetCore/Project13/LINQASPNET/obj/Debug/net9.0/refint/LINQASPNET.dll
+/home/omidsa/Programmings/ASPNetCore/Project13/LINQASPNET/obj/Debug/net9.0/LINQASPNET.pdb
+/home/omidsa/Programmings/ASPNetCore/Project13/LINQASPNET/obj/Debug/net9.0/LINQASPNET.genruntimeconfig.cache
+/home/omidsa/Programmings/ASPNetCore/Project13/LINQASPNET/obj/Debug/net9.0/ref/LINQASPNET.dll
