@@ -67,5 +67,9 @@ public class Program
                 Console.WriteLine($"{person.Name},{person.Age}");
             }
         }
+
+
+        bool anyChicagoans = people.Any(person => person.City=="Chicago");
+        Console.WriteLine($"Are there any peopel from chicago: {anyChicagoans}");
     }
 }
