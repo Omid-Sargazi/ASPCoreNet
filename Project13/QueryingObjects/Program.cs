@@ -71,5 +71,12 @@ public class Program
 
         bool anyChicagoans = people.Any(person => person.City=="Chicago");
         Console.WriteLine($"Are there any peopel from chicago: {anyChicagoans}");
+
+        bool allAdults = people.All(person => person.Age > 20);
+        Console.WriteLine($"Are all peopel older than 20");
+
+        var firstAngeleno = people.FirstOrDefault(person => person.City=="LA");
+        Console.WriteLine($"First peopel from LA: {firstAngeleno?.Name??"None"}");
+
     }
 }
