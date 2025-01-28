@@ -45,5 +45,13 @@
             {
                 Console.WriteLine(num);
             }
+
+            var evenSquares = numbers.Select(num => num*num)
+            .Where(num => num%2==0);
+            Console.WriteLine("Squares of even numbers");
+            foreach(var num in evenSquares)
+            {
+                Console.WriteLine(num);
+            }
     }
 }
