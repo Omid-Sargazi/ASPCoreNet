@@ -71,6 +71,18 @@
             Console.WriteLine($"Any number greater than 10: {anyGreateThanTen}");
             Console.WriteLine($"All number gretaer than 0 {allGreaterThanZero}");
 
+            Console.WriteLine(" Aggregating Data with Sum and ...");
+
+            int sum = numbers.Sum();
+            double average  = numbers.Average();
+            int min = numbers.Min();
+            int Max = numbers.Max();
+
+            Console.WriteLine($"Sum is: {sum}");
+            Console.WriteLine($"Average is {average}");
+            Console.WriteLine($"Min is {min}");
+            Console.WriteLine($"Max is: {Max}");
+
 
     }
 }
