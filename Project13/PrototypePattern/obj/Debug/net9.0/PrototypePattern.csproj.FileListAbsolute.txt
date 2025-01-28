@@ -1,0 +1,15 @@
+/home/omidsa/Programmings/ASPNetCore/Project13/PrototypePattern/bin/Debug/net9.0/PrototypePattern
+/home/omidsa/Programmings/ASPNetCore/Project13/PrototypePattern/bin/Debug/net9.0/PrototypePattern.deps.json
+/home/omidsa/Programmings/ASPNetCore/Project13/PrototypePattern/bin/Debug/net9.0/PrototypePattern.runtimeconfig.json
+/home/omidsa/Programmings/ASPNetCore/Project13/PrototypePattern/bin/Debug/net9.0/PrototypePattern.dll
+/home/omidsa/Programmings/ASPNetCore/Project13/PrototypePattern/bin/Debug/net9.0/PrototypePattern.pdb
+/home/omidsa/Programmings/ASPNetCore/Project13/PrototypePattern/obj/Debug/net9.0/PrototypePattern.GeneratedMSBuildEditorConfig.editorconfig
+/home/omidsa/Programmings/ASPNetCore/Project13/PrototypePattern/obj/Debug/net9.0/PrototypePattern.AssemblyInfoInputs.cache
+/home/omidsa/Programmings/ASPNetCore/Project13/PrototypePattern/obj/Debug/net9.0/PrototypePattern.AssemblyInfo.cs
+/home/omidsa/Programmings/ASPNetCore/Project13/PrototypePattern/obj/Debug/net9.0/PrototypePattern.csproj.CoreCompileInputs.cache
+/home/omidsa/Programmings/ASPNetCore/Project13/PrototypePattern/obj/Debug/net9.0/PrototypePattern.sourcelink.json
+/home/omidsa/Programmings/ASPNetCore/Project13/PrototypePattern/obj/Debug/net9.0/PrototypePattern.dll
+/home/omidsa/Programmings/ASPNetCore/Project13/PrototypePattern/obj/Debug/net9.0/refint/PrototypePattern.dll
+/home/omidsa/Programmings/ASPNetCore/Project13/PrototypePattern/obj/Debug/net9.0/PrototypePattern.pdb
+/home/omidsa/Programmings/ASPNetCore/Project13/PrototypePattern/obj/Debug/net9.0/PrototypePattern.genruntimeconfig.cache
+/home/omidsa/Programmings/ASPNetCore/Project13/PrototypePattern/obj/Debug/net9.0/ref/PrototypePattern.dll
