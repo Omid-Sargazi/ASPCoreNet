@@ -13,5 +13,12 @@
 
         foreach(var num in evenNumbers)
             Console.WriteLine(num);
+
+
+        var greaterThanFive = numbers.Where(num => num>=5);
+
+        Console.WriteLine("Numbers greater than five:");
+        foreach(var num in greaterThanFive )
+            Console.WriteLine(num);
     }
 }
