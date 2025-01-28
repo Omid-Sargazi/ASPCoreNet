@@ -32,5 +32,14 @@ public class Program
         foreach(var person in olderThanThirty)
             Console.WriteLine($"{person.Name}, {person.Age}");
 
+
+        var nameAndCity = people.Select(person=>new {person.Name, person.City});
+        
+        Console.WriteLine($"Names and Cities:");
+        foreach(var item in nameAndCity)
+        {
+            Console.WriteLine($"{item.Name},{item.City}");
+        }
+
     }
 }
