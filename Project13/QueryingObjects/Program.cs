@@ -25,5 +25,12 @@ public class Program
             Console.WriteLine($"{person.Name}, {person.Age}");
         }
 
+        var olderThanThirty = people.Where(person => person.Age>30)
+        .OrderBy(person=> person.Name);
+        
+        Console.WriteLine($"People order than 30 (Sorted by name:)");
+        foreach(var person in olderThanThirty)
+            Console.WriteLine($"{person.Name}, {person.Age}");
+
     }
 }
