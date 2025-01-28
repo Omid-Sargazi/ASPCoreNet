@@ -54,6 +54,18 @@ public class Program
         {
             Console.WriteLine(item.Name);
         }
+        
+        var peopleByCity = people.GroupBy(person => person.City);
 
+        Console.WriteLine($"Peopel Grouped By City:");
+        foreach(var group in peopleByCity)
+        {
+            Console.WriteLine($"City: {group.Key}");
+
+            foreach(var person in group)
+            {
+                Console.WriteLine($"{person.Name},{person.Age}");
+            }
+        }
     }
 }
