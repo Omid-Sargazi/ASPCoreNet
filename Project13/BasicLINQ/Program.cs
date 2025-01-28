@@ -53,5 +53,24 @@
             {
                 Console.WriteLine(num);
             }
+
+            Console.WriteLine("/////////////////////////////////////////////");
+
+            var firstEven = numbers.First(num => num%2==0);
+
+            var firstGreaterThanTen = numbers.FirstOrDefault(num => num>10);
+            Console.WriteLine($"First Even number: {firstEven}");
+            Console.WriteLine($"First number greater than zero: {firstGreaterThanTen}");
+
+            Console.WriteLine("/////////////////////////////////////////////");
+
+            bool anyGreateThanTen = numbers.Any(num => num>10);
+            
+            bool allGreaterThanZero = numbers.All(num => num>0);
+
+            Console.WriteLine($"Any number greater than 10: {anyGreateThanTen}");
+            Console.WriteLine($"All number gretaer than 0 {allGreaterThanZero}");
+
+
     }
 }
