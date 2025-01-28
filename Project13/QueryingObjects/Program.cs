@@ -41,5 +41,11 @@ public class Program
             Console.WriteLine($"{item.Name},{item.City}");
         }
 
+        var distinctCities = people.Select(person=>person.City).Distinct();
+
+        Console.WriteLine($"Distinct Cities:");
+        foreach(var city in distinctCities)
+            Console.WriteLine(city);
+
     }
 }
