@@ -1,0 +1,15 @@
+/home/omidsa/Programmings/ASPNetCore/Project13/QueryingObjects/bin/Debug/net9.0/QueryingObjects
+/home/omidsa/Programmings/ASPNetCore/Project13/QueryingObjects/bin/Debug/net9.0/QueryingObjects.deps.json
+/home/omidsa/Programmings/ASPNetCore/Project13/QueryingObjects/bin/Debug/net9.0/QueryingObjects.runtimeconfig.json
+/home/omidsa/Programmings/ASPNetCore/Project13/QueryingObjects/bin/Debug/net9.0/QueryingObjects.dll
+/home/omidsa/Programmings/ASPNetCore/Project13/QueryingObjects/bin/Debug/net9.0/QueryingObjects.pdb
+/home/omidsa/Programmings/ASPNetCore/Project13/QueryingObjects/obj/Debug/net9.0/QueryingObjects.GeneratedMSBuildEditorConfig.editorconfig
+/home/omidsa/Programmings/ASPNetCore/Project13/QueryingObjects/obj/Debug/net9.0/QueryingObjects.AssemblyInfoInputs.cache
+/home/omidsa/Programmings/ASPNetCore/Project13/QueryingObjects/obj/Debug/net9.0/QueryingObjects.AssemblyInfo.cs
+/home/omidsa/Programmings/ASPNetCore/Project13/QueryingObjects/obj/Debug/net9.0/QueryingObjects.csproj.CoreCompileInputs.cache
+/home/omidsa/Programmings/ASPNetCore/Project13/QueryingObjects/obj/Debug/net9.0/QueryingObjects.sourcelink.json
+/home/omidsa/Programmings/ASPNetCore/Project13/QueryingObjects/obj/Debug/net9.0/QueryingObjects.dll
+/home/omidsa/Programmings/ASPNetCore/Project13/QueryingObjects/obj/Debug/net9.0/refint/QueryingObjects.dll
+/home/omidsa/Programmings/ASPNetCore/Project13/QueryingObjects/obj/Debug/net9.0/QueryingObjects.pdb
+/home/omidsa/Programmings/ASPNetCore/Project13/QueryingObjects/obj/Debug/net9.0/QueryingObjects.genruntimeconfig.cache
+/home/omidsa/Programmings/ASPNetCore/Project13/QueryingObjects/obj/Debug/net9.0/ref/QueryingObjects.dll
