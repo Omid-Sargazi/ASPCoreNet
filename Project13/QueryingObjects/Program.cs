@@ -78,5 +78,18 @@ public class Program
         var firstAngeleno = people.FirstOrDefault(person => person.City=="LA");
         Console.WriteLine($"First peopel from LA: {firstAngeleno?.Name??"None"}");
 
+
+        /////////////////////////////////////////////////
+         List<PersonWithHobbies> peopleWithHobbies = new List<PersonWithHobbies>
+    {
+        new PersonWithHobbies {Name="Alice", Hobbies=new List<string>{"Reading", "Swimming"}},
+        new PersonWithHobbies {Name="Bob", Hobbies=new List<string>{"Cycling", "Hiking"}}
+    };
+
+    var allHobbies = peopleWithHobbies.SelectMany(person => person.Hobbies);
+    Console.WriteLine("All Hobbies;");
+    foreach(var hobby in allHobbies)
+        Console.WriteLine(hobby);
+
     }
 }
