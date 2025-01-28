@@ -47,5 +47,13 @@ public class Program
         foreach(var city in distinctCities)
             Console.WriteLine(city);
 
+        var youngAngelenos = people.Where(person => person.City=="LA" && person.Age<30);
+        Console.WriteLine($"Young people from LA");
+
+        foreach(var item in youngAngelenos)
+        {
+            Console.WriteLine(item.Name);
+        }
+
     }
 }
