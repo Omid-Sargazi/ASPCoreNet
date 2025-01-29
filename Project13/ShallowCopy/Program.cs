@@ -51,15 +51,23 @@ public class Program
         // // Console.WriteLine(person1.Name,person2.Name);
         // Console.WriteLine(person1.DeepCopyAddress.City + person2.DeepCopyAddress.City);
 
-        User originalUser = new User{Name = "Omid", Profile = new Profile{Address = "New York"}};
-        User copiedUser = originalUser.ShallowCopy();
+        // User originalUser = new User{Name = "Omid", Profile = new Profile{Address = "New York"}};
+        // User copiedUser = originalUser.ShallowCopy();
 
-        copiedUser.Name = "Saeed";
-        copiedUser.Profile.Address = "LA";
+        // copiedUser.Name = "Saeed";
+        // copiedUser.Profile.Address = "LA";
 
-        Console.WriteLine(originalUser.Name+ " "+copiedUser.Name);
-        Console.WriteLine(originalUser.Profile.Address+ " "+copiedUser.Profile.Address);
+        // Console.WriteLine(originalUser.Name+ " "+copiedUser.Name);
+        // Console.WriteLine(originalUser.Profile.Address+ " "+copiedUser.Profile.Address);
 
+        DeepCopyUser user1 = new DeepCopyUser{Name = "omid", DeepCopyProfile = new DeepCopyProfile {DeepCopyAddress = "New York"}};
+        DeepCopyUser user2 = user1.DeepCopy();
+
+        user2.Name = "Saeed";
+        user2.DeepCopyProfile.DeepCopyAddress = "LA";
+
+        Console.WriteLine(user2.DeepCopyProfile.DeepCopyAddress);
+        Console.WriteLine(user1.DeepCopyProfile.DeepCopyAddress);
 
 
     }
