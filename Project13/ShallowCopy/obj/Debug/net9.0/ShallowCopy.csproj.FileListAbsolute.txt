@@ -1,0 +1,15 @@
+/home/omidsa/Programmings/ASPNetCore/Project13/ShallowCopy/bin/Debug/net9.0/ShallowCopy
+/home/omidsa/Programmings/ASPNetCore/Project13/ShallowCopy/bin/Debug/net9.0/ShallowCopy.deps.json
+/home/omidsa/Programmings/ASPNetCore/Project13/ShallowCopy/bin/Debug/net9.0/ShallowCopy.runtimeconfig.json
+/home/omidsa/Programmings/ASPNetCore/Project13/ShallowCopy/bin/Debug/net9.0/ShallowCopy.dll
+/home/omidsa/Programmings/ASPNetCore/Project13/ShallowCopy/bin/Debug/net9.0/ShallowCopy.pdb
+/home/omidsa/Programmings/ASPNetCore/Project13/ShallowCopy/obj/Debug/net9.0/ShallowCopy.GeneratedMSBuildEditorConfig.editorconfig
+/home/omidsa/Programmings/ASPNetCore/Project13/ShallowCopy/obj/Debug/net9.0/ShallowCopy.AssemblyInfoInputs.cache
+/home/omidsa/Programmings/ASPNetCore/Project13/ShallowCopy/obj/Debug/net9.0/ShallowCopy.AssemblyInfo.cs
+/home/omidsa/Programmings/ASPNetCore/Project13/ShallowCopy/obj/Debug/net9.0/ShallowCopy.csproj.CoreCompileInputs.cache
+/home/omidsa/Programmings/ASPNetCore/Project13/ShallowCopy/obj/Debug/net9.0/ShallowCopy.sourcelink.json
+/home/omidsa/Programmings/ASPNetCore/Project13/ShallowCopy/obj/Debug/net9.0/ShallowCopy.dll
+/home/omidsa/Programmings/ASPNetCore/Project13/ShallowCopy/obj/Debug/net9.0/refint/ShallowCopy.dll
+/home/omidsa/Programmings/ASPNetCore/Project13/ShallowCopy/obj/Debug/net9.0/ShallowCopy.pdb
+/home/omidsa/Programmings/ASPNetCore/Project13/ShallowCopy/obj/Debug/net9.0/ShallowCopy.genruntimeconfig.cache
+/home/omidsa/Programmings/ASPNetCore/Project13/ShallowCopy/obj/Debug/net9.0/ref/ShallowCopy.dll
