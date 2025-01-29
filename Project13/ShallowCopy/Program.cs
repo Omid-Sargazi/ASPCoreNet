@@ -2,6 +2,7 @@
 using ShallowCopy.DeepCopy02;
 using ShallowCopy.ShalowCopy;
 using ShallowCopy.ShalowCopy02;
+using ShallowCopy.Users;
 
 public class Program
 {
@@ -31,23 +32,35 @@ public class Program
         // Console.WriteLine(deepPerson01.Name);
         // Console.WriteLine(deepPerson02.Name);
 
-        ShallowPerson person01 = new ShallowPerson {Name = "Omid", ShallowAddress = new ShallowAddress {City = "New York"}};
-        ShallowPerson person02 = person01.ShallowCopy();
+        // ShallowPerson person01 = new ShallowPerson {Name = "Omid", ShallowAddress = new ShallowAddress {City = "New York"}};
+        // ShallowPerson person02 = person01.ShallowCopy();
 
-        person02.Name = "Saeed";
-        person02.ShallowAddress.City = "Lux";
+        // person02.Name = "Saeed";
+        // person02.ShallowAddress.City = "Lux";
 
-        Console.WriteLine($"Shallow Copy main Objetc is:  {person01.Name},{person01.ShallowAddress.City}");
-        Console.WriteLine($"Shallow Copy of object is:  {person02.Name},{person02.ShallowAddress.City}");
+        // Console.WriteLine($"Shallow Copy main Objetc is:  {person01.Name},{person01.ShallowAddress.City}");
+        // Console.WriteLine($"Shallow Copy of object is:  {person02.Name},{person02.ShallowAddress.City}");
 
 
-        DeepCopyPerson person1 = new DeepCopyPerson{Name = "Omid", DeepCopyAddress = new DeepCopyAddress{City = "New York"}};
-        DeepCopyPerson person2 = person1.DeepCopy();
-        person2.Name = "Saeed";
-        person2.DeepCopyAddress.City = "Lux";
+        // DeepCopyPerson person1 = new DeepCopyPerson{Name = "Omid", DeepCopyAddress = new DeepCopyAddress{City = "New York"}};
+        // DeepCopyPerson person2 = person1.DeepCopy();
+        // person2.Name = "Saeed";
+        // person2.DeepCopyAddress.City = "Lux";
 
-        Console.WriteLine(person1.Name+ person2.Name);
-        // Console.WriteLine(person1.Name,person2.Name);
-        Console.WriteLine(person1.DeepCopyAddress.City + person2.DeepCopyAddress.City);
+        // Console.WriteLine(person1.Name+ person2.Name);
+        // // Console.WriteLine(person1.Name,person2.Name);
+        // Console.WriteLine(person1.DeepCopyAddress.City + person2.DeepCopyAddress.City);
+
+        User originalUser = new User{Name = "Omid", Profile = new Profile{Address = "New York"}};
+        User copiedUser = originalUser.ShallowCopy();
+
+        copiedUser.Name = "Saeed";
+        copiedUser.Profile.Address = "LA";
+
+        Console.WriteLine(originalUser.Name+ " "+copiedUser.Name);
+        Console.WriteLine(originalUser.Profile.Address+ " "+copiedUser.Profile.Address);
+
+
+
     }
 }
