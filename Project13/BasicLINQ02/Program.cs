@@ -112,6 +112,27 @@ public class Program
             }
         }
 
+        bool anyChicagoans = peopel.Any(person => person.City=="Chicago");
+        bool allAdults = peopel.All(person => person.Age>20);
+
+        var firstAngeleno = peopel.FirstOrDefault(person => person.City == "Los Angeles");
+        Console.WriteLine($"Firts person from LA: {firstAngeleno?.Name ?? "None"}");
+
+
+        List<PersonWithHobbies> peopleWithHobbies = new List<PersonWithHobbies>
+        {
+            new PersonWithHobbies { Name="Alice", Hobbies = new List<string>{"reding", "Swimming"}},
+            new PersonWithHobbies {Name="Bob", Hobbies = new List<string>{"Cycling", "Hiking"}},
+        };
+
+        var allallHobbies = peopleWithHobbies.SelectMany(person => person.Hobbies);
+
+        Console.WriteLine("All Hobbies");
+        foreach(var hobby in allallHobbies)
+        {
+            Console.WriteLine(hobby);
+        }
+
 
 
 
