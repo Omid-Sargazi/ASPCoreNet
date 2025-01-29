@@ -95,6 +95,12 @@ public class Program
         foreach(var city in distinctCities)
             Console.WriteLine(city);
 
+        //Combining Multiple Conditions in Where
+        var youngAngelenos = peopel.Where(person => person.Age<30 & person.City == "Los Angeles");
+        Console.WriteLine("Young peopel from LA");
+        foreach(var people in youngAngelenos)
+            Console.WriteLine(people.Name);
+
 
 
 
