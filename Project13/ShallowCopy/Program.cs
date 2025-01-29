@@ -1,4 +1,5 @@
-﻿using ShallowCopy.ShalowCopy;
+﻿using ShallowCopy.DeepCopy;
+using ShallowCopy.ShalowCopy;
 
 public class Program
 {
@@ -14,5 +15,18 @@ public class Program
 
         Console.WriteLine(person1.Name);
         Console.WriteLine(person2.Name);
+
+
+        Console.WriteLine("//////////////////////");
+
+        DeepPerson deepPerson01 = new DeepPerson{Name = "Omid", deepAddress = new DeepAddress{City="New york"}};
+        DeepPerson deepPerson02 = deepPerson01.DeepCopy();
+
+        deepPerson02.Name = "John";
+        deepPerson02.deepAddress.City = "LA";
+
+        Console.WriteLine("DeepCopy");
+        Console.WriteLine(deepPerson01.Name);
+        Console.WriteLine(deepPerson02.Name);
     }
 }
