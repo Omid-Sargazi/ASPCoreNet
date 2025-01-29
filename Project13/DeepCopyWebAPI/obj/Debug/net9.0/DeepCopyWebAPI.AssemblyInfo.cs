@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DeepCopyWebAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+00aad7e802694f124915b37b02eecc9fe1fe44a7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9ee93440286e5c109268d26ddd3cf7ba0c69ce68")]
 [assembly: System.Reflection.AssemblyProductAttribute("DeepCopyWebAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DeepCopyWebAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
