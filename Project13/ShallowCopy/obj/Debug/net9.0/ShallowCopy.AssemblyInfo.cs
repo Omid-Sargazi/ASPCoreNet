@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ShallowCopy")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3bb0ea7eaa51edbf0b2913b34782d757165f7c78")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f7df10cd917249a5c059a88970f43e4a3d12b1eb")]
 [assembly: System.Reflection.AssemblyProductAttribute("ShallowCopy")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ShallowCopy")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
