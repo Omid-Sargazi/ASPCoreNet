@@ -10,5 +10,7 @@ namespace BasicLINQ02.Models
         public string Name {get; set;}
         public int Age {get; set;}
         public string City {get; set;}
+
+        
     }
 }

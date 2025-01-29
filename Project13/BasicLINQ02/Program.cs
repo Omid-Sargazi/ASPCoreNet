@@ -1,4 +1,6 @@
-﻿public class Program
+﻿using BasicLINQ02.Models;
+
+public class Program
 {
     public static void Main(string[] args)
     {
@@ -59,6 +61,23 @@
 
         var numbersWithDoublicates  = new List<int>{1,1,2,2,3,3,4,5,5,6,7,8};
         var distinctNumbers = numbersWithDoublicates.Distinct();
+
+        List<Person> peopel = new List<Person>
+        {
+            new Person {Name = "Alice", Age = 25, City = "New York" },
+            new Person { Name = "Bob", Age = 30, City = "Los Angeles" },
+            new Person { Name = "Charlie", Age = 35, City = "New York" },
+            new Person { Name = "David", Age = 40, City = "Chicago" },
+            new Person { Name = "Eve", Age = 28, City = "Los Angeles" }
+        };
+
+        var newYorkers = from person in peopel
+                        where person.City == "New York"
+                        select person;
+        Console.WriteLine("People from NewYork:");
+        foreach(var person in newYorkers)
+            Console.WriteLine(person.Name);
+
 
 
     }
