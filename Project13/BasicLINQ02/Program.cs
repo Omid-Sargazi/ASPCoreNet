@@ -100,6 +100,17 @@ public class Program
         Console.WriteLine("Young peopel from LA");
         foreach(var people in youngAngelenos)
             Console.WriteLine(people.Name);
+        
+        //Group people by their city
+        var peopleByCity = peopel.GroupBy(person => person.City);
+        foreach(var item in peopleByCity)
+        {
+            Console.WriteLine("City: "+item.Key);
+            foreach(var person in item)
+            {
+                Console.WriteLine(person.Name);
+            }
+        }
 
 
 
