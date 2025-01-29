@@ -1,0 +1,15 @@
+/home/omidsa/Programmings/ASPNetCore/Project13/BasicLINQ02/bin/Debug/net9.0/BasicLINQ02
+/home/omidsa/Programmings/ASPNetCore/Project13/BasicLINQ02/bin/Debug/net9.0/BasicLINQ02.deps.json
+/home/omidsa/Programmings/ASPNetCore/Project13/BasicLINQ02/bin/Debug/net9.0/BasicLINQ02.runtimeconfig.json
+/home/omidsa/Programmings/ASPNetCore/Project13/BasicLINQ02/bin/Debug/net9.0/BasicLINQ02.dll
+/home/omidsa/Programmings/ASPNetCore/Project13/BasicLINQ02/bin/Debug/net9.0/BasicLINQ02.pdb
+/home/omidsa/Programmings/ASPNetCore/Project13/BasicLINQ02/obj/Debug/net9.0/BasicLINQ02.GeneratedMSBuildEditorConfig.editorconfig
+/home/omidsa/Programmings/ASPNetCore/Project13/BasicLINQ02/obj/Debug/net9.0/BasicLINQ02.AssemblyInfoInputs.cache
+/home/omidsa/Programmings/ASPNetCore/Project13/BasicLINQ02/obj/Debug/net9.0/BasicLINQ02.AssemblyInfo.cs
+/home/omidsa/Programmings/ASPNetCore/Project13/BasicLINQ02/obj/Debug/net9.0/BasicLINQ02.csproj.CoreCompileInputs.cache
+/home/omidsa/Programmings/ASPNetCore/Project13/BasicLINQ02/obj/Debug/net9.0/BasicLINQ02.sourcelink.json
+/home/omidsa/Programmings/ASPNetCore/Project13/BasicLINQ02/obj/Debug/net9.0/BasicLINQ02.dll
+/home/omidsa/Programmings/ASPNetCore/Project13/BasicLINQ02/obj/Debug/net9.0/refint/BasicLINQ02.dll
+/home/omidsa/Programmings/ASPNetCore/Project13/BasicLINQ02/obj/Debug/net9.0/BasicLINQ02.pdb
+/home/omidsa/Programmings/ASPNetCore/Project13/BasicLINQ02/obj/Debug/net9.0/BasicLINQ02.genruntimeconfig.cache
+/home/omidsa/Programmings/ASPNetCore/Project13/BasicLINQ02/obj/Debug/net9.0/ref/BasicLINQ02.dll
