@@ -1,0 +1,6 @@
+@DeepCopyWebAPI_HostAddress = http://localhost:5010
+
+GET {{DeepCopyWebAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
