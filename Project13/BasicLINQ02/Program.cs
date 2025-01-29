@@ -35,5 +35,31 @@
         foreach(var num in squares)
             Console.WriteLine(num);
 
+        //Combining Where and Select
+        var evenSquares = numbers.Where(num => num%2==0).Select(num => num*num);
+        //Using First and FirstOrDefault
+        var firstEven = numbers.Where(num=>num%2==0).First();
+        Console.WriteLine("First even is: "+ firstEven);
+
+        //firstGreaterThanTen
+        var firstGreaterThanTen = numbers.FirstOrDefault(num => num>10);
+        //Using Any and All
+        bool anyGreatenThanTen = numbers.Any(num => num>10);
+
+        bool allGreaterThanZero = numbers.All(num => num >0);
+        
+        //Aggregating Data with Sum, Average, Min, and Max csharp
+        var sum = numbers.Sum(num => num);
+        Console.WriteLine("Sum is : "+ sum);
+
+        double average = numbers.Average();
+        int min = numbers.Min();
+        int max=  numbers.Max();
+        // Using Distinct to Remove Duplicates
+
+        var numbersWithDoublicates  = new List<int>{1,1,2,2,3,3,4,5,5,6,7,8};
+        var distinctNumbers = numbersWithDoublicates.Distinct();
+
+
     }
 }
