@@ -77,6 +77,24 @@ public class Program
         Console.WriteLine("People from NewYork:");
         foreach(var person in newYorkers)
             Console.WriteLine(person.Name);
+ 
+        //Filtering and Sorting Custom Objects
+        var olderThanThirty = peopel.Where(p => p.Age>30).OrderBy(p=>p.Name);
+        Console.WriteLine("people order than 30: ");
+        foreach(var person in olderThanThirty)
+        {
+            Console.WriteLine(person.Name);
+        }
+
+
+        //Projecting Data with Select
+        var nameAndCity = peopel.Select(person => new {person.Name,person.City});
+        //Using Distinct with Custom Objects
+        var distinctCities = peopel.Select(perso=>perso.City).Distinct();
+        Console.WriteLine("Distinct Cities:");
+        foreach(var city in distinctCities)
+            Console.WriteLine(city);
+
 
 
 
