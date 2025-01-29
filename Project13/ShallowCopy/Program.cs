@@ -1,4 +1,5 @@
 ﻿using ShallowCopy.DeepCopy;
+using ShallowCopy.DeepCopy02;
 using ShallowCopy.ShalowCopy;
 using ShallowCopy.ShalowCopy02;
 
@@ -38,5 +39,15 @@ public class Program
 
         Console.WriteLine($"Shallow Copy main Objetc is:  {person01.Name},{person01.ShallowAddress.City}");
         Console.WriteLine($"Shallow Copy of object is:  {person02.Name},{person02.ShallowAddress.City}");
+
+
+        DeepCopyPerson person1 = new DeepCopyPerson{Name = "Omid", DeepCopyAddress = new DeepCopyAddress{City = "New York"}};
+        DeepCopyPerson person2 = person1.DeepCopy();
+        person2.Name = "Saeed";
+        person2.DeepCopyAddress.City = "Lux";
+
+        Console.WriteLine(person1.Name+ person2.Name);
+        // Console.WriteLine(person1.Name,person2.Name);
+        Console.WriteLine(person1.DeepCopyAddress.City + person2.DeepCopyAddress.City);
     }
 }
