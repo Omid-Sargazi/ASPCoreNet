@@ -41,6 +41,20 @@ public class Program
                 Console.WriteLine($"{product.Name},{product.Price}");
             }
 
+            var sortedProducts = products.OrderBy(p => p.Price).ToList();
+            Console.WriteLine("Sorted products on Price");
+            foreach(var product in sortedProducts)
+            {
+                Console.WriteLine(product.Price);
+            }
+
+            var sortedProductsOnName = products.OrderBy(p => p.Name).ToList();
+            Console.WriteLine("Sorted on Name");
+            foreach(var product in sortedProductsOnName)
+            {
+                Console.WriteLine(product.Name);
+            }
+
     }
 
 
