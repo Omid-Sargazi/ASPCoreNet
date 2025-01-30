@@ -1,3 +1,4 @@
+using System.Runtime.InteropServices;
 using LINQDataBase.Data;
 using LINQDataBase.Models;
 using Microsoft.EntityFrameworkCore;
@@ -60,6 +61,14 @@ public class Program
             foreach(var product in sortedDescending)
             {
                 Console.WriteLine(product.Name);
+            }
+
+            //Get only product names and prices.
+            var productDetails = products.Select(p => new {p.Name, p.Price}).ToList();
+            Console.WriteLine("Products details.");
+            foreach(var product in productDetails)
+            {
+                Console.WriteLine($"Product Name:{product.Name} Price:{product.Price}");
             }
 
     }
