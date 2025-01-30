@@ -1,15 +1,56 @@
-using PrototypePatternExample.Models;
+// using PrototypePatternExample.Models;
+
+// public class Program
+// {
+//     public static void Main(string[] args)
+//     {
+//         Console.WriteLine("hello");
+
+//         var builder = WebApplication.CreateBuilder(args);
+//         builder.Services.AddSingleton<SessionManager>();
+//         builder.Services.AddSingleton<UserSession>();
+//         builder.Services.AddOpenApi();
+//         builder.Services.AddEndpointsApiExplorer();
+//         builder.Services.AddSwaggerGen();
+
+//         var app = builder.Build();
+
+//         app.UseSwagger();
+//         app.UseSwaggerUI();
+
+
+//         app.MapGet("/", (SessionManager sessionManger)=>{
+//             var session = sessionManger.CreateSession(
+//                 "Omid",
+//                 new List<string>{"Admin","Editor"},
+//                 new Dictionary<string, string>{{"theme","Dark"},{"Language", "English"}}
+//             );
+//             return Results.Ok(session);
+//         });
+
+//         using(var scope = app.Services.CreateScope())
+//         {
+//             Console.WriteLine("Hello");
+//             // var sessionManager = scope.ServiceProvider.GetRequiredService<SessionManager>();
+//             // Console.WriteLine(sessionManager);
+//         }
+
+//         app.Run();
+//     }
+// }
+
+
+using PrototypePatternExample.Users;
 
 public class Program
 {
     public static void Main(string[] args)
     {
         Console.WriteLine("hello");
-
         var builder = WebApplication.CreateBuilder(args);
-        builder.Services.AddSingleton<SessionManager>();
-        builder.Services.AddSingleton<UserSession>();
         builder.Services.AddOpenApi();
+        builder.Services.AddSingleton<CreateUsers>();
+        builder.Services.AddSingleton<CreateUserManager>();
         builder.Services.AddEndpointsApiExplorer();
         builder.Services.AddSwaggerGen();
 
@@ -18,21 +59,16 @@ public class Program
         app.UseSwagger();
         app.UseSwaggerUI();
 
-
-        app.MapGet("/", (SessionManager sessionManger)=>{
-            var session = sessionManger.CreateSession(
+        app.MapGet("/",(CreateUserManager createUserManager)=>{
+            var newUser = createUserManager.createUsers(
                 "Omid",
-                new List<string>{"Admin","Editor"},
-                new Dictionary<string, string>{{"theme","Dark"},{"Language", "English"}}
+                new List<string>{"Admin"},
+                new Dictionary<string, string>{{"Theme","light"},{"Language","French"}}
             );
-            return Results.Ok(session);
+            return Results.Ok(newUser);
         });
 
-        using(var scope = app.Services.CreateScope())
-        {
-            Console.WriteLine("Hello");
-        }
-
         app.Run();
+
     }
 }
