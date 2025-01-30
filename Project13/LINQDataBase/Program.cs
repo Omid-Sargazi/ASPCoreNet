@@ -34,6 +34,13 @@ public class Program
                 Console.WriteLine($"{product.Id}: {product.Name} - ${product.Price}");
             }
 
+            var expensiveProducts = products.Where(p => p.Price>500).ToList();
+            Console.WriteLine("Expensive Products:");
+            foreach(var product in expensiveProducts)
+            {
+                Console.WriteLine($"{product.Name},{product.Price}");
+            }
+
     }
 
 
