@@ -106,6 +106,19 @@ public class Program
              .Sum(p => p.Price);
              Console.WriteLine($"Total price of all Products:{totalPrice}");
 
+             //Group products by category.
+             var productsByCategory = context.Products.GroupBy(p => p.Category.Name)
+             .Select(g=>new{Category = g.Key,Product = g.ToList()}).ToList();
+             Console.WriteLine("Products grouped by Ctegory:");
+             foreach(var group in productsByCategory)
+             {
+                Console.WriteLine($"Category:{group.Category}");
+                foreach(var product in group.Product)
+                {
+                    Console.WriteLine($"{product.Name}, {product.Price}");
+                }
+             }
+
         
         }
 
