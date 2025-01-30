@@ -55,6 +55,13 @@ public class Program
                 Console.WriteLine(product.Name);
             }
 
+            var sortedDescending = products.OrderByDescending(p => p.Name);
+            Console.WriteLine("Order By Desending.");
+            foreach(var product in sortedDescending)
+            {
+                Console.WriteLine(product.Name);
+            }
+
     }
 
 
