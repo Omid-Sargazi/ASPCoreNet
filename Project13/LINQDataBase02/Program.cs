@@ -119,6 +119,45 @@ public class Program
                 }
              }
 
+             //Join products and categories manually.
+            //  var productCategoryJoin = context.Products
+            //  .Join(context.Categories,
+            //     p=>p.CategoryId,
+            //     c=>c.Id,
+            //     (p,c)=>new {p.Name, Category=c.Name}
+            // ).ToList();
+
+            var productCategoryJoin = context.Products
+            .Join(context.Categories,
+                p=>p.CategoryId,
+                c => c.Id,
+                (p,c)=>new{
+                    p.Name,
+                    Category=c.Name
+                }
+            ).ToList();
+            Console.WriteLine("Products with categories:");
+            foreach(var item in productCategoryJoin)
+            {
+                Console.WriteLine($"{item.Name}, {item.Category}");
+            }
+
+            //Basic Join() with a New Anonymous Type
+            var result = context.Products
+            .Join(context.Categories,
+                p => p.CategoryId,
+                c => c.Id,
+                (p,c) => new {p.Name,Category= c.Name}
+            ).ToList();
+            foreach(var item in result)
+            {
+                Console.WriteLine($"Product:{item.Name}, Category:{item.Category}");
+            }
+
+            //Join() with a Where() Condition
+
+
+
         
         }
 
