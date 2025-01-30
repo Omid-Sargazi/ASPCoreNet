@@ -1,5 +1,6 @@
 using LINQDataBase02.Data;
 using LINQDataBase02.Models;
+using Microsoft.AspNetCore.SignalR.Protocol;
 using Microsoft.EntityFrameworkCore;
 
 public class Program
@@ -155,6 +156,31 @@ public class Program
             }
 
             //Join() with a Where() Condition
+            var reultsJoinAndWhere = context.Products
+                .Join(context.Categories,
+                    p => p.CategoryId,
+                    c => c.Id,
+                    (p, c) => new { p.Name, categoryName = c.Name, p.Price })
+                        .Where(x => x.Price > 500)
+                        .ToList();
+
+            foreach(var item in reultsJoinAndWhere)
+            {
+                Console.WriteLine($"{item.Name},{item.categoryName},{item.Price}");
+            }
+
+            //Join() with Multiple Conditions
+            var JoinMultipleConditions = context.Products
+            .Join(context.Categories,
+                p => p.CategoryId,
+                c => c.Id,
+                (p,c)=> new{p.Name, CategoryName=c.Name, p.Price}
+            ).Where(x=> x.Name.StartsWith("j")).ToList();
+            Console.WriteLine("Join() with Multiple Conditions.");
+            foreach(var item in JoinMultipleConditions)
+            {
+                Console.WriteLine($"{item.Name} {item.CategoryName} {item.Price}");
+            }
 
 
 
