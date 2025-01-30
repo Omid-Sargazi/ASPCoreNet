@@ -71,7 +71,7 @@ public class Program
                 Console.WriteLine($"{product.Name},{product.Price}");
             }
 
-            //Get products with their categories.
+            //Get products with their categories. 
             var productsWithCategories = context.Products
             .Include(p => p.Category).ToList();
             Console.WriteLine("Products with categories:");
@@ -79,6 +79,13 @@ public class Program
             {
                 Console.WriteLine($"{product.Name}, {product.Category.Name}");
             }
+
+            //Get the first product with a price greater than 500.
+            var firstExpensiveProduct = context.Products.
+            FirstOrDefault(p => p.Price >500);
+
+            Console.WriteLine(firstExpensiveProduct !=null ? 
+            firstExpensiveProduct.ToString() :"No product found with price greater than 500");
 
         
         }
