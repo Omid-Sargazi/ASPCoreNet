@@ -182,6 +182,19 @@ public class Program
                 Console.WriteLine($"{item.Name} {item.CategoryName} {item.Price}");
             }
 
+            //Join() and Order by Product Name
+            var JoinOrderProductName = context.Products
+            .Join(context.Categories,
+                p=>p.CategoryId,
+                c=>c.Id,
+                (p,c)=>new{p.Name, CategoryName=c.Name}
+            ).OrderBy(x=>x.Name).ToList();
+            Console.WriteLine("Join() and Order by Product Name");
+            foreach(var item in JoinOrderProductName)
+            {
+                Console.WriteLine($"{item.Name} {item.CategoryName}");
+            }
+
 
 
         
