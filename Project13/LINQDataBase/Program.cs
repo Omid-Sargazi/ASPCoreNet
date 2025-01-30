@@ -83,6 +83,25 @@ public class Program
             //Get the first product with a price greater than 500.
             var firstExpensiveProduct = context.Products.First(p=>p.Price > 500);
             Console.WriteLine($"First expensive product. {firstExpensiveProduct.Name}; {firstExpensiveProduct.Price}");
+            
+            //Check if there are any products in the "Electronics" category
+            bool anyElectronics = context.Products
+            .Any(p => p.Category.Name == "Electronics");
+
+            Console.WriteLine($"Are there any electronics: {anyElectronics}");
+
+            //Count the number of products in the "Clothing" category
+            // var clothingCount = context.Products
+            // .Include(p => p.Category.Name=="Clothing").Count();
+            // Console.WriteLine($"Number of Clothing Products: {clothingCount}");
+
+            var clothingCount = context.Products.
+            Count(p=>p.Category.Name == "Clothing");
+            Console.WriteLine($"Number of clothing number: {clothingCount}");
+
+            //Calculate the total price of all products.
+            decimal totalPrice = context.Products.Sum(p => p.Price);
+            Console.WriteLine($"Sum Price is:{totalPrice}");
 
     }
 
