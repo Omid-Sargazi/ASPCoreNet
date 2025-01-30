@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/LINQDataBase02.props" />
+</Project>
