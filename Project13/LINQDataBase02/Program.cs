@@ -195,6 +195,40 @@ public class Program
                 Console.WriteLine($"{item.Name} {item.CategoryName}");
             }
 
+            //Join() with Select Specific Fields
+            var JoinSelectSpecificFields = context.Products
+            .Join(context.Categories,
+                p=>p.CategoryId,
+                c=>c.Id,
+                (p,c)=>new {ProductName = p.Name, CategoryName = c.Name}
+            ).ToList();
+
+            //Join() with Aggregation (Counting Products per Category)
+            var JoinAggregationProductsCategory = context.Categories
+                .Join(context.Products,
+                    c=>c.Id,
+                    p=>p.CategoryId,
+                    (c,p)=>new {c.Name, p.Id}
+                ).GroupBy(x=>x.Name)
+                .Select(g=>new {Category = g.Key, ProductCount=g.Count()}).ToList();
+            
+            foreach(var item in JoinAggregationProductsCategory)
+            {
+                Console.WriteLine($"Category: {item.Category},Count:{item.ProductCount}");
+            }
+
+            //Join() with FirstOrDefault()
+            var firstProductInCategory = context.Products
+            .Join(context.Categories,
+                p=>p.CategoryId,
+                c=>c.Id,
+                (p,c)=>new {p.Name, Category=c.Name}
+            ).FirstOrDefault();
+
+            if(firstProductInCategory !=null)
+            {
+                Console.WriteLine($"First Product in Category:{firstProductInCategory.Name}");
+            }
 
 
         
