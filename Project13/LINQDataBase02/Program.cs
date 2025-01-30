@@ -53,6 +53,33 @@ public class Program
                 Console.WriteLine($"{product.Name},{product.Price}");
             }
 
+            //Sort products by price in descending order
+            var sortedDesending = context.Products
+            .OrderByDescending(p => p.Price).ToList();
+            Console.WriteLine("Products sorted by Price (Desending)");
+            foreach(var product in sortedDesending)
+            {
+                Console.WriteLine($"{product.Name},{product.Price}");
+            }
+
+            //Get only product names and prices.
+            var productDetails = context.Products
+            .Select(p=> new {p.Price, p.Name}).ToList();
+            Console.WriteLine("Product Details:");
+            foreach(var product in productDetails)
+            {
+                Console.WriteLine($"{product.Name},{product.Price}");
+            }
+
+            //Get products with their categories.
+            var productsWithCategories = context.Products
+            .Include(p => p.Category).ToList();
+            Console.WriteLine("Products with categories:");
+            foreach(var product in productsWithCategories)
+            {
+                Console.WriteLine($"{product.Name}, {product.Category.Name}");
+            }
+
         
         }
 
