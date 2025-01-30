@@ -71,6 +71,15 @@ public class Program
                 Console.WriteLine($"Product Name:{product.Name} Price:{product.Price}");
             }
 
+            //Get products with their categories
+            var productsWithCategories = context.Products
+                .Include(p=>p.Category).ToList();
+            Console.WriteLine("Products with Categories: ");
+            foreach(var item in productsWithCategories)
+            {
+                Console.WriteLine($"{item.Name}, {item.Category.Name}");
+            }
+
     }
 
 
