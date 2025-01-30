@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LINQDataBase")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f7808ac49328899f5e40d967d602eb7ba7934e48")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bf35f191da8fc97b7f961868c696f42b623cf47f")]
 [assembly: System.Reflection.AssemblyProductAttribute("LINQDataBase")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LINQDataBase")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

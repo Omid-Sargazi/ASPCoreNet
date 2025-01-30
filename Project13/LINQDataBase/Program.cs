@@ -80,6 +80,10 @@ public class Program
                 Console.WriteLine($"{item.Name}, {item.Category.Name}");
             }
 
+            //Get the first product with a price greater than 500.
+            var firstExpensiveProduct = context.Products.First(p=>p.Price > 500);
+            Console.WriteLine($"First expensive product. {firstExpensiveProduct.Name}; {firstExpensiveProduct.Price}");
+
     }
 
 
