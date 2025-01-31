@@ -1,0 +1,15 @@
+/home/omidsa/Programmings/ASPNetCore/Project14/ProxyPattern/bin/Debug/net9.0/ProxyPattern
+/home/omidsa/Programmings/ASPNetCore/Project14/ProxyPattern/bin/Debug/net9.0/ProxyPattern.deps.json
+/home/omidsa/Programmings/ASPNetCore/Project14/ProxyPattern/bin/Debug/net9.0/ProxyPattern.runtimeconfig.json
+/home/omidsa/Programmings/ASPNetCore/Project14/ProxyPattern/bin/Debug/net9.0/ProxyPattern.dll
+/home/omidsa/Programmings/ASPNetCore/Project14/ProxyPattern/bin/Debug/net9.0/ProxyPattern.pdb
+/home/omidsa/Programmings/ASPNetCore/Project14/ProxyPattern/obj/Debug/net9.0/ProxyPattern.GeneratedMSBuildEditorConfig.editorconfig
+/home/omidsa/Programmings/ASPNetCore/Project14/ProxyPattern/obj/Debug/net9.0/ProxyPattern.AssemblyInfoInputs.cache
+/home/omidsa/Programmings/ASPNetCore/Project14/ProxyPattern/obj/Debug/net9.0/ProxyPattern.AssemblyInfo.cs
+/home/omidsa/Programmings/ASPNetCore/Project14/ProxyPattern/obj/Debug/net9.0/ProxyPattern.csproj.CoreCompileInputs.cache
+/home/omidsa/Programmings/ASPNetCore/Project14/ProxyPattern/obj/Debug/net9.0/ProxyPattern.sourcelink.json
+/home/omidsa/Programmings/ASPNetCore/Project14/ProxyPattern/obj/Debug/net9.0/ProxyPattern.dll
+/home/omidsa/Programmings/ASPNetCore/Project14/ProxyPattern/obj/Debug/net9.0/refint/ProxyPattern.dll
+/home/omidsa/Programmings/ASPNetCore/Project14/ProxyPattern/obj/Debug/net9.0/ProxyPattern.pdb
+/home/omidsa/Programmings/ASPNetCore/Project14/ProxyPattern/obj/Debug/net9.0/ProxyPattern.genruntimeconfig.cache
+/home/omidsa/Programmings/ASPNetCore/Project14/ProxyPattern/obj/Debug/net9.0/ref/ProxyPattern.dll
