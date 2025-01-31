@@ -40,6 +40,7 @@
 // }
 
 
+using PrototypePatternExample.Models;
 using PrototypePatternExample.Users;
 
 public class Program
@@ -67,6 +68,21 @@ public class Program
             );
             return Results.Ok(newUser);
         });
+
+        using(var scope = app.Services.CreateScope())
+        {
+            Console.WriteLine("I'm in scope");
+            var baseTemplate = new EmailTemplate("Welcome to our store","@2023 Mystore")
+            {
+                Subject = "Default subject",
+                Body = "Dafault body"
+            };
+
+            var orderConfirmationEmail = (EmailTemplate)baseTemplate.Clone();
+            orderConfirmationEmail.Subject = "Your order has been confirimed.";
+            orderConfirmationEmail.Body = "Thank you for your purches.";
+            orderConfirmationEmail.Send("Omid");
+        }
 
         app.Run();
 

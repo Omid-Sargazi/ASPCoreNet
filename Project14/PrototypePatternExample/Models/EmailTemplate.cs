@@ -30,5 +30,8 @@ namespace PrototypePatternExample.Models
             Console.WriteLine($"Header: {Header}");
             Console.WriteLine($"Footer: {Footer}");
         }
+
+
     }
+
 }
