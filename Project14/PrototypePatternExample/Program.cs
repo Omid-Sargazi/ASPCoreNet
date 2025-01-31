@@ -96,6 +96,24 @@ public class Program
             baseEnemy.Display();
         }
 
+        using(var scope = app.Services.CreateScope())
+        {
+            var baseReport = new Report("Sales Report", "@ 2023 MyCompany");
+
+
+            var salesReport = (Report)baseReport.Clone();
+            salesReport.Data.Add("Total Sales: $10,000");
+            salesReport.Data.Add("Top Product: Laptop");
+
+            var inventoryReport = (Report)baseReport.Clone();
+            inventoryReport.Header = "Inventory Report";
+            inventoryReport.Data.Add("Total Items: 500");
+            inventoryReport.Data.Add("Out of Stock: 10  ");
+            salesReport.Print();
+            inventoryReport.Print();
+
+        }
+
         app.Run();
 
     }

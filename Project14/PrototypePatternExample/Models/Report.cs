@@ -21,5 +21,16 @@ namespace PrototypePatternExample.Models
         {
             return(Report)this.MemberwiseClone();
         }
+
+        public void Print()
+        {
+            Console.WriteLine($"Header: {Header}");
+            Console.WriteLine($"Footer: {Footer}");
+            foreach(var item in Data)
+            {
+                Console.WriteLine($"-{item}");
+            }
+            Console.WriteLine($"Footer:{Footer}");
+        }
     }
 }
