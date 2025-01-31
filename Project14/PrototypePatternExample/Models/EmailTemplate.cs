@@ -31,6 +31,8 @@ namespace PrototypePatternExample.Models
             Console.WriteLine($"Footer: {Footer}");
         }
 
+        
+
 
     }
 

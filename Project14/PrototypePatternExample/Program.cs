@@ -84,6 +84,18 @@ public class Program
             orderConfirmationEmail.Send("Omid");
         }
 
+        using(var scope = app.Services.CreateScope())
+        {
+            var baseEnemy = new GameCharacter("Goblin",100,"Sword");
+            
+            var enemy1 = (GameCharacter)baseEnemy.Clone();
+            enemy1.Name = "Goblin 1";
+            enemy1.Weapon = "Axe";
+
+            enemy1.Display();
+            baseEnemy.Display();
+        }
+
         app.Run();
 
     }
