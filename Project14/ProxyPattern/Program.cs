@@ -1,4 +1,5 @@
-﻿using ProxyPattern.LazyProxy;
+﻿using ProxyPattern.AccessControlProxy;
+using ProxyPattern.LazyProxy;
 using ProxyPattern.ProxyPattern01;
 
 public class Program
@@ -13,5 +14,11 @@ public class Program
 
         var lazyProxy = new LazyProxy();
         lazyProxy.Request();
+
+        var adminProxy = new AccessControlProxy("Admin");
+        adminProxy.Request();
+
+        var userProxy = new AccessControlProxy("User");
+        userProxy.Request();
     }
 }
