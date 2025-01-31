@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "NRgwU1kvWNMr2H174Re7nq+Ax5buCJl+3zSeKf+81xY=",
+  "Source": "ProxyCachingAPIService",
+  "BasePath": "_content/ProxyCachingAPIService",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
