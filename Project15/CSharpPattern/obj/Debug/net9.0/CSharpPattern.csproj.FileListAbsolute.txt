@@ -1,0 +1,15 @@
+/home/omidsa/Programmings/ASPNetCore/Project15/CSharpPattern/bin/Debug/net9.0/CSharpPattern
+/home/omidsa/Programmings/ASPNetCore/Project15/CSharpPattern/bin/Debug/net9.0/CSharpPattern.deps.json
+/home/omidsa/Programmings/ASPNetCore/Project15/CSharpPattern/bin/Debug/net9.0/CSharpPattern.runtimeconfig.json
+/home/omidsa/Programmings/ASPNetCore/Project15/CSharpPattern/bin/Debug/net9.0/CSharpPattern.dll
+/home/omidsa/Programmings/ASPNetCore/Project15/CSharpPattern/bin/Debug/net9.0/CSharpPattern.pdb
+/home/omidsa/Programmings/ASPNetCore/Project15/CSharpPattern/obj/Debug/net9.0/CSharpPattern.GeneratedMSBuildEditorConfig.editorconfig
+/home/omidsa/Programmings/ASPNetCore/Project15/CSharpPattern/obj/Debug/net9.0/CSharpPattern.AssemblyInfoInputs.cache
+/home/omidsa/Programmings/ASPNetCore/Project15/CSharpPattern/obj/Debug/net9.0/CSharpPattern.AssemblyInfo.cs
+/home/omidsa/Programmings/ASPNetCore/Project15/CSharpPattern/obj/Debug/net9.0/CSharpPattern.csproj.CoreCompileInputs.cache
+/home/omidsa/Programmings/ASPNetCore/Project15/CSharpPattern/obj/Debug/net9.0/CSharpPattern.sourcelink.json
+/home/omidsa/Programmings/ASPNetCore/Project15/CSharpPattern/obj/Debug/net9.0/CSharpPattern.dll
+/home/omidsa/Programmings/ASPNetCore/Project15/CSharpPattern/obj/Debug/net9.0/refint/CSharpPattern.dll
+/home/omidsa/Programmings/ASPNetCore/Project15/CSharpPattern/obj/Debug/net9.0/CSharpPattern.pdb
+/home/omidsa/Programmings/ASPNetCore/Project15/CSharpPattern/obj/Debug/net9.0/CSharpPattern.genruntimeconfig.cache
+/home/omidsa/Programmings/ASPNetCore/Project15/CSharpPattern/obj/Debug/net9.0/ref/CSharpPattern.dll
