@@ -7,7 +7,9 @@ public class Program
         // var pattern1 = new Pattern1();
         // pattern1.Run();
 
-        var pattern2 = new Pattern2();
-        pattern2.Run();
+        // var pattern2 = new Pattern2();
+        // pattern2.Run();
+        var pattern3 = new Pattern3();
+        pattern3.Run();
     }
 }
