@@ -19,8 +19,14 @@ public class Program
         // var pattern4 = new Pattern4();
         // pattern4.Run();
 
-        var pattern6 = new Pattern6();
-        pattern6.Run();
+        // var pattern6 = new Pattern6();
+        // pattern6.Run();
+
+        // var pattern7 = new Pattern7();
+        // pattern7.Run();
+
+        var pattern8 = new Pattern8();
+        pattern8.Run();
 
     }
 }
