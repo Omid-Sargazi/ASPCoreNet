@@ -152,5 +152,56 @@ public class Program
             {
                 Console.WriteLine($"bookName:{item.BookName}, Autorname:{item.AuthorName} ,publishename: {item.PublisherName}");
             }
+
+            var penguinBooks = books
+            .Join(publishers,b => b.PublisherId, p => p.PublisherId,(b,p)=>new {
+                BookName = b.Title,
+                PublisherName = p.PublisherName
+            }).Where(p => p.PublisherName=="Penguin Books").ToList();
+
+            Console.WriteLine("Penguin Books");
+            foreach(var item in penguinBooks)
+            {
+                Console.WriteLine($"Name:{item.BookName}, publisher:{item.PublisherName}");
+            }
+            /////////////////////////////////////////////////
+        var movies = new List<Movie>
+        {
+            new Movie { MovieId = 1, Title = "Inception", DirectorId = 1, GenreId = 1, ReleaseYear = 2010 },
+            new Movie { MovieId = 2, Title = "The Dark Knight", DirectorId = 1, GenreId = 2, ReleaseYear = 2008 },
+            new Movie { MovieId = 3, Title = "Interstellar", DirectorId = 1, GenreId = 3, ReleaseYear = 2014 },
+            new Movie { MovieId = 4, Title = "The Social Network", DirectorId = 2, GenreId = 4, ReleaseYear = 2010 },
+            new Movie { MovieId = 5, Title = "Fight Club", DirectorId = 3, GenreId = 5, ReleaseYear = 1999 }
+        };
+
+        var directors = new List<Director>
+        {
+            new Director { DirectorId = 1, DirectorName = "Christopher Nolan" },
+            new Director { DirectorId = 2, DirectorName = "David Fincher" },
+            new Director { DirectorId = 3, DirectorName = "David Fincher" } // Note: Same director for multiple movies
+        };
+
+        var genres = new List<Genre>
+        {
+            new Genre { GenreId = 1, GenreName = "Sci-Fi" },
+            new Genre { GenreId = 2, GenreName = "Action" },
+            new Genre { GenreId = 3, GenreName = "Adventure" },
+            new Genre { GenreId = 4, GenreName = "Drama" },
+            new Genre { GenreId = 5, GenreName = "Thriller" }
+        };
+
+        var movieDetails = movies
+        .Join(directors, m=>m.DirectorId, d => d.DirectorId,(m,d)=>new {m,d})
+        .Join(genres,md=>md.m.GenreId, g=>g.GenreId,(md, g)=>new{
+            MovieName = md.m.Title,
+            DirectorName = md.d.DirectorName,
+            genereName = g.GenreName
+        }).ToList();
+
+        Console.WriteLine("Movie details");
+        foreach(var item in movieDetails)
+        {
+            Console.WriteLine($"Movie:{item.MovieName},  Director:{item.DirectorName}, genereName:{item.genereName}");
+        }
     }
 }
