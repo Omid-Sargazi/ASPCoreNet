@@ -96,10 +96,61 @@ public class Program
 
           Console.WriteLine("Product name and product");
 
-          
+
           foreach(var item in productDetails)
           {
             Console.WriteLine($"Product Name:{item.ProductName}, category name:{item.categoryName}");
           }
+
+          Console.WriteLine("************Filtering and Sorting*****************");
+          var filteredProductDetails = products
+          .Join(categories,p=>p.CategoryId, c=>c.CategoryId,(p,c)=>new {
+            ProductName = p.ProductName,
+            categoryName = c.CategoryName,
+            Price = p.Price
+          }).Where(p=>p.Price>400).OrderBy(p=>p.categoryName).ToList();
+          Console.WriteLine("Filtering and Sorting");
+          foreach(var item in filteredProductDetails)
+          {
+            Console.WriteLine($"{item.ProductName},{item.categoryName},{item.Price}");
+          }
+
+          Console.WriteLine("**********Library Query********");
+          var books = new List<Book> 
+          {
+            new Book{BookId = 1, Title = "the great gatsby", AuthorId = 1, PublisherId = 101},
+            new Book {BookId = 2, Title = "To Kill a Mockingbird", AuthorId = 2, PublisherId = 102},
+             new Book { BookId = 3, Title = "1984", AuthorId = 3, PublisherId = 103 },
+            new Book { BookId = 4, Title = "Pride and Prejudice", AuthorId = 4, PublisherId = 101 }
+          };
+
+          var authors = new List<Author>
+            {
+                new Author { AuthorId = 1, AuthorName = "F. Scott Fitzgerald" },
+                new Author { AuthorId = 2, AuthorName = "Harper Lee" },
+                new Author { AuthorId = 3, AuthorName = "George Orwell" },
+                new Author { AuthorId = 4, AuthorName = "Jane Austen" }
+            };
+
+            var publishers = new List<Publisher>
+            {
+                new Publisher { PublisherId = 101, PublisherName = "Penguin Books" },
+                new Publisher { PublisherId = 102, PublisherName = "HarperCollins" },
+                new Publisher { PublisherId = 103, PublisherName = "Secker & Warburg" }
+            };
+
+
+            var bookDetails = books
+            .Join(publishers,b=>b.PublisherId,p=>p.PublisherId,(b,p)=>new{b,p})
+            .Join(authors,bp=>bp.b.AuthorId,a=>a.AuthorId,(bp,a)=>new{
+                BookName = bp.b.Title,
+                AuthorName = a.AuthorName,
+                PublisherName = bp.p.PublisherName
+            }).ToList();
+            Console.WriteLine("Details books");
+            foreach(var item in bookDetails)
+            {
+                Console.WriteLine($"bookName:{item.BookName}, Autorname:{item.AuthorName} ,publishename: {item.PublisherName}");
+            }
     }
 }
