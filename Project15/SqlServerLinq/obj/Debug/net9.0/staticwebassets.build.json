@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "GM2BkDGPs8lJS8XAjv4FJwboubkNQJjf8Q6SvPi0nbg=",
+  "Source": "SqlServerLinq",
+  "BasePath": "_content/SqlServerLinq",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

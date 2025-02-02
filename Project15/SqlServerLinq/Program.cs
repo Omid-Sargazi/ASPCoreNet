@@ -26,6 +26,13 @@ public class Program
 
             var studentName = context.Students.Select(s =>s.Name).ToList();
             Console.WriteLine("Students:"+ string.Join(", ",studentName));
+
+
+            var youngStudents = context.Students.Where(s => s.Age < 22).ToList();
+            foreach(var student in youngStudents)
+            {
+                Console.WriteLine($"Young Student: {student.Name}, Age:{student.Age}");
+            }
         }
     }
 
