@@ -68,5 +68,38 @@ public class Program
           {
             Console.WriteLine($"Employee:{item.EmployeeName}, Departemen:{item.DepartmentName}");
           }
+
+          Console.WriteLine("New///////////////////////////////////Query");
+          var products = new List<Product>
+          {
+            new Product{ProductId = 1, ProductName = "Laptop", CategoryId = 1, Price = 1200.00m},
+            new Product {ProductId = 2, ProductName = "Samrtphone", CategoryId = 1, Price = 800.00m},
+            new Product {ProductId = 3, ProductName = "tablet", CategoryId = 1, Price = 500.00m},
+            new Product { ProductId = 4, ProductName = "Desk Chair", CategoryId = 2, Price = 150.00m },
+            new Product { ProductId = 5, ProductName = "Office Desk", CategoryId = 2, Price = 300.00m }
+          };
+
+          var categories = new List<Category> 
+          {
+            new Category { CategoryId = 1, CategoryName = "Electronics" },
+            new Category { CategoryId = 2, CategoryName = "Furniture" }
+          };
+
+          var productDetails = products
+          .Join(categories,p=>p.CategoryId,c=>c.CategoryId,(p,c)=>new{
+
+                ProductName = p.ProductName,
+                categoryName = c.CategoryName
+
+          }).ToList();
+
+
+          Console.WriteLine("Product name and product");
+
+          
+          foreach(var item in productDetails)
+          {
+            Console.WriteLine($"Product Name:{item.ProductName}, category name:{item.categoryName}");
+          }
     }
 }
