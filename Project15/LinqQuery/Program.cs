@@ -40,5 +40,33 @@ public class Program
           {
             Console.WriteLine($"Student:{item.StudentName},enrolled in:{item.CourseTitle}");
           }
+
+          //////////////////////////////////
+          var employees = new List<Employee> 
+          {
+            new Employee { EmployeeId = 1, Name = "John", DepartmentId = 101 },
+            new Employee { EmployeeId = 2, Name = "Jane", DepartmentId = 102 },
+            new Employee { EmployeeId = 3, Name = "Mike", DepartmentId = 101 },
+            new Employee { EmployeeId = 4, Name = "Sara", DepartmentId = 103 }
+          };
+
+          var departments = new List<Department> 
+          {
+            new Department { DepartmentId = 101, DepartmentName = "HR" },
+            new Department { DepartmentId = 102, DepartmentName = "IT" },
+            new Department { DepartmentId = 103, DepartmentName = "Finance" }
+          };
+
+          var employeeDetails = employees
+          .Join(departments,e=>e.DepartmentId, d=>d.DepartmentId,(e,d)=>new{
+            EmployeeName = e.Name,
+            DepartmentName = d.DepartmentName
+          });
+
+          Console.WriteLine("display each employee's name along with their department name.");
+          foreach(var item in employeeDetails)
+          {
+            Console.WriteLine($"Employee:{item.EmployeeName}, Departemen:{item.DepartmentName}");
+          }
     }
 }
