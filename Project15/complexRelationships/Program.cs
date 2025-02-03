@@ -35,6 +35,17 @@ public class Program
             {
                 Console.WriteLine($"{item.Title}");
             }
+
+            Console.WriteLine("***********Get all books by a specific author**************");
+            var authorName = context.Books.Select(b => new {b.Title, b.Author.Name}).ToList();
+            var AuthorName = "J.K. Rowling";
+            var booksWithSpecificAuthor = context.Books
+            .Where(b => b.Author.Name == AuthorName).ToList();
+            Console.WriteLine($"Books by {AuthorName}");
+            foreach(var item in booksWithSpecificAuthor)
+            {
+                Console.WriteLine($"{item.Title}");
+            }
         }
 
 
