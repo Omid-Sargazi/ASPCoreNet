@@ -1,0 +1,6 @@
+@complexRelationships_HostAddress = http://localhost:5249
+
+GET {{complexRelationships_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
