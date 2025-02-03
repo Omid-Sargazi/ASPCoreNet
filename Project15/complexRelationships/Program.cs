@@ -59,6 +59,49 @@ public class Program
             {
                 Console.WriteLine($" {item.Name}, {item.Email}, {item.Phone}");
             }
+
+
+            var bookTitle = "Harry Potter and the Philosopher's Stone";
+            var categories = context.Books.Where(b => b.Title == bookTitle)
+            .SelectMany(b => b.BookCategories.Select(bc=>bc.Category)).ToList();
+
+            Console.WriteLine($"Categories for {bookTitle}:");
+            foreach(var item in categories)
+            {
+                Console.WriteLine(item.Name);
+            }
+
+            //Get all books in a specific category.
+
+            var categoryName = "Fantasy";
+            var booksSpecificCategory = context.Categories
+            .Where(c => c.Name == categoryName)
+            .SelectMany(c=>c.BookCategories.Select(bc => bc.Book))
+            .ToList();
+
+            Console.WriteLine($"Books in {categoryName}:");
+            foreach(var book in books)
+            {
+                Console.WriteLine(book.Title);
+            }
+
+            //Querying with Multiple Joins
+            Console.WriteLine("**********Get all books with their authors and categories**********");
+            var booksWithAuthorCategories = context.Books
+            .Include(b => b.Author)
+            .Include(b => b.BookCategories)
+            .ThenInclude(bc => bc.Category)
+            .ToList();
+
+            Console.WriteLine("Books with Authors and Categories;");
+            foreach(var book in booksWithAuthorCategories)
+            {
+                Console.WriteLine($"{book.Title} {book.Author.Name}");
+                foreach(var category in book.BookCategories.Select(bc => bc.Category))
+                {
+                    Console.WriteLine($" Category{category.Name}");
+                }
+            }
         }
 
 
