@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace LinqQuery.LibrarySystem
 {
-    public class Book
+    public class BookLib
     {
         public int BookId {get; set;}
         public string Title {get; set;}

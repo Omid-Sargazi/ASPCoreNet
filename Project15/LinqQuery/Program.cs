@@ -1,3 +1,4 @@
+using LinqQuery.LibrarySystem;
 using LinqQuery.Models;
 
 public class Program
@@ -237,5 +238,36 @@ public class Program
                 TotalPrice = oc.o.Quantity * p.Price,
                 OrderDate = oc.o.OrderDate,
             }).ToList();
+
+            Console.WriteLine("******************Librray System*****************");
+            var booksLib = new List<BookLib>
+            {
+                    new BookLib { BookId = 1, Title = "The Great Gatsby", Author = "F. Scott Fitzgerald" },
+                    new BookLib { BookId = 2, Title = "To Kill a Mockingbird", Author = "Harper Lee" },
+                    new BookLib { BookId = 3, Title = "1984", Author = "George Orwell" }
+            };
+
+            var studentsLib = new List<StudentLib>
+                {
+                    new StudentLib { StudentId = 101, Name = "Alice", Email = "alice@example.com" },
+                    new StudentLib { StudentId = 102, Name = "Bob", Email = "bob@example.com" }
+                };
+            var borrowRecords = new List<BorrowRecord>
+            {
+                new BorrowRecord { BorrowId = 1, BookId = 1, StudentId = 101, BorrowDate = new DateTime(2023, 9, 1), DueDate = new DateTime(2023, 9, 15), ReturnDate = new DateTime(2023, 9, 14) },
+                new BorrowRecord { BorrowId = 2, BookId = 2, StudentId = 102, BorrowDate = new DateTime(2023, 9, 5), DueDate = new DateTime(2023, 9, 19), ReturnDate = null }, // Not yet returned
+                new BorrowRecord { BorrowId = 3, BookId = 3, StudentId = 101, BorrowDate = new DateTime(2023, 9, 10), DueDate = new DateTime(2023, 9, 24), ReturnDate = new DateTime(2023, 9, 25) } // Returned late
+            };
+
+            var borrowDetails = borrowRecords
+            .Join(booksLib,br => br.BookId, b=>b.BookId,(br, b)=>new{br, b})
+            .Join(studentsLib,brb=>brb.br.StudentId, s =>s.StudentId,(brb,s)=>new{
+                StudentName = s.Name,
+                BookTitle = brb.b.Title,
+                BorrowDate = brb.br.BorrowDate,
+                DueDate = brb.br.DueDate,
+                ReturnDate = brb.br.ReturnDate,
+
+            });
     }
 }
