@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace LinqQueryWithSqlServer.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20250203081729_init")]
+    [Migration("20250203104059_init")]
     partial class init
     {
         /// <inheritdoc />

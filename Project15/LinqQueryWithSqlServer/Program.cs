@@ -26,7 +26,16 @@ public class Program
             SeedDate(context);
 
             Console.WriteLine("Database created and located seed data");
+
+            var students = context.Students.ToList();
+            
+            Console.WriteLine("All Studnets are:");
+            foreach(var st in students)
+            {
+                Console.WriteLine(st.Name);
+            }
        }
+    //    app.Run();
     }
 
     private static void SeedDate(AppDbContext context)
@@ -37,24 +46,29 @@ public class Program
             new () {Name = "Bob", Age=22},
             new () {Name = "Charlie", Age=40},
         };
+         context.Students.AddRange(students);
+        context.SaveChanges();
 
         var courses = new List<Course> {
            new() { Title = "Math", Instructor = "Dr. Smith" },
            new() { Title = "Physics", Instructor = "Dr. Brown" },
            new() { Title = "Chemistry", Instructor = "Dr. Taylor" },
         };
+        context.Courses.AddRange(courses);
+        context.SaveChanges();
+        var savedCourses = context.Courses.ToList();
 
         var enrollments = new List<Enrollment> {
             new () {Student = students[0], Course = courses[0]},
             new () {Student = students[0], Course = courses[1] },
             new () {Student = students[1], Course = courses[1]},
-            new () {Student = students[2], Course = courses[2]}
+            new () {Student = students[2], Course = courses[2]},
 
         };
 
-        context.Students.AddRange(students);
-        context.Courses.AddRange(courses);
-        context.Enrollments.AddRange(enrollments);
-        context.SaveChanges();
+        //  context.Students.AddRange(students);
+        // context.Courses.AddRange(courses);
+    //    context.Enrollments.AddRange(enrollments);
+        // context.SaveChanges();
     }
 }
