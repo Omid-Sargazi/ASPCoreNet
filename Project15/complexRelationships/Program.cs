@@ -46,6 +46,19 @@ public class Program
             {
                 Console.WriteLine($"{item.Title}");
             }
+
+            Console.WriteLine("***********Querying One-to-One Relationships***************");
+            //Get an author’s contact details.
+
+            var authorContact = "J.K. Rowling";
+            var contact = context.Authors
+            .Where(a => a.Name == authorContact)
+            .Select(a => new{a.Name, a.Contact.Email, a.Contact.Phone}).ToList();
+            Console.WriteLine("Details of Authors;");
+            foreach(var item in contact)
+            {
+                Console.WriteLine($" {item.Name}, {item.Email}, {item.Phone}");
+            }
         }
 
 
