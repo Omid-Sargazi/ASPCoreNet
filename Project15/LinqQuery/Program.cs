@@ -1,3 +1,4 @@
+using LinqQuery.EmployyeManagmentSystem;
 using LinqQuery.LibrarySystem;
 using LinqQuery.Models;
 
@@ -268,6 +269,30 @@ public class Program
                 DueDate = brb.br.DueDate,
                 ReturnDate = brb.br.ReturnDate,
 
+            });
+
+            Console.WriteLine("************employeesManagment***********");
+            var employeesManagment = new List<EmployeeSystem>
+            {
+                new EmployeeSystem { EmployeeId = 1, Name = "Alice", DepartmentId = 101, Salary = 50000.00m },
+                new EmployeeSystem { EmployeeId = 2, Name = "Bob", DepartmentId = 102, Salary = 60000.00m },
+                new EmployeeSystem { EmployeeId = 3, Name = "Charlie", DepartmentId = 101, Salary = 55000.00m },
+                new EmployeeSystem { EmployeeId = 4, Name = "David", DepartmentId = 103, Salary = 70000.00m },
+                new EmployeeSystem { EmployeeId = 5, Name = "Eve", DepartmentId = 102, Salary = 65000.00m }
+            };
+
+            var departmentsSystem = new List<DepartmentSystem>
+            {
+                new DepartmentSystem { DepartmentId = 101, DepartmentName = "HR" },
+                new DepartmentSystem { DepartmentId = 102, DepartmentName = "IT" },
+                new DepartmentSystem { DepartmentId = 103, DepartmentName = "Finance" }
+            };
+
+            var departmentSalaries = employeesManagment
+            .Join(departments,e=>e.DepartmentId, d=>d.DepartmentId,(e,d)=>new {
+                DepartmentName = d.DepartmentName,
+                EmployeeName = e.Name,
+                Salary = e.Salary,
             });
     }
 }
