@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "mLBYGLCJYP+eIpzdO2bsiP3TvThXYDWTGNlZgt+302Q=",
+  "Source": "LinqQueryWithSqlServer",
+  "BasePath": "_content/LinqQueryWithSqlServer",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

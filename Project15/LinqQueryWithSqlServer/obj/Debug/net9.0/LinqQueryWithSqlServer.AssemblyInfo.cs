@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LinqQueryWithSqlServer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a7d38ce9af98eb326edbfb5cd348553ae9921b53")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cf2d8c0d16c969c9f8759a4e6cfdd34b79c0b725")]
 [assembly: System.Reflection.AssemblyProductAttribute("LinqQueryWithSqlServer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LinqQueryWithSqlServer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
