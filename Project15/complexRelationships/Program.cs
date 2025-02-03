@@ -102,6 +102,18 @@ public class Program
                     Console.WriteLine($" Category{category.Name}");
                 }
             }
+
+            //Count the number of books in each category.
+            var categoryCounts = context.Categories
+            .Select(c => new {
+                Category = c.Name,
+                BookCount = c.BookCategories.Count
+            }).ToList();
+
+            foreach(var item in categoryCounts)
+            {
+                Console.WriteLine($"{item.Category} {item.BookCount}");
+            }
         }
 
 
