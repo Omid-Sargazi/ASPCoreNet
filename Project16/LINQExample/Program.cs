@@ -47,6 +47,15 @@ public class Program
            {
             Console.WriteLine(detais.Email +detais.Phone+ detais.Id);
            }
+           
+           //Get all books in a specific category.
+           var categoryName = "Fantasy";
+           var booksInSpecificCategory = context.BookCategories.Where(bc => bc.Category.Name == categoryName).Select(bc =>new{Books = bc.Book.Title}).ToList();
+           Console.WriteLine($"Get all books in a specific category{categoryName}");
+           foreach(var book in booksInSpecificCategory)
+           {
+            Console.WriteLine($"{book}");
+           }
         }
     }
 
