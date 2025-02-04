@@ -27,6 +27,15 @@ public class Program
                 Console.WriteLine(author.Name);
             }
 
+            //Get all books by a specific author.
+            var authorName = "J.K. Rowling";
+            var books = context.Authors.Where(a => a.Name == authorName).SelectMany(a=>a.Books).ToList();
+            Console.WriteLine($"all books for {authorName}");
+            foreach(var book in books)
+            {
+                Console.WriteLine(book.Title);
+            }
+
         }
     }
 
