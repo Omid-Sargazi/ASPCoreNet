@@ -1,41 +1,83 @@
-var builder = WebApplication.CreateBuilder(args);
+using LINQExample.Data;
+using LINQExample.Models;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Identity.Client;
 
-// Add services to the container.
-// Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
-builder.Services.AddOpenApi();
-
-var app = builder.Build();
-
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
+public class Program
 {
-    app.MapOpenApi();
-}
+    public static void Main(string[] args)
+    {
+        Console.WriteLine("hello sql");
 
-app.UseHttpsRedirection();
+        var builder = WebApplication.CreateBuilder(args);
 
-var summaries = new[]
-{
-    "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-};
+        var connectionString = builder.Configuration.GetConnectionString("defaultConnection");
+        builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer(connectionString));
+        
+        var app = builder.Build();
 
-app.MapGet("/weatherforecast", () =>
-{
-    var forecast =  Enumerable.Range(1, 5).Select(index =>
-        new WeatherForecast
-        (
-            DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
-            Random.Shared.Next(-20, 55),
-            summaries[Random.Shared.Next(summaries.Length)]
-        ))
-        .ToArray();
-    return forecast;
-})
-.WithName("GetWeatherForecast");
+        using(var scope = app.Services.CreateScope())
+        {
+            var context = scope.ServiceProvider.GetRequiredService<AppDbContext>();
+            //context.Database.EnsureCreated();
+            SeedDate(context);
+            var authors = context.Authors.ToList();
+            foreach(var author in authors)
+            {
+                Console.WriteLine(author.Name);
+            }
 
-app.Run();
+        }
+    }
 
-record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
-{
-    public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
+
+    private static void SeedDate(AppDbContext context)
+    {
+        if(!context.Authors.Any())
+        {
+             var authors = new List<Author>
+        {
+            new Author { Name = "J.K. Rowling" },
+            new Author { Name = "George R.R. Martin" }
+        };
+
+        context.Authors.AddRange(authors);
+        context.SaveChanges();
+
+        var books = new List<Book>
+            {
+            new Book { Title = "Harry Potter and the Philosopher's Stone", AuthorId = 1 },
+            new Book { Title = "A Game of Thrones", AuthorId = 2 }
+            };
+        context.Books.AddRange(books);
+        context.SaveChanges();
+
+        var categories = new List<Category>
+             {
+            new Category { Name = "Fantasy" },
+            new Category { Name = "Adventure" }
+            };
+        context.Categories.AddRange(categories);
+        context.SaveChanges();
+
+        var bookCategories = new List<BookCategory>
+        {
+            new BookCategory { BookId = 1, CategoryId = 1 },
+            new BookCategory { BookId = 1, CategoryId = 2 },
+            new BookCategory { BookId = 2, CategoryId = 1 }
+        };
+        context.BookCategories.AddRange(bookCategories);
+        context.SaveChanges();
+
+         var authorContacts = new List<AuthorContact>
+        {
+            new AuthorContact { Email = "jkrowling@example.com", Phone = "123-456-7890", AuthorId = 1 },
+            new AuthorContact { Email = "grrmartin@example.com", Phone = "987-654-3210", AuthorId = 2 }
+        };
+        context.AuthorContacts.AddRange(authorContacts);
+        context.SaveChanges();
+
+
+        }
+    }
 }
