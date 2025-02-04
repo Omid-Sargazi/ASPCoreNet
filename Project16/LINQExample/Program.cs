@@ -36,6 +36,17 @@ public class Program
                 Console.WriteLine(book.Title);
             }
 
+            //Get all books by a specific author.
+            var booksAuthors = context.Books.Where(b => b.Author.Name == authorName).ToList();
+            
+            //Get an author’s contact details.
+        //    var contact = context.Authors.Where(a => a.Name == authorName).ToList();
+            var contact = context.AuthorContacts.Where(ac => ac.Author.Name == authorName).ToList();
+           Console.WriteLine($"Get contact details {authorName}");
+           foreach(var detais in contact)
+           {
+            Console.WriteLine(detais.Email +detais.Phone+ detais.Id);
+           }
         }
     }
 
