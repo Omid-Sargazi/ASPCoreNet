@@ -1,0 +1,15 @@
+/home/omidsa/Programmings/ASPNetCore/Project16/ComplexLINQ/bin/Debug/net9.0/ComplexLINQ
+/home/omidsa/Programmings/ASPNetCore/Project16/ComplexLINQ/bin/Debug/net9.0/ComplexLINQ.deps.json
+/home/omidsa/Programmings/ASPNetCore/Project16/ComplexLINQ/bin/Debug/net9.0/ComplexLINQ.runtimeconfig.json
+/home/omidsa/Programmings/ASPNetCore/Project16/ComplexLINQ/bin/Debug/net9.0/ComplexLINQ.dll
+/home/omidsa/Programmings/ASPNetCore/Project16/ComplexLINQ/bin/Debug/net9.0/ComplexLINQ.pdb
+/home/omidsa/Programmings/ASPNetCore/Project16/ComplexLINQ/obj/Debug/net9.0/ComplexLINQ.GeneratedMSBuildEditorConfig.editorconfig
+/home/omidsa/Programmings/ASPNetCore/Project16/ComplexLINQ/obj/Debug/net9.0/ComplexLINQ.AssemblyInfoInputs.cache
+/home/omidsa/Programmings/ASPNetCore/Project16/ComplexLINQ/obj/Debug/net9.0/ComplexLINQ.AssemblyInfo.cs
+/home/omidsa/Programmings/ASPNetCore/Project16/ComplexLINQ/obj/Debug/net9.0/ComplexLINQ.csproj.CoreCompileInputs.cache
+/home/omidsa/Programmings/ASPNetCore/Project16/ComplexLINQ/obj/Debug/net9.0/ComplexLINQ.sourcelink.json
+/home/omidsa/Programmings/ASPNetCore/Project16/ComplexLINQ/obj/Debug/net9.0/ComplexLINQ.dll
+/home/omidsa/Programmings/ASPNetCore/Project16/ComplexLINQ/obj/Debug/net9.0/refint/ComplexLINQ.dll
+/home/omidsa/Programmings/ASPNetCore/Project16/ComplexLINQ/obj/Debug/net9.0/ComplexLINQ.pdb
+/home/omidsa/Programmings/ASPNetCore/Project16/ComplexLINQ/obj/Debug/net9.0/ComplexLINQ.genruntimeconfig.cache
+/home/omidsa/Programmings/ASPNetCore/Project16/ComplexLINQ/obj/Debug/net9.0/ref/ComplexLINQ.dll

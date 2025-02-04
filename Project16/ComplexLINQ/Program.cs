@@ -26,6 +26,17 @@
 
         var words = new List<string> {"hello","world"};
         var wordsResults = words.SelectMany(word => word.ToCharArray()).ToList();
+        ///////////////////////////////////////////
+        ///Flatten a list of strings into characters with index
+        var wordsWithIndex = words.SelectMany((word, index) 
+        => word.Select(c => new{Char = c, WordIndex = index})).ToList();
+        foreach(var i in wordsWithIndex)
+        {
+            Console.WriteLine(i.Char +i.WordIndex);
+        }
+
+        //Flatten a list of objects with nested collections
+    
 
     }
 }
