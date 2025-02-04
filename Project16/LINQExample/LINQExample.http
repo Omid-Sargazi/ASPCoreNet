@@ -1,0 +1,6 @@
+@LINQExample_HostAddress = http://localhost:5047
+
+GET {{LINQExample_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
