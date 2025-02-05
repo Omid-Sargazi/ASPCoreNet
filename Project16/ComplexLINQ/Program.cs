@@ -59,6 +59,18 @@ public class Program
             Console.WriteLine(item.Name+" " + item.Pet);
         }
 
+        //Flatten a list of objects with nested collections and filter
+        var peopelOfList = peopel.SelectMany(person => person.Pets.Where(pet => pet.StartsWith("D")), (person, pet) => new { person.Name, Pet = pet }).ToList();
+        
+        //Flatten a List of Orders with Order Items
+        var orders = new List<Order>
+        {
+            new Order { OrderId = 1, Items = new List<string> { "Apple", "Banana" } },
+            new Order { OrderId = 2, Items = new List<string> { "Orange", "Mango" } }
+        };
+
+        var resultsOfOrder = orders.SelectMany(order => order.Items,(order, item)=> new {order.OrderId, Item = item}).ToList();
+
        
     }    
 }
