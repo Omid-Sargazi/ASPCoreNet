@@ -420,3 +420,5 @@
 /home/omidsa/Programmings/ASPNetCore/Project16/IntegrationTestDemo/IntegrationTestDemo.Test/obj/Debug/net9.0/IntegrationTestDemo.Test.pdb
 /home/omidsa/Programmings/ASPNetCore/Project16/IntegrationTestDemo/IntegrationTestDemo.Test/obj/Debug/net9.0/IntegrationTestDemo.Test.genruntimeconfig.cache
 /home/omidsa/Programmings/ASPNetCore/Project16/IntegrationTestDemo/IntegrationTestDemo.Test/obj/Debug/net9.0/ref/IntegrationTestDemo.Test.dll
+/home/omidsa/Programmings/ASPNetCore/Project16/IntegrationTestDemo/IntegrationTestDemo.Test/bin/Debug/net9.0/Castle.Core.dll
+/home/omidsa/Programmings/ASPNetCore/Project16/IntegrationTestDemo/IntegrationTestDemo.Test/bin/Debug/net9.0/Moq.dll

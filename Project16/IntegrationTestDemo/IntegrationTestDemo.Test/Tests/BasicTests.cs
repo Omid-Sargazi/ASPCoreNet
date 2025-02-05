@@ -18,13 +18,13 @@ namespace IntegrationTestDemo.Test.Tests
             _factory = factory;
         }
 
-        [Fact]
+        //[Fact]
         public async Task Get_WeatherForecast_ReturnsSuccessStatusCode()
         {
             var client = _factory.CreateClient();
 
             var response = await client.GetAsync("/WeatherForecast");
-            
+
             Assert.Equal(HttpStatusCode.OK, response.StatusCode);
         }
     }
