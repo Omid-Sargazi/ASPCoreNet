@@ -1,3 +1,6 @@
+using Microsoft.EntityFrameworkCore;
+using MyAspNetCoreApp.Data;
+
 public class Program
 {
     public static void Main(string[] args)
@@ -7,6 +10,10 @@ public class Program
 // Add services to the container.
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
+builder.Services.AddControllers();
+
+builder.Services.AddDbContext<AppDbContext>(options=>
+    options.UseInMemoryDatabase("TestDb"));
 
 var app = builder.Build();
 
@@ -36,6 +43,8 @@ app.MapGet("/weatherforecast", () =>
     return forecast;
 })
 .WithName("GetWeatherForecast");
+
+app.MapControllers();
 
 app.Run();
 

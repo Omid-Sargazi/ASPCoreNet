@@ -7,6 +7,17 @@
 /home/omidsa/Programmings/ASPNetCore/Project16/MyAspNetCoreApp/MyAspNetCoreApp/bin/Debug/net9.0/MyAspNetCoreApp.dll
 /home/omidsa/Programmings/ASPNetCore/Project16/MyAspNetCoreApp/MyAspNetCoreApp/bin/Debug/net9.0/MyAspNetCoreApp.pdb
 /home/omidsa/Programmings/ASPNetCore/Project16/MyAspNetCoreApp/MyAspNetCoreApp/bin/Debug/net9.0/Microsoft.AspNetCore.OpenApi.dll
+/home/omidsa/Programmings/ASPNetCore/Project16/MyAspNetCoreApp/MyAspNetCoreApp/bin/Debug/net9.0/Microsoft.EntityFrameworkCore.dll
+/home/omidsa/Programmings/ASPNetCore/Project16/MyAspNetCoreApp/MyAspNetCoreApp/bin/Debug/net9.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+/home/omidsa/Programmings/ASPNetCore/Project16/MyAspNetCoreApp/MyAspNetCoreApp/bin/Debug/net9.0/Microsoft.EntityFrameworkCore.InMemory.dll
+/home/omidsa/Programmings/ASPNetCore/Project16/MyAspNetCoreApp/MyAspNetCoreApp/bin/Debug/net9.0/Microsoft.Extensions.Caching.Abstractions.dll
+/home/omidsa/Programmings/ASPNetCore/Project16/MyAspNetCoreApp/MyAspNetCoreApp/bin/Debug/net9.0/Microsoft.Extensions.Caching.Memory.dll
+/home/omidsa/Programmings/ASPNetCore/Project16/MyAspNetCoreApp/MyAspNetCoreApp/bin/Debug/net9.0/Microsoft.Extensions.DependencyInjection.dll
+/home/omidsa/Programmings/ASPNetCore/Project16/MyAspNetCoreApp/MyAspNetCoreApp/bin/Debug/net9.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+/home/omidsa/Programmings/ASPNetCore/Project16/MyAspNetCoreApp/MyAspNetCoreApp/bin/Debug/net9.0/Microsoft.Extensions.Logging.dll
+/home/omidsa/Programmings/ASPNetCore/Project16/MyAspNetCoreApp/MyAspNetCoreApp/bin/Debug/net9.0/Microsoft.Extensions.Logging.Abstractions.dll
+/home/omidsa/Programmings/ASPNetCore/Project16/MyAspNetCoreApp/MyAspNetCoreApp/bin/Debug/net9.0/Microsoft.Extensions.Options.dll
+/home/omidsa/Programmings/ASPNetCore/Project16/MyAspNetCoreApp/MyAspNetCoreApp/bin/Debug/net9.0/Microsoft.Extensions.Primitives.dll
 /home/omidsa/Programmings/ASPNetCore/Project16/MyAspNetCoreApp/MyAspNetCoreApp/bin/Debug/net9.0/Microsoft.OpenApi.dll
 /home/omidsa/Programmings/ASPNetCore/Project16/MyAspNetCoreApp/MyAspNetCoreApp/obj/Debug/net9.0/MyAspNetCoreApp.csproj.AssemblyReference.cache
 /home/omidsa/Programmings/ASPNetCore/Project16/MyAspNetCoreApp/MyAspNetCoreApp/obj/Debug/net9.0/MyAspNetCoreApp.GeneratedMSBuildEditorConfig.editorconfig
