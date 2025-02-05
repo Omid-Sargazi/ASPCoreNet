@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyAspNetCoreApp", "MyAspNetCoreApp\MyAspNetCoreApp.csproj", "{EFE92153-FEC6-46AD-B7E8-16A8976402E2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyAspNetCoreApp.Test", "MyAspNetCoreApp.Test\MyAspNetCoreApp.Test.csproj", "{1BAFB177-8A2D-449C-BCF3-C97D8E6DC406}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EFE92153-FEC6-46AD-B7E8-16A8976402E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFE92153-FEC6-46AD-B7E8-16A8976402E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFE92153-FEC6-46AD-B7E8-16A8976402E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFE92153-FEC6-46AD-B7E8-16A8976402E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1BAFB177-8A2D-449C-BCF3-C97D8E6DC406}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BAFB177-8A2D-449C-BCF3-C97D8E6DC406}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BAFB177-8A2D-449C-BCF3-C97D8E6DC406}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BAFB177-8A2D-449C-BCF3-C97D8E6DC406}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
