@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ComplexLINQ")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+12afdc0f1d6d8ac602b676c2a88517d997e66632")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0dedeaf0510fad91e98cebb505832d6bf254f1f5")]
 [assembly: System.Reflection.AssemblyProductAttribute("ComplexLINQ")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ComplexLINQ")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
