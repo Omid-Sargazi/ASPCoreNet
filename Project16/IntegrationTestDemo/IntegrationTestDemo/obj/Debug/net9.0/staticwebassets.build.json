@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "q3Ttr5AYkfSYNAU6YVhZb+f3hV3ExoYsfk0zZ2+l3RY=",
+  "Source": "IntegrationTestDemo",
+  "BasePath": "_content/IntegrationTestDemo",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
