@@ -17,7 +17,7 @@ public class Program
     {
         app.MapOpenApi();
     }
-
+    
     app.UseHttpsRedirection();
 
     var summaries = new[]
