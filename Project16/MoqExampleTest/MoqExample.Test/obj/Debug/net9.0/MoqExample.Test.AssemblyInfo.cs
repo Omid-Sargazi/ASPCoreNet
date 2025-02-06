@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MoqExample.Test")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b9ce1df8b28331fdca184c8d41e2f0d9653e12c6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6ff7f6129dfbcbe92c8e2dfe2b5105dc9307f44a")]
 [assembly: System.Reflection.AssemblyProductAttribute("MoqExample.Test")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MoqExample.Test")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
