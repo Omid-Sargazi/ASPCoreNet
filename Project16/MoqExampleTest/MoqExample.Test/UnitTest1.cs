@@ -1,4 +1,5 @@
-﻿using Moq;
+﻿using System.Xml.Serialization;
+using Moq;
 using MoqExample.Interfaces;
 
 namespace MoqExample.Test;
@@ -21,12 +22,29 @@ public class UnitTest1
 
     }
 
-    [Fact]
+    // [Fact]
     public void Test_GetUserName()
     {
         var mockUserService =  new Mock<IUserService>();
         mockUserService.Setup(x => x.GetUserName(1)).Returns("OmidSa");
         var result = mockUserService.Object.GetUserName(1);
         Assert.Equal("OmidSa",result);
+    }
+    // [Fact]
+    public void TestReadFile_throwException()
+    {
+        var mockFileReader = new Mock<IFileReader>();
+        mockFileReader.Setup(x => x.ReadFile(It.IsAny<string>())).Throws(new FileNotFoundException());
+
+        Assert.Throws<FileNotFoundException>(()=>mockFileReader.Object.ReadFile("invalid_path"));
+    }
+
+    [Fact]
+    public void Test_ConnectionString()
+    {
+        var mockAppSettings = new Mock<IAppSettings>();
+        mockAppSettings.Setup(x => x.ConnectionString).Returns("Server=myServer;Database=Db;");
+        var result = mockAppSettings.Object.ConnectionString;
+        Assert.Equal("Server=myServer;Database=Db;",result);
     }
 }
