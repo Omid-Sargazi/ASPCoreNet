@@ -47,7 +47,7 @@ public class UnitTest1
         var result = mockAppSettings.Object.ConnectionString;
         Assert.Equal("Server=myServer;Database=Db;",result);
     }
-    
+
     [Fact]
     public void Test_Log_Callback()
     {
@@ -57,5 +57,15 @@ public class UnitTest1
 
         mockLogger.Object.Log("Test Message");
         Assert.Equal("Test Message",loggedMessage);
+    }
+
+    [Fact]
+    public void Test_TryParse()
+    {
+        var mockParse = new Mock<IParser>();
+        mockParse.Setup(x => x.TyrParse(It.IsAny<string>(),out It.Ref<int>.IsAny)).Returns((string input, out int result)=>{
+            result = 42;
+            return true;
+        });
     }
 }
