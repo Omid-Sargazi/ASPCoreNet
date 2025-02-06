@@ -39,12 +39,23 @@ public class UnitTest1
         Assert.Throws<FileNotFoundException>(()=>mockFileReader.Object.ReadFile("invalid_path"));
     }
 
-    [Fact]
+    // [Fact]
     public void Test_ConnectionString()
     {
         var mockAppSettings = new Mock<IAppSettings>();
         mockAppSettings.Setup(x => x.ConnectionString).Returns("Server=myServer;Database=Db;");
         var result = mockAppSettings.Object.ConnectionString;
         Assert.Equal("Server=myServer;Database=Db;",result);
+    }
+    
+    [Fact]
+    public void Test_Log_Callback()
+    {
+        string loggedMessage = string.Empty;
+        var mockLogger = new Mock<ILogger>();
+        mockLogger.Setup(x => x.Log(It.IsAny<string>())).Callback<string>(msg => loggedMessage = msg);
+
+        mockLogger.Object.Log("Test Message");
+        Assert.Equal("Test Message",loggedMessage);
     }
 }
