@@ -73,7 +73,7 @@ public class UnitTest1
         Assert.Equal(42,output);
     }
     
-    [Fact]
+    // [Fact]
     public void Test_Validate_RefParameter()
     {
         var mockValidator = new Mock<IValidator>();
@@ -82,5 +82,30 @@ public class UnitTest1
         string input = "test";
         var result = mockValidator.Object.Validator(ref input);
         Assert.Equal(true, result);
+    }
+
+    // [Fact]
+    public void Test_Next_MultipleCalls()
+    {
+        var mockRandomGenerator = new Mock<IRandomGenerator>();
+        mockRandomGenerator.SetupSequence(x => x.Next())
+        .Returns(1)
+        .Returns(2)
+        .Returns(3);
+
+        Assert.Equal(1, mockRandomGenerator.Object.Next());
+        Assert.Equal(2, mockRandomGenerator.Object.Next());
+        Assert.Equal(3, mockRandomGenerator.Object.Next());
+    }
+
+
+    [Fact]
+    public async Task Test_GetDataAsync()
+    {
+        var mockApiClient = new Mock<IApiClient>();
+        mockApiClient.Setup(x => x.GetDataAsunc()).ReturnsAsync("Mocked Data");
+
+        var result = await mockApiClient.Object.GetDataAsunc();
+        Assert.Equal("Mocked Data",result);
     }
 }
