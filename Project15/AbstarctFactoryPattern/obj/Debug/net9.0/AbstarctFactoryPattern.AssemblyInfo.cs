@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AbstarctFactoryPattern")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ce76b4321fd4225e251c61814411976ed8073b58")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e9feef4aa534d6177a86fb363699127b52504452")]
 [assembly: System.Reflection.AssemblyProductAttribute("AbstarctFactoryPattern")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AbstarctFactoryPattern")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
