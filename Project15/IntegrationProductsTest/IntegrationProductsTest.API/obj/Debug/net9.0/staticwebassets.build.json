@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "/R+XvgR0XZg1Q71XRMTCK0XqWENHBCBd6MDJfPDGHew=",
+  "Source": "IntegrationProductsTest.API",
+  "BasePath": "_content/IntegrationProductsTest.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
