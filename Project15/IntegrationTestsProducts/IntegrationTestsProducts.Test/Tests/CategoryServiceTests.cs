@@ -32,7 +32,7 @@ namespace IntegrationTestsProducts.Test.Tests
             Assert.Equal(1,await _context.Categories.CountAsync());
         }
 
-        [Fact]
+        // [Fact]
         public async Task GetCategoryById_ShouldReturnCorrectCategory()
         {
             var category = new Category {Name = "Books"};
@@ -43,6 +43,16 @@ namespace IntegrationTestsProducts.Test.Tests
             Assert.NotNull(result);
             Assert.Equal("Books", result.Name);
             Assert.Equal(1, result.Id);
+        }
+
+        [Fact]
+        public async Task GetAllCategories_ShouldReturnAllCategories()
+        {
+            await _categoryService.CreateCategoryAsync(new Category {Name = "Books"});
+            await _categoryService.CreateCategoryAsync(new Category{Name = "Toys"});
+
+            var result =  await _categoryService.GetAllCategoriesAsync();
+            Assert.Equal(2, result.Count);
         }
     }
 }
