@@ -35,5 +35,19 @@ namespace Authentication.API.Controllers
 
             return Ok(new {Message="User registered successfully"});
         }
+
+        [HttpPost("sign-in")]
+        public async Task<IActionResult> SignIn([FromBody] SignInRequest request)
+        {
+            var user = await _userManager.FindByEmailAsync(request.Email);
+            if(user == null)
+                return Unauthorized();
+            
+            var result = await _signInManager.PasswordSignInAsync(user, request.Password, request.RememberMe, false);
+
+            if(result.Succeeded) return Unauthorized();
+
+            return Ok(new {Message = "User signed in successfully"});
+        }
     }
 }
