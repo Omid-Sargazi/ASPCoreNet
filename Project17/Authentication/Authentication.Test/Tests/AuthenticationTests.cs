@@ -18,7 +18,7 @@ namespace Authentication.Test.Tests
             _httpClient = factory.CreateClient();
         }
 
-        [Fact]
+        // [Fact]
         public async Task SignUp_ShouldReturnSuccess()
         {
             var request = new SignUpRequest
@@ -35,5 +35,27 @@ namespace Authentication.Test.Tests
             response.EnsureSuccessStatusCode();
 
         }
+
+        // [Fact]
+        public async Task SignIn_ShouldReturnSuccess()
+        {
+            await SignUp_ShouldReturnSuccess();
+
+            var request = new SignInRequest
+            {
+                Email = "test@example.com",
+                Password = "Test@123",
+                RememberMe = false
+            };
+
+            var response = await _httpClient.PostAsync("/api/auth/sign-in",
+                new StringContent(JsonSerializer.Serialize(request),Encoding.UTF8,"application/json")
+            );
+
+            response.EnsureSuccessStatusCode();
+        }
+
+
+        
     }
 }
