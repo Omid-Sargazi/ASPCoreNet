@@ -28,5 +28,13 @@ public class Program
         {
             Console.WriteLine(item.Name);
         }
+
+        //Where Filter
+        var customersOver25 = customers.Where(c => c.Age > 25);
+        
+        foreach(var item in customersOver25)
+        {
+            Console.WriteLine(item);
+        }
     }
 }
