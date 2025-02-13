@@ -52,6 +52,12 @@ public class Program
         {
             Console.WriteLine(item.Age);
         }
-
+        //Specific Field by Where
+        var customerEmails = customers.Select(c => c.Email);
+        Console.WriteLine("Specific Field");
+        foreach(var item in customerEmails)
+        {
+            Console.WriteLine(item);
+        }
     }
 }
