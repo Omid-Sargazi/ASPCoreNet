@@ -43,5 +43,15 @@ public class Program
         {
             Console.WriteLine(item.Age);
         }
+
+        //Where + OrderBy
+        var result = customers.Where(c => c.Age > 25)
+        .OrderByDescending(c => c.Age);
+        Console.WriteLine("OderBy&Decending");
+        foreach(var item in result)
+        {
+            Console.WriteLine(item.Age);
+        }
+
     }
 }
