@@ -36,5 +36,12 @@ public class Program
         {
             Console.WriteLine(item);
         }
+
+        //OrderBy
+        var orderedCustomers = customers.OrderBy(c => c.Age);
+        foreach(var item in orderedCustomers)
+        {
+            Console.WriteLine(item.Age);
+        }
     }
 }
