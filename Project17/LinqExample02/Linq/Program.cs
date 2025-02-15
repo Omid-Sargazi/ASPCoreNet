@@ -37,5 +37,12 @@ public class Program
         var sortedEmployees = employees.OrderByDescending(e => e.Salary);
         //Total Salary Across All Employees
         var totalSalary = employees.Sum(e => e.Salary);
+
+        Console.WriteLine(totalSalary);
+
+        var maxBudget = departments.Max(d => d.Budget);
+        Console.WriteLine("Maximum Budget: "+ maxBudget);
+
+        
     }
 }
