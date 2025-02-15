@@ -43,6 +43,16 @@ public class Program
         var maxBudget = departments.Max(d => d.Budget);
         Console.WriteLine("Maximum Budget: "+ maxBudget);
 
+        //Joins & Relationships Inner Join Departments-Employees
+        var deptEmployees = departments.Join(employees, 
+        d=>d.Id, e=>e.DepartmentId,
+        (d,e)=>new {d.Name, name=  e.Name, role = e.Role});
+
+    foreach(var item in deptEmployees)
+    {
+        Console.WriteLine($"Name:{item.Name}, Role: {item.role}");
+    }
+
         
     }
 }
