@@ -1,0 +1,15 @@
+/home/omidsa/Programmings/ASPNetCore/Project17/LinqExample02/Linq/obj/Debug/net9.0/Linq.GeneratedMSBuildEditorConfig.editorconfig
+/home/omidsa/Programmings/ASPNetCore/Project17/LinqExample02/Linq/obj/Debug/net9.0/Linq.AssemblyInfoInputs.cache
+/home/omidsa/Programmings/ASPNetCore/Project17/LinqExample02/Linq/obj/Debug/net9.0/Linq.AssemblyInfo.cs
+/home/omidsa/Programmings/ASPNetCore/Project17/LinqExample02/Linq/obj/Debug/net9.0/Linq.csproj.CoreCompileInputs.cache
+/home/omidsa/Programmings/ASPNetCore/Project17/LinqExample02/Linq/obj/Debug/net9.0/Linq.sourcelink.json
+/home/omidsa/Programmings/ASPNetCore/Project17/LinqExample02/Linq/bin/Debug/net9.0/Linq
+/home/omidsa/Programmings/ASPNetCore/Project17/LinqExample02/Linq/bin/Debug/net9.0/Linq.deps.json
+/home/omidsa/Programmings/ASPNetCore/Project17/LinqExample02/Linq/bin/Debug/net9.0/Linq.runtimeconfig.json
+/home/omidsa/Programmings/ASPNetCore/Project17/LinqExample02/Linq/bin/Debug/net9.0/Linq.dll
+/home/omidsa/Programmings/ASPNetCore/Project17/LinqExample02/Linq/bin/Debug/net9.0/Linq.pdb
+/home/omidsa/Programmings/ASPNetCore/Project17/LinqExample02/Linq/obj/Debug/net9.0/Linq.dll
+/home/omidsa/Programmings/ASPNetCore/Project17/LinqExample02/Linq/obj/Debug/net9.0/refint/Linq.dll
+/home/omidsa/Programmings/ASPNetCore/Project17/LinqExample02/Linq/obj/Debug/net9.0/Linq.pdb
+/home/omidsa/Programmings/ASPNetCore/Project17/LinqExample02/Linq/obj/Debug/net9.0/Linq.genruntimeconfig.cache
+/home/omidsa/Programmings/ASPNetCore/Project17/LinqExample02/Linq/obj/Debug/net9.0/ref/Linq.dll
