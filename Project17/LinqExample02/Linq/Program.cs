@@ -53,6 +53,12 @@ public class Program
         Console.WriteLine($"Name:{item.Name}, Role: {item.role}");
     }
 
-        
+
+    var groupedEmployees = employees.GroupBy(e => e.DepartmentId);
+
+    var highEarners = employees.Where(e => e.Salary > 6000);
+
+
+
     }
 }
