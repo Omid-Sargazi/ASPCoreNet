@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace APIAuthenticationTest.API.Contracts.Abstracts.CommandAbstract
@@ -12,16 +13,16 @@ namespace APIAuthenticationTest.API.Contracts.Abstracts.CommandAbstract
             
         }
 
-        public CommandResponse(string prefix, int code, string message)
+        public CommandResponse(ResponseMessageCode messageCode)
         {
-            Prefix = prefix;
-            Code = code;
-            Message = message;   
+            Prefix = messageCode.Prefix;
+            Code = messageCode.Code;
+            Message = messageCode.Message;   
         }
 
-        public string Prefix {get;}
-        public int Code {get;}
-        public string Message {get;}
+        [JsonIgnore]public string Prefix {get; protected set;}
+        [JsonIgnore]public int Code {get; protected set;}
+        [JsonIgnore]public string Message {get; protected set;}
 
     }
 }
