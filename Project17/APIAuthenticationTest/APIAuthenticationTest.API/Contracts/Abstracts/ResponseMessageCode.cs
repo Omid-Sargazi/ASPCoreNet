@@ -7,9 +7,11 @@ namespace APIAuthenticationTest.API.Contracts.Abstracts
 {
     public abstract class ResponseMessageCode
     {
-        protected ResponseMessageCode()
+        protected ResponseMessageCode(string prefix, int code, string message)
         {
-            
+            Prefix = prefix;
+            Code = code;
+            Message = message;   
         }
 
         public string Prefix {get;}

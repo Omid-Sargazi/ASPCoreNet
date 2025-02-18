@@ -5,9 +5,8 @@ using System.Threading.Tasks;
 
 namespace APIAuthenticationTest.API.Contracts.Abstracts.CommandAbstract
 {
-    public sealed class CodeAndMessage
+    public abstract class QueryResponse
     {
-        public int Code {get; set;}
-        public string Message {get; set;}
+        
     }
 }
