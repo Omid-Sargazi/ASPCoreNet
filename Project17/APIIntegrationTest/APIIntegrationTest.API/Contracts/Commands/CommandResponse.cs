@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace APIIntegrationTest.API.Contracts.Commands
 {
-    public class CommandResponse
+    public abstract class CommandResponse
     {
        public CommandResponse()
        {
