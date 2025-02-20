@@ -10,7 +10,7 @@ namespace CQRSPattern02.API.Contracts.Commands.Authentication
     {
         public bool Succeeded { get; set; }
         public string Message { get; set; }
-        public string Token { get; set; }
+        public string? Token { get; set; }
         public IEnumerable<string> Errors { get; set; }
     }
 }

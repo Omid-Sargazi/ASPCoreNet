@@ -42,6 +42,24 @@ namespace CQRSPattern02.API.Contracts.Handlers.Authentication
             };
 
             var result = await _userManager.CreateAsync(user, command.Password);
+
+            if(result.Succeeded)
+            {
+                return new SignUpWithBasicInformationCommandResponse
+                {
+                    Succeeded = true,
+                    UserId = user.Id,
+                    Message = "Registration successful"
+                };
+            }
+
+            return new SignUpWithBasicInformationCommandResponse
+            {
+                Succeeded = result.Succeeded,
+                UserId = result.Succeeded ? user.Id : null,
+                Errors = result.Errors.Select(e => e.Description),
+                Message = result.Succeeded ? "Registration   successful" : "Registration failed"
+            };
         }
     }
 }
