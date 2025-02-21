@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
@@ -10,6 +11,9 @@ using TestLibrarySystem.API.Models;
 
 namespace TestLibrarySystem.API.Controllers
 {
+    [Authorize]
+    [ApiController]
+    [Route("api/[controller]")]
     public class BooksController:ControllerBase
     {
         private readonly LibraryDbContext _context;
@@ -19,7 +23,7 @@ namespace TestLibrarySystem.API.Controllers
             _context = context;
         }
 
-        [HttpGet]
+        [HttpGet("get-Books")]
         public async Task<IActionResult> GetBooks()
         {
             var books  = await _context.Books.ToListAsync();
@@ -37,7 +41,7 @@ namespace TestLibrarySystem.API.Controllers
         public async Task<IActionResult> CreateBook([FromBody] Book book)
         {
             if(!ModelState.IsValid) return BadRequest(ModelState);
-            
+
             _context.Books.Add(book);
             await _context.SaveChangesAsync();
             return CreatedAtAction(nameof(GetBook), new{id= book.Id}, book);
