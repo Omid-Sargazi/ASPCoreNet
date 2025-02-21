@@ -9,6 +9,8 @@ public class Program
         app.MapGet("/",()=> "Hello World");
         app.MapGet("/about",()=>"this is about page");
 
+        app.MapGet("/user",()=> new{Name = "Omid", Age=42});
+
         app.Run();
     }
 }
