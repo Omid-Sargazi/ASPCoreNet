@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http.Headers;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc.Testing;
 using Microsoft.EntityFrameworkCore;
@@ -24,6 +25,9 @@ namespace TestLibrarySystem.Test.IntegrationTests
                 }
 
                 services.AddDbContext<LibraryDbContext>(options => options.UseInMemoryDatabase("testDb"));
+
+                services.AddAuthentication("Test")
+                .AddScheme<AuthenticationSchemeOptions, TestAuthHandler>("Test", options=>{});
 
                 var sp = services.BuildServiceProvider();
                 using var scope = sp.CreateAsyncScope();
