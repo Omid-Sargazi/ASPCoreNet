@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Net.Http.Json;
 using System.Threading.Tasks;
 using TestLibrarySystem.API.Models;
@@ -38,7 +39,14 @@ namespace TestLibrarySystem.Test.IntegrationTests
             var book = await response.Content.ReadFromJsonAsync<Book>();
             Assert.NotNull(book);
             Assert.Equal("Test Book 1", book.Title);
+        }
 
+        [Fact]
+        public async Task GetBook_WithInvalidId_ReturnsNotFound()
+        {
+            var response = await _client.GetAsync("api/books/999");
+            
+            Assert.Equal(HttpStatusCode.NotFound, response.StatusCode);
         }
     }
 }
