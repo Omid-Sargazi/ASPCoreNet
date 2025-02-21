@@ -6,10 +6,15 @@ public class Program
 
         var app = builder.Build();
 
-        app.MapGet("/",()=> "Hello World");
-        app.MapGet("/about",()=>"this is about page");
+        app.Use(async (context, next)=>{
+            Console.WriteLine($"Incoming request: {context.Request.Method} {context.Request.Path}");
+            await next();
+        });
 
-        app.MapGet("/user",()=> new{Name = "Omid", Age=42});
+        app.MapGet("/",()=> "Hello World");
+        // app.MapGet("/about",()=>"this is about page");
+
+        // app.MapGet("/user",()=> new{Name = "Omid", Age=42});
 
         app.Run();
     }
