@@ -25,9 +25,21 @@ public class Program
 
        app.MapGet("/",()=>"Hello World");
 
+       app.MapGet("/index",async context=>{
+        await context.Response.SendFileAsync("wwwroot/index.html");
+       });
+
        app.MapGet("/about",()=>"this is about page");
 
        app.MapGet("/user",() => new {Name = "Omid", Age=42});
+
+       app.MapGet("/greet",(string name)=>{
+        return $"Hello {name}";
+       });
+
+       app.MapGet("/user/{id}",(int id)=>{
+        return new {UserId = id, Name = "Omid", Age=42};
+       });
 
        app.Run();
 
