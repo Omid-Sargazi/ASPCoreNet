@@ -41,7 +41,14 @@ public class Program
         return new {UserId = id, Name = "Omid", Age=42};
        });
 
+       app.MapPost("/user",(User user)=>{
+        return new {Message = $"User {user.Name}", user};
+       });
+
        app.Run();
 
     }
+
+
+    public record User(string Name, int Age);
 }
