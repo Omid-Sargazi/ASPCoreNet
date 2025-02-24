@@ -6,72 +6,83 @@ namespace MeanASPNETCoreBook.API
     public static void Main(string[] args)
     {
         Console.WriteLine("hello");
-       var builder = WebApplication.CreateBuilder();
+        var builder = WebApplication.CreateBuilder(args);
+        builder.Services.AddSingleton<UserService>();
+        // builder.Services.AddSwaggerGen();
+        var app = builder.Build();
 
-       builder.Services.AddSingleton<UserService>();
-       builder.Services.AddSingleton<TodoService>();
 
-       var app = builder.Build();
+        // app.MapGet("/hello", ()=>"Hello from asp.net core");
+        // app.MapGet("/jsonfile",()=>
+        //     new {Name ="Omid", Age=42}
+        // );
 
-       app.UseDeveloperExceptionPage();
-       app.UseStaticFiles();
+        // app.MapGet("/about",()=>{return new {page="About", title="About us"};});
 
-       app.Use(async (context, next)=>{
-        Console.WriteLine($"Request: {context.Request.Method} {context.Request.Path}");
-        await next();
-       });
+        // app.MapGet("/greet",(string name)=>{
+        //     return $"Hello {name}";
+        // });
 
-       app.Use(async (context, next)=>{
-        await next();
-        if(!context.Response.HasStarted)
-            await context.Response.WriteAsync("Middleware says: Welcome!");
-        
-        // await next();
-       });
+        // app.MapGet("/user/{id}",(int id)=>{
+        //     return $"squere is {id*id}";
+        // });
 
-       app.MapGet("/",()=>"Hello World");
 
-       app.MapGet("/index",async context=>{
-        await context.Response.SendFileAsync("wwwroot/index.html");
-       });
+        // app.MapPost("/postUser",(User user)=>{
+        //     return $"Hello {user.name} {user.age}";
+        // });
 
-       app.MapGet("/about",()=>"this is about page");
 
-       app.MapGet("/user",() => new {Name = "Omid", Age=42});
+        // app.MapPost("/postUser2",(User user)=>{
+        //     return new {name=user.name, age=user.age};
+        // });
 
-       app.MapGet("/greet",(string name)=>{
-        return $"Hello {name}";
-       });
+        // app.MapGet("/userServices",(UserService services)=>{
+        //     return services.GetUsers();
+        // });
 
-       app.MapGet("/user/{id}",(int id)=>{
-        return new {UserId = id, Name = "Omid", Age=42};
-       });
+        // app.UseSwagger();
+        // app.UseSwaggerUI();
 
-       app.MapPost("/user",(User user)=>{
-        return new {Message = $"User {user.Name}", user};
-       });
+        //Day 6
+        app.MapGet("/products",()=> 
+            new List<Product> {
+                new Product(1, "Laptop", 1200),
+                new Product(2, "Phone", 500),
+            }
+        );
 
-       app.MapGet("/userss",(UserService service)=> service.GetUsers());
+        app.MapGet("/products/{id}",(int id)=>{
+            var products = new List<Product>
+            {
+                new Product(1, "Laptop",1200),
+                new Product(2, "Phone", 800)
+            };
 
-       app.MapGet("todos", (TodoService service) => service.GetTodos());
-       app.MapPost("todos",(TodoService service, TodoItem item)=> service.AddTodo(item));
+            var product = products.FirstOrDefault(p => p.Id == id);
+            return product is null ? Results.NotFound("Product not found") : Results.Ok(product);
+        });
 
-       app.Run();
+        app.MapGet("/search",(string Name)=>{
+            var products = new List<Product> 
+            {
+                new Product(1, "Laptop", 1200),
+                new Product(2, "Phone", 800)
+            };
 
+            var foundProducts = products.Where(p => p.Name.Contains(Name,StringComparison.OrdinalIgnoreCase)).ToList();
+            return Results.Ok(foundProducts);
+        });
+
+
+
+        app.Run();
     }
 
 
+    public record User(string name, int age);
+
+    public record Product(int Id, string Name, decimal Price);
 }
-    public record User(string Name, int Age);
-
-    public class UserService
-    {
-        private readonly List<User> _users = new()
-        {
-            new User ("Alice", 30),
-            new User ("Bob", 25),
-        };
-
-        public List<User> GetUsers()=>_users;
-    }
+   
 }
