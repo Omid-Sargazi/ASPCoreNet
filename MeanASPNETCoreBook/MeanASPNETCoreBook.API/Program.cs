@@ -1,4 +1,8 @@
+using MeanASPNETCoreBook.API.Data;
 using MeanASPNETCoreBook.API.Projects;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Versioning;
+using Microsoft.EntityFrameworkCore;
 namespace MeanASPNETCoreBook.API
 {
     public class Program
@@ -9,6 +13,19 @@ namespace MeanASPNETCoreBook.API
         var builder = WebApplication.CreateBuilder(args);
         builder.Services.AddSingleton<UserService>();
         // builder.Services.AddSwaggerGen();
+
+        builder.Services.AddApiVersioning(options=>{
+            options.ReportApiVersions = true;
+            options.AssumeDefaultVersionWhenUnspecified = true;
+            options.DefaultApiVersion = new ApiVersion(1,0);
+            options.ApiVersionReader = new UrlSegmentApiVersionReader();
+        });
+
+
+        builder.Services.AddDbContext<AppDbContext>(options=> 
+        {
+            options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection"));
+        });
 
         builder.Services.AddControllers();
         var app = builder.Build();
