@@ -9,7 +9,11 @@ namespace MeanASPNETCoreBook.API
         var builder = WebApplication.CreateBuilder(args);
         builder.Services.AddSingleton<UserService>();
         // builder.Services.AddSwaggerGen();
+
+        builder.Services.AddControllers();
         var app = builder.Build();
+
+        app.MapControllers();
 
 
         // app.MapGet("/hello", ()=>"Hello from asp.net core");
@@ -45,34 +49,34 @@ namespace MeanASPNETCoreBook.API
         // app.UseSwaggerUI();
 
         //Day 6
-        app.MapGet("/products",()=> 
-            new List<Product> {
-                new Product(1, "Laptop", 1200),
-                new Product(2, "Phone", 500),
-            }
-        );
+        // app.MapGet("/products",()=> 
+        //     new List<Product> {
+        //         new Product(1, "Laptop", 1200),
+        //         new Product(2, "Phone", 500),
+        //     }
+        // );
 
-        app.MapGet("/products/{id}",(int id)=>{
-            var products = new List<Product>
-            {
-                new Product(1, "Laptop",1200),
-                new Product(2, "Phone", 800)
-            };
+        // app.MapGet("/products/{id}",(int id)=>{
+        //     var products = new List<Product>
+        //     {
+        //         new Product(1, "Laptop",1200),
+        //         new Product(2, "Phone", 800)
+        //     };
 
-            var product = products.FirstOrDefault(p => p.Id == id);
-            return product is null ? Results.NotFound("Product not found") : Results.Ok(product);
-        });
+        //     var product = products.FirstOrDefault(p => p.Id == id);
+        //     return product is null ? Results.NotFound("Product not found") : Results.Ok(product);
+        // });
 
-        app.MapGet("/search",(string Name)=>{
-            var products = new List<Product> 
-            {
-                new Product(1, "Laptop", 1200),
-                new Product(2, "Phone", 800)
-            };
+        // app.MapGet("/search",(string Name)=>{
+        //     var products = new List<Product> 
+        //     {
+        //         new Product(1, "Laptop", 1200),
+        //         new Product(2, "Phone", 800)
+        //     };
 
-            var foundProducts = products.Where(p => p.Name.Contains(Name,StringComparison.OrdinalIgnoreCase)).ToList();
-            return Results.Ok(foundProducts);
-        });
+        //     var foundProducts = products.Where(p => p.Name.Contains(Name,StringComparison.OrdinalIgnoreCase)).ToList();
+        //     return Results.Ok(foundProducts);
+        // });
 
 
 
@@ -80,9 +84,9 @@ namespace MeanASPNETCoreBook.API
     }
 
 
-    public record User(string name, int age);
+    // public record User(string name, int age);
 
-    public record Product(int Id, string Name, decimal Price);
+    // public record Product(int Id, string Name, decimal Price);
 }
    
 }
