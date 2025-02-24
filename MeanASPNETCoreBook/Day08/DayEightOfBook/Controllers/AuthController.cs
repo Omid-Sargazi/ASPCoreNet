@@ -53,7 +53,7 @@ namespace DayEightOfBook.Controllers
 
         private string GenerateJwtToken(ApplicationUser user)
         {
-            var key = Encoding.UTF8.GetBytes("SuperSecretKey12345!");
+            var key = Encoding.UTF8.GetBytes("ThisIsASuperSecretKeyThatIsAtLeast32BytesLong!");
         var tokenHandler = new JwtSecurityTokenHandler();
         var tokenDescriptor = new Microsoft.IdentityModel.Tokens.SecurityTokenDescriptor
         {
