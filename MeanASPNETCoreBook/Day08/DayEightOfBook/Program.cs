@@ -1,4 +1,5 @@
 using System.Text;
+using System.Threading.Tasks;
 using DayEightOfBook.Data;
 using DayEightOfBook.Models;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -8,7 +9,7 @@ using Microsoft.IdentityModel.Tokens;
 
 public class Program
 {
-    public static void Main(string[] args)
+    public static async Task Main(string[] args)
     {
         Console.WriteLine("omid");
 
@@ -25,7 +26,7 @@ public class Program
         .AddEntityFrameworkStores<AppDbContext>()
         .AddDefaultTokenProviders();
 
-        var key = Encoding.UTF8.GetBytes("ThisIsASuperSecretKeyThatIsAtLeast32BytesLongs!");
+        var key = Encoding.UTF8.GetBytes(builder.Configuration["JwtSettings:Secret"]);
 
         builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
         .AddJwtBearer(options => {
@@ -39,6 +40,12 @@ public class Program
                 ValidateIssuerSigningKey = true,
                 IssuerSigningKey = new SymmetricSecurityKey(key)
             };
+        });
+
+
+
+        builder.Services.AddAuthorization(options=> {
+            options.AddPolicy("AdminOnly", policy => policy.RequireRole("Admin"));
         });
 
         builder.Services.AddAuthorization();
@@ -58,6 +65,17 @@ public class Program
         using(var scope = app.Services.CreateScope())
         {
             var dbContext = scope.ServiceProvider.GetRequiredService<AppDbContext>();
+            var roleManager = scope.ServiceProvider.GetRequiredService<RoleManager<IdentityRole>>();
+
+            if(!await roleManager.RoleExistsAsync("Admin"))
+            {
+                await roleManager.CreateAsync(new IdentityRole("Admin"));
+            }
+
+            if(!await roleManager.RoleExistsAsync("User"))
+            {
+                await roleManager.CreateAsync(new IdentityRole("User"));
+            }
             dbContext.Database.EnsureCreated();
 
             if(!dbContext.Products.Any())
