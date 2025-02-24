@@ -19,7 +19,7 @@ namespace MeanASPNETCoreBook.API.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<Product>> GetProducts() => Ok(products);
 
-        [HttpGet("{id}")]
+        [HttpGet("{id:int}")]
         public ActionResult<Product> GetProduct(int id)
         {
             var product = products.FirstOrDefault(p => p.Id == id);
