@@ -35,5 +35,15 @@ namespace DayEightOfBook.Controllers
             Console.WriteLine("Test endpoint hit");
             return Ok("Test works!");
         }
+
+
+        [Authorize(Roles ="Admin")]
+        [HttpPost]
+        public async Task<ActionResult<Product>> AddProduct(Product product)
+        {
+            _context.Products.Add(product);
+            await _context.SaveChangesAsync();
+            return CreatedAtAction(nameof(GetProducts), new {id= product.Id}, product);
+        }
     }
 }
