@@ -26,6 +26,15 @@ public class Program
 
             var FindBook = db.Books.Find(1);
             Console.WriteLine($"Book: {FindBook.Title}");
+
+            ///////Filtering///////////////////////////
+            Console.WriteLine("////////////Filtering///////////");
+            var booksByAuthor = db.Books.Where(b => b.AuthorId == 1).ToList();
+
+            var efCoreBooks = db.Books.Where(b => b.Title.Contains("EF Core")).ToList();
+            var greatReviews = db.Reviews.Where(r => r.Comment.Contains("Great")).ToList();
+            var popularBooks = db.Books.Where(b => b.Reviews.Count > 1).ToList();
+            var Omid = db.Authors.Where(a => a.Name == "Omid").ToList();
         }
     }
 }
