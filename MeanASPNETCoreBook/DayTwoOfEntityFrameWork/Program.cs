@@ -76,6 +76,12 @@ public class Program
             var booksWithReviews = db.Books.Include(b =>b.Reviews).ToList();
             var reviewsWithBooks = db.Reviews.Include(r => r.Book).ToList();
             var authorsWithBooksAndReviews = db.Authors.Include(a => a.Books).ThenInclude(b => b.Reviews).ToList();
+            ///////////////////////////Advanced Queries/////////////////////////////////////////
+            Console.WriteLine("/////////////////////////Advanced Queries/////////////////////////////");
+            var booksPerAuthor = db.Authors.Select(a => new {a.Name, BookCount = a.Books.Count}).ToList();
+            var avgReviews = db.Books.Average(b =>b.Reviews.Count);
+            var booksWithoutReviews = db.Books.Where(b => b.Reviews.Count == 0).ToList();
+            var mostReviewedBook = db.Books.OrderByDescending(b => b.Reviews.Count).FirstOrDefault();
         }
 
     }
