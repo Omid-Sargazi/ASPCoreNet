@@ -35,6 +35,14 @@ public class Program
             var greatReviews = db.Reviews.Where(r => r.Comment.Contains("Great")).ToList();
             var popularBooks = db.Books.Where(b => b.Reviews.Count > 1).ToList();
             var Omid = db.Authors.Where(a => a.Name == "Omid").ToList();
+
+            /////////////////////////sortedBooks////////////////////////
+            Console.WriteLine("////////////Sorted Books///////////");
+            var sortedBooks = db.Books.OrderBy(b => b.Title).ToList();
+            var sortedBooksDesc = db.Books.OrderByDescending(b => b.Title).ToList();
+            var sortedReviews = db.Reviews.OrderBy(r => r.Comment.Length).ToList();
+            var sortedAuthors = db.Authors.OrderBy(a =>a.Name).ToList();
+            var booksByReviewCount = db.Books.OrderBy(b =>b.Reviews.Count).ToList();
         }
     }
 }
