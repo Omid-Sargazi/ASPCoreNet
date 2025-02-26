@@ -1,4 +1,5 @@
 ﻿using DayTwoOfEntityFrameWork.Data;
+using Microsoft.EntityFrameworkCore;
 
 public class Program
 {
@@ -68,6 +69,13 @@ public class Program
 
             var secondPageReviews = db.Reviews.Skip(2).Take(2).ToList();
             var firstTwoAuthors = db.Authors.Take(2).ToList();
+            ///////////////////////////Get books with their authors///////////////////////////////
+            Console.WriteLine("/////////////////////////Get books with their authors/////////////////////////////");
+            var booksWithAuthors = db.Books.Include(b =>b.Author).ToList();
+            var authorsWithBooks = db.Authors.Include(a => a.Books).ToList();
+            var booksWithReviews = db.Books.Include(b =>b.Reviews).ToList();
+            var reviewsWithBooks = db.Reviews.Include(r => r.Book).ToList();
+            var authorsWithBooksAndReviews = db.Authors.Include(a => a.Books).ThenInclude(b => b.Reviews).ToList();
         }
 
     }
