@@ -43,6 +43,32 @@ public class Program
             var sortedReviews = db.Reviews.OrderBy(r => r.Comment.Length).ToList();
             var sortedAuthors = db.Authors.OrderBy(a =>a.Name).ToList();
             var booksByReviewCount = db.Books.OrderBy(b =>b.Reviews.Count).ToList();
+            //////////////Pagination///////////////////////////////
+            Console.WriteLine("////////////Pagination///////////");
+
+            var firstTwoBooks = db.Books.Take(2).ToList();
+            Console.WriteLine("First Two Books");
+            foreach(var book in firstTwoBooks)
+            {
+                Console.WriteLine(book.Title);
+            }
+            var secondPage = db.Books.Skip(2).Take(2).ToList();
+            Console.WriteLine("/////////////////////////Second Page/////////////////////////////");
+            foreach(var book in secondPage)
+            {
+                Console.WriteLine(book.Title);
+            }
+
+            var firstThreeReviews = db.Reviews.Take(3).ToList();
+            Console.WriteLine("/////////////////////////First Three Reviews/////////////////////////////");
+            foreach(var review in firstThreeReviews)
+            {
+                Console.WriteLine(review.Comment);
+            }
+
+            var secondPageReviews = db.Reviews.Skip(2).Take(2).ToList();
+            var firstTwoAuthors = db.Authors.Take(2).ToList();
         }
+
     }
 }
