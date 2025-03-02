@@ -38,6 +38,10 @@ public class Program
 
             var fetchedStudent = db.Students.Include(s => s.Courses).FirstOrDefault();
             Console.WriteLine($"{fetchedStudent.Name} is enrolled in {fetchedStudent.Courses.Count} courses.");
+
+            var otherBook = new Book {Title = "Mastering EF Core", Author = "John Doe"};
+            db.Books.Add(otherBook);
+            db.SaveChanges();
         }
     }
 }
