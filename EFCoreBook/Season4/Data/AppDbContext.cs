@@ -24,6 +24,11 @@ namespace Season4.Data
             .HasMany(b => b.Reviews)
             .WithOne(r => r.Book)
             .HasForeignKey(r => r.BookId);
+
+            modelBuilder.Entity<Student>()
+            .HasMany(s => s.Courses)
+            .WithMany(c => c.Students)
+            .UsingEntity(j => j.ToTable("StudentCources"));
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
