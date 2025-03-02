@@ -17,6 +17,11 @@ namespace Season4.Data
             .HasOne(u => u.Profile)
             .WithOne(p => p.User)
             .HasForeignKey<UserProfile>(p => p.UserId);
+
+            modelBuilder.Entity<Book>()
+            .HasMany(b => b.Reviews)
+            .WithOne(r => r.Book)
+            .HasForeignKey(r => r.BookId);
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
