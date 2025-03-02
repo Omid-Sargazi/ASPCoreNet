@@ -13,6 +13,8 @@ namespace Season4.Data
         public DbSet<UserProfile> UserProfiles {get; set;}
         public DbSet<Book> Books {get; set;}
         public DbSet<Review> Reviews {get; set;}
+        public DbSet<Student> Students {get;set;}
+        public DbSet<Course> Courses {get; set;}
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<User>()

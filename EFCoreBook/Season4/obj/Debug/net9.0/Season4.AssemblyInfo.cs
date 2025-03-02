@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Season4")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+178091abaecd4512ab753fd19f17e995131e498e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+18241d22f0375b653df705cc1b286bb9f3930ecd")]
 [assembly: System.Reflection.AssemblyProductAttribute("Season4")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Season4")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

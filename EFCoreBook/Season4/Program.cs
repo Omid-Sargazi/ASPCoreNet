@@ -26,6 +26,18 @@ public class Program
 
             var fetcheBook = db.Books.Include(b => b.Reviews).FirstOrDefault();
             Console.WriteLine($"{fetcheBook.Title} has {fetcheBook.Reviews.Count} reviews.");
+
+            var student = new Student {Name = "Mike"};
+            var course1 = new Course{CourseName = "C# Advanced"};
+            var course2 = new Course {CourseName = "EfCore advanced"};
+            student.Courses.Add(course1);
+            student.Courses.Add(course2);
+
+            db.Students.Add(student);
+            db.SaveChanges();
+
+            var fetchedStudent = db.Students.Include(s => s.Courses).FirstOrDefault();
+            Console.WriteLine($"{fetchedStudent.Name} is enrolled in {fetchedStudent.Courses.Count} courses.");
         }
     }
 }
