@@ -65,6 +65,18 @@ public class Program
                 transaction.Rollback();
                 Console.WriteLine($"Transaction failed: {ex.Message}");
             }
+
+            try
+            {
+                db.Database.ExecuteSqlRaw("INSERT INTO Books (Title, Author) VALUES ('Raw SQL Book', 'SQL Expert')");
+                db.Database.ExecuteSqlRaw("INSERT INTO Reviews (Reviewer, Rating, BookId) VALUES ('John', 5, (SELECT MAX(BookId) FROM Books))");
+                transaction.Commit();
+                Console.WriteLine("Transaction committed using raw SQL.");
+            }catch(Exception ex)
+            {
+                transaction.Rollback();
+                Console.WriteLine($"Transaction failed: {ex.Message}");
+            }
         }
     }
 }
