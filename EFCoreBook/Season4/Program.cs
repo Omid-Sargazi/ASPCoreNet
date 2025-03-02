@@ -42,6 +42,29 @@ public class Program
             var otherBook = new Book {Title = "Mastering EF Core", Author = "John Doe"};
             db.Books.Add(otherBook);
             db.SaveChanges();
+
+
+            using var transaction = db.Database.BeginTransaction();
+
+            try{
+                var AliceBook = new Book {Title = "EF Core Transactions", Author="Alice"};
+                db.Books.Add(AliceBook);
+                db.SaveChanges();
+
+                var review = new Review {Reviewer = "John", Rating = 5, BookId = AliceBook.BookId};
+                db.Reviews.Add(review);
+                db.SaveChanges();
+
+                transaction.Commit();
+                Console.WriteLine("Transaction committed successfully!");
+
+
+
+            }catch(Exception ex)
+            {
+                transaction.Rollback();
+                Console.WriteLine($"Transaction failed: {ex.Message}");
+            }
         }
     }
 }
