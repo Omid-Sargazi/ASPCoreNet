@@ -1,10 +1,16 @@
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
+using System.Text;
+using System.Text.Json;
 using System.Threading.Channels;
 using System.Threading.Tasks;
+using CachingwithRedis.Data;
 using CachingwithRedis.Model;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Caching.Distributed;
 using Microsoft.Extensions.Caching.Memory;
 
 namespace CachingwithRedis.Controllers
@@ -13,32 +19,78 @@ namespace CachingwithRedis.Controllers
     [Route("api/products")]
     public class ProductController:ControllerBase
     {
-        private readonly IMemoryCache _cache;
-        public ProductController(IMemoryCache cache)
+        // private readonly IMemoryCache _cache;
+        private readonly AppDbContext _context;
+        private readonly ILogger<ProductController> _logger;
+        private readonly IDistributedCache _cache;
+        public ProductController(IDistributedCache cache, AppDbContext context, ILogger<ProductController> logger)
         {
-            _cache = cache;   
+            _cache = cache;
+            _context = context;
+            _logger = logger;
+        }
+        
+
+        [HttpGet("nocache")]
+        public async Task<IActionResult> GetProductsNoCache()
+        {
+            var stopWatch = Stopwatch.StartNew();
+
+            Thread.Sleep(2000);
+
+            var products = await _context.Products.ToListAsync();
+            stopWatch.Stop();
+            _logger.LogInformation($"No Cache Exceute time:{stopWatch.ElapsedMilliseconds}ms");
+
+            return Ok(new 
+            {
+                Data = products,
+                ExecutionTimeMs = stopWatch.ElapsedMilliseconds
+            });
         }
 
-        [HttpGet("get-products")]
-        public IActionResult GetProducts()
+        [HttpGet("cached")]
+        public async Task<IActionResult> GetProductsCached()
         {
-            if(_cache.TryGetValue("products", out List<Product>? products))
+            var stopwatch = Stopwatch.StartNew();
+            string cacheKey = "all_products"; 
+            var cachedProducts = await _cache.GetAsync(cacheKey);
+
+            if(cachedProducts != null)
             {
-                products = new List<Product>
-                {
-                    new Product (1, "Laptop", 1200),
-                    new Product(2, "Mobile", 800),
-                };
+                stopwatch.Stop();
+                var productsFromCache = JsonSerializer.Deserialize<List<Product>>(cachedProducts);
+                _logger.LogInformation($"Cache hit - execution time: {stopwatch.ElapsedMilliseconds}ms");
 
-                var cacheOption = new MemoryCacheEntryOptions
+                return Ok( new
                 {
-                    AbsoluteExpirationRelativeToNow = TimeSpan.FromSeconds(30)
-                };
+                    Data = productsFromCache,
+                    ExecutionTimeMs = stopwatch.ElapsedMilliseconds,
+                    Source = "Cache",
+                }
+                    
+                );
 
-                _cache.Set("products", products, cacheOption);
             }
+            Thread.Sleep(2000);
+            var products = await _context.Products.ToListAsync();
+            var serializedProducts = JsonSerializer.Serialize(products);
 
-            return Ok(products);
+            var cacheOptions = new DistributedCacheEntryOptions
+            {
+                AbsoluteExpirationRelativeToNow = TimeSpan.FromMinutes(5)
+            };
+
+            await _cache.SetAsync(cacheKey, Encoding.UTF8.GetBytes(serializedProducts),cacheOptions);
+            stopwatch.Stop();
+            _logger.LogInformation($"Cache miss - execution time: {stopwatch.ElapsedMilliseconds}ms");
+
+            return Ok
+            (new{
+                Data = products,
+                ExecutionTimeMs = stopwatch.ElapsedMilliseconds,
+                Source = "Database"
+            });
         }
     }
 }
