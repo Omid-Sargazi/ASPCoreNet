@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Text;
+using System.Text.Json;
 using System.Threading.Tasks;
 using CachingwithRedis.Data;
 using Microsoft.AspNetCore.Mvc;
@@ -51,6 +53,69 @@ namespace CachingwithRedis.Controllers
                 Data = summery,
                 ExecutionTimeMs = stopwatch.ElapsedMilliseconds,
             });
+        }
+
+        [HttpGet("cached/summary")]
+        public async Task<IActionResult> GetOrderSummaryCached()
+        {
+            var stopwatch = Stopwatch.StartNew();
+            string cacheKey = "order_summary";
+            var cachedSummary = await _cache.GetAsync(cacheKey);
+
+            if(cachedSummary !=null)
+            {
+                stopwatch.Stop();
+                var summaryFromCache = JsonSerializer.Deserialize<object>(cachedSummary);
+                _logger.LogInformation($"Cache hit - execution time: {stopwatch.ElapsedMilliseconds}ms");
+
+                return Ok(new
+                {
+                    Data = summaryFromCache,
+                    ExecutionTimeMs = stopwatch.ElapsedMilliseconds,
+                    Source = "Cache",
+                });
+
+            }
+
+            Thread.Sleep(1500);
+
+            var summary = await _context.Orders
+            .GroupBy(o => o.Status)
+            .Select(g => new 
+            {
+                Status = g.Key,
+                Count = g.Count(),
+                TotalAmount = g.Sum(o => o.TotalAmount),
+                AverageAmount = g.Average(o => o.TotalAmount)
+            }).ToListAsync();
+
+            var serializedSummary = JsonSerializer.Serialize(summary);
+
+            var cacheOptions = new DistributedCacheEntryOptions
+            {
+                SlidingExpiration = TimeSpan.FromMinutes(2),
+                AbsoluteExpirationRelativeToNow = TimeSpan.FromMinutes(10)
+            };
+
+            await _cache.SetAsync(cacheKey, Encoding.UTF8.GetBytes(serializedSummary),
+            cacheOptions);
+
+            stopwatch.Stop();
+            _logger.LogInformation($"Cache miss - execution time: {stopwatch.ElapsedMilliseconds}ms");
+
+            return Ok(new 
+        { 
+            Data = summary,
+            ExecutionTimeMs = stopwatch.ElapsedMilliseconds,
+            Source = "Database" 
+        });
+        }
+
+        [HttpGet("clear-cache")]
+        public async Task<IActionResult> ClearCache()
+        {
+            await _cache.RemoveAsync("order_summary");
+            return Ok("Cache cleared");
         }
     }
 }
