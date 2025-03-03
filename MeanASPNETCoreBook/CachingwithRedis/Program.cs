@@ -1,4 +1,5 @@
 using CachingwithRedis.Data;
+using CachingwithRedis.Interfaces;
 using CachingwithRedis.Model;
 using CachingwithRedis.Models;
 using Microsoft.AspNetCore.RateLimiting;
@@ -9,6 +10,11 @@ public class Program
 {
 public static void Main(string[] args)
     {
+        Console.WriteLine("Hello World!");
+
+        string configValue = "Email";
+        App app01 = CompositionRoot.BuildApp(configValue);
+        app01.Run();
 
     var builder = WebApplication.CreateBuilder(args);
 
@@ -37,6 +43,11 @@ public static void Main(string[] args)
             config.Window = TimeSpan.FromSeconds(30);
             config.PermitLimit = 10;
             config.SegmentsPerWindow = 3;
+        });
+
+        options.AddFixedWindowLimiter("login-limit", config=>{
+            config.Window = TimeSpan.FromMinutes(1);
+            config.PermitLimit = 3;
         });
     });
 
