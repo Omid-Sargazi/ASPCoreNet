@@ -31,6 +31,14 @@ namespace FluentAPIDataAnnotations.Data
             modelBuilder.Entity<Book>()
             .Property(b => b.Author)
             .HasDefaultValue("Unknown");
+
+            modelBuilder.Entity<Enrollment>()
+            .HasKey(e => new {e.StudentId, e.CourseId});
+
+            modelBuilder.Entity<Course>()
+            .HasOne(c => c.Student)
+            .WithMany(s => s.Courses)
+            .HasForeignKey(c => c.StudentId);
         }
     }
 }
