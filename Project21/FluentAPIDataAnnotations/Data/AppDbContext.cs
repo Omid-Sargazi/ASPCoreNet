@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 using FluentAPIDataAnnotations.Models;
@@ -39,6 +40,12 @@ namespace FluentAPIDataAnnotations.Data
             .HasOne(c => c.Student)
             .WithMany(s => s.Courses)
             .HasForeignKey(c => c.StudentId);
+
+            modelBuilder.Entity<Student>()
+            .Property(s =>s.Age)
+            .HasColumnType("int")
+            .IsRequired()
+            .HasAnnotation("Range", new RangeAttribute(1,100));
         }
     }
 }

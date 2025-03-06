@@ -12,5 +12,7 @@ namespace FluentAPIDataAnnotations.Models
         public int Id { get; set; }
         public string Name { get; set; }
         public List<Course> Courses { get; set; }
+        [Range(1,100)]
+        public int Age {get; set;}
     }
 }
