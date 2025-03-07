@@ -95,7 +95,32 @@ namespace LibraryManagementSystem.Data
 
                 entity.HasIndex(u =>u.Email).IsUnique();
             });
+            
 
+            modelBuilder.Entity<BorrowTransaction>(entity=>{
+                entity.ToTable("BorrowTransactions");
+                entity.HasKey(bt => bt.Id);
+                entity.Property(bt => bt.BorrowDate).IsRequired();
+                entity.Property(bt => bt.DueDate).IsRequired();
+                entity.Property(bt => bt.Status).IsRequired()
+                .HasConversion<string>();
+
+                entity.Property(bt => bt.FineAmount).HasColumnType("decimal(18,2)");
+                entity.Property(bt =>bt.Notes).HasMaxLength(500);
+
+                entity.HasOne(bt => bt.User)
+                .WithMany(u => u.BorrowTransactions)
+                .HasForeignKey(bt => bt.BookId)
+                .OnDelete(DeleteBehavior.Restrict);
+
+                entity.HasOne(bt => bt.Book)
+                .WithMany(b => b.borrowTransactions)
+                .HasForeignKey(bt => bt.BookId)
+                .OnDelete(DeleteBehavior.Restrict);
+            });
+
+            modelBuilder.Entity<User>()
+            .HasQueryFilter(u => u.IsActive);
 
 
         }
