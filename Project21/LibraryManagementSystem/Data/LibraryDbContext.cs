@@ -44,6 +44,60 @@ namespace LibraryManagementSystem.Data
                 entity.HasIndex(c => c.Name).IsUnique();
             });
 
+            modelBuilder.Entity<BookCategory>(entity=> {
+                entity.ToTable("BookCategories");
+                entity.HasKey(bc => new {bc.BookId, bc.CategoryId});
+                
+                entity.HasOne(bc => bc.Book)
+                .WithMany(b => b.BookCategories)
+                .HasForeignKey(bc => bc.BookId);
+
+                entity.HasOne(bc => bc.Category)
+                .WithMany(bc => bc.BookCategories)
+                .HasForeignKey(bc => bc.CategoryId);
+            });
+
+            modelBuilder.Entity<Review>(entity=>{
+                entity.ToTable("Reviews");
+                entity.HasKey(r => r.Id);
+                entity.Property(r => r.Rating).IsRequired();
+                entity.Property(r => r.Comment).HasMaxLength(1000);
+                entity.Property(r => r.CreatedAt).HasDefaultValueSql("GETDATA()");
+
+                entity.HasOne(r =>r.Book)
+                .WithMany(b => b.Reviews)
+                .HasForeignKey(r => r.BookId)
+                .OnDelete(DeleteBehavior.Cascade);
+
+                entity.HasOne(r => r.User)
+                .WithMany(u => u.Reviews)
+                .HasForeignKey(r => r.UserId)
+                .OnDelete(DeleteBehavior.Restrict);
+            });
+
+            modelBuilder.Entity<User>(entity => {
+                entity.ToTable("User");
+                entity.HasKey(u => u.Id);
+                entity.Property(u => u.FirstName).IsRequired().HasMaxLength(50);
+                entity.Property(u => u.LastName).IsRequired().HasMaxLength(50);
+                entity.Property(u => u.Email).IsRequired().HasMaxLength(50);
+                entity.Property(u => u.PhoneNumber).HasMaxLength(15);
+                entity.Property(u => u.RegistrationDate).HasDefaultValueSql("GETDATE()");
+                entity.Property(u => u.IsActive).HasDefaultValue(true);
+
+                entity.OwnsOne(u => u.Address, address=>{
+                    address.Property(a => a.Street).HasColumnName("Street").HasMaxLength(100);
+                    address.Property(a => a.City).HasColumnName("City").HasMaxLength(50);
+                    address.Property(a => a.State).HasColumnName("State").HasMaxLength(50);
+                    address.Property(a => a.ZipCode).HasColumnName("ZipCode").HasMaxLength(10);
+                    address.Property(a => a.Country).HasColumnName("ZipCode").HasMaxLength(50);
+                });
+
+                entity.HasIndex(u =>u.Email).IsUnique();
+            });
+
+
+
         }
 
     }
