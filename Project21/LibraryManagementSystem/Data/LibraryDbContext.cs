@@ -31,6 +31,17 @@ namespace LibraryManagementSystem.Data
                 entity.Property(b => b.Price).HasColumnType("decimal(18,2)");
                 entity.Property(b => b.Description).HasMaxLength(2000);
                 entity.Property(b => b.RowVersion).IsRowVersion();
+
+                entity.HasIndex(b => b.ISBN).IsUnique();
+            });
+
+            modelBuilder.Entity<Category>(entity=>{
+                entity.ToTable("Categories");
+                entity.HasKey(b => b.Id);
+                entity.Property(c => c.Name).IsRequired().HasMaxLength(50);
+                entity.Property(c => c.Description).HasMaxLength(500);
+
+                entity.HasIndex(c => c.Name).IsUnique();
             });
 
         }
