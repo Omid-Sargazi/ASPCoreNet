@@ -10,8 +10,8 @@ namespace BookStoreAPIs.Data
     public class BookStoreContext:DbContext
     {
         public BookStoreContext(DbContextOptions<BookStoreContext> options):base(options){}
-        DbSet<Book> Books {get; set;}
-        DbSet<Author> Authors {get; set;}
+        public DbSet<Book> Books {get; set;}
+        public DbSet<Author> Authors {get; set;}
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
