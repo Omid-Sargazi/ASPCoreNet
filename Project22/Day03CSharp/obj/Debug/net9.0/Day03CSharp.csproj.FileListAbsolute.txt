@@ -1,0 +1,15 @@
+/home/omidsa/Programmings/ASPNetCore/Project22/Day03CSharp/bin/Debug/net9.0/Day03CSharp
+/home/omidsa/Programmings/ASPNetCore/Project22/Day03CSharp/bin/Debug/net9.0/Day03CSharp.deps.json
+/home/omidsa/Programmings/ASPNetCore/Project22/Day03CSharp/bin/Debug/net9.0/Day03CSharp.runtimeconfig.json
+/home/omidsa/Programmings/ASPNetCore/Project22/Day03CSharp/bin/Debug/net9.0/Day03CSharp.dll
+/home/omidsa/Programmings/ASPNetCore/Project22/Day03CSharp/bin/Debug/net9.0/Day03CSharp.pdb
+/home/omidsa/Programmings/ASPNetCore/Project22/Day03CSharp/obj/Debug/net9.0/Day03CSharp.GeneratedMSBuildEditorConfig.editorconfig
+/home/omidsa/Programmings/ASPNetCore/Project22/Day03CSharp/obj/Debug/net9.0/Day03CSharp.AssemblyInfoInputs.cache
+/home/omidsa/Programmings/ASPNetCore/Project22/Day03CSharp/obj/Debug/net9.0/Day03CSharp.AssemblyInfo.cs
+/home/omidsa/Programmings/ASPNetCore/Project22/Day03CSharp/obj/Debug/net9.0/Day03CSharp.csproj.CoreCompileInputs.cache
+/home/omidsa/Programmings/ASPNetCore/Project22/Day03CSharp/obj/Debug/net9.0/Day03CSharp.sourcelink.json
+/home/omidsa/Programmings/ASPNetCore/Project22/Day03CSharp/obj/Debug/net9.0/Day03CSharp.dll
+/home/omidsa/Programmings/ASPNetCore/Project22/Day03CSharp/obj/Debug/net9.0/refint/Day03CSharp.dll
+/home/omidsa/Programmings/ASPNetCore/Project22/Day03CSharp/obj/Debug/net9.0/Day03CSharp.pdb
+/home/omidsa/Programmings/ASPNetCore/Project22/Day03CSharp/obj/Debug/net9.0/Day03CSharp.genruntimeconfig.cache
+/home/omidsa/Programmings/ASPNetCore/Project22/Day03CSharp/obj/Debug/net9.0/ref/Day03CSharp.dll
