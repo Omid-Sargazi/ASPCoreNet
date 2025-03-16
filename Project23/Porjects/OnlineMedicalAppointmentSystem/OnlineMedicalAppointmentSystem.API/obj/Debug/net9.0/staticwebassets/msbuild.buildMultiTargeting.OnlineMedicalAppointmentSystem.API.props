@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/OnlineMedicalAppointmentSystem.API.props" />
+</Project>

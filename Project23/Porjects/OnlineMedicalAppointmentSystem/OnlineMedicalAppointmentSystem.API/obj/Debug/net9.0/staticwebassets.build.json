@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "Jx3Z0IurHenk532RQo36numAlbpC+vkVYRdL+BwK00c=",
+  "Source": "OnlineMedicalAppointmentSystem.API",
+  "BasePath": "_content/OnlineMedicalAppointmentSystem.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
