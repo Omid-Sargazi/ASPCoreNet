@@ -16,5 +16,37 @@ namespace OnlineMedicalAppointmentSystem.Infrastructure.Data
         public DbSet<Payment> Payments {get; set;}
 
         public AppDbContext(DbContextOptions<AppDbContext> options):base(options){}
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+            
+            modelBuilder.Entity<Patient>().HasKey(p => p.Id);
+            modelBuilder.Entity<Doctor>().HasKey(d => d.Id);
+            modelBuilder.Entity<Appointment>().HasKey(a => a.Id);
+            modelBuilder.Entity<Schedule>().HasKey(s => s.Id);
+            modelBuilder.Entity<Payment>().HasKey(p => p.Id);
+
+            modelBuilder.Entity<Appointment>()
+            .HasOne(a => a.Patient)
+            .WithMany(p => p.Appointments)
+            .HasForeignKey(a => a.PatientId);
+
+            modelBuilder.Entity<Appointment>()
+            .HasOne(a => a.Doctor)
+            .WithMany(d => d.Appointments)
+            .HasForeignKey(a => a.DoctorId);
+
+            modelBuilder.Entity<Schedule>()
+                .HasOne(s => s.Doctor)
+                .WithMany(d => d.Schedules)
+                .HasForeignKey(s => s.DoctorId);
+
+            modelBuilder.Entity<Payment>()
+                .HasOne(p => p.Appointment)
+                .WithOne(a => a.Payment)
+                .HasForeignKey<Payment>(p => p.AppointmentId);
+
+        }
     }
 }
