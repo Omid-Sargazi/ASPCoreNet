@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace OnlineMedicalAppointmentSystem.Domain.Models
 {
-    public class Doctor
+    public class Doctor:BaseEntity
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }
