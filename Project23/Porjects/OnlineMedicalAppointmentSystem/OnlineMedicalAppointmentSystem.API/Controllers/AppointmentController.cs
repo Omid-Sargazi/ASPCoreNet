@@ -36,5 +36,14 @@ namespace OnlineMedicalAppointmentSystem.API.Controllers
             return Ok(result);
         }
 
+        [HttpPost("book")]
+        public async Task<IActionResult> BookAppointment([FromBody] BookAppointmentCommand command)
+        {
+            await _bookCommandHandler.Handle(command);
+            return Ok("Appointment booked successfully.");
+        }
+
+        
+
     }
 }
