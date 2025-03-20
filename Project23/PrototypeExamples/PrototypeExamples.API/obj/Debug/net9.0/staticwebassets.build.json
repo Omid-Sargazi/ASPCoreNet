@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "AKO4MeqWW+ZH6wR/glf2rZDa8I5dgz980siNVvlANoE=",
+  "Source": "PrototypeExamples.API",
+  "BasePath": "_content/PrototypeExamples.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

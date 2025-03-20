@@ -1,41 +1,50 @@
-var builder = WebApplication.CreateBuilder(args);
+using System.Text;
+using PrototypeExamples.API;
 
-// Add services to the container.
-// Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
-builder.Services.AddOpenApi();
-
-var app = builder.Build();
-
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
+public class Program
 {
-    app.MapOpenApi();
-}
+    public static void Main(string[] args)
+    {
+        var builder = WebApplication.CreateBuilder(args);
+        var app = builder.Build();
 
-app.UseHttpsRedirection();
+        app.MapGet("/PrototypePizza",()=>{
+            StringBuilder sb = new StringBuilder();
+            sb.AppendLine("=== PIZZA PROTOTYPE EXAMPLE ===");
 
-var summaries = new[]
-{
-    "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-};
+            Pizza margheritaPrototype = new MargheritaPizza();
+            Pizza pepperoniPrototype = new PepperoniPizza();
 
-app.MapGet("/weatherforecast", () =>
-{
-    var forecast =  Enumerable.Range(1, 5).Select(index =>
-        new WeatherForecast
-        (
-            DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
-            Random.Shared.Next(-20, 55),
-            summaries[Random.Shared.Next(summaries.Length)]
-        ))
-        .ToArray();
-    return forecast;
-})
-.WithName("GetWeatherForecast");
+            sb.AppendLine("Original Margherita Toppings: " 
+                          + string.Join(", ", margheritaPrototype.Toppings));
 
-app.Run();
+            sb.AppendLine("Original Pepperoni Toppings: " 
+                          + string.Join(", ", pepperoniPrototype.Toppings));
 
-record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
-{
-    public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
+                          sb.AppendLine();
+
+            // 2) Clone them
+            Pizza clonedMargherita = margheritaPrototype.Clone();
+            Pizza clonedPepperoni = pepperoniPrototype.Clone();
+
+            // 3) Show we can modify clone without affecting original
+            clonedMargherita.Toppings.Add("Extra Cheese");
+            clonedPepperoni.Toppings.Remove("Pepperoni"); // suppose we want a mild version
+
+            sb.AppendLine("After modifying clones:");
+            sb.AppendLine("Margherita Prototype Toppings: " 
+                          + string.Join(", ", margheritaPrototype.Toppings));
+            sb.AppendLine("Cloned Margherita Toppings: " 
+                          + string.Join(", ", clonedMargherita.Toppings));
+
+            sb.AppendLine("Pepperoni Prototype Toppings: " 
+                          + string.Join(", ", pepperoniPrototype.Toppings));
+            sb.AppendLine("Cloned Pepperoni Toppings: " 
+                          + string.Join(", ", clonedPepperoni.Toppings));
+
+            return sb.ToString();
+
+        });
+            app.Run();
+    }
 }

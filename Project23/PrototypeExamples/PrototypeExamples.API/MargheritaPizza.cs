@@ -17,7 +17,7 @@ namespace PrototypeExamples.API
 
         public override Pizza Clone()
         {
-            return (Pizza)this.MemeberwiseClone();
+            return (Pizza)this.MemberwiseClone();
         }
     }
 }
