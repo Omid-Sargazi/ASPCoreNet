@@ -1,10 +1,22 @@
+using System.Linq.Expressions;
 using System.Text;
 using PrototypeExamples.API;
+using PrototypeExamples.API.ImplementingIDisposable;
 
 public class Program
 {
     public static void Main(string[] args)
     {
+
+        /// <summary>
+        /// /////////////////////////EXpresson Tree///////////////////////////
+        /// </summary>
+        /// <returns></returns>
+        Expression<Func<int, int, int>>addExpression = (x,y) => x-y;
+        Expression<Func<int, int, int>> addExpression2 = (x, y) => x + y;
+        Func<int, int, int> addFunction = addExpression2.Compile();
+        int result = addFunction(2,3);
+        Console.WriteLine($"Result:{result}");
         var builder = WebApplication.CreateBuilder(args);
         var app = builder.Build();
 
@@ -44,7 +56,18 @@ public class Program
 
             return sb.ToString();
 
+
+            
+
         });
             app.Run();
+
+
+         using (var fileHandler = new FileHandler("example.txt"))
+        {
+            fileHandler.writeToFile("Hello, World!");
+        } // Dispose is called automatically here
+
+
     }
 }
