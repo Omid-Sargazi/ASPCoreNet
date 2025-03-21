@@ -36,6 +36,8 @@ public class Program
             Console.WriteLine($"{item.Name} is {item.Age} years old");
         }
 
+        
+
         app.MapGet("/PrototypePizza",()=>{
             StringBuilder sb = new StringBuilder();
             sb.AppendLine("=== PIZZA PROTOTYPE EXAMPLE ===");
@@ -85,5 +87,19 @@ public class Program
         } // Dispose is called automatically here
 
 
+        int resultt = ApplyOperation(2, 3, Multiply);
+        Console.WriteLine($"Result:{resultt}");
+
+
+    }
+
+    static int ApplyOperation(int a, int b, Func<int, int, int> operation)
+    {
+        return operation(a, b);
+    }
+
+    static int Multiply(int x, int y)
+    {
+        return x * y;
     }
 }
