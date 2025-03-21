@@ -2,6 +2,7 @@ using System.Linq.Expressions;
 using System.Text;
 using PrototypeExamples.API;
 using PrototypeExamples.API.ImplementingIDisposable;
+using PrototypeExamples.API.ModelExpression;
 
 public class Program
 {
@@ -19,6 +20,21 @@ public class Program
         Console.WriteLine($"Result:{result}");
         var builder = WebApplication.CreateBuilder(args);
         var app = builder.Build();
+
+
+        var people = new List<Person>
+        {
+             new Person { Name = "Alice", Age = 25 },
+            new Person { Name = "Bob", Age = 30 },
+            new Person { Name = "Charlie", Age = 35 }
+        };
+
+        Expression<Func<Person,bool>>filter = p=>p.Age>30;
+        var filteredPeople = people.AsQueryable().Where(filter).ToList();
+        foreach(var item in filteredPeople)
+        {
+            Console.WriteLine($"{item.Name} is {item.Age} years old");
+        }
 
         app.MapGet("/PrototypePizza",()=>{
             StringBuilder sb = new StringBuilder();
