@@ -1,4 +1,5 @@
 ﻿using UsingAndDisposable;
+using UsingAndDisposable.AdapterPatterns.Example04;
 
 public class Program
 {
@@ -16,5 +17,12 @@ public class Program
         {
             fm.Write("this is a test");
         }
-        Console.WriteLine("کار تموم شد!");    }
+        Console.WriteLine("کار تموم شد!");   
+
+        FahrenheitSensor fahrenheitSensor = new FahrenheitSensor();
+        ITemperature temperature = new TemperatureAdapter(fahrenheitSensor);
+                Console.WriteLine($"Temperature in Celsius: {temperature.GetTemperatureInCelsius()}");
+
+    }
+
 }
