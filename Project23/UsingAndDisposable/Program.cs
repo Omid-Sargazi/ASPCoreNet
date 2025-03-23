@@ -1,4 +1,6 @@
-﻿public class Program
+﻿using UsingAndDisposable;
+
+public class Program
 {
     public static void Main(string[] args)
     {
@@ -9,5 +11,10 @@
             writer.WriteLine("Hello World");
         }
         Console.WriteLine("The file has been written");
-    }
+
+        using(FileManager fm = new FileManager("temp.txt"))
+        {
+            fm.Write("this is a test");
+        }
+        Console.WriteLine("کار تموم شد!");    }
 }
