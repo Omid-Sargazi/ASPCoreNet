@@ -1,5 +1,6 @@
 ﻿using UsingAndDisposable;
 using UsingAndDisposable.AdapterPatterns.Example04;
+using UsingAndDisposable.BridgePattern02.OnAndOff;
 
 public class Program
 {
@@ -22,6 +23,19 @@ public class Program
         FahrenheitSensor fahrenheitSensor = new FahrenheitSensor();
         ITemperature temperature = new TemperatureAdapter(fahrenheitSensor);
                 Console.WriteLine($"Temperature in Celsius: {temperature.GetTemperatureInCelsius()}");
+
+        /////////////////////bridge pattern///////////////////////////////
+        
+        IDevice tv = new TV();
+        IDevice fan = new Fan();
+
+        RemoteControl remoteControl = new BasicRemote(tv);
+        remoteControl.TurnOff();
+        remoteControl.TurnOn();
+        remoteControl = new BasicRemote(fan);
+        remoteControl.TurnOff();
+        remoteControl.TurnOn();
+        
 
     }
 
