@@ -52,6 +52,14 @@ public class Program
         string text = null;
         text ??= "Asign value";
         Console.WriteLine(text);
+
+        string[] names = null;
+        int? count = names?.Length;
+        Console.WriteLine(count.HasValue ? count.Value:-1);
+
+        names = new[] {"Alice", "Omid"};
+        count = names?.Length;
+        Console.WriteLine(count);
         
 
     }
