@@ -1,4 +1,5 @@
-﻿using UsingAndDisposable;
+﻿using Microsoft.VisualBasic;
+using UsingAndDisposable;
 using UsingAndDisposable.AdapterPatterns.Example04;
 using UsingAndDisposable.BridgePattern02.OnAndOff;
 
@@ -42,6 +43,11 @@ public class Program
         {
             Console.WriteLine(name.Length);
         }
+
+
+        string inputt = null;
+        string result = inputt ?? "Default value";
+        Console.WriteLine($"{result}");
         
 
     }
@@ -55,5 +61,7 @@ public class Program
         }
         Console.WriteLine($"Processing: {data}");
     }
+
+    
 
 }
