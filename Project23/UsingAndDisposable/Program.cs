@@ -48,6 +48,10 @@ public class Program
         string inputt = null;
         string result = inputt ?? "Default value";
         Console.WriteLine($"{result}");
+
+        string text = null;
+        text ??= "Asign value";
+        Console.WriteLine(text);
         
 
     }
