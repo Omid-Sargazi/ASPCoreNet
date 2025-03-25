@@ -8,33 +8,40 @@ public class Program
     {
         Console.WriteLine("Hello");
 
-        using(StreamWriter writer = new StreamWriter("example.txt"))
-        {
-            writer.WriteLine("Hello World");
-        }
-        Console.WriteLine("The file has been written");
+        // using(StreamWriter writer = new StreamWriter("example.txt"))
+        // {
+        //     writer.WriteLine("Hello World");
+        // }
+        // Console.WriteLine("The file has been written");
 
-        using(FileManager fm = new FileManager("temp.txt"))
-        {
-            fm.Write("this is a test");
-        }
-        Console.WriteLine("کار تموم شد!");   
+        // using(FileManager fm = new FileManager("temp.txt"))
+        // {
+        //     fm.Write("this is a test");
+        // }
+        // Console.WriteLine("کار تموم شد!");   
 
-        FahrenheitSensor fahrenheitSensor = new FahrenheitSensor();
-        ITemperature temperature = new TemperatureAdapter(fahrenheitSensor);
-                Console.WriteLine($"Temperature in Celsius: {temperature.GetTemperatureInCelsius()}");
+        // FahrenheitSensor fahrenheitSensor = new FahrenheitSensor();
+        // ITemperature temperature = new TemperatureAdapter(fahrenheitSensor);
+        //         Console.WriteLine($"Temperature in Celsius: {temperature.GetTemperatureInCelsius()}");
 
-        /////////////////////bridge pattern///////////////////////////////
+        // /////////////////////bridge pattern///////////////////////////////
         
-        IDevice tv = new TV();
-        IDevice fan = new Fan();
+        // IDevice tv = new TV();
+        // IDevice fan = new Fan();
 
-        RemoteControl remoteControl = new BasicRemote(tv);
-        remoteControl.TurnOff();
-        remoteControl.TurnOn();
-        remoteControl = new BasicRemote(fan);
-        remoteControl.TurnOff();
-        remoteControl.TurnOn();
+        // RemoteControl remoteControl = new BasicRemote(tv);
+        // remoteControl.TurnOff();
+        // remoteControl.TurnOn();
+        // remoteControl = new BasicRemote(fan);
+        // remoteControl.TurnOff();
+        // remoteControl.TurnOn();
+
+
+        string name = null;
+        if(name !=null)
+        {
+            Console.WriteLine(name.Length);
+        }
         
 
     }
