@@ -46,4 +46,14 @@ public class Program
 
     }
 
+    public void ProcessData(string data)
+    {
+        if(data == null)
+        {
+            Console.WriteLine("Data is null, exiting.");
+            return;
+        }
+        Console.WriteLine($"Processing: {data}");
+    }
+
 }
