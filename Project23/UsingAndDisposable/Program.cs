@@ -2,6 +2,7 @@
 using UsingAndDisposable;
 using UsingAndDisposable.AdapterPatterns.Example04;
 using UsingAndDisposable.BridgePattern02.OnAndOff;
+using UsingAndDisposable.ProxyPattern.BankAccount;
 
 public class Program
 {
@@ -64,6 +65,12 @@ public class Program
         string[] items = null;
         int length = items?.Length ?? 0;
         Console.WriteLine(length);
+
+
+        IBankAccount account01 = new BankAccountProxy(10000,true);
+        account01.ShowBalance();
+        // account01 = new BankAccountProxy(10000,false);
+        account01.ShowBalance();
         
 
     }
