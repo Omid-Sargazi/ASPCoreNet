@@ -60,6 +60,10 @@ public class Program
         names = new[] {"Alice", "Omid"};
         count = names?.Length;
         Console.WriteLine(count);
+
+        string[] items = null;
+        int length = items?.Length ?? 0;
+        Console.WriteLine(length);
         
 
     }
