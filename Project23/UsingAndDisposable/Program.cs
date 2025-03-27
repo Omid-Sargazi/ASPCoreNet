@@ -1,8 +1,10 @@
 ﻿using Microsoft.VisualBasic;
 using UsingAndDisposable;
 using UsingAndDisposable.AdapterPatterns.Example04;
+using UsingAndDisposable.AdapterPatterns.Example05;
 using UsingAndDisposable.BridgePattern02.OnAndOff;
 using UsingAndDisposable.ProxyPattern.BankAccount;
+using UsingAndDisposable.ProxyPattern.Printer;
 
 public class Program
 {
@@ -71,6 +73,9 @@ public class Program
         account01.ShowBalance();
         // account01 = new BankAccountProxy(10000,false);
         account01.ShowBalance();
+
+        UsingAndDisposable.ProxyPattern.Printer.IPrinter printer01 = new PrinterProxy(true);
+        printer01.Print("example.pdf");
         
 
     }
