@@ -3,6 +3,7 @@ using UsingAndDisposable;
 using UsingAndDisposable.AdapterPatterns.Example04;
 using UsingAndDisposable.AdapterPatterns.Example05;
 using UsingAndDisposable.BridgePattern02.OnAndOff;
+using UsingAndDisposable.DIP;
 using UsingAndDisposable.ProxyPattern.BankAccount;
 using UsingAndDisposable.ProxyPattern.Printer;
 
@@ -76,6 +77,17 @@ public class Program
 
         UsingAndDisposable.ProxyPattern.Printer.IPrinter printer01 = new PrinterProxy(true);
         printer01.Print("example.pdf");
+
+        /// <summary>
+        /// ////////////////////DIP//////////////////////
+        /// </summary>
+        /// <param name="data"></param>
+
+        var emailNotifier = new Notification(new EmailSender());
+        emailNotifier.Notify("Hello via Email");
+
+        var smsNotifier  = new Notification(new SmsSender());
+        smsNotifier.Notify("Helllo via SMS");
         
 
     }
