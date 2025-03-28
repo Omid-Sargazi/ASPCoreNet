@@ -2,10 +2,14 @@
 using UsingAndDisposable;
 using UsingAndDisposable.AdapterPatterns.Example04;
 using UsingAndDisposable.AdapterPatterns.Example05;
+using UsingAndDisposable.BridgePattern;
 using UsingAndDisposable.BridgePattern02.OnAndOff;
+using UsingAndDisposable.CommandPattern;
 using UsingAndDisposable.DIP;
 using UsingAndDisposable.ProxyPattern.BankAccount;
 using UsingAndDisposable.ProxyPattern.Printer;
+namespace UsingAndDisposable.CommandPattern;
+
 
 public class Program
 {
@@ -88,6 +92,15 @@ public class Program
 
         var smsNotifier  = new Notification(new SmsSender());
         smsNotifier.Notify("Helllo via SMS");
+
+        Light light = new Light();
+        ICommand turnon = new TurnOnLightCommand(light);
+        ICommand turnoff = new TurnOffLightCommand(light);
+
+        RemoteControl remoteControl = new RemoteControl();
+        remoteControl.SetCommand(turnon);
+        remoteControl.PressButton();
+        remoteControl.PressUndo();
         
 
     }
