@@ -6,6 +6,7 @@ using UsingAndDisposable.BridgePattern;
 using UsingAndDisposable.BridgePattern02.OnAndOff;
 using UsingAndDisposable.CommandPattern;
 using UsingAndDisposable.DIP;
+using UsingAndDisposable.MediatorPattern;
 using UsingAndDisposable.ProxyPattern.BankAccount;
 using UsingAndDisposable.ProxyPattern.Printer;
 namespace UsingAndDisposable.CommandPattern;
@@ -101,6 +102,12 @@ public class Program
         remoteControl.SetCommand(turnon);
         remoteControl.PressButton();
         remoteControl.PressUndo();
+
+        IChatRoom chatRoom = new ChatRoom();
+        User mikel = new User(chatRoom, "Mike");
+        User sara = new User(chatRoom, "Sara");
+        mikel.Send("message from mike");
+        sara.Send("message from sara");
         
 
     }
