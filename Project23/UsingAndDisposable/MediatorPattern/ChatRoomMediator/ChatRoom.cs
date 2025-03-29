@@ -14,9 +14,17 @@ namespace UsingAndDisposable.MediatorPattern.ChatRoomMediator
             Console.WriteLine($"{user.Name} به چت‌روم اضافه شد.");
         }
 
-        public void SendMessage(string message, User user)
+       
+       public void SendMessage(string message, User sender)
+    {
+        foreach (var user in _users)
         {
-            
+            // پیام رو به همه‌ی کاربرها بفرست، به جز فرستنده
+            if (user != sender)
+            {
+                user.ReceiveMessage(message, sender.Name);
+            }
         }
     }
-}
+    }
+    }
