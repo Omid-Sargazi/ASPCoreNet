@@ -5,4 +5,8 @@ public class Animal
     {
         Console.WriteLine($"{Name} is eating.");
     }
+    public virtual void MakeSound()
+    {
+        Console.WriteLine($"{Name} makes a generic sound.");
+    }
 }

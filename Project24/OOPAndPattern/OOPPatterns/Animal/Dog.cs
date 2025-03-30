@@ -4,4 +4,8 @@ public class Dog:Animal
     {
         Console.WriteLine($"{Name} is barking.");
     }
+    public override void MakeSound()
+    {
+        Console.WriteLine($"{Name} says barks.");
+    }
 }
