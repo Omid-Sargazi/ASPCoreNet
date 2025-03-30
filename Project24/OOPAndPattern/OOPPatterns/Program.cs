@@ -11,6 +11,8 @@
         Cat cat = new Cat{Name = "Luna"};
         cat.Eat();
         cat.Meow();
+        dog.MakeSound();
+        cat.MakeSound();
 
     }
 }
