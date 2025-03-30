@@ -1,0 +1,15 @@
+/home/omidsa/Programmings/ASPNetCore/Project24/OOPAndPattern/OOPPatterns/bin/Debug/net8.0/OOPPatterns
+/home/omidsa/Programmings/ASPNetCore/Project24/OOPAndPattern/OOPPatterns/bin/Debug/net8.0/OOPPatterns.deps.json
+/home/omidsa/Programmings/ASPNetCore/Project24/OOPAndPattern/OOPPatterns/bin/Debug/net8.0/OOPPatterns.runtimeconfig.json
+/home/omidsa/Programmings/ASPNetCore/Project24/OOPAndPattern/OOPPatterns/bin/Debug/net8.0/OOPPatterns.dll
+/home/omidsa/Programmings/ASPNetCore/Project24/OOPAndPattern/OOPPatterns/bin/Debug/net8.0/OOPPatterns.pdb
+/home/omidsa/Programmings/ASPNetCore/Project24/OOPAndPattern/OOPPatterns/obj/Debug/net8.0/OOPPatterns.GeneratedMSBuildEditorConfig.editorconfig
+/home/omidsa/Programmings/ASPNetCore/Project24/OOPAndPattern/OOPPatterns/obj/Debug/net8.0/OOPPatterns.AssemblyInfoInputs.cache
+/home/omidsa/Programmings/ASPNetCore/Project24/OOPAndPattern/OOPPatterns/obj/Debug/net8.0/OOPPatterns.AssemblyInfo.cs
+/home/omidsa/Programmings/ASPNetCore/Project24/OOPAndPattern/OOPPatterns/obj/Debug/net8.0/OOPPatterns.csproj.CoreCompileInputs.cache
+/home/omidsa/Programmings/ASPNetCore/Project24/OOPAndPattern/OOPPatterns/obj/Debug/net8.0/OOPPatterns.sourcelink.json
+/home/omidsa/Programmings/ASPNetCore/Project24/OOPAndPattern/OOPPatterns/obj/Debug/net8.0/OOPPatterns.dll
+/home/omidsa/Programmings/ASPNetCore/Project24/OOPAndPattern/OOPPatterns/obj/Debug/net8.0/refint/OOPPatterns.dll
+/home/omidsa/Programmings/ASPNetCore/Project24/OOPAndPattern/OOPPatterns/obj/Debug/net8.0/OOPPatterns.pdb
+/home/omidsa/Programmings/ASPNetCore/Project24/OOPAndPattern/OOPPatterns/obj/Debug/net8.0/OOPPatterns.genruntimeconfig.cache
+/home/omidsa/Programmings/ASPNetCore/Project24/OOPAndPattern/OOPPatterns/obj/Debug/net8.0/ref/OOPPatterns.dll
