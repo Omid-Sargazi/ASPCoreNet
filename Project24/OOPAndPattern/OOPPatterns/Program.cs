@@ -14,5 +14,9 @@
         dog.MakeSound();
         cat.MakeSound();
 
+        VehicleFactory factory = new VehicleFactory();
+        IVehicle vehicle = factory.GetVehicle("Car");
+        vehicle.Drive();
+
     }
 }
