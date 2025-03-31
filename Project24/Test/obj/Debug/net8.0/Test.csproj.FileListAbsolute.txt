@@ -1,0 +1,15 @@
+/home/omidsa/Programmings/ASPNetCore/Project24/Test/bin/Debug/net8.0/Test
+/home/omidsa/Programmings/ASPNetCore/Project24/Test/bin/Debug/net8.0/Test.deps.json
+/home/omidsa/Programmings/ASPNetCore/Project24/Test/bin/Debug/net8.0/Test.runtimeconfig.json
+/home/omidsa/Programmings/ASPNetCore/Project24/Test/bin/Debug/net8.0/Test.dll
+/home/omidsa/Programmings/ASPNetCore/Project24/Test/bin/Debug/net8.0/Test.pdb
+/home/omidsa/Programmings/ASPNetCore/Project24/Test/obj/Debug/net8.0/Test.GeneratedMSBuildEditorConfig.editorconfig
+/home/omidsa/Programmings/ASPNetCore/Project24/Test/obj/Debug/net8.0/Test.AssemblyInfoInputs.cache
+/home/omidsa/Programmings/ASPNetCore/Project24/Test/obj/Debug/net8.0/Test.AssemblyInfo.cs
+/home/omidsa/Programmings/ASPNetCore/Project24/Test/obj/Debug/net8.0/Test.csproj.CoreCompileInputs.cache
+/home/omidsa/Programmings/ASPNetCore/Project24/Test/obj/Debug/net8.0/Test.sourcelink.json
+/home/omidsa/Programmings/ASPNetCore/Project24/Test/obj/Debug/net8.0/Test.dll
+/home/omidsa/Programmings/ASPNetCore/Project24/Test/obj/Debug/net8.0/refint/Test.dll
+/home/omidsa/Programmings/ASPNetCore/Project24/Test/obj/Debug/net8.0/Test.pdb
+/home/omidsa/Programmings/ASPNetCore/Project24/Test/obj/Debug/net8.0/Test.genruntimeconfig.cache
+/home/omidsa/Programmings/ASPNetCore/Project24/Test/obj/Debug/net8.0/ref/Test.dll

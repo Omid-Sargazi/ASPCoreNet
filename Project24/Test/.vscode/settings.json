@@ -1,0 +1,6 @@
+{
+  "dotnet.defaultRuntimePath": "/home/omidsa/dotnet",
+  "omnisharp.dotnetPath": "/home/omidsa/dotnet",
+  "omnisharp.useModernNet": true,
+  "dotnetAcquisitionExtension.enable": false
+}
