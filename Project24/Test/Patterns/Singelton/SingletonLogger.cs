@@ -5,7 +5,7 @@ namespace Test.Pattern.Singelton
         private static SingletonLogger _instance;
 
         private SingletonLogger(){}
-        public SingletonLogger getInstance()
+        public static SingletonLogger getInstance()
         {
             get
             {
