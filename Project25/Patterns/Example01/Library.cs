@@ -21,3 +21,4 @@ namespace Patterns.Example01
         Books.Remove(book);
     }
 }
+}
