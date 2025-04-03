@@ -1,0 +1,15 @@
+/home/omidsa/Programmings/ASPNetCore/Project25/Patterns/obj/Debug/net9.0/Patterns.GeneratedMSBuildEditorConfig.editorconfig
+/home/omidsa/Programmings/ASPNetCore/Project25/Patterns/obj/Debug/net9.0/Patterns.AssemblyInfoInputs.cache
+/home/omidsa/Programmings/ASPNetCore/Project25/Patterns/obj/Debug/net9.0/Patterns.AssemblyInfo.cs
+/home/omidsa/Programmings/ASPNetCore/Project25/Patterns/obj/Debug/net9.0/Patterns.csproj.CoreCompileInputs.cache
+/home/omidsa/Programmings/ASPNetCore/Project25/Patterns/obj/Debug/net9.0/Patterns.sourcelink.json
+/home/omidsa/Programmings/ASPNetCore/Project25/Patterns/bin/Debug/net9.0/Patterns
+/home/omidsa/Programmings/ASPNetCore/Project25/Patterns/bin/Debug/net9.0/Patterns.deps.json
+/home/omidsa/Programmings/ASPNetCore/Project25/Patterns/bin/Debug/net9.0/Patterns.runtimeconfig.json
+/home/omidsa/Programmings/ASPNetCore/Project25/Patterns/bin/Debug/net9.0/Patterns.dll
+/home/omidsa/Programmings/ASPNetCore/Project25/Patterns/bin/Debug/net9.0/Patterns.pdb
+/home/omidsa/Programmings/ASPNetCore/Project25/Patterns/obj/Debug/net9.0/Patterns.dll
+/home/omidsa/Programmings/ASPNetCore/Project25/Patterns/obj/Debug/net9.0/refint/Patterns.dll
+/home/omidsa/Programmings/ASPNetCore/Project25/Patterns/obj/Debug/net9.0/Patterns.pdb
+/home/omidsa/Programmings/ASPNetCore/Project25/Patterns/obj/Debug/net9.0/Patterns.genruntimeconfig.cache
+/home/omidsa/Programmings/ASPNetCore/Project25/Patterns/obj/Debug/net9.0/ref/Patterns.dll
