@@ -11,6 +11,15 @@ namespace Patterns
         myCar.Color = "Red";
 
         myCar.Drive();
+
+        ////////////////////////
+        var englsih = new EnglishGreeting();
+        var spanish = new SpanishGreeting();
+        var french = new FrenchGreeting();
+        Console.WriteLine(engine.SayHello());
+        Console.WriteLine(spanish.SayHello());
+        Console.WriteLine(french.SayHello());
+
     }
 }
 }
