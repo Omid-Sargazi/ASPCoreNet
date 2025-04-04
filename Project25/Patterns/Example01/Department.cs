@@ -9,7 +9,6 @@ namespace Patterns.Example01
         {
             Name = name;
             Professors = new List<Professor>();
-
         }
     }
 }

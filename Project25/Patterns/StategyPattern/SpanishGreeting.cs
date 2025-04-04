@@ -5,6 +5,6 @@ namespace Patterns.StrategyPattern
         public string SayHello()
         {
             return "Hola";
-        }
+        }   
     }
 }
