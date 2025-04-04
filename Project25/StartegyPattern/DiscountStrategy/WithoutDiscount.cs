@@ -1,7 +1,10 @@
 namespace  StartegyPattern.DiscountStrategy
 {
-    public decimal CalculateDiscount(decimal price)
+   public class WithoutDiscount : IDiscount
+    {
+        public decimal CalculateDiscount(decimal price)
         {
-            return price; // قیمت بدون تغییر
+            return price; // بدون تخفیف
         }
+    }
 }

@@ -1,6 +1,6 @@
 namespace  StartegyPattern.DiscountStrategy
 {
-    public class SeasonalDiscount : IDiscountStrategy
+    public class SeasonalDiscount : IDiscount
     {
         public decimal CalculateDiscount(decimal price)
         {
