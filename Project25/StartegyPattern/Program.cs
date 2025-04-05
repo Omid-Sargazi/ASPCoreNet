@@ -1,4 +1,5 @@
-﻿using StartegyPattern.BuilderPattern;
+﻿using StartegyPattern.PrototypePattern;
+using StartegyPattern.BuilderPattern;
 public class Program
 {
     public static void Main(string[] args)
@@ -19,5 +20,11 @@ public class Program
         .WithAddress("Australis").
         Build();
         Console.WriteLine(person.Age);
+
+        var baseSoldier = new Soldier("Rifle","Light Armor", 100);
+        var soldier2 = new Soldier(baseSoldier.Weapon, baseSoldier.Armor, baseSoldier.Health);
+        soldier2.Weapon = "Shotgun";
+        Console.WriteLine(soldier2.Weapon, baseSoldier.Weapon);
+
     }
 }
