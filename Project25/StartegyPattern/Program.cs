@@ -11,5 +11,13 @@ public class Program
         .AddTopping("Peperoni")
         .Build();
         Console.WriteLine($"Pizza Size: {pizza.Size}");
+
+        var person = new PersonBuilder()
+        .WithLastName("Omid")
+        .WithLastName("Sa")
+        .WithAge(42)
+        .WithAddress("Australis").
+        Build();
+        Console.WriteLine(person.Age);
     }
 }

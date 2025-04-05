@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("StartegyPattern")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3ba58490215e0d5e44d8e523c8637c0f9c91bf50")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9da03850bd3e724de1f46f197ffa639234fe04cd")]
 [assembly: System.Reflection.AssemblyProductAttribute("StartegyPattern")]
 [assembly: System.Reflection.AssemblyTitleAttribute("StartegyPattern")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
