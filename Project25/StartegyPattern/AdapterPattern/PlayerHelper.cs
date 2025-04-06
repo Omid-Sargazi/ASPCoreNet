@@ -1,11 +1,15 @@
 namespace StartegyPattern.AdapterPattern
 {
-    public class PlayerHelper 
+    public class PlayerHelper : IMediaPlayer
     {
+        private OldVlcPlayer _oldVlcPlayer;
+        public PlayerHelper(OldVlcPlayer oldVlcPlayer)
+        {
+            _oldVlcPlayer = oldVlcPlayer;
+        }
         public void Play()
         {
-            var oldPlaye = new OldVlcPlayer();
-            oldPlaye.StartPlayback();
+           _oldVlcPlayer.StartPlayback();
         }
     }
 }
