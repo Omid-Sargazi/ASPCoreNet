@@ -1,6 +1,6 @@
 namespace  StartegyPattern.CompositePattern
 {
-    public class Circle
+    public class Circle : IShape
     {
         public void Draw() => Console.WriteLine("Drawing a Circle");
     }
