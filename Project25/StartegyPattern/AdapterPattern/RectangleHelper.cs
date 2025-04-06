@@ -1,11 +1,15 @@
 namespace StartegyPattern.AdapterPattern
 {
-    public class RectangleHelper
+    public class RectangleHelper : IShape
     {
+        private LegacyRectangle _rectangle;
+        public RectangleHelper(LegacyRectangle retangle)
+        {
+            _rectangle = retangle;
+        }
         public void Draw()
         {
-            var rect = new LegacyRectangle();
-            rect.Render();
+           _rectangle.Render();
         }
     }
 }
